@@ -1,0 +1,6 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute]
+"ExceptionLogFile"="\\CSR\\_ERRORS\\EXCEPTIONS.ERR"
+"MaxExceptionLogSize"=dword:00155CC0
+
