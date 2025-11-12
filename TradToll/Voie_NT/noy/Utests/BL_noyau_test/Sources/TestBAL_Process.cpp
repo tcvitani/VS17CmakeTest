@@ -134,29 +134,29 @@ void TestBAL_Process::initTestCase()
 		currentProcess = lstConsumerProcess.at(i);	
 	
 #ifdef _DEBUG
-		currentProcess->start("BL_CONSUMER.exe", QStringList(currentProcess->m_sMailboxName));
+		currentProcess->start("BL_Consumer_vs22_x64.exe", QStringList(currentProcess->m_sMailboxName));
 #else
-		currentProcess->start("BL_CONSUMER_R.exe", QStringList(currentProcess->m_sMailboxName));
+		currentProcess->start("BL_Consumer_vs22_x64_r.exe", QStringList(currentProcess->m_sMailboxName));
 #endif	
 	}
 
 
 
-// 	for(i=0;i<NUM_PROCESSES_TO_TEST;i++)
-// 	{
-// 		currentProcess = lstConsumerProcess.at(i);	
-// 
-// 		QProcess::ProcessState e = currentProcess->state();
-// 		if(e==QProcess::Starting || e==QProcess::Running)
-// 		{
-// 			currentProcess->waitForStarted(3000);
-// 		}
-// 		else
-// 		{
-// 			QFAIL(QString("Unable to start process BLConsumer.exe %1").arg(currentProcess->m_sMailboxName).toAscii().data());
-// 		}
-// 	}	
-// 
+ 	//for(i=0;i<NUM_PROCESSES_TO_TEST;i++)
+ 	//{
+ 	//	currentProcess = lstConsumerProcess.at(i);	
+ 	//
+ 	//	QProcess::ProcessState e = currentProcess->state();
+ 	//	if(e==QProcess::Starting || e==QProcess::Running)
+ 	//	{
+ 	//		currentProcess->waitForStarted(3000);
+ 	//	}
+ 	//	else
+ 	//	{
+ 	//		QFAIL(QString("Unable to start process BL_Consumer_vs22_x64.exe %1").arg(currentProcess->m_sMailboxName).toAscii().data());
+ 	//	}
+ 	//}	
+ 
 	m_szMainMailboxName = QString(gszMainProducerMailbox);
 	m_mainMailboxId = PublieBAL ((char*)gszMainProducerMailbox, 0); 
 	 
