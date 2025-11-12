@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile />
+    <ClCompile>
+      <AdditionalIncludeDirectories>
+		..\includes;
+		"includes";
+		"sources";
+		"l:\commun_nt\declare\10.0.0";
+		"l:\voie_nt\commun\3.2.0";
+		"l:\commun_nt\reg\10.0.2";
+		"l:\commun_nt\excpt\10.0.3";
+		"l:\commun_nt\trc\10.0.3"
+	  </AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
