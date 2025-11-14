@@ -1,6 +1,6 @@
 #include <QtGui>
 #include <Qlistwidget>
-#include <qtconcurrentrun.h>
+//#include <qtconcurrentrun.h>
 #include <QTextCodec>
 #include <QMessageBox>
 
@@ -47,7 +47,7 @@ MainDlg::MainDlg(QWidget *parent, QString sIHMMailbox)
 	m_sSystemEncoding = regValues.value("SystemEncoding", "").toString();
 	if(m_sSystemEncoding!="")
 	{
-		QTextCodec *codec = QTextCodec::codecForName(m_sSystemEncoding.toAscii().data());
+		QTextCodec *codec = QTextCodec::codecForName(m_sSystemEncoding.toLatin1().data());
 		if(codec!=NULL)
 			QTextCodec::setCodecForLocale(codec);
 	}

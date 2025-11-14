@@ -590,7 +590,7 @@ void SimuSendReciveThread::run()
 	
 	QString sBalName = QString(SIMU_NOM_BAL) + QString("%1").arg(m_iInstanceCounter);
 
-	sprintf_s(pcInstance, sizeof(pcInstance), "%s", sBalName.toAscii().data());
+	sprintf_s(pcInstance, sizeof(pcInstance), "%s", sBalName.toLatin1().data());
 	
     SetTextToMainDlg(QString("SIMU: Creation BAL=%1 ...").arg(pcInstance));
 	SupprimeBAL(pcInstance) ;	// stop if exist
@@ -606,7 +606,7 @@ void SimuSendReciveThread::run()
 	
 	
     SetTextToMainDlg(QString("SIMU: Connection to IHM ..."));
-	sprintf_s(pcInstance, sizeof(pcInstance), "%s", m_sIHMMailbox.toAscii().data());
+	sprintf_s(pcInstance, sizeof(pcInstance), "%s", m_sIHMMailbox.toLatin1().data());
 		
     SetTextToMainDlg(QString("SIMU: Connection BAL=%1 ...").arg(pcInstance));
 		
@@ -1265,7 +1265,7 @@ QAction * SimuSendReciveThread::getSetTextAction()
 
 
 
-void SimuSendReciveThread::SetTextToMainDlg(QString &szText)
+void SimuSendReciveThread::SetTextToMainDlg(const QString &szText)
 {
 //	incMsgsEvents();
 
@@ -1438,10 +1438,10 @@ void SimuSendReciveThread::onVideo()
 		newAff.valeur.video.cmdval.dwValeur = m_pActionVideo->property(_PROP_SOURCE).toInt();
 		break;
 	case IHM_VIDEO_SAVE_BMP:
-		strcpy(newAff.valeur.video.cmdval.szValeur, m_pActionVideo->property(_PROP_VALUE).toString().toAscii().data());
+		strcpy(newAff.valeur.video.cmdval.szValeur, m_pActionVideo->property(_PROP_VALUE).toString().toLatin1().data());
 		break;
 	case IHM_VIDEO_SAVE_JPG:
-		strcpy(newAff.valeur.video.cmdval.szValeur, m_pActionVideo->property(_PROP_VALUE).toString().toAscii().data());
+		strcpy(newAff.valeur.video.cmdval.szValeur, m_pActionVideo->property(_PROP_VALUE).toString().toLatin1().data());
 		break;
 	}		
 	
@@ -1545,7 +1545,7 @@ void SimuSendReciveThread::onPolice()
 
 		newPolice.objet = (enum_ihm_objets)m_pActionPolice->property(_PROP_OBJECT).toInt();
 		strcpy((char*)newPolice.valeur.szValeur, m_pActionPolice->property(_PROP_VALUE).toByteArray());
-		newPolice.propriete = m_pActionPolice->property(_PROP_PROPERTY).toChar().toAscii();
+		newPolice.propriete = m_pActionPolice->property(_PROP_PROPERTY).toChar().toLatin1();
 
 		sendMessage((enum_ihm_service)M_IHM_POLICE, SRV_TYP_SET, &newPolice);
 	}
@@ -1609,7 +1609,7 @@ void SimuSendReciveThread::onPrependScript(QString szScript)
 
 }
 
-char * SimuSendReciveThread::verify_if_no_change_string(char *s)
+const char * SimuSendReciveThread::verify_if_no_change_string(char *s)
 {
 	if(strcmp(SCRIPT_XML_ATTRIBUTE_NO_CHANGE,s) == 0)
 		return IHM_NOCHANGE_S;
@@ -1661,17 +1661,17 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 					{
 						struct_ihm_srv_config newConf = {0};
 
-						strcpy((char*)newConf.projet, verify_if_no_change_string(child.attribute(_PROP_PROJECT).toAscii().data()));
-						strcpy((char*)newConf.no_version, verify_if_no_change_string(child.attribute(_PROP_VERSION).toAscii().data()));
-						strcpy((char*)newConf.langue, verify_if_no_change_string(child.attribute(_PROP_LANGUAGE).toAscii().data()));
-						strcpy((char*)newConf.type_voie,  verify_if_no_change_string(child.attribute(_PROP_TYPE_OF_LANE).toAscii().data()));
-						strcpy((char*)newConf.type_poste, verify_if_no_change_string(child.attribute(_PROP_TYPE_OF_SHIFT).toAscii().data()));
-						strcpy((char*)newConf.main_dlg_hidden, verify_if_no_change_string(child.attribute(_PROP_MAIN_DLG_HIDDEN).toAscii().data()));
+						strcpy((char*)newConf.projet, verify_if_no_change_string(child.attribute(_PROP_PROJECT).toLatin1().data()));
+						strcpy((char*)newConf.no_version, verify_if_no_change_string(child.attribute(_PROP_VERSION).toLatin1().data()));
+						strcpy((char*)newConf.langue, verify_if_no_change_string(child.attribute(_PROP_LANGUAGE).toLatin1().data()));
+						strcpy((char*)newConf.type_voie,  verify_if_no_change_string(child.attribute(_PROP_TYPE_OF_LANE).toLatin1().data()));
+						strcpy((char*)newConf.type_poste, verify_if_no_change_string(child.attribute(_PROP_TYPE_OF_SHIFT).toLatin1().data()));
+						strcpy((char*)newConf.main_dlg_hidden, verify_if_no_change_string(child.attribute(_PROP_MAIN_DLG_HIDDEN).toLatin1().data()));
 						
 											
 						sendMessage(M_IHM_CONFIG, SRV_TYP_SET, (void*)&newConf);
 						
-						m_szLanguage = child.attribute(_PROP_LANGUAGE).toAscii().data();
+						m_szLanguage = child.attribute(_PROP_LANGUAGE).toLatin1().data();
 					}
 				}
 				else if(child.attribute(_PROP_SERVICE) == XML_AFFICHAGE)
@@ -1710,7 +1710,7 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 								break;
 							case IHM_VIDEO_SAVE_BMP:
 							case IHM_VIDEO_SAVE_JPG:
-								strcpy(newAff.valeur.video.cmdval.szValeur, child.attribute(_PROP_VALUE).toAscii().data());
+								strcpy(newAff.valeur.video.cmdval.szValeur, child.attribute(_PROP_VALUE).toLatin1().data());
 								break;
 							}		
 							newAff.visibility = (child.attribute(_PROP_VISIBLITY) == "0")?enuIHM_AFF_OBJ_HIDDEN:enuIHM_AFF_OBJ_VISIBLE;
@@ -1719,11 +1719,11 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 						{
 							newAff.valeur.link.iTargetDialog = child.attribute(_PROP_DIALOG_ID).toInt();
 							newAff.visibility = (child.attribute(_PROP_VISIBLITY) == "0")?enuIHM_AFF_OBJ_HIDDEN:enuIHM_AFF_OBJ_VISIBLE;
-							strcpy(newAff.valeur.link.szUrlValue, child.attribute(_PROP_VALUE).toAscii().data());
+							strcpy(newAff.valeur.link.szUrlValue, child.attribute(_PROP_VALUE).toLatin1().data());
 						}
 						else if(newAff.objet == IHM_OBJ_OpenLoginDlg)
 						{
-							strcpy((char*)newAff.valeur.login_dlg.szLogin, child.attribute(_PROP_VALUE).toAscii().data());
+							strcpy((char*)newAff.valeur.login_dlg.szLogin, child.attribute(_PROP_VALUE).toLatin1().data());
 							newAff.valeur.login_dlg.bManualLogin = child.attribute(_PROP_MANUAL_LOGIN).toInt();
 							newAff.valeur.login_dlg.bLDAPOffline = child.attribute(_PROP_LDAP_OFFLINE).toInt();
 							newAff.visibility = (child.attribute(_PROP_VISIBLITY) == "0")?enuIHM_AFF_OBJ_HIDDEN:enuIHM_AFF_OBJ_VISIBLE;
@@ -1731,7 +1731,7 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 						}
 						else if(newAff.objet == IHM_OBJ_HMenuView1 || newAff.objet == IHM_OBJ_HMenuView2)
 						{
-							strcpy((char*)newAff.valeur.menu.szMenuContent, child.attribute(_PROP_VALUE).toAscii().data());
+							strcpy((char*)newAff.valeur.menu.szMenuContent, child.attribute(_PROP_VALUE).toLatin1().data());
 							newAff.valeur.menu.bUseExternalFile = child.attribute(_PROP_IS_FILE).toInt();
 							newAff.valeur.menu.bDoNotReloadMenu = child.attribute(_PROP_DO_NOT_RELOAD).toInt();
 							newAff.visibility = (child.attribute(_PROP_VISIBLITY) == "0")?enuIHM_AFF_OBJ_HIDDEN:enuIHM_AFF_OBJ_VISIBLE;
@@ -1739,7 +1739,7 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 						}
 						else if(newAff.objet == IHM_OBJ_TableView1 || newAff.objet == IHM_OBJ_TableView2 || newAff.objet == IHM_OBJ_TableView3)
 						{
-							strcpy((char*)newAff.valeur.table_view.szContent, child.attribute(_PROP_VALUE).toAscii().data());
+							strcpy((char*)newAff.valeur.table_view.szContent, child.attribute(_PROP_VALUE).toLatin1().data());
 							newAff.valeur.table_view.bUseExternalFile = child.attribute(_PROP_IS_FILE).toInt();
 							
 							enum_aff_table_command iCmd = (enum_aff_table_command)getTableViewCmdFromString(child.attribute(_PROP_COMMAND));
@@ -1756,7 +1756,7 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 							if(child.attribute(_PROP_VALUE)!="")
 							{
 								QString sValue = child.attribute(_PROP_VALUE);
-								strcpy((char*)newAff.valeur.szValeur, verify_if_no_change_string(sValue.toAscii().data()));
+								strcpy((char*)newAff.valeur.szValeur, verify_if_no_change_string(sValue.toLatin1().data()));
 							}
 							else
 							{
@@ -1767,13 +1767,13 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 								else	
 									newAff.is_enabled = enuIHM_OBJECT_UNCHANGED;
 
-								strcpy((char*)newAff.valeur.button.szValeurImg, verify_if_no_change_string(child.attribute("BUTTON_IMG").toAscii().data()));
-								strcpy((char*)newAff.valeur.button.szValeurText, verify_if_no_change_string(child.attribute("BUTTON_TEXT").toAscii().data()));
+								strcpy((char*)newAff.valeur.button.szValeurImg, verify_if_no_change_string(child.attribute("BUTTON_IMG").toLatin1().data()));
+								strcpy((char*)newAff.valeur.button.szValeurText, verify_if_no_change_string(child.attribute("BUTTON_TEXT").toLatin1().data()));
 
 							}
 							
 							QString sToolTip = child.attribute(_PROP_TOOLTIP);
-							strcpy((char*)newAff.szToolTip, verify_if_no_change_string(sToolTip.toAscii().data()));
+							strcpy((char*)newAff.szToolTip, verify_if_no_change_string(sToolTip.toLatin1().data()));
 							
 							newAff.propriete = child.attribute(_PROP_PROPERTY).toInt();
 							newAff.visibility = (child.attribute(_PROP_VISIBLITY) == "0")?enuIHM_AFF_OBJ_HIDDEN:enuIHM_AFF_OBJ_VISIBLE;
@@ -1801,7 +1801,7 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 						if(child.attribute(_PROP_GROUPE)!="")
 						{
 							QString sValue = child.attribute(_PROP_GROUPE);
-							strcpy((char*)newAff.valeur.szValeur, sValue.toAscii().data());
+							strcpy((char*)newAff.valeur.szValeur, sValue.toLatin1().data());
 
 							if(child.attribute("ENABLED") == "1")
 								newAff.is_enabled = enuIHM_OBJECT_ENABLED;
@@ -1822,7 +1822,7 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 					memset(&newPolice, 0, sizeof(newPolice));//initialize to zeroes
 					
 					newPolice.objet = (enum_ihm_objets)getObjectIdFromString(child.attribute(_PROP_OBJECT));
-					strcpy((char*)newPolice.valeur.szValeur, child.attribute(_PROP_VALUE).toAscii().data());
+					strcpy((char*)newPolice.valeur.szValeur, child.attribute(_PROP_VALUE).toLatin1().data());
 
 					sendMessage((enum_ihm_service)M_IHM_POLICE, SRV_TYP_SET, &newPolice);
 				}
@@ -1841,9 +1841,9 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 						iService = M_IHM_TOUCHES;
 						iType = SRV_TYP_DEMANDE;
 						
-						strcpy((char*)newTouches.nomgroupe, child.attribute(_PROP_GROUPE).toAscii().data());
+						strcpy((char*)newTouches.nomgroupe, child.attribute(_PROP_GROUPE).toLatin1().data());
 						newTouches.touche = child.attribute(_PROP_ASCII).toInt();
-						newTouches.etat = child.attribute(_PROP_ETAT).toAscii().at(0);
+						newTouches.etat = child.attribute(_PROP_ETAT).toLatin1().at(0);
 					}
 					else if(child.attribute(_PROP_TYPE) == _PROP_VAL_FIN)
 					{
@@ -1865,7 +1865,7 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 						
 						szDefinition.append(QString("|%1|%2").arg(child.attribute(_PROP_DLG_NAME)).arg(child.attribute(_PROP_NO_CONTROLS)));
 						szDefinition.append(child.attribute(_PROP_CTRL_STRING));
-						strcpy((char*)newSaisie.string, szDefinition.toAscii().data());
+						strcpy((char*)newSaisie.string, szDefinition.toLatin1().data());
 						
 						sendMessage((enum_ihm_service)M_IHM_SAISIE_VISU, SRV_TYP_DEMANDE, &newSaisie);
 					}			
@@ -1889,18 +1889,18 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 						QString szTemp;
 						struct_ihm_srv_saisie_visu_ex newSaisieEx  = {0};
 						
-						strcpy((char*)newSaisieEx.dialog_id, child.attribute(_PROP_DIALOG_ID).toAscii().data());
+						strcpy((char*)newSaisieEx.dialog_id, child.attribute(_PROP_DIALOG_ID).toLatin1().data());
 						newSaisieEx.is_file = child.attribute(_PROP_IS_FILE).toInt();
 						//if(newSaisieEx.is_file == 0)
 						//{
 						//	//QString ss;
 						//	//QTextStream s(&ss);
 						//	//s << child.firstChild();
-						//	//strcpy((char*)newSaisieEx.data, ss.toAscii().data());
-						//	strcpy((char*)newSaisieEx.data, child.attribute(_PROP_VALUE).toAscii().data());
+						//	//strcpy((char*)newSaisieEx.data, ss.toLatin1().data());
+						//	strcpy((char*)newSaisieEx.data, child.attribute(_PROP_VALUE).toLatin1().data());
 						//}
 						//else
-							strcpy((char*)newSaisieEx.data, child.attribute(_PROP_VALUE).toAscii().data());
+							strcpy((char*)newSaisieEx.data, child.attribute(_PROP_VALUE).toLatin1().data());
 		
 						sendMessage((enum_ihm_service)M_IHM_SAISIE_VISU_EX, SRV_TYP_DEMANDE, &newSaisieEx);
 					}			
@@ -1909,7 +1909,7 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 						QString szTemp;
 						struct_ihm_srv_saisie_visu_ex newSaisieEx  = {0};
 						
-						strcpy((char*)newSaisieEx.dialog_id, child.attribute(_PROP_DIALOG_ID).toAscii().data());
+						strcpy((char*)newSaisieEx.dialog_id, child.attribute(_PROP_DIALOG_ID).toLatin1().data());
 
 						sendMessage((enum_ihm_service)M_IHM_SAISIE_VISU_EX, SRV_TYP_DEMANDE_ANNULATION,  &newSaisieEx);
 					}
@@ -1920,8 +1920,8 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 					{
 						struct_ihm_srv_detection newDetection = {0};
 						
-						strcpy((char*)newDetection.CoupleId, child.attribute(_PROP_COUPLE_ID).toAscii());
-						//strcpy((char*)newDetection.Format, child.attribute(_PROP_SAISIE).toAscii());
+						strcpy((char*)newDetection.CoupleId, child.attribute(_PROP_COUPLE_ID).toLatin1());
+						//strcpy((char*)newDetection.Format, child.attribute(_PROP_SAISIE).toLatin1());
 						newDetection.EnvoiePrePostambule = child.attribute(_PROP_PREPOSTAMBULES).toInt();
 						newDetection.ChaineComplete= (unsigned char) 0;
 						newDetection.ChaineSaisie[0]=0;
@@ -1934,8 +1934,8 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 					{
 						struct_ihm_srv_detection newDetection = {0};
 						
-						strcpy((char*)newDetection.CoupleId, child.attribute(_PROP_COUPLE_ID).toAscii());
-						//strcpy((char*)newDetection.Format, child.attribute(_PROP_SAISIE).toAscii());
+						strcpy((char*)newDetection.CoupleId, child.attribute(_PROP_COUPLE_ID).toLatin1());
+						//strcpy((char*)newDetection.Format, child.attribute(_PROP_SAISIE).toLatin1());
 						newDetection.EnvoiePrePostambule = child.attribute(_PROP_PREPOSTAMBULES).toInt();
 						newDetection.ChaineComplete= (unsigned char) 0;
 						newDetection.ChaineSaisie[0]=0;
@@ -1996,9 +1996,9 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 						newAuth.is_sec_code_pwd = (BYTE)child.attribute("IS_SEC_CODE_PWD").toInt();
 						newAuth.ret_val = (enum_ihm_auth_ret_val)child.attribute("RET_VAL").toInt();
 
-						strcpy((char*)newAuth.user_id, child.attribute("USER").toAscii().data());
-						strcpy((char*)newAuth.sec_code, child.attribute("SEC_CODE").toAscii().data());
-						strcpy((char*)newAuth.session_id, child.attribute("SESSION_ID").toAscii().data());
+						strcpy((char*)newAuth.user_id, child.attribute("USER").toLatin1().data());
+						strcpy((char*)newAuth.sec_code, child.attribute("SEC_CODE").toLatin1().data());
+						strcpy((char*)newAuth.session_id, child.attribute("SESSION_ID").toLatin1().data());
 
 					}
 					else if(child.attribute(_PROP_TYPE) == _PROP_VAL_FIN)
@@ -2023,7 +2023,7 @@ void SimuSendReciveThread::OpenXMLScript(QString szScript)
 						iService = M_IHM_ASYNC_INPUT;
 						iType = SRV_TYP_SET;
 						newAsync.is_file = child.attribute(_PROP_IS_FILE).toInt();
-						strcpy((char*)newAsync.data, child.attribute(_PROP_VALUE).toAscii().data());
+						strcpy((char*)newAsync.data, child.attribute(_PROP_VALUE).toLatin1().data());
 					}
 					else if(child.attribute(_PROP_TYPE) == _PROP_VAL_GET)
 					{

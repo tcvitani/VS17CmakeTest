@@ -376,7 +376,7 @@ target_link_libraries(${PROJECT_EXE}
 
 )
  
-#add_subdirectory(tests)
+add_subdirectory(tests)
 
 
 

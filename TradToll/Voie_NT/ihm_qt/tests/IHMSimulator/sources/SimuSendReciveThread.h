@@ -65,7 +65,7 @@ public:
 	bool					m_bReturnControlAuto;
 	int decMsgsEvents();
 	
-	static char * verify_if_no_change_string(char *);
+	static const char * verify_if_no_change_string(char *);
 	
 	void setUserDialogConfirmed(bool bCancelScript);
 
@@ -94,7 +94,7 @@ protected:
 	void readRecivedMailslot();
 	QString SimuGetMsgSrv(enum_ihm_service eSrv);
 	QString SimuGetMsgType(enum_ihm_type eType);
-	void SetTextToMainDlg(QString &szText);
+	void SetTextToMainDlg(const QString &szText);
 	void OpenXMLScript(QString szScript);
 	QString generateReadableMessage(struct_ihm_message  * p_msg);
 		

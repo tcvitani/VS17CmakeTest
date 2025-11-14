@@ -2,9 +2,9 @@
 #ifndef ASYNCINPUTDLG_H
 #define ASYNCINPUTDLG_H
 
-#include "Ui_AsyncInputDlg.h"
 #include "IHMSimuDld.h"
 
+class Ui_AsyncInput;
 
 class AsyncInputDlg : public IHMSimuDld
 {
@@ -18,7 +18,7 @@ public slots:
 	void reject();
 	
 private:
-    Ui_AsyncInput ui;
+    Ui_AsyncInput *ui;
 };
 
 #endif
