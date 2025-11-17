@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainDlg</class>
+ <widget class="QMainWindow" name="MainDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>591</width>
+    <height>536</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Virtual keyboard Test</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/IHMSimulator/images/logo.png</normaloff>:/IHMSimulator/images/logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Affichage</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>INIT CONFIG:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>keyboard_id</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="txtKeyboardID">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="btnSendInitConfig">
+         <property name="text">
+          <string>Send INIT CONFIG</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>AFF MOVE:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>X Pos</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinPosX">
+           <property name="maximum">
+            <number>2000</number>
+           </property>
+           <property name="singleStep">
+            <number>10</number>
+           </property>
+           <property name="value">
+            <number>400</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>X Pos</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinPosY">
+           <property name="maximum">
+            <number>2000</number>
+           </property>
+           <property name="singleStep">
+            <number>10</number>
+           </property>
+           <property name="value">
+            <number>300</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="btnSendAffMove">
+         <property name="text">
+          <string>Send AFF MOVE</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>AFF SHOW:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QPushButton" name="btnSendAffShow0">
+           <property name="text">
+            <string>Send AFF HIDE</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnSendAffShow1">
+           <property name="text">
+            <string>Send AFF SHOW</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="0" colspan="3">
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QPushButton" name="btnSendAffDEBUT">
+           <property name="text">
+            <string>Send AFF DEBUT</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnSendAffFIN">
+           <property name="text">
+            <string>Send AFF FIN</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>Arret</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QPushButton" name="btnSendArret">
+         <property name="text">
+          <string>Send ARRET</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="listWidget"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>668</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnClose">
+        <property name="text">
+         <string>Close</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>591</width>
+     <height>19</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSet_Config">
+   <property name="text">
+    <string>Set Config</string>
+   </property>
+  </action>
+  <action name="actionGet_Config">
+   <property name="text">
+    <string>Get Config</string>
+   </property>
+  </action>
+  <action name="actionDebutAff">
+   <property name="text">
+    <string>Debut</string>
+   </property>
+  </action>
+  <action name="actionSet_Icon">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Set Icon</string>
+   </property>
+  </action>
+  <action name="actionSet_Label">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Set Label</string>
+   </property>
+  </action>
+  <action name="actionFinAff">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Fin</string>
+   </property>
+  </action>
+  <action name="actionDebutTouche">
+   <property name="text">
+    <string>Debut</string>
+   </property>
+  </action>
+  <action name="actionDemandeTouche">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Demande</string>
+   </property>
+  </action>
+  <action name="actionFinTouche">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Fin</string>
+   </property>
+  </action>
+  <action name="actionDemandeSasie">
+   <property name="text">
+    <string>Demande</string>
+   </property>
+  </action>
+  <action name="actionAnnulationSasie">
+   <property name="text">
+    <string>Annulation</string>
+   </property>
+  </action>
+  <action name="actionDebutDetection">
+   <property name="text">
+    <string>Debut</string>
+   </property>
+  </action>
+  <action name="actionFinDetection">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Fin</string>
+   </property>
+  </action>
+  <action name="actionSetPolice">
+   <property name="text">
+    <string>Set</string>
+   </property>
+  </action>
+  <action name="actionExitMenu">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAbout_IHM_Simulator">
+   <property name="text">
+    <string>About IHM Simulator</string>
+   </property>
+  </action>
+  <action name="actionTt">
+   <property name="text">
+    <string>tt</string>
+   </property>
+  </action>
+  <action name="actionARRET">
+   <property name="text">
+    <string>ARRET</string>
+   </property>
+  </action>
+  <action name="actionLoad_script">
+   <property name="text">
+    <string>Load script</string>
+   </property>
+  </action>
+  <action name="actionSet_Image">
+   <property name="text">
+    <string>Set Image</string>
+   </property>
+  </action>
+  <action name="actionVideo">
+   <property name="text">
+    <string>Video</string>
+   </property>
+  </action>
+  <action name="actionAUTH_AUTO">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>AUTH AUTO</string>
+   </property>
+  </action>
+  <action name="actionTAKE_CTRL_AUTO">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>TAKE CTRL AUTO</string>
+   </property>
+  </action>
+  <action name="actionRETURN_CTRL_AUTO">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>RETURN CTRL AUTO</string>
+   </property>
+  </action>
+  <action name="actionAuthDEBUT">
+   <property name="text">
+    <string>DEBUT</string>
+   </property>
+  </action>
+  <action name="actionAuthFIN">
+   <property name="text">
+    <string>FIN</string>
+   </property>
+  </action>
+  <action name="actionAUTH_RSP">
+   <property name="text">
+    <string>AUTH RSP</string>
+   </property>
+  </action>
+  <action name="actionTAKE_CTRL_RSP">
+   <property name="text">
+    <string>TAKE CTRL RSP</string>
+   </property>
+  </action>
+  <action name="actionRETURN_CTRL_RSP">
+   <property name="text">
+    <string>RETURN CTRL RSP</string>
+   </property>
+  </action>
+  <action name="actionLink">
+   <property name="text">
+    <string>Link</string>
+   </property>
+  </action>
+  <action name="actionDemandeSasieEx">
+   <property name="text">
+    <string>Demande</string>
+   </property>
+  </action>
+  <action name="actionAnnulationSasieEx">
+   <property name="text">
+    <string>Annulation</string>
+   </property>
+  </action>
+  <action name="actionDebut">
+   <property name="text">
+    <string>Debut</string>
+   </property>
+  </action>
+  <action name="actionDebutAsync">
+   <property name="text">
+    <string>Debut</string>
+   </property>
+  </action>
+  <action name="actionSetAsync">
+   <property name="text">
+    <string>Set</string>
+   </property>
+  </action>
+  <action name="actionFinAsync">
+   <property name="text">
+    <string>Fin</string>
+   </property>
+  </action>
+  <action name="actionGetAsync">
+   <property name="text">
+    <string>Get</string>
+   </property>
+  </action>
+  <action name="actionLoopScript">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Loop script</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionExitMenu</sender>
+   <signal>activated()</signal>
+   <receiver>MainDlg</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>393</x>
+     <y>247</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
