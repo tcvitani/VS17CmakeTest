@@ -1,0 +1,5 @@
+/I ".\INCLUDES"
+/I "..\STARTUP\INCLUDES"
+/I "..\STARTUP\SOURCES"
+/I "l:\Commun_NT\Declare\1.0.0"
+/I "l:\Voie_NT\Commun\3.1.0"
