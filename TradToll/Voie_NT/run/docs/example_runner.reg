@@ -1,0 +1,42 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\Runner]
+"TracePath"="c:\\exploit\\logs\\_errors"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\Runner\CDG]
+"CDG"="csr_cdg.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\Runner\DAC]
+"DAC"="csr_dac.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\Runner\P1]
+"LAN"="csr_pipe.dll"
+"AFF_SGM"="csr_sgm.dll"
+"ZIP"="csr_zip.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\Runner\P2]
+;
+; SYNTAXE:
+;   "modclass_name" = "dllmod_name | ignore_err"
+;
+;   ignore_err = 0 -> stopper si erreur au lancement des modules de la classe (valeur par defaut)
+;   ignore_err = 1 -> continuer si erreur au lancement des modules de la classe
+;
+"PCS"="csr_pcs.dll | 0"
+"DCP_T88"="csr_t88.dll | 1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\Runner\P3]
+"EMI"="emi_fic.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\Runner\RFR]
+"RFR"="referenc.dll"
+"RFR_AUT"="rfr_aut.dll"
+"RFR_BAS"="rfr_bas.dll"
+"RFR_CFG"="rfr_cfg.dll"
+"RFR_CUR"="rfr_cur.dll"
+"RFR_OCM"="rfr_ocm.dll"
+"RFR_OTL"="rfr_otl.dll"
+"RFR_PRD"="rfr_prd.dll"
+"RFR_TCI"="rfr_tci.dll"
+"RFR_TFT"="rfr_tft_modular.dll"
+"RFR_TIS"="rfr_tis.dll"
