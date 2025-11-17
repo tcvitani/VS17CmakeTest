@@ -2,8 +2,9 @@
 #ifndef WAITUSER_DLG_H
 #define WAITUSER_DLG_H
 
+#include "ui_waitUser.h"
 
-class Ui_WaitUserDlg;
+
 
 class MWaitUserDlg: public QDialog
 {
@@ -19,7 +20,7 @@ protected:
 
 
 private:
-	Ui_WaitUserDlg *ui;
+	Ui_WaitUserDlg ui;
 };
 
 #endif

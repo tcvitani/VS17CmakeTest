@@ -798,17 +798,14 @@ void MIhmDesktopIntf::processConfigLaneType(MIhmVirtDynConfig* pVirtObj)
 //------------------------------------------------------------------------------
 	int target_screen_index = MIhmConfigGeneral::getCfg()->getStartupScreenIndex();//1 is an example, this is 2nd screen, because screens are numbered from 0
 	
-	QScreen *deskWidget = qApp->primaryScreen();
-	QScreen *parent_screen = deskWidget;
+	QScreen *parent_screen = qApp->primaryScreen();  //deskWidget;
 	QList<QScreen*> lstSecreens = qApp->screens();
 
-	//if (lstSecreens.count() <= target_screen_index)
-	//{
-	//	target_screen_index = 0;
-	//}
+	if (lstSecreens.count() <= target_screen_index)
+	{
+		target_screen_index = 0;
+	}
 	
-	//bool is_virtual_desktop = deskWidget->isVirtualDesktop();
-
 	if (lstSecreens.count()>1)
 	{
 		TRACE_D(QString("MIhmDesktopIntf::processConfigLaneType: For Virtual desktop - parent screen is NULL!"));
@@ -826,18 +823,18 @@ void MIhmDesktopIntf::processConfigLaneType(MIhmVirtDynConfig* pVirtObj)
 					.arg(i)
 					.arg(rect.x()).arg(rect.y())
 					.arg(rect.width()).arg(rect.height()));
+
+				if (target_screen_index == i)
+				{
+					parent_screen = screen;
+					break;
+				}
+
 			}
 		}
 		
 
 	}
-	//else
-	//{
-	//	parent_screen = QApplication::desktop()->screen(target_screen_index);
-	//	
-	//	TRACE_D(QString("MIhmDesktopIntf::processConfigLaneType: parent_screen != NULL - parent screen geometry: w:%1 h:%2 ")
-	//			.arg(parent_screen->width()).arg(parent_screen->height()));
-	//}
 
 
 	m_pMainDialog = new MFormMain();

@@ -1,4 +1,0 @@
-<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Tiho Cvitan (Ecsat d.o.o.) -->
-<IHM_SIMU_script>
-		<ACTION SERVICE="SAISIE_EX" TYPE="DEMANDE" DIALOG_ID="FILE_DIALOG" IS_FILE="1" VALUE="OpenFile_VAL.xml"/>
-</IHM_SIMU_script>

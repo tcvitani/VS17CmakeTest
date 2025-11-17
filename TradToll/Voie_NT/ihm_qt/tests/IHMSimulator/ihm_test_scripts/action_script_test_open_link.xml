@@ -1,5 +1,0 @@
-<IHM_SIMU_script>
-	<ACTION SERVICE="AFFICHAGE" TYPE="SET" OBJECT="IHM_OBJ_OpenLink" VALUE="http://www.monitor.hr" is_post="" parameters="" DIALOG_ID="0" VISIBILITY="1"/>
-	<ACTION SERVICE="AFFICHAGE" TYPE="SET" OBJECT="IHM_OBJ_OpenLink" VALUE="http://www.google.com" DIALOG_ID="1" VISIBILITY="1"/>
-	<ACTION SERVICE="AFFICHAGE" TYPE="SET" OBJECT="IHM_OBJ_OpenLink" VALUE="http://www.youtube.com" DIALOG_ID="2" VISIBILITY="1"/>
-</IHM_SIMU_script>

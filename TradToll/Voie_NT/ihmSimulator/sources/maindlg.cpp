@@ -1,5 +1,6 @@
 #include <QtGui>
 #include <Qlistwidget>
+
 #include <QTextCodec>
 #include <QMessageBox>
 #include <QMainWindow>
@@ -21,7 +22,6 @@
 #include "AsyncInputDlg.h"
 #include "ihm.h"
 #include "MWaitUserDlg.h"
-#include "ui_maindlg.h"
 
 // macros
 #define __GET_COF_ACTION			m_pSendReciveThread->getConfigAction()
@@ -40,8 +40,7 @@
 MainDlg::MainDlg(QWidget *parent, QString sIHMMailbox)
     : QMainWindow(parent)
 {
-	ui = new Ui_MainDlg();
-    ui->setupUi(this);
+    ui.setupUi(this);
 	m_bExit = false;
 
 	m_sIHMMailbox = sIHMMailbox;
@@ -58,73 +57,74 @@ MainDlg::MainDlg(QWidget *parent, QString sIHMMailbox)
 		
 	memset(&m_AuthData, NULL, sizeof(struct_ihm_authorization));
 
+
 	//EXIT
-	//QObject::connect(ui->actionExitMenu, SIGNAL(triggered()), this, SLOT(onWaitExit()));
+	//QObject::connect(ui.actionExitMenu, SIGNAL(triggered()), this, SLOT(onWaitExit()));
 	
 	//Config
-	QObject::connect(ui->actionSet_Config, SIGNAL(triggered()), this, SLOT(onSet_Config()));
-	QObject::connect(ui->actionGet_Config, SIGNAL(triggered()), this, SLOT(onGet_Config()));
+	QObject::connect(ui.actionSet_Config, SIGNAL(triggered()), this, SLOT(onSet_Config()));
+	QObject::connect(ui.actionGet_Config, SIGNAL(triggered()), this, SLOT(onGet_Config()));
 
 	//Affichage
-	QObject::connect(ui->actionDebutAff, SIGNAL(triggered()), this, SLOT(onDebutAff()));
-	QObject::connect(ui->actionSet_Icon, SIGNAL(triggered()), this, SLOT(onSet_Icon()));
-	QObject::connect(ui->actionSet_Label, SIGNAL(triggered()), this, SLOT(onSet_Label()));
-	QObject::connect(ui->actionSet_Image, SIGNAL(triggered()), this, SLOT(onSet_Image()));
-	QObject::connect(ui->actionLink, SIGNAL(triggered()), this, SLOT(onLink()));
-	QObject::connect(ui->actionFinAff, SIGNAL(triggered()), this, SLOT(onFinAff()));
+	QObject::connect(ui.actionDebutAff, SIGNAL(triggered()), this, SLOT(onDebutAff()));
+	QObject::connect(ui.actionSet_Icon, SIGNAL(triggered()), this, SLOT(onSet_Icon()));
+	QObject::connect(ui.actionSet_Label, SIGNAL(triggered()), this, SLOT(onSet_Label()));
+	QObject::connect(ui.actionSet_Image, SIGNAL(triggered()), this, SLOT(onSet_Image()));
+	QObject::connect(ui.actionLink, SIGNAL(triggered()), this, SLOT(onLink()));
+	QObject::connect(ui.actionFinAff, SIGNAL(triggered()), this, SLOT(onFinAff()));
 
 	//Touche
-	QObject::connect(ui->actionDebutTouche, SIGNAL(triggered()), this, SLOT(onDebutTouche()));
-	QObject::connect(ui->actionDemandeTouche, SIGNAL(triggered()), this, SLOT(onDemandeTouche()));
-	QObject::connect(ui->actionFinTouche, SIGNAL(triggered()), this, SLOT(onFinTouche()));
+	QObject::connect(ui.actionDebutTouche, SIGNAL(triggered()), this, SLOT(onDebutTouche()));
+	QObject::connect(ui.actionDemandeTouche, SIGNAL(triggered()), this, SLOT(onDemandeTouche()));
+	QObject::connect(ui.actionFinTouche, SIGNAL(triggered()), this, SLOT(onFinTouche()));
 
 	//Sasie
-	QObject::connect(ui->actionDemandeSasie, SIGNAL(triggered()), this, SLOT(onDemandeSasie()));
-	QObject::connect(ui->actionAnnulationSasie, SIGNAL(triggered()), this, SLOT(onAnnulationSasie()));
+	QObject::connect(ui.actionDemandeSasie, SIGNAL(triggered()), this, SLOT(onDemandeSasie()));
+	QObject::connect(ui.actionAnnulationSasie, SIGNAL(triggered()), this, SLOT(onAnnulationSasie()));
 
 	//SasieEx
-	QObject::connect(ui->actionDemandeSasieEx, SIGNAL(triggered()), this, SLOT(onDemandeSasieEx()));
-	QObject::connect(ui->actionAnnulationSasieEx, SIGNAL(triggered()), this, SLOT(onAnnulationSasieEx()));
+	QObject::connect(ui.actionDemandeSasieEx, SIGNAL(triggered()), this, SLOT(onDemandeSasieEx()));
+	QObject::connect(ui.actionAnnulationSasieEx, SIGNAL(triggered()), this, SLOT(onAnnulationSasieEx()));
 
 	//Detection
-	QObject::connect(ui->actionDebutDetection, SIGNAL(triggered()), this, SLOT(onDebutDetection()));
-	QObject::connect(ui->actionFinDetection, SIGNAL(triggered()), this, SLOT(onFinDetection()));
+	QObject::connect(ui.actionDebutDetection, SIGNAL(triggered()), this, SLOT(onDebutDetection()));
+	QObject::connect(ui.actionFinDetection, SIGNAL(triggered()), this, SLOT(onFinDetection()));
 
 	//Police
-	QObject::connect(ui->actionSetPolice, SIGNAL(triggered()), this, SLOT(onSetPolice()));
+	QObject::connect(ui.actionSetPolice, SIGNAL(triggered()), this, SLOT(onSetPolice()));
 
 	//Video
-	QObject::connect(ui->actionVideo, SIGNAL(triggered()), this, SLOT(onVideo()));
+	QObject::connect(ui.actionVideo, SIGNAL(triggered()), this, SLOT(onVideo()));
 
 	//Arret
-	QObject::connect(ui->actionARRET, SIGNAL(triggered()), this, SLOT(onArret()));
+	QObject::connect(ui.actionARRET, SIGNAL(triggered()), this, SLOT(onArret()));
 	
 	//About dlg
-	QObject::connect(ui->actionAbout_IHM_Simulator, SIGNAL(triggered()), this, SLOT(onAbout_IHM_Simulator()));
+	QObject::connect(ui.actionAbout_IHM_Simulator, SIGNAL(triggered()), this, SLOT(onAbout_IHM_Simulator()));
 
 	//Script
-	QObject::connect(ui->actionLoad_script, SIGNAL(triggered()), this, SLOT(onScript()));
-	QObject::connect(ui->actionLoopScript, SIGNAL(changed()), this, SLOT(onLoopScriptChange()));
+	QObject::connect(ui.actionLoad_script, SIGNAL(triggered()), this, SLOT(onScript()));
+	QObject::connect(ui.actionLoopScript, SIGNAL(changed()), this, SLOT(onLoopScriptChange()));
 	
 
 	
-    QObject::connect(ui->btnClose, SIGNAL(clicked()), this, SLOT(onClose()));
+    QObject::connect(ui.btnClose, SIGNAL(clicked()), this, SLOT(onClose()));
 
 	//Authorization
-	QObject::connect(ui->actionAuthDEBUT, SIGNAL(triggered()), this, SLOT(onAuthDebut()));
-	QObject::connect(ui->actionAuthFIN, SIGNAL(triggered()), this, SLOT(onAuthFin()));
-	QObject::connect(ui->actionAUTH_AUTO, SIGNAL(triggered()), this, SLOT(onAuthAutoChecked()));
-	QObject::connect(ui->actionTAKE_CTRL_AUTO, SIGNAL(triggered()), this, SLOT(onAuthTakeCtrlAutoChecked()));
-	QObject::connect(ui->actionRETURN_CTRL_AUTO, SIGNAL(triggered()), this, SLOT(onAuthReturnCtrlAutoChecked()));
-	QObject::connect(ui->actionAUTH_RSP, SIGNAL(triggered()), this, SLOT(onAuthRsp()));
-	QObject::connect(ui->actionTAKE_CTRL_RSP, SIGNAL(triggered()), this, SLOT(onAuthTakeCtrlRsp()));
-	QObject::connect(ui->actionRETURN_CTRL_RSP, SIGNAL(triggered()), this, SLOT(onAuthReturnCtrlRsp()));
+	QObject::connect(ui.actionAuthDEBUT, SIGNAL(triggered()), this, SLOT(onAuthDebut()));
+	QObject::connect(ui.actionAuthFIN, SIGNAL(triggered()), this, SLOT(onAuthFin()));
+	QObject::connect(ui.actionAUTH_AUTO, SIGNAL(triggered()), this, SLOT(onAuthAutoChecked()));
+	QObject::connect(ui.actionTAKE_CTRL_AUTO, SIGNAL(triggered()), this, SLOT(onAuthTakeCtrlAutoChecked()));
+	QObject::connect(ui.actionRETURN_CTRL_AUTO, SIGNAL(triggered()), this, SLOT(onAuthReturnCtrlAutoChecked()));
+	QObject::connect(ui.actionAUTH_RSP, SIGNAL(triggered()), this, SLOT(onAuthRsp()));
+	QObject::connect(ui.actionTAKE_CTRL_RSP, SIGNAL(triggered()), this, SLOT(onAuthTakeCtrlRsp()));
+	QObject::connect(ui.actionRETURN_CTRL_RSP, SIGNAL(triggered()), this, SLOT(onAuthReturnCtrlRsp()));
 	
 	//Affichage
-	QObject::connect(ui->actionDebutAsync, SIGNAL(triggered()), this, SLOT(onAsyncInputDebut()));
-	QObject::connect(ui->actionSetAsync, SIGNAL(triggered()), this, SLOT(onAsyncInputSet()));
-	QObject::connect(ui->actionGetAsync, SIGNAL(triggered()), this, SLOT(onAsyncInputGet()));
-	QObject::connect(ui->actionFinAsync, SIGNAL(triggered()), this, SLOT(onAsyncInputFin()));
+	QObject::connect(ui.actionDebutAsync, SIGNAL(triggered()), this, SLOT(onAsyncInputDebut()));
+	QObject::connect(ui.actionSetAsync, SIGNAL(triggered()), this, SLOT(onAsyncInputSet()));
+	QObject::connect(ui.actionGetAsync, SIGNAL(triggered()), this, SLOT(onAsyncInputGet()));
+	QObject::connect(ui.actionFinAsync, SIGNAL(triggered()), this, SLOT(onAsyncInputFin()));
 
 
 	//Send receive thread
@@ -144,7 +144,7 @@ MainDlg::MainDlg(QWidget *parent, QString sIHMMailbox)
 	onAuthAutoChecked();
 	onAuthTakeCtrlAutoChecked();
 	onAuthReturnCtrlAutoChecked();
-	ui->listWidget->setMaximumBlockCount(1000);
+	ui.listWidget->setMaximumBlockCount(1000);
 
 }
 
@@ -153,7 +153,7 @@ void MainDlg::onMessage(QString msg)
 //	int iMsgEvents = m_pSendReciveThread->decMsgsEvents();
 	// print message to main window
 	//QString sNewLine = QString("Queued msgs: %1 - ").arg(iMsgEvents) + msg ;
-	ui->listWidget->appendPlainText(msg);
+	ui.listWidget->appendPlainText(msg);
 }
 
 
@@ -377,7 +377,7 @@ void MainDlg::onScript()
 
 void MainDlg::onLoopScriptChange()
 {
-	m_pSendReciveThread->setLoopScript(ui->actionLoopScript->isChecked());
+	m_pSendReciveThread->setLoopScript(ui.actionLoopScript->isChecked());
 }
 
 
@@ -426,17 +426,17 @@ void MainDlg::onAuthFin()
 
 void MainDlg::onAuthAutoChecked()
 {
-	m_pSendReciveThread->m_bAuthAuto = ui->actionAUTH_AUTO->isChecked();
+	m_pSendReciveThread->m_bAuthAuto = ui.actionAUTH_AUTO->isChecked();
 }
 
 void MainDlg::onAuthTakeCtrlAutoChecked()
 {
-	m_pSendReciveThread->m_bTakeControlAuto = ui->actionTAKE_CTRL_AUTO->isChecked();
+	m_pSendReciveThread->m_bTakeControlAuto = ui.actionTAKE_CTRL_AUTO->isChecked();
 }
 
 void MainDlg::onAuthReturnCtrlAutoChecked()
 {
-	m_pSendReciveThread->m_bReturnControlAuto = ui->actionRETURN_CTRL_AUTO->isChecked();
+	m_pSendReciveThread->m_bReturnControlAuto = ui.actionRETURN_CTRL_AUTO->isChecked();
 }
 
 void MainDlg::onAuthRsp()
@@ -488,7 +488,7 @@ void MainDlg::onAuthData(struct_ihm_authorization *newData)
 
 void MainDlg::onClose()
 {
-	ui->actionARRET->trigger();
+	ui.actionARRET->trigger();
 	close();
 }	
 

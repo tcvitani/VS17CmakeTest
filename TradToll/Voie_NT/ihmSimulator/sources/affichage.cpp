@@ -1,7 +1,6 @@
 #include <QtGui>
 #include <QListwidget>
 #include <QSettings>
-#include "Ui_Affichage.h"
 
 #include "constants.h"
 #include "Affichage.h"
@@ -10,7 +9,7 @@
 AffichageDlg::AffichageDlg(QWidget *parent, int iType, QString szMailbox, QString szLanguage)
 	: IHMSimuDld(parent, DLG_AFF, szMailbox)
 {
-    ui->setupUi(this);
+    ui.setupUi(this);
 
 	m_iSubType = iType;
 	m_szLanguage = szLanguage;
@@ -47,7 +46,7 @@ bool AffichageDlg::ReadXMLData()
 	{
 		if(child.attribute("TYPE") == sSubType)
 		{
-			ui->comboBoxObject->addItem(child.text(), SimuSendReciveThread::getObjectIdFromString(QString(child.text())));//MMM child.attribute("ID"));
+			ui.comboBoxObject->addItem(child.text(), SimuSendReciveThread::getObjectIdFromString(QString(child.text())));//MMM child.attribute("ID"));
 		}
 		child = child.nextSiblingElement(XML_AFFICHAGE);
 		
@@ -69,7 +68,7 @@ bool AffichageDlg::ReadRegValues()
 			slValues = regValues.allKeys();
 			for(int i = 0; i < slValues.size(); i++)
 			{
-				ui->comboBoxRegKey->addItem(slValues.at(i).section("/", -1), NULL);// regValues.value(slValues.at(i), NULL).toString()
+				ui.comboBoxRegKey->addItem(slValues.at(i).section("/", -1), NULL);// regValues.value(slValues.at(i), NULL).toString()
 			}
 		}
 		break;
@@ -79,7 +78,7 @@ bool AffichageDlg::ReadRegValues()
 			slValues = regValues.allKeys();
 			for(int i = 0; i < slValues.size(); i++)
 			{
-				ui->comboBoxRegKey->addItem(slValues.at(i).section("/", -1), NULL);// regValues.value(slValues.at(i), NULL).toString()
+				ui.comboBoxRegKey->addItem(slValues.at(i).section("/", -1), NULL);// regValues.value(slValues.at(i), NULL).toString()
 			}
 		}
 		break;
@@ -92,7 +91,7 @@ bool AffichageDlg::ReadRegValues()
 				if(slValues.at(i).section("/", -1) == "ImagesRoot")
 					m_szImageRoot = regValues.value(slValues.at(i), NULL).toString();
 				else
-					ui->comboBoxRegKey->addItem(regValues.value(slValues.at(i), NULL).toString(), NULL);// slValues.at(i).section("/", -1)
+					ui.comboBoxRegKey->addItem(regValues.value(slValues.at(i), NULL).toString(), NULL);// slValues.at(i).section("/", -1)
 			}
 		}
 		break;
@@ -110,9 +109,9 @@ void AffichageDlg::accept()
 	case AFF_ICON:
 		{
 			m_pAction->setProperty(_PROP_TYPE, _PROP_VAL_SET);
-			m_pAction->setProperty(_PROP_OBJECT, ui->comboBoxObject->itemData(ui->comboBoxObject->currentIndex()));
-			m_pAction->setProperty(_PROP_VALUE, ui->comboBoxRegKey->currentText());// itemData(ui->comboBoxRegKey->currentIndex()));
-			m_pAction->setProperty(_PROP_PROPERTY, ui->spinBoxProperty->text());
+			m_pAction->setProperty(_PROP_OBJECT, ui.comboBoxObject->itemData(ui.comboBoxObject->currentIndex()));
+			m_pAction->setProperty(_PROP_VALUE, ui.comboBoxRegKey->currentText());// itemData(ui.comboBoxRegKey->currentIndex()));
+			m_pAction->setProperty(_PROP_PROPERTY, ui.spinBoxProperty->text());
 			m_pAction->activate(QAction::Trigger);
 			
 			QTime dieTime = QTime::currentTime().addMSecs(100);
@@ -123,9 +122,9 @@ void AffichageDlg::accept()
 	case AFF_LABEL:
 		{
 			m_pAction->setProperty(_PROP_TYPE, _PROP_VAL_SET);
-			m_pAction->setProperty(_PROP_OBJECT, ui->comboBoxObject->itemData(ui->comboBoxObject->currentIndex()));
-			m_pAction->setProperty(_PROP_VALUE, ui->comboBoxRegKey->currentText());// itemData(ui->comboBoxRegKey->currentIndex()));
-			m_pAction->setProperty(_PROP_PROPERTY, ui->spinBoxProperty->text());
+			m_pAction->setProperty(_PROP_OBJECT, ui.comboBoxObject->itemData(ui.comboBoxObject->currentIndex()));
+			m_pAction->setProperty(_PROP_VALUE, ui.comboBoxRegKey->currentText());// itemData(ui.comboBoxRegKey->currentIndex()));
+			m_pAction->setProperty(_PROP_PROPERTY, ui.spinBoxProperty->text());
 			m_pAction->activate(QAction::Trigger);
 			
 			QTime dieTime = QTime::currentTime().addMSecs(100);
@@ -136,9 +135,9 @@ void AffichageDlg::accept()
 	case AFF_IMAGE:
 		{
 			m_pAction->setProperty(_PROP_TYPE, _PROP_VAL_SET);
-			m_pAction->setProperty(_PROP_OBJECT, ui->comboBoxObject->itemData(ui->comboBoxObject->currentIndex()));
-			m_pAction->setProperty(_PROP_VALUE, QString("%1\\%2").arg(m_szImageRoot).arg(ui->comboBoxRegKey->currentText()));// itemData(ui->comboBoxRegKey->currentIndex()));
-			m_pAction->setProperty(_PROP_PROPERTY, ui->spinBoxProperty->text());
+			m_pAction->setProperty(_PROP_OBJECT, ui.comboBoxObject->itemData(ui.comboBoxObject->currentIndex()));
+			m_pAction->setProperty(_PROP_VALUE, QString("%1\\%2").arg(m_szImageRoot).arg(ui.comboBoxRegKey->currentText()));// itemData(ui.comboBoxRegKey->currentIndex()));
+			m_pAction->setProperty(_PROP_PROPERTY, ui.spinBoxProperty->text());
 			m_pAction->activate(QAction::Trigger);
 			
 			QTime dieTime = QTime::currentTime().addMSecs(100);

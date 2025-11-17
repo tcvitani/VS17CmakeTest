@@ -2,7 +2,7 @@
 #ifndef MAINDLG_H
 #define MAINDLG_H
 
-#include <QMainWindow>
+#include "ui_MainDlg.h"
 #include "ihm.h"
 
 class ConfigDlg;
@@ -17,7 +17,7 @@ class DetectionDlg;
 class LinkDlg;
 class AsyncInputDlg;
 class SimuSendReciveThread;
-class Ui_MainDlg;
+
 
 class MainDlg : public QMainWindow
 {
@@ -84,7 +84,7 @@ protected:
 	void OpenXMLScript(QString szScript);
 
 private:
-    Ui_MainDlg				*ui;
+    Ui_MainDlg				ui;
 
 	QString					m_sSystemEncoding;
 

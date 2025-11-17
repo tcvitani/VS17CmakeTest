@@ -1,1 +1,0 @@
-#pragma comment (lib, "L:\\VOIE_NT\\NOY\\1.4.1\\csr_noy.lib")

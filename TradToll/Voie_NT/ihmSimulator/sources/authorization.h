@@ -2,11 +2,10 @@
 #ifndef AUTHORIZATIONDLG_H
 #define AUTHORIZATIONDLG_H
 
-
+#include "Ui_authorization.h"
 #include "IHMSimuDld.h"
 #include "ihm.h"
 
-class Ui_authorization;
 
 class AuthorizationDlg : public IHMSimuDld
 {
@@ -28,7 +27,7 @@ protected:
 
 	
 private:
-    Ui_authorization *ui;
+    Ui_authorization ui;
 };
 
 #endif

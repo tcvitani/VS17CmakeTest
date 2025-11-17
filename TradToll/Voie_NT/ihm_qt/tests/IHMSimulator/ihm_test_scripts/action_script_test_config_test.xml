@@ -1,3 +1,0 @@
-<IHM_SIMU_script>
-	<ACTION SERVICE="CONFIG" TYPE="SET" TYPE_OF_LANE="EPA" LANGUAGE="English" TYPE_OF_SHIFT="ShiftMaintenance" PROJECT="LaneControler" VERSION="1.6.0"/>
-</IHM_SIMU_script>

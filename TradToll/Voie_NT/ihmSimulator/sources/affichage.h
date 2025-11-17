@@ -2,9 +2,9 @@
 #ifndef AFFICHAGEDLG_H
 #define AFFICHAGEDLG_H
 
+#include "Ui_Affichage.h"
 #include "IHMSimuDld.h"
 
-class Ui_AffichageDlg;
 
 class AffichageDlg : public IHMSimuDld
 {
@@ -34,7 +34,7 @@ protected:
 
 	
 private:
-    Ui_AffichageDlg *ui;
+    Ui_AffichageDlg ui;
 	int m_iSubType;
 	QString m_szLanguage;
 	QString m_szImageRoot;

@@ -4942,50 +4942,55 @@ void MFormMain::changeEvent(QEvent * event)
 {
 	if(event->type() == QEvent::ActivationChange)
 	{
-		TRACE_D(QString("MFormMain::changeEvent: ActivationChange ... "));
+		//TRACE_D(QString("MFormMain::changeEvent: ActivationChange ... %1").arg((int)qApp->applicationState()));
 
-		if (m_pLoginDialog != NULL)
+		if (qApp->applicationState() == Qt::ApplicationActive)
 		{
-			TRACE_D(QString("MFormMain::changeEvent: m_pLoginDialog != NULL"));
-			m_pLoginDialog->raise();
-			m_pLoginDialog->activateWindow();
-		}
-		else if (m_pCurrentClientDlg != NULL)
-		{
-			TRACE_D(QString("MFormMain::changeEvent: m_pCurrentClientDlg != NULL"));
-			m_pCurrentClientDlg->raise();
-			m_pCurrentClientDlg->activateWindow();
-		}
-		else if (m_pAboutDlg != NULL)
-		{
-			TRACE_D(QString("MFormMain::changeEvent: m_pAboutDlg != NULL"));
-			m_pAboutDlg->raise();
-			m_pAboutDlg->activateWindow();
-		}
-		else
-		{ 
-			QWidget * pModalWin = getModalWindow();
-
-			if (pModalWin != NULL)
+			if (m_pLoginDialog != NULL)
 			{
-				TRACE_D(QString("MFormMain::changeEvent: pModalWin != NULL"));
-				pModalWin->raise();
-				pModalWin->activateWindow();
+				TRACE_D(QString("MFormMain::changeEvent: m_pLoginDialog != NULL"));
+				m_pLoginDialog->raise();
+				m_pLoginDialog->activateWindow();
+			}
+			else if (m_pCurrentClientDlg != NULL)
+			{
+				TRACE_D(QString("MFormMain::changeEvent: m_pCurrentClientDlg != NULL"));
+				m_pCurrentClientDlg->raise();
+				m_pCurrentClientDlg->activateWindow();
+			}
+			else if (m_pAboutDlg != NULL)
+			{
+				TRACE_D(QString("MFormMain::changeEvent: m_pAboutDlg != NULL"));
+				m_pAboutDlg->raise();
+				m_pAboutDlg->activateWindow();
 			}
 			else
-			{
-				if (!this->isActiveWindow())
+			{ 
+				QWidget * pModalWin = getModalWindow();
+
+				if (pModalWin != NULL)
 				{
-					TRACE_D(QString("MFormMain::changeEvent: main wnd not active - activating..."));
-					this->activateWindow();
+					TRACE_D(QString("MFormMain::changeEvent: pModalWin != NULL"));
+					pModalWin->raise();
+					pModalWin->activateWindow();
 				}
 				else
 				{
-					;// TRACE_D(QString("MFormMain::changeEvent: main window already activated!"));
+					if (!this->isActiveWindow())
+					{
+						TRACE_D(QString("MFormMain::changeEvent: main wnd not active - activating..."));
+						this->activateWindow();
+					}
+					else
+					{
+						;// TRACE_D(QString("MFormMain::changeEvent: main window already activated!"));
 
+					}
 				}
 			}
+
 		}
+
 	}
 	
 	QWidget::changeEvent(event);

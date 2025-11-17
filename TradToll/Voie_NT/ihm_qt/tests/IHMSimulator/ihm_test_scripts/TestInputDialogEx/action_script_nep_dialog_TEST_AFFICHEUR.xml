@@ -1,3 +1,0 @@
-<IHM_SIMU_script>																															
-	<ACTION SERVICE="SAISIE_EX" TYPE="DEMANDE" DIALOG_ID="TEST_AFFICHEUR" IS_FILE="1" VALUE="TEST_AFFICHEUR_VAL.xml"/>
-</IHM_SIMU_script>

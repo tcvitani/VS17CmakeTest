@@ -2,8 +2,9 @@
 #ifndef CONFIGDLG_H
 #define CONFIGDLG_H
 
+#include "Ui_config.h"
 #include "IHMSimuDld.h"
-class Ui_ConfigDlg;
+
 
 class ConfigDlg : public IHMSimuDld
 {
@@ -30,7 +31,7 @@ protected:
 
 	
 private:
-    Ui_ConfigDlg *ui;
+    Ui_ConfigDlg ui;
 	int m_iSubType;
 };
 
