@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainDlg</class>
+ <widget class="QMainWindow" name="MainDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>885</width>
+    <height>828</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IHM_QTSimulator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPlainTextEdit" name="listWidget"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>668</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnClose">
+        <property name="text">
+         <string>Close</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>885</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuServices">
+    <property name="title">
+     <string>Services</string>
+    </property>
+    <widget class="QMenu" name="menuCONFIG">
+     <property name="title">
+      <string>CONFIG</string>
+     </property>
+     <addaction name="actionSet_Config"/>
+     <addaction name="actionGet_Config"/>
+    </widget>
+    <widget class="QMenu" name="menuAFFICHAGE">
+     <property name="title">
+      <string>AFFICHAGE</string>
+     </property>
+     <addaction name="actionDebutAff"/>
+     <addaction name="separator"/>
+     <addaction name="actionSet_Icon"/>
+     <addaction name="actionSet_Label"/>
+     <addaction name="actionSet_Image"/>
+     <addaction name="actionVideo"/>
+     <addaction name="actionLink"/>
+     <addaction name="separator"/>
+     <addaction name="actionFinAff"/>
+     <addaction name="separator"/>
+    </widget>
+    <widget class="QMenu" name="menuTOUCHE">
+     <property name="title">
+      <string>TOUCHE</string>
+     </property>
+     <addaction name="actionDebutTouche"/>
+     <addaction name="separator"/>
+     <addaction name="actionDemandeTouche"/>
+     <addaction name="separator"/>
+     <addaction name="actionFinTouche"/>
+    </widget>
+    <widget class="QMenu" name="menuSASIE">
+     <property name="title">
+      <string>SASIE</string>
+     </property>
+     <addaction name="actionDemandeSasie"/>
+     <addaction name="actionAnnulationSasie"/>
+    </widget>
+    <widget class="QMenu" name="menuINDICATEUR">
+     <property name="title">
+      <string>INDICATEUR</string>
+     </property>
+     <addaction name="separator"/>
+    </widget>
+    <widget class="QMenu" name="menuDETECTION">
+     <property name="title">
+      <string>DETECTION</string>
+     </property>
+     <addaction name="actionDebutDetection"/>
+     <addaction name="actionFinDetection"/>
+    </widget>
+    <widget class="QMenu" name="menuPOLICE">
+     <property name="title">
+      <string>POLICE</string>
+     </property>
+     <addaction name="actionSetPolice"/>
+    </widget>
+    <widget class="QMenu" name="menuAUTORIZATION">
+     <property name="title">
+      <string>AUTORIZATION</string>
+     </property>
+     <addaction name="actionAuthDEBUT"/>
+     <addaction name="actionAuthFIN"/>
+     <addaction name="actionAUTH_AUTO"/>
+     <addaction name="actionTAKE_CTRL_AUTO"/>
+     <addaction name="actionRETURN_CTRL_AUTO"/>
+     <addaction name="actionAUTH_RSP"/>
+     <addaction name="actionTAKE_CTRL_RSP"/>
+     <addaction name="actionRETURN_CTRL_RSP"/>
+    </widget>
+    <widget class="QMenu" name="menuSAISIE_EX">
+     <property name="title">
+      <string>SAISIE_EX</string>
+     </property>
+     <addaction name="actionDemandeSasieEx"/>
+     <addaction name="actionAnnulationSasieEx"/>
+    </widget>
+    <widget class="QMenu" name="menuASYNC_INPUT_2">
+     <property name="title">
+      <string>ASYNC INPUT</string>
+     </property>
+     <addaction name="actionDebutAsync"/>
+     <addaction name="separator"/>
+     <addaction name="actionGetAsync"/>
+     <addaction name="actionSetAsync"/>
+     <addaction name="separator"/>
+     <addaction name="actionFinAsync"/>
+    </widget>
+    <addaction name="menuCONFIG"/>
+    <addaction name="menuAUTORIZATION"/>
+    <addaction name="menuAFFICHAGE"/>
+    <addaction name="menuTOUCHE"/>
+    <addaction name="menuSASIE"/>
+    <addaction name="menuSAISIE_EX"/>
+    <addaction name="menuPOLICE"/>
+    <addaction name="menuDETECTION"/>
+    <addaction name="menuINDICATEUR"/>
+    <addaction name="menuASYNC_INPUT_2"/>
+    <addaction name="actionARRET"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_IHM_Simulator"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad_script"/>
+    <addaction name="actionLoopScript"/>
+    <addaction name="separator"/>
+    <addaction name="actionExitMenu"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuServices"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSet_Config">
+   <property name="text">
+    <string>Set Config</string>
+   </property>
+  </action>
+  <action name="actionGet_Config">
+   <property name="text">
+    <string>Get Config</string>
+   </property>
+  </action>
+  <action name="actionDebutAff">
+   <property name="text">
+    <string>Debut</string>
+   </property>
+  </action>
+  <action name="actionSet_Icon">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Set Icon</string>
+   </property>
+  </action>
+  <action name="actionSet_Label">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Set Label</string>
+   </property>
+  </action>
+  <action name="actionFinAff">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Fin</string>
+   </property>
+  </action>
+  <action name="actionDebutTouche">
+   <property name="text">
+    <string>Debut</string>
+   </property>
+  </action>
+  <action name="actionDemandeTouche">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Demande</string>
+   </property>
+  </action>
+  <action name="actionFinTouche">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Fin</string>
+   </property>
+  </action>
+  <action name="actionDemandeSasie">
+   <property name="text">
+    <string>Demande</string>
+   </property>
+  </action>
+  <action name="actionAnnulationSasie">
+   <property name="text">
+    <string>Annulation</string>
+   </property>
+  </action>
+  <action name="actionDebutDetection">
+   <property name="text">
+    <string>Debut</string>
+   </property>
+  </action>
+  <action name="actionFinDetection">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Fin</string>
+   </property>
+  </action>
+  <action name="actionSetPolice">
+   <property name="text">
+    <string>Set</string>
+   </property>
+  </action>
+  <action name="actionExitMenu">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAbout_IHM_Simulator">
+   <property name="text">
+    <string>About IHM Simulator</string>
+   </property>
+  </action>
+  <action name="actionTt">
+   <property name="text">
+    <string>tt</string>
+   </property>
+  </action>
+  <action name="actionARRET">
+   <property name="text">
+    <string>ARRET</string>
+   </property>
+  </action>
+  <action name="actionLoad_script">
+   <property name="text">
+    <string>Load script</string>
+   </property>
+  </action>
+  <action name="actionSet_Image">
+   <property name="text">
+    <string>Set Image</string>
+   </property>
+  </action>
+  <action name="actionVideo">
+   <property name="text">
+    <string>Video</string>
+   </property>
+  </action>
+  <action name="actionAUTH_AUTO">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>AUTH AUTO</string>
+   </property>
+  </action>
+  <action name="actionTAKE_CTRL_AUTO">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>TAKE CTRL AUTO</string>
+   </property>
+  </action>
+  <action name="actionRETURN_CTRL_AUTO">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>RETURN CTRL AUTO</string>
+   </property>
+  </action>
+  <action name="actionAuthDEBUT">
+   <property name="text">
+    <string>DEBUT</string>
+   </property>
+  </action>
+  <action name="actionAuthFIN">
+   <property name="text">
+    <string>FIN</string>
+   </property>
+  </action>
+  <action name="actionAUTH_RSP">
+   <property name="text">
+    <string>AUTH RSP</string>
+   </property>
+  </action>
+  <action name="actionTAKE_CTRL_RSP">
+   <property name="text">
+    <string>TAKE CTRL RSP</string>
+   </property>
+  </action>
+  <action name="actionRETURN_CTRL_RSP">
+   <property name="text">
+    <string>RETURN CTRL RSP</string>
+   </property>
+  </action>
+  <action name="actionLink">
+   <property name="text">
+    <string>Link</string>
+   </property>
+  </action>
+  <action name="actionDemandeSasieEx">
+   <property name="text">
+    <string>Demande</string>
+   </property>
+  </action>
+  <action name="actionAnnulationSasieEx">
+   <property name="text">
+    <string>Annulation</string>
+   </property>
+  </action>
+  <action name="actionDebut">
+   <property name="text">
+    <string>Debut</string>
+   </property>
+  </action>
+  <action name="actionDebutAsync">
+   <property name="text">
+    <string>Debut</string>
+   </property>
+  </action>
+  <action name="actionSetAsync">
+   <property name="text">
+    <string>Set</string>
+   </property>
+  </action>
+  <action name="actionFinAsync">
+   <property name="text">
+    <string>Fin</string>
+   </property>
+  </action>
+  <action name="actionGetAsync">
+   <property name="text">
+    <string>Get</string>
+   </property>
+  </action>
+  <action name="actionLoopScript">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Loop script</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionExitMenu</sender>
+   <signal>triggered()</signal>
+   <receiver>MainDlg</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>393</x>
+     <y>247</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
