@@ -267,7 +267,7 @@ target_include_directories(${PROJECT_EXE} PRIVATE
 							"${CMAKE_SOURCE_DIR}/../../Voie_NT/commun/includes"
 							"${CMAKE_SOURCE_DIR}/../../Voie_NT/run/includes"	
 							"${CMAKE_SOURCE_DIR}/../../Voie_NT/virtualKYB/includes"
-							"${CMAKE_SOURCE_DIR}/../../Commun_NT/lwd/startup/includes"
+							"${CMAKE_SOURCE_DIR}/../../Voie_NT/lwd/startup/includes"
 )
  
 
@@ -312,15 +312,15 @@ set_target_properties(CSR::Trc PROPERTIES
 add_library(CSR::Noy SHARED IMPORTED GLOBAL)
 set_target_properties(CSR::Noy PROPERTIES
 					  INTERFACE_INCLUDE_DIRECTORIES
-					  	"${CMAKE_SOURCE_DIR}/../Noy/includes/"
+					  	"${CMAKE_SOURCE_DIR}/../../Voie_NT/Noy/includes/"
 					  IMPORTED_IMPLIB_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../Noy/out/build/release/csr_noy_VS17_x64_r.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../Voie_NT/Noy/out/build/release/csr_noy_VS17_x64_r.lib"
 					  IMPORTED_LOCATION_RELEASE	
-					  	"${CMAKE_SOURCE_DIR}/../Noy/out/build/release/csr_noy_VS17_x64_r.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../Voie_NT/Noy/out/build/release/csr_noy_VS17_x64_r.dll"
 					  IMPORTED_IMPLIB_DEBUG		
-					  	"${CMAKE_SOURCE_DIR}/../Noy/out/build/debug/csr_noy_VS17_x64.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../Voie_NT/Noy/out/build/debug/csr_noy_VS17_x64.lib"
 					  IMPORTED_LOCATION_DEBUG	
-					  	"${CMAKE_SOURCE_DIR}/../Noy/out/build/debug/csr_noy_VS17_x64.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../Voie_NT/Noy/out/build/debug/csr_noy_VS17_x64.dll"
 					  MAP_IMPORTED_CONFIG_MINSIZEREL
 					  	Release
 					  MAP_IMPORTED_CONFIG_RELWITHDEBINFO

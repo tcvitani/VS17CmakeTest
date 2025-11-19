@@ -201,7 +201,7 @@ char *lib_exit_codes[NB_EXIT_CODE + 1] =
  */
 
 
-int __cdecl main (INT Argc, CHAR *Argv[])
+int main (INT Argc, CHAR *Argv[])
 {
 	DWORD res_trc, res_pid, res_key, nb_programs, result, nb_launched;
     HANDLE event;

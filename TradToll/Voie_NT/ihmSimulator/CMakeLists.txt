@@ -102,7 +102,7 @@ target_include_directories(${SIMULATOR_EXE} PRIVATE
 							"${CMAKE_SOURCE_DIR}/../../Voie_NT/commun/includes"
 							"${CMAKE_SOURCE_DIR}/../../Voie_NT/run/includes"	
 							"${CMAKE_SOURCE_DIR}/../../Voie_NT/virtualKYB/includes"
-							"${CMAKE_SOURCE_DIR}/../../Commun_NT/lwd/startup/includes"				
+							"${CMAKE_SOURCE_DIR}/../../Voie_NT/lwd/startup/includes"				
 )
 
 ##-----------------------------------------------------------------------------------------------
