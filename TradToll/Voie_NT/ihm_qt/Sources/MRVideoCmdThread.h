@@ -2,7 +2,8 @@
 #define MRVIDEO_CMD_THREAD_H
 
 #include <QThread>
-#include <QHttp>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
 #include <QTimer>
 #include <QMutex>
 
@@ -41,7 +42,7 @@ private slots:
 	void onPoolTimeout();
 
 	//Slots to handle HTTP
-	void onHttpRequestFinished(int idHttp, bool error);
+	void onHttpRequestFinished(QNetworkReply* reply);
 
 private:
 	bool initialize();
@@ -78,10 +79,11 @@ private:
 	void sendHttpCommand(enuRVStreamHttpCommand eCmdId);
 	void abortHttp();
 	
-	MAutEvent * parseResponse(bool bHttpErr);
+	MAutEvent * parseResponse(QNetworkReply* reply);
 	bool extractRspCode(QByteArray &baData, int *piCodeStatus);
-	QHttp *m_pHttp;
-	int m_iLastHttpRspId;
+	QNetworkAccessManager* m_pHttpNewManager;
+
+	QNetworkReply* m_pLastNetworkReply;
 	QByteArray m_baImageCaptured;
 	bool m_bImageCaptured;
 

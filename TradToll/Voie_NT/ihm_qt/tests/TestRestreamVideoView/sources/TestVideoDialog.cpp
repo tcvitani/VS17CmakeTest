@@ -70,6 +70,10 @@ void TestVideoDialog::onRVideoResponseMessage(MRVideoMsg* pMsg, int iObjId)
 	}
 }
 
+void TestVideoDialog::onMessage(QString s)
+{
+	ui.txtOutput->appendPlainText(s);
+}
 
 
 void TestVideoDialog::onBtnSelectSrc()

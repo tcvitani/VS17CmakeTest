@@ -13,7 +13,7 @@ MRVideoCmdThread::MRVideoCmdThread(QString sTargetRVideoObjId)
 	m_sTargetRVideoObjId = sTargetRVideoObjId;
 	m_iPoolTimeout = 1000;
 	m_bTraceAll = false;
-	m_pHttp = NULL;
+	m_pHttpNewManager = NULL;
 }
 
 
@@ -290,19 +290,24 @@ QString MRVideoCmdThread::generateCommandPath(enuRVStreamHttpCommand eCmdId, QSt
 
 void MRVideoCmdThread::sendHttpCommand(enuRVStreamHttpCommand eCmdId)
 {
-	if(m_pHttp==NULL)
+	if(m_pHttpNewManager ==NULL)
 	{
-		m_pHttp = new QHttp(this);
-		connect(m_pHttp, SIGNAL(requestFinished(int,bool)), this, SLOT(onHttpRequestFinished(int,bool)));
+		m_pHttpNewManager = new QNetworkAccessManager(this);
+		connect(m_pHttpNewManager, &QNetworkAccessManager::finished, this, &MRVideoCmdThread::onHttpRequestFinished);  //, SLOT(onHttpRequestFinished(QNetworkReply*)));
 	}
 	
-	m_pHttp->setHost(m_sCurrentHost, m_uiPort);
+	//m_pHttp->setHost(m_sCurrentHost, m_uiPort);
 	QString sCmd = generateCommandPath(eCmdId, m_sCurrentSourceId);
 
-	m_iLastHttpRspId = m_pHttp->get(sCmd);
+	QString sURL = QString("http://%1:%2/%3").arg(m_sCurrentHost).arg(m_uiPort).arg(sCmd);
+
+	QNetworkRequest req;
+	req.setUrl(QUrl(sURL));
+
+	m_pLastNetworkReply = m_pHttpNewManager->get(req);
  
 	if(getTraceAll())
-		TRACE_D(QString("MRVideoCmdThread::sendHttpCommand: Sending get to: host:[%1], path:[%2]").arg(m_sCurrentHost).arg(sCmd));
+		TRACE_D(QString("MRVideoCmdThread::sendHttpCommand: Sending get to: host:[%1], path:[%2]").arg(req.url().toString()).arg(sCmd));
 }
 
 
@@ -310,24 +315,28 @@ void MRVideoCmdThread::abortHttp()
 {
 	if(getTraceAll())
 		TRACE_D(QString("MRVideoCmdThread::abortHttp: Aborting http req!"));
-
-	m_pHttp->abort();
+	
+	if(m_pLastNetworkReply!=NULL)
+		m_pLastNetworkReply->abort();
 }
 
 
-void MRVideoCmdThread::onHttpRequestFinished(int idHttp, bool bHttpErr)
+void MRVideoCmdThread::onHttpRequestFinished(QNetworkReply* reply)
 {
-	//first verify that this is the last get I sent
-	if(m_iLastHttpRspId == idHttp)
-	{
+	////first verify that this is the last get I sent
+	//if(m_iLastHttpRspId == idHttp)
+	//{
 		
-		if(getTraceAll())
-			TRACE_D(QString("MRVideoCmdThread::onHttpRequestFinished: id:%1 state:%2!").arg(idHttp).arg((int)m_pHttp->state()));
+	if (getTraceAll())
+	{
+		QString sMsg = QString("MRVideoCmdThread::onHttpRequestFinished: url:%1 error:%2!").arg(reply->url().toString()).arg(reply->errorString());
+		TRACE_D(sMsg)
+	}
 
-		if(m_pHttp->error()==QHttp::NoError)
+		if(reply->error() != QNetworkReply::TimeoutError)
 		{
 			//parse HTTP response and generate event to send to automate
-			MAutEvent * pEvent = parseResponse(bHttpErr);
+			MAutEvent * pEvent = parseResponse(reply);
 			m_RVideoAut.processEvent(pEvent);
 		}
 		else
@@ -337,27 +346,27 @@ void MRVideoCmdThread::onHttpRequestFinished(int idHttp, bool bHttpErr)
 		}
 
 		emit checkMessages();
-	}
+	//}
 }
 
 
-MAutEvent * MRVideoCmdThread::parseResponse(bool bHttpErr)
+MAutEvent * MRVideoCmdThread::parseResponse(QNetworkReply* reply)
 {
 	MAutEvent * pEvent = NULL;
 
-	if(!bHttpErr)
-	{
-		if(getTraceAll())
-			TRACE_D(QString("MRVideoCmdThread::parseResponse: No Error! State:%1 hasPendingRequests:%2")
-				.arg((int)m_pHttp->state()).arg((int)m_pHttp->hasPendingRequests()));
-		
-		QHttpResponseHeader rspHeader = m_pHttp->lastResponse();
-		QString sType = rspHeader.contentType(); 
+	if(getTraceAll())
+		TRACE_D(QString("MRVideoCmdThread::parseResponse:url:%1 error:%2!").arg(reply->url().toString()).arg(reply->errorString()));
 
-		if(sType == "text/html")
+	if(reply->error() == QNetworkReply::NoError)
+	{
+		
+		QVariant vRspHeader = reply->header(QNetworkRequest::ContentTypeHeader);
+		QString sType = vRspHeader.toString();
+
+		if(sType.indexOf("text/html", 0, Qt::CaseInsensitive)>=0)
 		{
 			QString sMsg = "Response data:";
-			QByteArray baRsp = m_pHttp->readAll();
+			QByteArray baRsp = reply->readAll();
 			sMsg.append(baRsp);
 			if(m_bTraceAll)
 				TRACE_D(sMsg);
@@ -420,9 +429,9 @@ MAutEvent * MRVideoCmdThread::parseResponse(bool bHttpErr)
 				pEvent = new MRVideoCmdAtmEvent(MRVideoCmdAutomate::enuEvtRspNOK); 
 			}
 		}
-		else if(sType == "image/jpeg")	//check header if it is an image 
+		else if(sType.indexOf("image/jpeg", 0, Qt::CaseInsensitive) >= 0)	//check header if it is an image 
 		{
-			m_baImageCaptured = m_pHttp->readAll();
+			m_baImageCaptured = reply->readAll();
 			
 			if(m_baImageCaptured.size()>0)
 			{
@@ -459,7 +468,7 @@ MAutEvent * MRVideoCmdThread::parseResponse(bool bHttpErr)
 		}
 		else
 		{
-			TRACE_W(QString("MRVideoCmdThread::parseResponse: Unexpected contentType!"));
+			TRACE_W(QString("MRVideoCmdThread::parseResponse: Unexpected contentType %1!").arg(sType));
 			pEvent = new MRVideoCmdAtmEvent(MRVideoCmdAutomate::enuEvtRspNOK); 
 			
 		}

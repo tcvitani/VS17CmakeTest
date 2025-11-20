@@ -391,7 +391,15 @@ set(CMAKE_INSTALL_PREFIX  "C:/csr/exe")
 #        -t ${CMAKE_INSTALL_PREFIX} #$<TARGET_FILE_DIR:${PROJECT_LIB}>
 #        $<TARGET_RUNTIME_DLLS:${PROJECT_LIB}>
 #    COMMAND_EXPAND_LISTS
+#) 
+
+
+# add_custom_command(
+#    TARGET ${PROJECT_EXE} PRE_BUILD
+#    COMMAND "dumpcpp c:\\csr\\exe\\CS_MJPG_Control.dll -o ${PROJECT_SOURCES_DIR}/Cs_MJPG_Ctrl"
+#    COMMAND_EXPAND_LISTS
 #)
+
 
 add_custom_command(
     TARGET ${PROJECT_EXE} POST_BUILD

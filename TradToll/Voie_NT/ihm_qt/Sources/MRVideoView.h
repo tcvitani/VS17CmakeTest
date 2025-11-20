@@ -4,15 +4,13 @@
 
 #include <QWidget>
 #include <QFrame>
-#include "Cs_MJPG_Ctrl.h"
-
 
 class QHBoxLayout;
 class QVBoxLayout;
 class QFrame;
 class QLabel;
 
-
+class MJPEGStreamer;
 
 
 class MRVideoView: public QFrame
@@ -28,15 +26,16 @@ public:
 	bool ShowVideo();
 	bool HideVideo();
 	bool isInitialized(){return m_bInitialized;};
-private slots:
-	void onCtlException(int,QString,QString,QString);
+//signals:
+//	void message(QString s);
+//private slots:
 
 private:
 	bool reInitAxis();
 
 	QWidget *m_parent;
 	QHBoxLayout *m_layout;
-    CS_MJPG_CONTROLLib::CS_MjpgCtrl *m_CamCtl;
+	MJPEGStreamer* m_mjpgStreamaer;
 
 	QString m_sRegVideoSrcs;
 	QString m_sURL;

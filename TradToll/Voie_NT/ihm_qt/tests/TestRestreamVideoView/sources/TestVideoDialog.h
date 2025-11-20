@@ -36,6 +36,7 @@ private slots:
 	
 	void onRVideoResponseMessage(MRVideoMsg* pMsg, int iObjId);
 
+	void onMessage(QString);
 private:
 
 	void initVideoView();

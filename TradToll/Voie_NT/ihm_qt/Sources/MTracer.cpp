@@ -104,7 +104,8 @@ void MTracer::initData(MTracer * pTracer, int iMaxTraceSize)
 	pTracer->m_sERR_PATH = regValues.value(QString("%1").arg(CSR_REG_KEYv_ERRORPATH), QString(DEFAULT_ERR_PATH)).toString();
 	pTracer->m_sTRC_PATH = regValues.value(QString("%1").arg(CSR_REG_KEYv_TRACEPATH), QString(DEFAULT_TRC_PATH)).toString();
 
-	QSettings regValues2(QString("%1TRC\\").arg(CSR_REG_KEYn_CSRBASE), QSettings::NativeFormat);
+	QString sRegPath2 = QString("HKEY_LOCAL_MACHINE\\%1TRC\\").arg(CSR_REG_KEYn_CSRBASE);
+	QSettings regValues2(sRegPath2, QSettings::NativeFormat);
 	int iErr = regValues2.value(QString("%1.ERR").arg(m_sBallID), 0).toInt();
 	int iTrc = regValues2.value(QString("%1.TRC").arg(m_sBallID), 0).toInt();
 	
