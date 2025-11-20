@@ -36,7 +36,7 @@ MIhmConfigActions::~MIhmConfigActions()
 
 bool MIhmConfigActions::lessThan(const MIhmAction* x1, const MIhmAction* x2) 
 { 
-	return *x1 < *x2; 
+	return QString::compare(x1->getActionID(),x2->getActionID())>0;
 
 }
 

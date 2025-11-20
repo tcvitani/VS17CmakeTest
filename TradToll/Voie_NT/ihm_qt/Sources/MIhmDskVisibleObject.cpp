@@ -4,7 +4,7 @@
 #include "MHelpFuncs.h"
 #include "MHMenuView.h"
 #include "MIhmConfigGeneral.h"
-//#include "MRVideoView.h"
+#include "MRVideoView.h"
 #include "MButtonLabel.h"
 #include "MTabView.h"
 //#include "MIhmTaskBar.h"
@@ -1818,147 +1818,147 @@ void MIhmHMenuView::updateReadOnlyState()
 // Restream video
 //--------------------------------------------------------------------
 
-//MIhmRestreamVideoView::MIhmRestreamVideoView(enumVisibleObjectId eId, int iMyVirtObjId):MIhmContainer(eId)
-//{
-//	m_bValid = false;
-//	m_pRVideoView = NULL;
-//	m_bShown = false;
-//	m_iMyVirtObjId = iMyVirtObjId;
-//}
-//
-//MIhmRestreamVideoView::~MIhmRestreamVideoView()
-//{
-//	if(m_pRVideoView!=NULL)
-//		delete m_pRVideoView;
-//}
-//
-//bool MIhmRestreamVideoView::setSource(QString sURL, QString sUser, QString sPwd)
-//{
-//	bool bRet = false;
-//
-//	if(m_pRVideoView!=NULL)
-//	{
-//		m_sSourceUrl = sURL ;
-//		m_sUser = sUser;
-//		m_sPwd = sPwd;
-//		
-//		m_sSourceUrlWithSessionID = m_sSourceUrl;
-//		//m_sSourceUrlWithSessionID.append(QString("&RESSClientID=CLI%1")
-//		//	.arg(MIhmVirtualObject::getNameForId((enum MIhmVirtualObject::enumVirtualObjectId)m_iMyVirtObjId)));
-//
-//		bRet = m_pRVideoView->SetSource(m_sSourceUrlWithSessionID, m_sUser, m_sPwd);
-//	}
-//	return bRet;
-//}
-//
-//void MIhmRestreamVideoView::showVideo()
-//{
-//	if(m_pRVideoView!=NULL)
-//	{
-//		m_bShown = true;
-//		m_pRVideoView->ShowVideo();
-//	}
-//}
-//
-//void MIhmRestreamVideoView::hideVideo()
-//{
-//	if(m_pRVideoView!=NULL)
-//	{
-//		m_bShown = false;
-//		m_pRVideoView->HideVideo();
-//	}
-//}		
-//
-//void MIhmRestreamVideoView::setVisible(bool bVisible)
-//{
-//	if(!m_bValid)
-//		return;
-//	
-//	QFrame *pFrame = getFrame();
-//	pFrame->setVisible(bVisible);
-//}
-//
-//void MIhmRestreamVideoView::setReadOnly(bool bReadOnly)
-//{
-//	if(m_bReadOnly != bReadOnly)
-//	{
-//		m_bReadOnly = bReadOnly;
-//		
-//		if(m_pRVideoView!=NULL)
-//		{
-//			if(bReadOnly)
-//			{
-//				getFrame()->setVisible(false);
-//				m_pRVideoView->HideVideo();
-//			}
-//			else
-//			{
-//				 getFrame()->setVisible(true);
-//				
-//				if(!m_sSourceUrl.isEmpty())
-//					m_pRVideoView->SetSource(m_sSourceUrlWithSessionID, m_sUser, m_sPwd);
-//				
-//				if(m_bShown)
-//					m_pRVideoView->ShowVideo();
-//				else
-//					m_pRVideoView->HideVideo();
-//			}
-//		}
-//	}
-//}
-//
-//
-//bool MIhmRestreamVideoView::setIniSettings(LaneTypeVisObjParams * pVisParams)
-//{
-//	bool bRetVal;
-//	
-//	bRetVal = MIhmContainer::setIniSettings(pVisParams);
-//	
-//	if(bRetVal)
-//	{
-//		bRetVal = setIniVideoSettings();
-//	}
-//	
-//	return bRetVal;
-//}
-//
-//bool MIhmRestreamVideoView::setIniVideoSettings()
-//{
-//	bool bRetVal = false;
-//	TRACE_D(QString("MIhmRestreamVideoView::setIniSettings: ..."));
-//
-//	QFrame *pFrame = getFrame();
-//	pFrame->setVisible(true);
-//	
-//	if(pFrame!=NULL)
-//	{
-//		m_pRVideoView = new MRVideoView(pFrame);
-//			
-//		if(m_pRVideoView != NULL && m_pRVideoView->init()) 
-//		{	
-//			m_hlayout = new QHBoxLayout(pFrame);
-//			m_hlayout->setSpacing(0);
-//			m_hlayout->setContentsMargins(0, 0, 0, 0);
-//			m_hlayout->addWidget(m_pRVideoView);
-//			m_pRVideoView->show();
-//			
-//			m_bValid = true;
-//			bRetVal = true;
-//		}
-//		else
-//		{
-//			TRACE_W(QString("MIhmRestreamVideoView::setIniSettings: Unable to create video view object %1").arg(m_sName));
-//			bRetVal = false;
-//		}
-//	}
-//	else
-//	{
-//		TRACE_W(QString("MIhmRestreamVideoView::setIniSettings: No frame widget defined for object %1").arg(m_sName));
-//		bRetVal = false;
-//	}
-//	return bRetVal;
-//}
-//
+MIhmRestreamVideoView::MIhmRestreamVideoView(enumVisibleObjectId eId, int iMyVirtObjId):MIhmContainer(eId)
+{
+	m_bValid = false;
+	m_pRVideoView = NULL;
+	m_bShown = false;
+	m_iMyVirtObjId = iMyVirtObjId;
+}
+
+MIhmRestreamVideoView::~MIhmRestreamVideoView()
+{
+	if(m_pRVideoView!=NULL)
+		delete m_pRVideoView;
+}
+
+bool MIhmRestreamVideoView::setSource(QString sURL, QString sUser, QString sPwd)
+{
+	bool bRet = false;
+
+	if(m_pRVideoView!=NULL)
+	{
+		m_sSourceUrl = sURL ;
+		m_sUser = sUser;
+		m_sPwd = sPwd;
+		
+		m_sSourceUrlWithSessionID = m_sSourceUrl;
+		//m_sSourceUrlWithSessionID.append(QString("&RESSClientID=CLI%1")
+		//	.arg(MIhmVirtualObject::getNameForId((enum MIhmVirtualObject::enumVirtualObjectId)m_iMyVirtObjId)));
+
+		bRet = m_pRVideoView->SetSource(m_sSourceUrlWithSessionID, m_sUser, m_sPwd);
+	}
+	return bRet;
+}
+
+void MIhmRestreamVideoView::showVideo()
+{
+	if(m_pRVideoView!=NULL)
+	{
+		m_bShown = true;
+		m_pRVideoView->ShowVideo();
+	}
+}
+
+void MIhmRestreamVideoView::hideVideo()
+{
+	if(m_pRVideoView!=NULL)
+	{
+		m_bShown = false;
+		m_pRVideoView->HideVideo();
+	}
+}		
+
+void MIhmRestreamVideoView::setVisible(bool bVisible)
+{
+	if(!m_bValid)
+		return;
+	
+	QFrame *pFrame = getFrame();
+	pFrame->setVisible(bVisible);
+}
+
+void MIhmRestreamVideoView::setReadOnly(bool bReadOnly)
+{
+	if(m_bReadOnly != bReadOnly)
+	{
+		m_bReadOnly = bReadOnly;
+		
+		if(m_pRVideoView!=NULL)
+		{
+			if(bReadOnly)
+			{
+				getFrame()->setVisible(false);
+				m_pRVideoView->HideVideo();
+			}
+			else
+			{
+				 getFrame()->setVisible(true);
+				
+				if(!m_sSourceUrl.isEmpty())
+					m_pRVideoView->SetSource(m_sSourceUrlWithSessionID, m_sUser, m_sPwd);
+				
+				if(m_bShown)
+					m_pRVideoView->ShowVideo();
+				else
+					m_pRVideoView->HideVideo();
+			}
+		}
+	}
+}
+
+
+bool MIhmRestreamVideoView::setIniSettings(LaneTypeVisObjParams * pVisParams)
+{
+	bool bRetVal;
+	
+	bRetVal = MIhmContainer::setIniSettings(pVisParams);
+	
+	if(bRetVal)
+	{
+		bRetVal = setIniVideoSettings();
+	}
+	
+	return bRetVal;
+}
+
+bool MIhmRestreamVideoView::setIniVideoSettings()
+{
+	bool bRetVal = false;
+	TRACE_D(QString("MIhmRestreamVideoView::setIniSettings: ..."));
+
+	QFrame *pFrame = getFrame();
+	pFrame->setVisible(true);
+	
+	if(pFrame!=NULL)
+	{
+		m_pRVideoView = new MRVideoView(pFrame);
+			
+		if(m_pRVideoView != NULL && m_pRVideoView->init()) 
+		{	
+			m_hlayout = new QHBoxLayout(pFrame);
+			m_hlayout->setSpacing(0);
+			m_hlayout->setContentsMargins(0, 0, 0, 0);
+			m_hlayout->addWidget(m_pRVideoView);
+			m_pRVideoView->show();
+			
+			m_bValid = true;
+			bRetVal = true;
+		}
+		else
+		{
+			TRACE_W(QString("MIhmRestreamVideoView::setIniSettings: Unable to create video view object %1").arg(m_sName));
+			bRetVal = false;
+		}
+	}
+	else
+	{
+		TRACE_W(QString("MIhmRestreamVideoView::setIniSettings: No frame widget defined for object %1").arg(m_sName));
+		bRetVal = false;
+	}
+	return bRetVal;
+}
+
 
 
 

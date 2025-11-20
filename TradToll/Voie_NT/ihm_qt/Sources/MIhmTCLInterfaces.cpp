@@ -15,7 +15,7 @@
 #include "MTracer.h"
 #include "MIhmMsg.h"
 #include "MIhmMsgVideo.h"
-//#include "MRVideoControlObject.h"
+#include "MRVideoControlObject.h"
 #include "MRVideoMsg.h"
 #include "MIhmVirtObjectsModel.h"
 
@@ -86,8 +86,8 @@ MIhmTCLInterfaces::~MIhmTCLInterfaces()
 	while (!m_lstIdentifiedUsers.isEmpty())
 		delete m_lstIdentifiedUsers.takeFirst();
 
-	//while (!m_lstRVideoCtrl.isEmpty())
-	//	delete m_lstRVideoCtrl.takeFirst();
+	while (!m_lstRVideoCtrl.isEmpty())
+		delete m_lstRVideoCtrl.takeFirst();
 	
 	delete m_pWEBVirtObjectModel;	
 }
@@ -225,7 +225,7 @@ bool MIhmTCLInterfaces::initialize(MIhmMainLogic *pParent)
 		m_pAuthAutomate = new MIHMAuthAutomate();
 		m_pAuthAutomate->initialize(this);
 
-//		InitRVideoControlObjects();
+		InitRVideoControlObjects();
 
 		if(!MIhmConfigGeneral::getCfg()->isWebEnabled()) // if WebEnabled the signal will be sent when web interface initializes 
 		{
@@ -966,83 +966,83 @@ bool MIhmTCLInterfaces::processRVideoMsg(MIhmMsgVideo* pMsg)
 {
 	bool bRetVal = false;
 
-	//MRVideoControlObject * pRVideoControlObject = getRVideoControlObject(pMsg->getTargetVirtObject()); 
-	//
-	//if(pRVideoControlObject!=NULL)
-	//{
+	MRVideoControlObject * pRVideoControlObject = getRVideoControlObject(pMsg->getTargetVirtObject()); 
+	
+	if(pRVideoControlObject!=NULL)
+	{
 
-	//	switch(pMsg->getVideoMsgType())
-	//	{
-	//		case MIhmMsgVideo::enuIhmMsgVideoSelectSourceReq:
-	//			{
-	//				TRACE_D(QString("MIhmTCLInterfaces::processRVideoMsg: Message type enuIhmMsgVideoSelectSourceReq, Source:%1 !").
-	//												arg(((MIhmMsgVideoSelectSrc*)pMsg)->m_iNewSource));
+		switch(pMsg->getVideoMsgType())
+		{
+			case MIhmMsgVideo::enuIhmMsgVideoSelectSourceReq:
+				{
+					TRACE_D(QString("MIhmTCLInterfaces::processRVideoMsg: Message type enuIhmMsgVideoSelectSourceReq, Source:%1 !").
+													arg(((MIhmMsgVideoSelectSrc*)pMsg)->m_iNewSource));
 
-	//				pRVideoControlObject->activate(((MIhmMsgVideoSelectSrc*)pMsg)->m_iNewSource);
+					pRVideoControlObject->activate(((MIhmMsgVideoSelectSrc*)pMsg)->m_iNewSource);
 
-	//				MIhmMsgRVideoUpdateSrc * pNewTclMsg = new MIhmMsgRVideoUpdateSrc(pMsg->getTargetVirtObject());
-	//				pNewTclMsg->m_sStreamSourceUrlLocal = pRVideoControlObject->getActivatedStreamSourceUrlLocal();
-	//				pNewTclMsg->m_sStreamSourceUrlRemote = pRVideoControlObject->getActivatedStreamSourceUrlRemote();
-	//				pNewTclMsg->m_sBaseUrl = pRVideoControlObject->getActivatedStreamBaseUrl();
-	//				sendMessageToAni(pNewTclMsg);
-	//				bRetVal = true;
-	//			}
-	//			break;
-	//		case MIhmMsgVideo::enuIhmMsgVideoOnReq:
-	//			{
-	//				TRACE_D(QString("MIhmTCLInterfaces::processRVideoMsg: Message type enuIhmMsgVideoOnReq!"));
+					MIhmMsgRVideoUpdateSrc * pNewTclMsg = new MIhmMsgRVideoUpdateSrc(pMsg->getTargetVirtObject());
+					pNewTclMsg->m_sStreamSourceUrlLocal = pRVideoControlObject->getActivatedStreamSourceUrlLocal();
+					pNewTclMsg->m_sStreamSourceUrlRemote = pRVideoControlObject->getActivatedStreamSourceUrlRemote();
+					pNewTclMsg->m_sBaseUrl = pRVideoControlObject->getActivatedStreamBaseUrl();
+					sendMessageToAni(pNewTclMsg);
+					bRetVal = true;
+				}
+				break;
+			case MIhmMsgVideo::enuIhmMsgVideoOnReq:
+				{
+					TRACE_D(QString("MIhmTCLInterfaces::processRVideoMsg: Message type enuIhmMsgVideoOnReq!"));
 
-	//				pRVideoControlObject->reactivate();
+					pRVideoControlObject->reactivate();
 
-	//				MIhmMsgRVideoUpdateOnOff * pNewTclMsg = new MIhmMsgRVideoUpdateOnOff(pMsg->getTargetVirtObject());
-	//				pNewTclMsg->m_bVideoOn = true;
-	//				sendMessageToAni(pNewTclMsg);
-	//				bRetVal = true;
-	//			}
-	//			break;
-	//		case MIhmMsgVideo::enuIhmMsgVideoOffReq:
-	//			{
-	//				TRACE_D(QString("MIhmTCLInterfaces::processRVideoMsg: Message type enuIhmMsgVideoOffReq!"));
-	//				pRVideoControlObject->deactivate();
+					MIhmMsgRVideoUpdateOnOff * pNewTclMsg = new MIhmMsgRVideoUpdateOnOff(pMsg->getTargetVirtObject());
+					pNewTclMsg->m_bVideoOn = true;
+					sendMessageToAni(pNewTclMsg);
+					bRetVal = true;
+				}
+				break;
+			case MIhmMsgVideo::enuIhmMsgVideoOffReq:
+				{
+					TRACE_D(QString("MIhmTCLInterfaces::processRVideoMsg: Message type enuIhmMsgVideoOffReq!"));
+					pRVideoControlObject->deactivate();
 
-	//				MIhmMsgRVideoUpdateOnOff * pNewTclMsg = new MIhmMsgRVideoUpdateOnOff(pMsg->getTargetVirtObject());
-	//				pNewTclMsg->m_bVideoOn = false;
-	//				sendMessageToAni(pNewTclMsg);
-	//				bRetVal = true;
-	//			}
-	//			break;
-	//		case MIhmMsgVideo::enuIhmMsgVideoFreezeReq:
-	//				pRVideoControlObject->grabb();
-	//				bRetVal = true;
-	//			break;
-	//		case MIhmMsgVideo::enuIhmMsgVideoUnfreezeReq:
-	//				pRVideoControlObject->reactivate();
-	//				bRetVal = true;
-	//			break;
-	//		case MIhmMsgVideo::enuIhmMsgVideoSaveReq:
-	//			{	
-	//				QString sTargetSavePath = MIhmConfigGeneral::getCfg()->createDefaultVideoFullPath(((MIhmMsgVideoSave*)pMsg)->m_sTargetFileName);
+					MIhmMsgRVideoUpdateOnOff * pNewTclMsg = new MIhmMsgRVideoUpdateOnOff(pMsg->getTargetVirtObject());
+					pNewTclMsg->m_bVideoOn = false;
+					sendMessageToAni(pNewTclMsg);
+					bRetVal = true;
+				}
+				break;
+			case MIhmMsgVideo::enuIhmMsgVideoFreezeReq:
+					pRVideoControlObject->grabb();
+					bRetVal = true;
+				break;
+			case MIhmMsgVideo::enuIhmMsgVideoUnfreezeReq:
+					pRVideoControlObject->reactivate();
+					bRetVal = true;
+				break;
+			case MIhmMsgVideo::enuIhmMsgVideoSaveReq:
+				{	
+					QString sTargetSavePath = MIhmConfigGeneral::getCfg()->createDefaultVideoFullPath(((MIhmMsgVideoSave*)pMsg)->m_sTargetFileName);
 
-	//				pRVideoControlObject->save(sTargetSavePath, 
-	//										   ((MIhmMsgVideoSave*)pMsg)->m_bSaveJpg);
-	//				bRetVal = true;
-	//			}
-	//			break;
+					pRVideoControlObject->save(sTargetSavePath, 
+											   ((MIhmMsgVideoSave*)pMsg)->m_bSaveJpg);
+					bRetVal = true;
+				}
+				break;
 
-	//		case MIhmMsgVideo::enuIhmMsgVideoZoomReq:
-	//			break;
-	//		default:
-	//			TRACE_W(QString("MIhmTCLInterfaces::processRVideoMsg: Unknown video message type %1!").
-	//							arg(pMsg->getVideoMsgType()));
-	//			break;
-	//	}
-	//}
-	//else
-	//{
-	//		TRACE_W(QString("MIhmTCLInterfaces::processRVideoMsg: Unable to find RVideoControlObject for %1!").
-	//						arg(pMsg->getTargetVirtObject()));
-	//	
-	//}
+			case MIhmMsgVideo::enuIhmMsgVideoZoomReq:
+				break;
+			default:
+				TRACE_W(QString("MIhmTCLInterfaces::processRVideoMsg: Unknown video message type %1!").
+								arg(pMsg->getVideoMsgType()));
+				break;
+		}
+	}
+	else
+	{
+			TRACE_W(QString("MIhmTCLInterfaces::processRVideoMsg: Unable to find RVideoControlObject for %1!").
+							arg(pMsg->getTargetVirtObject()));
+		
+	}
 
 	return bRetVal;
 }
@@ -1081,44 +1081,44 @@ void MIhmTCLInterfaces::onRVideoResponseMessage(MRVideoMsg* pRVMsg, int eSourceV
 
 
 
-//void MIhmTCLInterfaces::InitRVideoControlObjects()
-//{
-	//MRVideoControlObject * pNewObj;
-	//
-	//QString sRegVideoSrcs = MIhmConfigGeneral::getCfg()->getModuleConfigKey();
-	//sRegVideoSrcs.append("\\RestreamVideoSources");
+void MIhmTCLInterfaces::InitRVideoControlObjects()
+{
+	MRVideoControlObject * pNewObj;
+	
+	QString sRegVideoSrcs = MIhmConfigGeneral::getCfg()->getModuleConfigKey();
+	sRegVideoSrcs.append("\\RestreamVideoSources");
 
 
-	//for(int iVirtId = MIhmVirtualObject::enuIhmVirtRestreamVideoView1; iVirtId<=MIhmVirtualObject::enuIhmVirtRestreamVideoView2; iVirtId++)
-	//{
-	//	pNewObj = new MRVideoControlObject(iVirtId, MIhmVirtualObject::getNameForId((enum MIhmVirtualObject::enumVirtualObjectId)iVirtId));
-	//	
-	//	if(pNewObj->init(sRegVideoSrcs))	
-	//	{
-	//		connect(pNewObj, SIGNAL(newOutputRVideoMessage(MRVideoMsg*, int)), this, SLOT(onRVideoResponseMessage(MRVideoMsg*, int)));
-	//		m_lstRVideoCtrl.append(pNewObj);
-	//	}
-	//	else
-	//		delete pNewObj;
-	//}
-//}
+	for(int iVirtId = MIhmVirtualObject::enuIhmVirtRestreamVideoView1; iVirtId<=MIhmVirtualObject::enuIhmVirtRestreamVideoView2; iVirtId++)
+	{
+		pNewObj = new MRVideoControlObject(iVirtId, MIhmVirtualObject::getNameForId((enum MIhmVirtualObject::enumVirtualObjectId)iVirtId));
+		
+		if(pNewObj->init(sRegVideoSrcs))	
+		{
+			connect(pNewObj, SIGNAL(newOutputRVideoMessage(MRVideoMsg*, int)), this, SLOT(onRVideoResponseMessage(MRVideoMsg*, int)));
+			m_lstRVideoCtrl.append(pNewObj);
+		}
+		else
+			delete pNewObj;
+	}
+}
 
-//MRVideoControlObject* MIhmTCLInterfaces::getRVideoControlObject(int eTargetVirtObjet)
-//{
-//	MRVideoControlObject* pRetVal = NULL;
-//
-//	for(int i=0; i< m_lstRVideoCtrl.size();i++)
-//	{
-//		if (m_lstRVideoCtrl.at(i)->getVirtObject() == eTargetVirtObjet)
-//		{
-//			pRetVal = m_lstRVideoCtrl.at(i);
-//			break;
-//		}
-//	}
-//	
-//	return pRetVal;
-//	
-//}
+MRVideoControlObject* MIhmTCLInterfaces::getRVideoControlObject(int eTargetVirtObjet)
+{
+	MRVideoControlObject* pRetVal = NULL;
+
+	for(int i=0; i< m_lstRVideoCtrl.size();i++)
+	{
+		if (m_lstRVideoCtrl.at(i)->getVirtObject() == eTargetVirtObjet)
+		{
+			pRetVal = m_lstRVideoCtrl.at(i);
+			break;
+		}
+	}
+	
+	return pRetVal;
+	
+}
 
 
 //------------------------------------------------------------------

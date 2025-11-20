@@ -1050,46 +1050,46 @@ private:
 
 
 
-//class MRVideoView;
-//class MIhmRestreamVideoView:public MIhmContainer
-//{
-//public:
-//	MIhmRestreamVideoView(enumVisibleObjectId eId, int iMyVirtObjId);
-//	~MIhmRestreamVideoView();
-//	
-//	enumVisibleObjectType getType(){return enuIhmRestreamVideoView;};
-//	
-//	virtual bool setIniSettings(LaneTypeVisObjParams * pVisParams);
-//	virtual void setReadOnly(bool bReadOnly);
-//	
-//	bool setIniVideoSettings();
-//	void setVisible(bool bVisible);
-//	bool isValid(){return m_bValid;};
-//	bool setSource(QString sURL, QString sUser = QString(""), QString sPwd = QString(""));
-//	QString getSourceUrl() {return m_sSourceUrl;};
-//	bool isShown(){return m_bShown;};	
-//
-//	void showVideo();
-//	void hideVideo();
-//	int getSource(); 
-//
-//protected:
-//	QString m_sSourceUrl;
-//	QString m_sSourceUrlWithSessionID;
-//	QString m_sUser;
-//	QString m_sPwd;
-//	
-//private:
-//	bool m_bValid;
-//	QString m_sTemplateFile;
-//	MRVideoView * m_pRVideoView;
-//	QHBoxLayout * m_hlayout;
-//
-//	int m_iMyVirtObjId;
-//	bool m_bFreeze;
-//	bool m_bShown;
-//	int m_iZoom;
-//};
+class MRVideoView;
+class MIhmRestreamVideoView:public MIhmContainer
+{
+public:
+	MIhmRestreamVideoView(enumVisibleObjectId eId, int iMyVirtObjId);
+	~MIhmRestreamVideoView();
+	
+	enumVisibleObjectType getType(){return enuIhmRestreamVideoView;};
+	
+	virtual bool setIniSettings(LaneTypeVisObjParams * pVisParams);
+	virtual void setReadOnly(bool bReadOnly);
+	
+	bool setIniVideoSettings();
+	void setVisible(bool bVisible);
+	bool isValid(){return m_bValid;};
+	bool setSource(QString sURL, QString sUser = QString(""), QString sPwd = QString(""));
+	QString getSourceUrl() {return m_sSourceUrl;};
+	bool isShown(){return m_bShown;};	
+
+	void showVideo();
+	void hideVideo();
+	int getSource(); 
+
+protected:
+	QString m_sSourceUrl;
+	QString m_sSourceUrlWithSessionID;
+	QString m_sUser;
+	QString m_sPwd;
+	
+private:
+	bool m_bValid;
+	QString m_sTemplateFile;
+	MRVideoView * m_pRVideoView;
+	QHBoxLayout * m_hlayout;
+
+	int m_iMyVirtObjId;
+	bool m_bFreeze;
+	bool m_bShown;
+	int m_iZoom;
+};
 
 
 

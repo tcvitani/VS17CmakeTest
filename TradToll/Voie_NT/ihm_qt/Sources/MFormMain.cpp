@@ -1518,22 +1518,22 @@ void MFormMain::updateRVideoView(MIhmDskVisibleObject::enumVisibleObjectId eId, 
 									.arg(pVirtObj->m_sStreamSourceUrlRemote)
 									.arg((int)pVirtObj->m_bVideoOn));
 
-	//MIhmRestreamVideoView * pCurrent = (MIhmRestreamVideoView*)getVisibleVideoObject(pVirtObj->getId());
-	//
-	//if(pCurrent->getType()==MIhmDskVisibleObject::enuIhmRestreamVideoView)
-	//{
-	//	pCurrent->setVisible(pVirtObj->isVisible());
-	//	
-	//	if(pCurrent->getSourceUrl()!=pVirtObj->m_sStreamSourceUrlLocal)
-	//	{
-	//		pCurrent->setSource(pVirtObj->m_sStreamSourceUrlLocal);
-	//	}
+	MIhmRestreamVideoView * pCurrent = (MIhmRestreamVideoView*)getVisibleVideoObject(pVirtObj->getId());
+	
+	if(pCurrent->getType()==MIhmDskVisibleObject::enuIhmRestreamVideoView)
+	{
+		pCurrent->setVisible(pVirtObj->isVisible());
+		
+		if(pCurrent->getSourceUrl()!=pVirtObj->m_sStreamSourceUrlLocal)
+		{
+			pCurrent->setSource(pVirtObj->m_sStreamSourceUrlLocal);
+		}
 
-	//	if(pVirtObj->m_bVideoOn)
-	//		pCurrent->showVideo();
-	//	else
-	//		pCurrent->hideVideo();
-	//}
+		if(pVirtObj->m_bVideoOn)
+			pCurrent->showVideo();
+		else
+			pCurrent->hideVideo();
+	}
 }
 
 //-----------------------------------
@@ -3054,15 +3054,15 @@ void MFormMain::initializeVisibleObjects()
 				m_vectDskVisibleObjects.replace(i, pNewObject);	
 			break;
 		//------------------------------------------------------------
-			//case MIhmDskVisibleObject::enuCNT_RVIDEO_VIEW1:
-			//	pNewObject = new MIhmRestreamVideoView((MIhmDskVisibleObject::enumVisibleObjectId)i, MIhmVirtualObject::enuIhmVirtRestreamVideoView1);
-			//	m_vectDskVisibleObjects.replace(i, pNewObject);	
-			//break;
+			case MIhmDskVisibleObject::enuCNT_RVIDEO_VIEW1:
+				pNewObject = new MIhmRestreamVideoView((MIhmDskVisibleObject::enumVisibleObjectId)i, MIhmVirtualObject::enuIhmVirtRestreamVideoView1);
+				m_vectDskVisibleObjects.replace(i, pNewObject);	
+			break;
 
-			//case MIhmDskVisibleObject::enuCNT_RVIDEO_VIEW2:
-			//	pNewObject = new MIhmRestreamVideoView((MIhmDskVisibleObject::enumVisibleObjectId)i, MIhmVirtualObject::enuIhmVirtRestreamVideoView2);
-			//	m_vectDskVisibleObjects.replace(i, pNewObject);	
-			//break;
+			case MIhmDskVisibleObject::enuCNT_RVIDEO_VIEW2:
+				pNewObject = new MIhmRestreamVideoView((MIhmDskVisibleObject::enumVisibleObjectId)i, MIhmVirtualObject::enuIhmVirtRestreamVideoView2);
+				m_vectDskVisibleObjects.replace(i, pNewObject);	
+			break;
 		//------------------------------------------------------------
 
 			case MIhmDskVisibleObject::enuCNT_TAB_VIEW1:

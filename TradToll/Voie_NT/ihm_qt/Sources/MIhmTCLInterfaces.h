@@ -18,7 +18,7 @@ class MIhmVirtualObject;
 class MIhmSessionUserData;
 class MIHMAuthAutomate;
 class MIhmMsgVideo;
-//class MRVideoControlObject;
+class MRVideoControlObject;
 class MRVideoMsg;
 class MIhmVirtObjectsModel;
 
@@ -195,10 +195,10 @@ private:
 	// to host threads that use HTTP commands to control the MJPEG stream 
 	// that is to be received from restream_server and rendered to the clients using
 	// visible objects :MRVideoView(using AxAxis) for desktop and AxAxis for WEB
-	//QList <MRVideoControlObject*> m_lstRVideoCtrl;
+	QList <MRVideoControlObject*> m_lstRVideoCtrl;
 	
-	//void InitRVideoControlObjects();
-	//MRVideoControlObject* getRVideoControlObject(int eTargetVirtObjet);
+	void InitRVideoControlObjects();
+	MRVideoControlObject* getRVideoControlObject(int eTargetVirtObjet);
 
 	//------------------------------------
 	//Input frequency limitation - should be adjusted depending on system performances

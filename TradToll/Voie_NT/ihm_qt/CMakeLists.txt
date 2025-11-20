@@ -127,12 +127,12 @@ set(PROJECT_SOURCES
 	${PROJECT_SOURCES_DIR}/MInputExFiledsKbdInterface.cpp
 	${PROJECT_SOURCES_DIR}/MInputExReq.cpp
 	${PROJECT_SOURCES_DIR}/MIhmListWidget.cpp
-	#${PROJECT_SOURCES_DIR}/MRVideoView.cpp
-	#${PROJECT_SOURCES_DIR}/Cs_MJPG_Ctrl.cpp
-	#${PROJECT_SOURCES_DIR}/MRVideoCmdThread.cpp
-	#${PROJECT_SOURCES_DIR}/MRVideoMsg.cpp
-	#${PROJECT_SOURCES_DIR}/MRVideoCmdAutomate.cpp
-	#${PROJECT_SOURCES_DIR}/MRVideoControlObject.cpp
+	${PROJECT_SOURCES_DIR}/MRVideoView.cpp
+	${PROJECT_SOURCES_DIR}/mjpegstreamer.cpp
+	${PROJECT_SOURCES_DIR}/MRVideoCmdThread.cpp
+	${PROJECT_SOURCES_DIR}/MRVideoMsg.cpp
+	${PROJECT_SOURCES_DIR}/MRVideoCmdAutomate.cpp
+	${PROJECT_SOURCES_DIR}/MRVideoControlObject.cpp
 	${PROJECT_SOURCES_DIR}/MIhmMsgVideo.cpp
 	${PROJECT_SOURCES_DIR}/MTableModelRow.cpp
 	${PROJECT_SOURCES_DIR}/MRowsCommand.cpp
@@ -234,12 +234,12 @@ set(PROJECT_HEADERS
 	${PROJECT_SOURCES_DIR}/MInputExFiledsKbdInterface.h
 	${PROJECT_SOURCES_DIR}/MInputExReq.h
 	${PROJECT_SOURCES_DIR}/MIhmListWidget.h
-	#${PROJECT_SOURCES_DIR}/MRVideoView.h 
-	#${PROJECT_SOURCES_DIR}/Cs_MJPG_Ctrl.h
-	#${PROJECT_SOURCES_DIR}/MRVideoCmdThread.h
-	#${PROJECT_SOURCES_DIR}/MRVideoMsg.h
-	#${PROJECT_SOURCES_DIR}/MRVideoCmdAutomate.h
-	#${PROJECT_SOURCES_DIR}/MRVideoControlObject.h
+	${PROJECT_SOURCES_DIR}/MRVideoView.h 
+	${PROJECT_SOURCES_DIR}/mjpegstreamer.h
+	${PROJECT_SOURCES_DIR}/MRVideoCmdThread.h
+	${PROJECT_SOURCES_DIR}/MRVideoMsg.h
+	${PROJECT_SOURCES_DIR}/MRVideoCmdAutomate.h
+	${PROJECT_SOURCES_DIR}/MRVideoControlObject.h
 	${PROJECT_SOURCES_DIR}/MIhmMsgVideo.h
 	${PROJECT_SOURCES_DIR}/MTableModelRow.h
 	${PROJECT_SOURCES_DIR}/MRowsCommand.h
