@@ -86,7 +86,7 @@ bool MIhmAniInitData::initialize(QString szMboxName, QString sConfigKey)
 		return false;
 	}
 
-	m_sCommFilesRoot = QString(szWork);
+	m_sCommFilesRoot = MHelpFuncs::cleanAbsolutePath(szWork);
 
 
 	//		DWORD	m_dwMaxTableRowsInMemory;
@@ -191,9 +191,16 @@ QString MIhmAniInitData::getCleanPath(QString sPath, QString sSubPath)
 	if(sPath.size()>0)
 		if(sPath.right(1) == QString("/") || sPath.right(1) == QString("\\"))
 			sPath = sPath.left(sPath.size()-1);
-	
-	if(sSubPath!="")
-		sRet = QDir::cleanPath(sPath + QDir::separator() + sSubPath); 
+
+	if (sPath.at(0) == QChar('.') && sPath.at(1) != QChar('.'))
+		sPath = QDir::cleanPath(QDir::currentPath() + QDir::separator() + QDir::cleanPath(sPath));
+	else
+		sPath = QDir::cleanPath(sPath);
+
+	if (!sSubPath.isEmpty())
+		sRet = QDir::cleanPath(sPath + QDir::separator() + sSubPath);
+	else
+		sRet = sPath;
 
 	return sRet;
 }

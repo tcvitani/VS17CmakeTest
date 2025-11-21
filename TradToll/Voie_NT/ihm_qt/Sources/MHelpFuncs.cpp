@@ -5,6 +5,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <Math.h>
+#include <QDir>
 
 #include "MHelpFuncs.h"
 #include "MTracer.h"
@@ -1187,4 +1188,24 @@ QRect MHelpFuncs::convertStrToRect(const QString& sGeometry)
 
 
 	return retValue;
+}
+
+QString MHelpFuncs::cleanAbsolutePath(QString sPath)
+{
+	QString sRet;
+
+	sPath = sPath.trimmed();
+
+	if (sPath.size() > 0)
+		if (sPath.right(1) == QString("/") || sPath.right(1) == QString("\\"))
+			sPath = sPath.left(sPath.size() - 1);
+	
+	
+	if (sPath.at(0) == QChar('.') && sPath.at(1) != QChar('.'))
+		sRet = QDir::cleanPath(QDir::currentPath() + QDir::separator() + QDir::cleanPath(sPath));
+	else
+		sRet = QDir::cleanPath(sPath);
+
+
+	return sRet;
 }

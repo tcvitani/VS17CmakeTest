@@ -243,7 +243,7 @@ bool MInputExReq::setDescription(QString sDescription, int is_file)
 			//read the file content
 			sDescription = MHelpFuncs::loadFileContent(sFullPath);
 
-			if(sDescription=="")
+			if(sDescription.isEmpty())
 			{
 				TRACE_W(QString("MInputExReq::setDescription: Error in file %1!").arg(sFullPath));
 				m_bValid = false;

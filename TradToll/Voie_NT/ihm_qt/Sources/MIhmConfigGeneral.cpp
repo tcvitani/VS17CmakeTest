@@ -481,7 +481,7 @@ bool MIhmConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 		return false;
 	}
 
-	m_sUITemplateRoot = QString(szTemp);
+	m_sUITemplateRoot = MHelpFuncs::cleanAbsolutePath(szTemp);
 
 
 
@@ -498,7 +498,7 @@ bool MIhmConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 		return false;
 	}
 
-	m_sUICssRoot = QString(szTemp);
+	m_sUICssRoot = MHelpFuncs::cleanAbsolutePath(szTemp);
 
 // 		QString m_sUIInputExDefRoot;
 	dwValeurLen = sizeof (szTemp);
@@ -513,7 +513,7 @@ bool MIhmConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 		return false;
 	}
 
-	m_sUIInputExDefRoot = QString(szTemp);
+	m_sUIInputExDefRoot = MHelpFuncs::cleanAbsolutePath(szTemp);
 
 
 
@@ -531,7 +531,7 @@ bool MIhmConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 		return false;
 	}
 
-	m_sCommFilesRoot = QString(szTemp);
+	m_sCommFilesRoot = MHelpFuncs::cleanAbsolutePath(szTemp);
 
 
 // 		QString m_sSplashTemplate;
@@ -802,7 +802,7 @@ bool MIhmConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 		return false;
 	}
 	else
-		m_sLaneTypesCfgFile = QString(szTemp);
+		m_sLaneTypesCfgFile = MHelpFuncs::cleanAbsolutePath(szTemp);
 
 
 	//Load all available lane types...
@@ -829,7 +829,7 @@ bool MIhmConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 		return false;
 	}
 
-	m_sDynamicColorsFile = QString(szTemp);
+	m_sDynamicColorsFile = MHelpFuncs::cleanAbsolutePath(szTemp);
 
 
 	if(!m_oConfigColors.loadConfigFromFile(m_sDynamicColorsFile))
@@ -867,7 +867,7 @@ bool MIhmConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 		return false;
 	}
 	else
-		m_sLanguagesCfgFilePath = QString(szTemp);
+		m_sLanguagesCfgFilePath = MHelpFuncs::cleanAbsolutePath(szTemp);
 
 	
 	if(!m_oLanguages.initFromFile(m_sLanguagesCfgFilePath, m_sDefaultLanguage, false))
@@ -892,7 +892,7 @@ bool MIhmConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 		return false;
 	}
 	else
-		m_sImagesCfgFilePath = QString(szTemp);
+		m_sImagesCfgFilePath = MHelpFuncs::cleanAbsolutePath(szTemp);
 	
 	if(!m_oConfImages.initFromFile(m_sImagesCfgFilePath))
 	{
@@ -916,7 +916,7 @@ bool MIhmConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 		return false;
 	}
 	else
-		m_sActionsCfgFilePath = QString(szTemp);
+		m_sActionsCfgFilePath = MHelpFuncs::cleanAbsolutePath(szTemp);
 	
 	if(!m_oConfigActions.loadConfigFromFile(m_sActionsCfgFilePath))
 	{
@@ -940,7 +940,7 @@ bool MIhmConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 		return false;
 	}
 	else
-		m_sCursorsCfgFilePath = QString(szTemp);
+		m_sCursorsCfgFilePath = MHelpFuncs::cleanAbsolutePath(szTemp);
 
 	if(!m_oConfigCursors.loadConfigFromFile(m_sCursorsCfgFilePath))
 	{
@@ -966,7 +966,7 @@ bool MIhmConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 		return false;
 	}
 	else
-		m_sDynamicCfgFilePath = QString(szTemp);
+		m_sDynamicCfgFilePath = MHelpFuncs::cleanAbsolutePath(szTemp);
 	
 	if(!reloadConfigDynamic())
 	{
@@ -1364,14 +1364,10 @@ QString MIhmConfigGeneral::getCleanPath(QString sPath, QString sSubPath)
 {
 	QString sRet;
 
-	sPath = sPath.trimmed();
+	sRet = MHelpFuncs::cleanAbsolutePath(sPath);
 
-	if(sPath.size()>0)
-		if(sPath.right(1) == QString("/") || sPath.right(1) == QString("\\"))
-			sPath = sPath.left(sPath.size()-1);
-	
-	if(sSubPath!="")
-		sRet = QDir::cleanPath(sPath + QDir::separator() + sSubPath); 
+	if (!sSubPath.isEmpty())
+		sRet = QDir::cleanPath(sRet + QDir::separator() + sSubPath);
 
 	return sRet;
 }

@@ -60,6 +60,8 @@ public:
 	static QString deepCopy(const QString &right); 
 
 	static QRect convertStrToRect(const QString& sGeometry);
+
+	static QString cleanAbsolutePath(QString sPath);
 private:
 	static bool ishexnstring(const QString& string);
 
