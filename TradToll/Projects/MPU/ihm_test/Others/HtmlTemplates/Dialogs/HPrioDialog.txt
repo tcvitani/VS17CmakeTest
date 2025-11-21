@@ -1,0 +1,32 @@
+<div id="HighPriorityDialog" class="panel" >
+	<div class="control Dialog-Title" >
+		<span>%dialog-title%</span>
+	</div>
+
+	<div class="control Dialog-Body" >
+		<div style="%text-message-style%">
+			<span>%text-value%</span>
+		</div>
+		
+		<div style="%login-style%">
+			<input type="text" class="line-edit-title label" value="%label-login-value%"  size="10" readonly="readonly" tabIndex="-1">
+			<input type="hidden" value="login_name" class="line-edit-description">
+				<input id="Item_0_0" value="%login-value%" class="line-edit-item" type="text" maxlength="40" size="40" >
+		</div>
+		<div style="%password-style%">
+			<input type="text" class="line-edit-title label" value="%label-pwd-value%"  size="10" readonly="readonly" tabIndex="-1">
+			<input type="hidden" value="login_pwd" class="line-edit-description">
+				<input id="Item_1_0" value="" class="line-edit-item" type="password" maxlength="40" size="40" >
+		</div>
+	</div>
+
+	<div class="control Dialog-Buttons" >
+		<input class="btnCANCEL" type="button" value="%btn-cancel-text%" style="%btn-cancel-style%" />
+		<input class="btnOK" type="button" value="%btn-ok-text%" style="%btn-ok-style%"/>
+	</div>
+
+	<script type="text/javascript">
+		var dialogId = "%dialog-id%";
+	</script>
+
+</div>

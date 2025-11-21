@@ -1,0 +1,5 @@
+<div id="%id%" class="control image spare %class%" style="%style%">
+	<div class="image-holder">
+		<img src="%images-root%/%image-name%" />
+	</div>
+</div>

@@ -1,0 +1,22 @@
+<div id="HighPriorityDialog" class="panel" style="">
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="height: 260px;">
+
+		<div id="lblMessage" class="control text vertically-centered" style="text-align: center;"><div class="text-holder">%lblMessage-text%</div></div>
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" >
+		<input class="btnCancel" type="button" value="%btnCancel-text%" >
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+
+	</script>
+
+</div>

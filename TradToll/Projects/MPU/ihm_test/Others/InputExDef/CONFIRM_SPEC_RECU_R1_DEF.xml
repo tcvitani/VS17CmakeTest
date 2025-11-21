@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css" >
+
+	<widget type="Label" name="lblTitle" />
+	<widget type="Label" name="lblMessage" />
+	<widget type="Label" name="lblOIB" />
+	<widget type="LineEditExt" name="txtOIB" format="C" format_detail="" min_len="8" max_len="13" validator="[0-9]{8}|[0-9]{13}"/>
+	<widget type="Label" name="lblName" />
+	<widget type="LineEditExt" name="txtName" format="C" format_detail="" min_len="0" max_len="40" validator="^[A-Ža-ž0-9\s\.\,\'\-\/&#38;]{0,40}$" />
+	<widget type="Label" name="lblAddress" />
+	<widget type="LineEditExt" name="txtAddress" format="C" format_detail="" min_len="0" max_len="40" validator="^[A-Ža-ž0-9\s\.\,\'\-\/&#38;]{0,40}$" />
+	<widget type="Label" name="lblCity" />
+	<widget type="LineEditExt" name="txtCity" format="C" format_detail="" min_len="0" max_len="32" validator="^[A-Ža-ž\s]{0,32}$" />
+	<widget type="Label" name="lblCountry" />
+	<widget type="LineEditExt" name="txtCountry" format="C" format_detail="" min_len="0" max_len="32" validator="^[A-Ža-ž\s]{0,32}$" />
+
+	<widget type="PushButtonOK" name="btnOK" />
+	<widget type="PushButtonCancel" name="btnCancel" />
+</input_definition>

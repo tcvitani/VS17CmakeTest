@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IHM_CONFIG>
+	<IMAGES ROOT_FOLDER=".\images\">
+		<!-- Predefined images used by IHM -->
+		<IMG ID="DefaultListItem" FILE="default.gif" IS_ANIMATED="0"/>
+		<IMG ID="NoPicture" FILE="\ecsat\other\No_picture.jpg" IS_ANIMATED="0"/>
+		<IMG ID="ImgLuhnKeyOK" FILE="luhn_OK.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgLuhnKeyNOK" FILE="luhn_NOK.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgIcoFile" FILE="ImgIcoFile.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgIcoDir" FILE="ImgIcoDir.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgButtonUp" FILE="ImgButtonUp.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgLock" FILE="\nep\ihm-images\general-info\lock.png" IS_ANIMATED="0"/>
+		<!-- ******************************************* -->
+		<IMG ID="ImgViolationOn" FILE="\nep\ihm-images\violation_on.gif" IS_ANIMATED="1"/>
+		<IMG ID="ImgViolationOff" FILE="\nep\ihm-images\violation_off.gif" IS_ANIMATED="1"/>
+		<IMG ID="ImgEntOpticalBarrier" FILE="\nep\ihm-images\lane-shema\image-optical-curtain.png"/>
+		<IMG ID="ImgGabariteEnabled" FILE="\nep\ihm-images\lane-shema\image-gabarite-enabled.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgGabariteDisabled" FILE="\nep\ihm-images\lane-shema\image-gabarite-disabled.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgGabariteMiddle" FILE="\nep\ihm-images\lane-shema\image-gabarite-middle.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgGabariteBroken" FILE="\nep\ihm-images\lane-shema\image-gabarite-broken.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgBeaconOn" FILE="\nep\ihm-images\lane-shema\image-beacon-anim.gif"/>
+		<IMG ID="ImgBeaconOff" FILE="\nep\ihm-images\lane-shema\image-beacon-off.png"/>
+		<IMG ID="ImgTableBeacon" FILE="\nep\ihm-images\lane-shema\image-table-beacon.png"/>
+		<IMG ID="ImgCarTyp1Number" FILE="\nep\ihm-images\lane-shema\image-number-1.png"/>
+		<IMG ID="ImgCarTyp2Number" FILE="\nep\ihm-images\lane-shema\image-number-2.png"/>
+		<IMG ID="ImgCarTyp3Number" FILE="\nep\ihm-images\lane-shema\image-number-3.png"/>
+		<IMG ID="ImgCarTyp4Number" FILE="\nep\ihm-images\lane-shema\image-number-4.png"/>
+		<IMG ID="ImgCarTyp5Number" FILE="\nep\ihm-images\lane-shema\image-number-5.png"/>
+		<IMG ID="ImgCarTyp6Number" FILE="\nep\ihm-images\lane-shema\image-number-1a.png"/>
+		<IMG ID="ImgCarTyp7Number" FILE="\nep\ihm-images\lane-shema\image-number-1.png"/>
+		<IMG ID="ImgCarTyp8Number" FILE="\nep\ihm-images\lane-shema\image-number-2.png"/>
+		<IMG ID="ImgCarTyp9Number" FILE="\nep\ihm-images\lane-shema\image-number-3.png"/>
+		<IMG ID="ImgCarTyp10Number" FILE="\nep\ihm-images\lane-shema\image-number-4.png"/>
+		<IMG ID="ImgCarTyp11Number" FILE="\nep\ihm-images\lane-shema\image-number-5.png"/>
+		<IMG ID="ImgCarTyp1NumberGreen" FILE="\nep\ihm-images\lane-shema\image-number-1-green.png"/>
+		<IMG ID="ImgCarTyp2NumberGreen" FILE="\nep\ihm-images\lane-shema\image-number-2-green.png"/>
+		<IMG ID="ImgCarTyp3NumberGreen" FILE="\nep\ihm-images\lane-shema\image-number-3-green.png"/>
+		<IMG ID="ImgCarTyp4NumberGreen" FILE="\nep\ihm-images\lane-shema\image-number-4-green.png"/>
+		<IMG ID="ImgCarTyp5NumberGreen" FILE="\nep\ihm-images\lane-shema\image-number-5-green.png"/>
+		<IMG ID="ImgCarTyp6NumberGreen" FILE="\nep\ihm-images\lane-shema\image-number-1a-green.png"/>
+		<IMG ID="ImgCarTyp7NumberGreen" FILE="\nep\ihm-images\lane-shema\image-number-1-green.png"/>
+		<IMG ID="ImgCarTyp8NumberGreen" FILE="\nep\ihm-images\lane-shema\image-number-2-green.png"/>
+		<IMG ID="ImgCarTyp9NumberGreen" FILE="\nep\ihm-images\lane-shema\image-number-3-green.png"/>
+		<IMG ID="ImgCarTyp10NumberGreen" FILE="\nep\ihm-images\lane-shema\image-number-4-green.png"/>
+		<IMG ID="ImgCarTyp11NumberGreen" FILE="\nep\ihm-images\lane-shema\image-number-5-green.png"/>
+		<IMG ID="ImgCarTyp1NumberRed" FILE="\nep\ihm-images\lane-shema\image-number-1-red.png"/>
+		<IMG ID="ImgCarTyp2NumberRed" FILE="\nep\ihm-images\lane-shema\image-number-2-red.png"/>
+		<IMG ID="ImgCarTyp3NumberRed" FILE="\nep\ihm-images\lane-shema\image-number-3-red.png"/>
+		<IMG ID="ImgCarTyp4NumberRed" FILE="\nep\ihm-images\lane-shema\image-number-4-red.png"/>
+		<IMG ID="ImgCarTyp5NumberRed" FILE="\nep\ihm-images\lane-shema\image-number-5-red.png"/>
+		<IMG ID="ImgCarTyp6NumberRed" FILE="\nep\ihm-images\lane-shema\image-number-1a-red.png"/>
+		<IMG ID="ImgCarTyp7NumberRed" FILE="\nep\ihm-images\lane-shema\image-number-1-red.png"/>
+		<IMG ID="ImgCarTyp8NumberRed" FILE="\nep\ihm-images\lane-shema\image-number-2-red.png"/>
+		<IMG ID="ImgCarTyp9NumberRed" FILE="\nep\ihm-images\lane-shema\image-number-3-red.png"/>
+		<IMG ID="ImgCarTyp10NumberRed" FILE="\nep\ihm-images\lane-shema\image-number-4-red.png"/>
+		<IMG ID="ImgCarTyp11NumberRed" FILE="\nep\ihm-images\lane-shema\image-number-5-red.png"/>
+		<IMG ID="ImgEntOpticalBarrierOn" FILE="\nep\ihm-images\lane-shema\image-optical-curtain-on.png"/>
+		<IMG ID="ImgEntOpticalBarrierOff" FILE="\nep\ihm-images\lane-shema\image-optical-curtain-off.png"/>
+		<IMG ID="ImgCarTypUnknown" FILE="\nep\ihm-images\lane-shema\image-number-unknown.png"/>
+		<IMG ID="ImgTableBeacon" FILE="\nep\ihm-images\lane-shema\image-table-beacon.png"/>
+		<IMG ID="ImgCar" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-1.png"/>
+		<IMG ID="ImgCarTyp1" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-1.png"/>
+		<IMG ID="ImgCarTyp2" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-2.png"/>
+		<IMG ID="ImgCarTyp3" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-3.png"/>
+		<IMG ID="ImgCarTyp4" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-4.png"/>
+		<IMG ID="ImgCarTyp5" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-5.png"/>
+		<IMG ID="ImgCarTyp6" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-1a.png"/>
+		<IMG ID="ImgCarTyp7" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-1.png"/>
+		<IMG ID="ImgCarTyp8" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-2.png"/>
+		<IMG ID="ImgCarTyp9" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-3.png"/>
+		<IMG ID="ImgCarTyp10" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-4.png"/>
+		<IMG ID="ImgCarTyp11" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-5.png"/>
+		<IMG ID="ImgCarTyp1Green" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-1-green.png"/>
+		<IMG ID="ImgCarTyp2Green" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-2-green.png"/>
+		<IMG ID="ImgCarTyp3Green" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-3-green.png"/>
+		<IMG ID="ImgCarTyp4Green" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-4-green.png"/>
+		<IMG ID="ImgCarTyp5Green" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-5-green.png"/>
+		<IMG ID="ImgCarTyp6Green" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-1a-green.png"/>
+		<IMG ID="ImgCarTyp7Green" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-1-green.png"/>
+		<IMG ID="ImgCarTyp8Green" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-2-green.png"/>
+		<IMG ID="ImgCarTyp9Green" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-3-green.png"/>
+		<IMG ID="ImgCarTyp10Green" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-4-green.png"/>
+		<IMG ID="ImgCarTyp11Green" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-5-green.png"/>
+		<IMG ID="ImgCarTyp1Red" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-1-red.png"/>
+		<IMG ID="ImgCarTyp2Red" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-2-red.png"/>
+		<IMG ID="ImgCarTyp3Red" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-3-red.png"/>
+		<IMG ID="ImgCarTyp4Red" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-4-red.png"/>
+		<IMG ID="ImgCarTyp5Red" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-5-red.png"/>
+		<IMG ID="ImgCarTyp6Red" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-1a-red.png"/>
+		<IMG ID="ImgCarTyp7Red" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-1-red.png"/>
+		<IMG ID="ImgCarTyp8Red" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-2-red.png"/>
+		<IMG ID="ImgCarTyp9Red" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-3-red.png"/>
+		<IMG ID="ImgCarTyp10Red" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-4-red.png"/>
+		<IMG ID="ImgCarTyp11Red" FILE="\nep\ihm-images\lane-shema\image-vehicle-class-5-red.png"/>
+		<IMG ID="ImgRedLight" FILE="\nep\ihm-images\lane-shema\image-traffic-light-red.png"/>
+		<IMG ID="ImgGreenLight" FILE="\nep\ihm-images\lane-shema\image-traffic-light-green.png"/>
+		<IMG ID="ImgLightOff" FILE="\nep\ihm-images\lane-shema\image-traffic-light-none.png"/>
+		<IMG ID="ImgGateDown" FILE="\nep\ihm-images\lane-shema\image-barrier-down.png"/>
+		<IMG ID="ImgGateMiddle" FILE="\nep\ihm-images\lane-shema\image-barrier-middle.png"/>
+		<IMG ID="ImgGateUp" FILE="\nep\ihm-images\lane-shema\image-barrier-up.png"/>
+		<IMG ID="ImgGateHs" FILE="\nep\ihm-images\lane-shema\image-barrier-broken.png"/>
+		<IMG ID="ImgGateDownLock" FILE="\nep\ihm-images\lane-shema\image-barrier-down-lock.png"/>
+		<IMG ID="ImgGateMiddleLock" FILE="\nep\ihm-images\lane-shema\image-barrier-middle-lock.png"/>
+		<IMG ID="ImgGateUpLock" FILE="\nep\ihm-images\lane-shema\image-barrier-up-lock.png"/>
+		<IMG ID="ImgGateHsLock" FILE="\nep\ihm-images\lane-shema\image-barrier-broken-lock.png"/>
+		<IMG ID="ImgLoopFree" FILE="\nep\ihm-images\lane-shema\image-loop-free.png"/>
+		<IMG ID="ImgLoopOcc" FILE="\nep\ihm-images\lane-shema\image-loop-ocupied.png"/>
+		<IMG ID="ImgLoopErr" FILE="\nep\ihm-images\lane-shema\image-loop-error.png"/>
+		<IMG ID="Z6_INC_CTRL_CM10_1_LNK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\05-motorized-ticket-reader-down-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CTRL_CM10_2_LNK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\05-motorized-ticket-reader-up-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CTRL_CM10_1_DEVICE_NOK" FILE="\nep\ihm-images\ihm-alert-icons\05-motorized-ticket-reader-down-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CTRL_CM10_2_DEVICE_NOK" FILE="\nep\ihm-images\ihm-alert-icons\05-motorized-ticket-reader-up-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CTRL_CM10_1_CARD_BLOCKED" FILE="\nep\ihm-images\ihm-alert-icons\05-motorized-ticket-reader-down.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CTRL_CM10_2_CARD_BLOCKED" FILE="\nep\ihm-images\ihm-alert-icons\05-motorized-ticket-reader-up.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CM10_1_LNK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\06-motorized-card-reader-down-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CM10_2_LNK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\06-motorized-card-reader-up-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CM10_1_DEVICE_NOK" FILE="\nep\ihm-images\ihm-alert-icons\06-motorized-card-reader-down-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CM10_2_DEVICE_NOK" FILE="\nep\ihm-images\ihm-alert-icons\06-motorized-card-reader-up-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CM10_1_CARD_BLOCKED" FILE="\nep\ihm-images\ihm-alert-icons\06-motorized-card-reader-down.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CM10_2_CARD_BLOCKED" FILE="\nep\ihm-images\ihm-alert-icons\06-motorized-card-reader-up.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CHIP_1_LNK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\07-insertion-card-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CHIP_2_LNK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\07-insertion-card-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CHIP_1_DEVICE_NOK" FILE="\nep\ihm-images\ihm-alert-icons\07-insertion-card-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CHIP_2_DEVICE_NOK" FILE="\nep\ihm-images\ihm-alert-icons\07-insertion-card-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DCP1_LINK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DCP2_LINK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-right-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DCP1_NOK" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DCP2_NOK" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-right-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DCP1_NO_MORE_PAPER" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DCP2_NO_MORE_PAPER" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-right-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DCP1_PAPER_LESS_50" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-left.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DCP2_PAPER_LESS_50" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-right.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DCP1_JAMMED" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DCP2_JAMMED" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-right-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_LINK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_GEN_MODE_INACTIVE" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_GEN_STATUS_DEG" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_GEN_STATUS_NOK" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_DETECT_STATUS_DEG" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_DETECT_STATUS_NOK" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_DETECT_CURT_LINK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_DETECT_CURT_ALIGN_NOK" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_DETECT_CURT_DIRTY" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_DETECT_CURT_EMIT_DEG" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_DETECT_CURT_EMIT_NOK" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_DETECT_RADAR_NOK" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_HEIGHT_STATUS_DEG" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_HEIGHT_STATUS_NOK" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_HEIGHT_HC1_NOK" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_HEIGHT_HC2_NOK" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_AXLE_STATUS_DEG" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_AXLE_STATUS_NOK" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_AXLE_AC1_NOK" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_AVC_V_AXLE_AC2_NOK" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_LINK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_GEN_MODE_INACTIVE" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_GEN_STATUS_DEG" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_GEN_STATUS_NOK" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_DETECT_STATUS_DEG" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_DETECT_STATUS_NOK" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_DETECT_CURT_LINK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_DETECT_CURT_ALIGN_NOK" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_DETECT_CURT_DIRTY" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_DETECT_CURT_EMIT_DEG" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_DETECT_CURT_EMIT_NOK" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_DETECT_RADAR_NOK" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_HEIGHT_STATUS_DEG" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_HEIGHT_STATUS_NOK" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_HEIGHT_HC1_NOK" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_HEIGHT_HC2_NOK" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_AXLE_STATUS_DEG" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_AXLE_STATUS_NOK" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_AXLE_AC1_NOK" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_V_AXLE_AC2_NOK" FILE="\nep\ihm-images\ihm-alert-icons\31-exit-curtain-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRINTER1_LINK_ERR" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRINTER1_ERR" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRINTER1_PAPER_END" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRINTER1_PAPER_NEAR_END" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRINTER2_LINK_ERR" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-down-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRINTER2_ERR" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-down-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRINTER2_PAPER_END" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-down-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRINTER2_PAPER_NEAR_END" FILE="\nep\ihm-images\ihm-alert-icons\02-receipt-printer-down.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRINTER3_LINK_ERR" FILE="\nep\ihm-images\ihm-alert-icons\\02-receipt-printer-up-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRINTER3_ERR" FILE="\nep\ihm-images\ihm-alert-icons\\02-receipt-printer-up-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRINTER3_PAPER_END" FILE="\nep\ihm-images\ihm-alert-icons\\02-receipt-printer-up-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRINTER3_PAPER_NEAR_END" FILE="\nep\ihm-images\ihm-alert-icons\\02-receipt-printer-up.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DOCUMENT_READER_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\03-document-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DOCUMENT_READER_LINK_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\03-document-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_TICKET_READER_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\05-motorized-ticket-reader.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_TICKET_READER_LINK_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\05-motorized-ticket-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_TICKET_READER_UPPER_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\05-motorized-ticket-reader-up.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_TICKET_READER_UPPER_LINK_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\05-motorized-ticket-reader-up-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_TICKET_READER_LOWER_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\05-motorized-ticket-reader-down.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_TICKET_READER_LOWER_LINK_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\05-motorized-ticket-reader-down-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_INSERTION_READER_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\07-insertion-card-reader.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_INSERTION_READER_LINK_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\07-insertion-card-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CARD_READER1_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\06-motorized-card-reader.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CARD_READER1_LINK_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\06-motorized-card-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CARD_READER2_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\06-motorized-card-reader-down.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CARD_READER2_LINK_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\06-motorized-card-reader-down-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CARD_READER3_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\06-motorized-card-reader-up.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CARD_READER3_LINK_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\06-motorized-card-reader-up-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CONTACTLESS_CARD_READER_LINK_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\08-contactless-card-reader.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CONTACTLESS_CARD_READER_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\08-contactless-card-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_INTERNAL_ANTENNA_LINK_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\09-table-antenna-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_INTERNAL_ANTENNA_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\09-table-antenna-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_EXTERNAL_ANTENNA_LINK_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\10-beacon-right-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_EXTERNAL_ANTENNA_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\10-beacon-right-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_B1_ANTENNA_LINK_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\10-beacon-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_B1_ANTENNA_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\10-beacon-left-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POWER_SUPPLY_CRITICAL" FILE="\nep\ihm-images\ihm-alert-icons\23-power-supply-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_ACCESS_BARRIER_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\25-entry-barrier-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_ACCESS_BARRIER_FORCED_OPEN" FILE="\nep\ihm-images\ihm-alert-icons\25-entry-barrier.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_ACCESS_BARRIER_FORCED_CLOSED" FILE="\nep\ihm-images\ihm-alert-icons\25-entry-barrier.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_ACCESS_BARRIER_UNHINGED" FILE="\nep\ihm-images\ihm-alert-icons\25-entry-barrier-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PASSAGE_BARRIER_FORCED_OPEN" FILE="\nep\ihm-images\ihm-alert-icons\26-exit-barrier.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PASSAGE_BARRIER_FORCED_CLOSED" FILE="\nep\ihm-images\ihm-alert-icons\26-exit-barrier.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PASSAGE_BARRIER_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\26-exit-barrier-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PASSAGE_BARRIER_UNHINGED" FILE="\nep\ihm-images\ihm-alert-icons\26-exit-barrier-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HARD_DRIVE_ALMOST_FULL" FILE="\nep\ihm-images\ihm-alert-icons\33-free-disk-space.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HARD_DRIVE_FULL" FILE="\nep\ihm-images\ihm-alert-icons\33-free-disk-space-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_COMMUNICATION_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\37-lse.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_RED_CROSS_FORCED" FILE="\nep\ihm-images\ihm-alert-icons\39-red-cross.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_SILENT_ALARM" FILE="\nep\ihm-images\ihm-alert-icons\42-silent-alarm.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_MAINTENANCE_DOOR_OPEN" FILE="\nep\ihm-images\ihm-alert-icons\43-maintenance-door.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_MAINTENANCE_DOOR_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\43-maintenance-door-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_READER_DRAWER_DOOR_OPEN" FILE="\nep\ihm-images\ihm-alert-icons\47-readers-drawer.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_READER_DRAWER_DOOR_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\47-readers-drawer-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CASHDRAWER_DOOR_OPEN" FILE="\nep\ihm-images\ihm-alert-icons\48-cash-drawer.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CASHDRAWER_DOOR_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\48-cash-drawer-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_OPERATIONS_DOOR_OPEN" FILE="\nep\ihm-images\ihm-alert-icons\44-operations-door.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_OPERATIONS_DOOR_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\44-operations-door-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CHANGE_RET_DOOR_OPEN" FILE="\nep\ihm-images\ihm-alert-icons\45-change-door.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CHANGE_RET_DOOR_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\45-change-door-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CASH_WITHDRAWAL_DOOR_OPEN" FILE="\nep\ihm-images\ihm-alert-icons\46-vaults-door.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CASH_WITHDRAWAL_DOOR_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\46-vaults-door-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DOCUMENT_BIN_ABSENT" FILE="\nep\ihm-images\ihm-alert-icons\19-document-mailbox.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DOCUMENT_BIN_OPEN" FILE="\nep\ihm-images\ihm-alert-icons\19-document-mailbox-opened.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DOCUMENT_BIN_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\19-document-mailbox-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_COIN_BAG_ABSENT" FILE="\nep\ihm-images\ihm-alert-icons\18-coin-bag.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_EFS_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CAL_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-cal-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CEC_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-cec-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CHA_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\35-secondary-list-cha-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CLA_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-cla-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CNT_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-cnt-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CRA_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\35-secondary-list-cra-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CRC_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-crc-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CUT_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\35-secondary-list-cut-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DIS_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\35-secondary-list-dis-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_ECM_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-ecm-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_EMC_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-emc-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_FRA_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\35-secondary-list-fra-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_FVC_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-fvc-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_FVM_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-fvm-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_FVR_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-fvr-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_FVT_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-fvt-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_GAR_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-gar-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_GRI_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\35-secondary-list-gri-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_IPG_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-ipg-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_LCA_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-lca-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_LEA_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-lea-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_LER_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-ler-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_LGA_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\35-secondary-list-lga-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_LTB_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-ltb-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_NOI_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\35-secondary-list-noi-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_OPA_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-opa-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PAN_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\35-secondary-list-pan-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRO_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-pro-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRV_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\35-secondary-list-prv-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_REJ_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-rej-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_STE_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-ste-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_TAR_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-tar-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_TAU_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-tau-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_TDP_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\35-secondary-list-tdp-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_TTF_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\34-primary-list-ttf-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CGM_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\35-secondary-list-cgm-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_EFS_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CAL_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CHA_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CLA_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CNT_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CRA_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CRC_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CUT_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_DIS_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_ECM_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_EMC_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_FRA_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_FVC_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_FVM_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_FVR_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_FVT_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_GAR_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_GRI_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_IPG_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_LCA_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_LEA_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_LER_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_LGA_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_LTB_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_NOI_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_NOI_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_OPA_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PAN_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRO_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_PRV_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_REJ_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_STE_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_TAR_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_TAU_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_TDP_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_TTF_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CGM_INVALID" FILE="\nep\ihm-images\ihm-alert-icons\36-referentiel-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HEIGHT_LIMITER_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\27-entry-frame-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HEIGHT_LIMITER_UNHINGED" FILE="\nep\ihm-images\ihm-alert-icons\27-entry-frame-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HEIGHT_LIMITER_MESSAGE_ERROR" FILE="\nep\ihm-images\ihm-alert-icons\28-entry-frame-variable-message-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgCanopyLock" FILE="\nep\ihm-images\general-info\lock.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgWarningOn" FILE="\nep\ihm-images\lane-shema\image-warning-on.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgWarningOff" FILE="\nep\ihm-images\lane-shema\image-warning-off.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_OHLS_FORCED_OFF" FILE="\nep\ihm-images\ihm-alert-icons\41-ohls.png" IS_ANIMATED="0"/>
+		<IMG ID="ALARMS_TITLE_BACKGROUND" FILE="\nep\ihm-images\alarms\image-alarms-title-background.png" IS_ANIMATED="0"/>
+		<IMG ID="ALARMS_TITLE_BACKGROUND_BLINK" FILE="\nep\ihm-images\alarms\image-alarms-title-background-blinking.gif" IS_ANIMATED="1"/>
+		<IMG ID="Z6_INC_ENTRY_LOOP_TO_OCC" FILE="\nep\ihm-images\ihm-alert-icons\29-presence-loop.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_EXIT_LOOP_TO_OCC" FILE="\nep\ihm-images\ihm-alert-icons\30-exit-loop.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgRadioChecked" FILE="\nep\ihm-images\dialog\radio-button-checked.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgRadioUnchecked" FILE="\nep\ihm-images\dialog\radio-button-unchecked.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CHANNEL_DOOR_OPEN" FILE="\nep\ihm-images\ihm-alert-icons\49-pedestrian-gate.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_VOC_FORCED_OFF" FILE="\nep\ihm-images\ihm-alert-icons\40-audio-output.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgEmpty" FILE="\nep\ihm-images\lane-shema\empty.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgRedLightBlink" FILE="\nep\ihm-images\lane-shema\image-traffic-light-red-animated.gif" IS_ANIMATED="1"/>
+		<IMG ID="ImgWarningBlink" FILE="\nep\ihm-images\lane-shema\image-warning-on-animated.gif" IS_ANIMATED="1"/>
+		<IMG ID="ImgGeneralInfoBackground" FILE="\nep\ihm-images\general-info\image-general-info-background.png" IS_ANIMATED="0"/>
+		<IMG ID="ImgGeneralInfoBackgroundHighlited" FILE="\nep\ihm-images\general-info\image-general-info-background-highlighted.png" IS_ANIMATED="0"/>
+		<!-- ZBR start 2012/01/16 -->
+		<IMG ID="Z6_INC_AVC_NOK" FILE="\nep\ihm-images\ihm-alert-icons\20-pre-dac-left-err.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_POST_AVC_NOK" FILE="\nep\ihm-images\ihm-alert-icons\49-post-dac-right-err.png" IS_ANIMATED="0"/>
+		<!-- ZBR end 2012/01/16 -->
+		<!-- AHA start 2011/11/12 -->
+		<IMG ID="Z6_INC_HOPP1_NOK" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-1-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP1_LINK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-1.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP1_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-1.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP1_EMPTY" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-1.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP1_ALMOST_EMPTY" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-1.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP1_JAMMED" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-1.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP2_NOK" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-2-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP2_LINK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-2.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP2_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-2.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP2_EMPTY" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-2.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP2_ALMOST_EMPTY" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-2.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP2_JAMMED" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-2.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP3_NOK" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-3.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP3_LINK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-3-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP3_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-3.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP3_EMPTY" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-3.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP3_ALMOST_EMPTY" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-3.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP3_JAMMED" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-3.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP4_NOK" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-4.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP4_LINK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-4-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP4_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-4.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP4_EMPTY" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-4.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP4_ALMOST_EMPTY" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-4.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP4_JAMMED" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-4.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CA1_NOK" FILE="\nep\ihm-images\ihm-alert-icons\17-coin-acceptor-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CA1_LINK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\17-coin-acceptor-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CA1_JAMMED" FILE="\nep\ihm-images\ihm-alert-icons\17-coin-acceptor.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CA2_NOK" FILE="\nep\ihm-images\ihm-alert-icons\17-coin-acceptor-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CA2_LINK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\17-coin-acceptor-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CA2_JAMMED" FILE="\nep\ihm-images\ihm-alert-icons\17-coin-acceptor.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_BNR1_NOK" FILE="\nep\ihm-images\ihm-alert-icons\15-banknote-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_BNR1_LINK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\15-banknote-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_BNR1_JAMMED" FILE="\nep\ihm-images\ihm-alert-icons\15-banknote-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_BNR1_CASHBOX_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\16-banknote-vault.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_BNR1_CASHBOX_ALMOST_FULL" FILE="\nep\ihm-images\ihm-alert-icons\16-banknote-vault.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_BNR1_CASHBOX_FULL" FILE="\nep\ihm-images\ihm-alert-icons\16-banknote-vault.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_BNR2_NOK" FILE="\nep\ihm-images\ihm-alert-icons\15-banknote-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_BNR2_LINK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\15-banknote-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_BNR2_JAMMED" FILE="\nep\ihm-images\ihm-alert-icons\15-banknote-reader-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_BNR2_CASHBOX_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\16-banknote-vault.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_BNR2_CASHBOX_ALMOST_FULL" FILE="\nep\ihm-images\ihm-alert-icons\16-banknote-vault.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_BNR2_CASHBOX_FULL" FILE="\nep\ihm-images\ihm-alert-icons\16-banknote-vault.png" IS_ANIMATED="0"/>
+		<!-- AHA end 2011/11/12 -->
+		<!-- AHA start 2011/11/17 -->
+		<IMG ID="Z6_INC_HOPP1_FORCE" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-1-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP2_FORCE" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-2-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP3_FORCE" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-3-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP4_FORCE" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-4-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP1_NOTES_THRESHOLD" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-1-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP2_NOTES_THRESHOLD" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-2-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP3_NOTES_THRESHOLD" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-3-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP4_NOTES_THRESHOLD" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-4-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP1_COINS_THRESHOLD" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-1-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP2_COINS_THRESHOLD" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-2-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP3_COINS_THRESHOLD" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-3-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOPP4_COINS_THRESHOLD" FILE="\nep\ihm-images\ihm-alert-icons\13-hopper-4-warn.png" IS_ANIMATED="0"/>
+		<!-- AHA end 2011/11/17 -->
+		<!-- AHA start 2011/11/18 -->
+		<IMG ID="Z6_INC_COINS_BAG_MISSING" FILE="\nep\ihm-images\ihm-alert-icons\18-coin-bag.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_COINS_BAG_ALMOST_FULL" FILE="\nep\ihm-images\ihm-alert-icons\18-coin-bag.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_COINS_BAG_FULL" FILE="\nep\ihm-images\ihm-alert-icons\18-coin-bag.png" IS_ANIMATED="0"/>
+		<!-- AHA end 2011/11/18 -->
+		<!-- AHA start 2011/01/20 -->
+		<IMG ID="Z6_INC_COINS_BAG_AMOUNT_THRESHOLD" FILE="\nep\ihm-images\ihm-alert-icons\18-coin-bag.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_BNR1_CASHBOX_AMOUNT_THRESHOLD" FILE="\nep\ihm-images\ihm-alert-icons\16-banknote-vault.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_BNR2_CASHBOX_AMOUNT_THRESHOLD" FILE="\nep\ihm-images\ihm-alert-icons\16-banknote-vault.png" IS_ANIMATED="0"/>
+		<!-- AHA end 2011/01/20 -->
+		<!-- AHA start 2011/02/18 -->
+		<IMG ID="Z6_INC_HOP_ROUTING_FLUSH_POS" FILE="\nep\ihm-images\ihm-alert-icons\14-change-routing-alt.png" IS_ANIMATED="0"/>
+		<!-- AHA end 2011/02/18 -->
+		<!-- AHA start 2011/03/01 -->
+		<IMG ID="Z6_INC_HOP_ROUTING_BLOCKED_CHANGE_POSITION" FILE="\nep\ihm-images\ihm-alert-icons\14-change-routing-alt-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOP_ROUTING_BLOCKED_INCOHERENT_POSITION" FILE="\nep\ihm-images\ihm-alert-icons\14-change-routing-alt-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_HOP_ROUTING_BLOCKED_FLUSH_POSITION" FILE="\nep\ihm-images\ihm-alert-icons\14-change-routing-alt-warn.png" IS_ANIMATED="0"/>
+		<!-- AHA end 2011/03/01 -->
+		<!-- AHA start 2011/03/12 -->
+		<IMG ID="Z6_INC_CASH_MANAGEMENT_NOK" FILE="\nep\ihm-images\ihm-alert-icons\12-cash-management-system-warn.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CASH_MANAGEMENT_BNR_ONLY" FILE="\nep\ihm-images\ihm-alert-icons\12-cash-management-system.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_CASH_MANAGEMENT_CA_ONLY" FILE="\nep\ihm-images\ihm-alert-icons\12-cash-management-system.png" IS_ANIMATED="0"/>
+		<!-- AHA end 2011/03/12 -->
+		<!-- AHA start 2011/03/15 -->
+		<IMG ID="Z6_INC_COINS_BAG_NOT_ACTIVE" FILE="\nep\ihm-images\ihm-alert-icons\18-coin-bag.png" IS_ANIMATED="0"/>
+		<IMG ID="Z6_INC_NOTES_VAULT_NOT_ACTIVE" FILE="\nep\ihm-images\ihm-alert-icons\16-banknote-vault.png" IS_ANIMATED="0"/>
+		<!-- AHA end 2011/03/15 -->
+		
+		<IMG ID="Z6_INC_PER_LNK_NOK" FILE="\nep\ihm-images\ihm-alert-icons\10-beacon-warn.png" IS_ANIMATED="0"/>
+	</IMAGES>
+</IHM_CONFIG>

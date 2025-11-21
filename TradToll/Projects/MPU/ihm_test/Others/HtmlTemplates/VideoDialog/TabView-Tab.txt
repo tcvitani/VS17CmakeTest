@@ -1,0 +1,1 @@
+<li id="%id%" class="tab %class% %first% %active%"><span>%text%</span></li>

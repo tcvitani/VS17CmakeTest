@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="TEST HEIGHT LIMITER"/>
+	<widget type="Label" name="lblMessage" text="Pour démarrer le limiteur de hauteur de test, appuyez sur « ENTREE » ou cliquez sur «TESTER»"/>
+	<widget type="PushButtonOK" name="btnOK" text="TESTER" readonly="0"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="ANNULER" readonly="0" translate="1"/>
+</input_description>

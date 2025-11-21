@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css">
+	<widget type="Label" name="lblTitle"/>
+	<widget type="Label" name="lblMessage"/>
+	<widget type="Label" name="lblTitle1"/>
+	<widget type="LineEditExt" name="txtValue1" format="N" format_detail="N4" validator="^([1-9][0-9]{0,3}|0)$"/>
+	<widget type="PushButtonOK" name="btnOK"/>
+	<widget type="PushButtonCancel" name="btnCancel"/>
+</input_definition>

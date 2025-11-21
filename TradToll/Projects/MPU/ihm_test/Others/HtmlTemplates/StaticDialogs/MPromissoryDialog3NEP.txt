@@ -1,0 +1,49 @@
+<div id="Dialog" class="panel" style="">
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblCompanyNameTitle" class="control text label" style=""><div class="text-holder">%lblCompanyNameTitle-text%</div></div>
+			<input id="txtCompanyNameValue" value="%txtCompanyNameValue-text%" class="" type="text" %txtCompanyNameValue-readonly%>
+		</div>
+
+		<div>
+			<div id="lblAddressTitle" class="control text label" style=""><div class="text-holder">%lblAddressTitle-text%</div></div>
+			<input id="txtAddressValue" value="%txtAddressValue-text%" class="" type="text" %txtAddressValue-readonly%>
+		</div>
+
+		<div>
+			<div id="lblZIPAndCityTitle" class="control text label" style=""><div class="text-holder">%lblZIPAndCityTitle-text%</div></div>
+			<input id="txtZIPValue" value="%txtZIPValue-text%" class="" type="text" style="" %txtZIPValue-readonly%>
+			<input id="txtCityValue" value="%txtCityValue-text%" class="" type="text"  style="margin-left: 4px;" %txtCityValue-readonly%>
+		</div>
+
+		<div>
+			<div id="lblCountryTitle" class="control text label" style=""><div class="text-holder">%lblCountryTitle-text%</div></div>
+			<select id="cboCountryValue" style="width: 200px; margin: 0px 0px 5px 0px;" %cboCountryValue-readonly%>
+				%cboCountryValue-data%
+			</select>
+		</div>
+
+		<div>
+			<div id="lblTelephoneTitle" class="control text label" style=""><div class="text-holder">%lblTelephoneTitle-text%</div></div>
+			<input id="txtTelephoneValue" value="%txtTelephoneValue-text%" class="" type="text" %txtTelephoneValue-readonly%>
+		</div>
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+
+	</script>
+
+</div>

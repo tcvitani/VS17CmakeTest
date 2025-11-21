@@ -1,0 +1,107 @@
+<div id="Dialog" class="panel" style="">
+
+	<script type="text/javascript">
+		// initialize the dialog validator
+		dialogValidator.init();
+	</script>
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblStartDateTitle" class="control text label" style=""><div class="text-holder">%lblStartDateTitle-text%</div></div>
+			<input id="txtStartDateValue" value="%txtStartDateValue-text%" class="" type="text" %txtStartDateValue-readonly%>
+			<script type="text/javascript">
+
+				$("#txtStartDateValue").mask
+				(
+					"%txtStartDateValue-mask%",
+					{
+						placeholder: "%txtStartDateValue-mask-placeholder%"
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtStartDateValue', 'regex', { regex: '%txtStartDateValue-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblStartTimeTitle" class="control text label" style=""><div class="text-holder">%lblStartTimeTitle-text%</div></div>
+			<input id="txtStartTimeValue" value="%txtStartTimeValue-text%" class="" type="text" %txtStartTimeValue-readonly%>
+			<script type="text/javascript">
+
+				$("#txtStartTimeValue").mask
+				(
+					"%txtStartTimeValue-mask%",
+					{
+						placeholder: "%txtStartTimeValue-mask-placeholder%"
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtStartTimeValue', 'regex', { regex: '%txtStartTimeValue-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblEndDateTitle" class="control text label" style=""><div class="text-holder">%lblEndDateTitle-text%</div></div>
+			<input id="txtEndDateValue" value="%txtEndDateValue-text%" class="" type="text" %txtEndDateValue-readonly%>
+			<script type="text/javascript">
+
+				$("#txtEndDateValue").mask
+				(
+					"%txtEndDateValue-mask%",
+					{
+						placeholder: "%txtEndDateValue-mask-placeholder%"
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtEndDateValue', 'regex', { regex: '%txtEndDateValue-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblEndTimeTitle" class="control text label" style=""><div class="text-holder">%lblEndTimeTitle-text%</div></div>
+			<input id="txtEndTimeValue" value="%txtEndTimeValue-text%" class="" type="text" %txtEndTimeValue-readonly%>
+			<script type="text/javascript">
+
+				$("#txtEndTimeValue").mask
+				(
+					"%txtEndTimeValue-mask%",
+					{
+						placeholder: "%txtEndTimeValue-mask-placeholder%"
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtEndTimeValue', 'regex', { regex: '%txtEndTimeValue-regex%' } );
+			</script>
+		</div>
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%">
+		<input class="btnCancel" type="button" value="%btnCancel-text%">
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+		dialogsHandler.updateOkButtonOnValidation = %dialog-update-ok-button-on-validation%;
+
+	</script>
+
+</div>

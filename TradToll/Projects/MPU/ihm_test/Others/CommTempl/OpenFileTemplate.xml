@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="ListView" name="listViewFiles" multiselection="0"/>
+	<widget type="Label" name="lblTitle" text="%MSGBOX_TITLE%" translate="1"/>
+	<widget type="PushButton" name="btnUp" readonly="0"/>
+	<widget type="ComboBox" name="cbDrive" readonly="0"/>
+	<widget type="ComboBox" name="cbFilter" readonly="0"  src="ListFileTypes.xml">
+	</widget>
+	<widget type="LineEdit" name="txtPath" value="" readonly="1"/>
+	<widget type="LineEdit" name="txtFile" readonly="1"/>
+	<widget type="PushButtonOK" name="btnOK" text="%OK_BUTTON_TEXT%" readonly="0" translate="1"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="%CANCEL_BUTTON_TEXT%" readonly="0" translate="1"/>
+</input_description>

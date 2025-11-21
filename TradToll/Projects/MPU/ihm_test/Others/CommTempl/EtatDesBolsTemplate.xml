@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="%BOWLS_STATUS_TITLE%" />
+	<widget type="Label" name="lblColumn1Title" text="STATE_BOWLS_BOWL1" />
+	<widget type="Label" name="lblColumn1Contents" text="%BOWL1_STATE%" />
+	<widget type="Label" name="lblColumn2Title" text="STATE_BOWLS_BOWL2" />
+	<widget type="Label" name="lblColumn2Contents" text="%BOWL2_STATE%" />
+	<widget type="Label" name="lblColumn3Title" text="STATE_BOWLS_BOWL3" />
+	<widget type="Label" name="lblColumn3Contents" text="%BOWL3_STATE%" />
+	<widget type="Label" name="lblColumn4Title" text="STATE_BOWLS_BOWL4" />
+	<widget type="Label" name="lblColumn4Contents" text="%BOWL4_STATE%" />
+	<widget type="PushButtonOK" name="btnOK" text="Fermer" readonly="0"  />
+</input_description>

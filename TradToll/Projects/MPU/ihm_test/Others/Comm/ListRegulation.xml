@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<option_list>
+<option value="1" text="Magnétiques : N/A ths ( 0 par défaut)"/>
+<option value="2" text="Télépéage TIS et CARDME : N/A ths ( 0 par défaut)"/>
+<option value="3" text="TIS uniquement : N/A ths ( 0 par défaut)"/>
+<option value="4" text="CARDME uniquement : N/A ths ( 0 par défaut)"/>
+<option value="5" text="Paiement immédiat : 100 ths ( 0 par défaut)"/>
+<option value="6" text="Tous paiements : N/A ths ( 0 par défaut)"/>
+
+</option_list>

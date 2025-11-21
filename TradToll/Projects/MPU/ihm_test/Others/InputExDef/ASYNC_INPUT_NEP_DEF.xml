@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Tiho Cvitan (Ecsat d.o.o.) -->
+<input_definition>
+	<widget type="CheckBox" name="chkAV1"/>
+	<widget type="CheckBox" name="chkTTA"/>
+	<widget type="CheckBox" name="chk1_2T"/>
+	<widget type="CheckBox" name="chkJEP"/>
+	<widget type="CheckBox" name="chkAutre"/>
+	<widget type="ComboBox" name="cmbCountry"/>
+	<widget type="LineEdit" name="txtLicence" format="C" format_detail=""/>
+	<widget type="LineEdit" name="txtMark" format="C" format_detail=""/>
+	<widget type="LineEdit" name="txtModel" format="C" format_detail=""/>
+	<widget type="LineEdit" name="txtColour" format="C" format_detail=""/>
+	<widget type="LineEdit" name="txtName" format="C" format_detail=""/>
+	<widget type="LineEdit" name="txtLastName" format="C" format_detail=""/>
+	<widget type="LineEdit" name="txtAdress" format="C" format_detail=""/>
+	<widget type="LineEdit" name="txtCP" format="C" format_detail=""/>
+	<widget type="LineEdit" name="txtTown" format="C" format_detail=""/>
+	<widget type="LineEdit" name="txtComment" format="C" format_detail=""/>
+</input_definition>

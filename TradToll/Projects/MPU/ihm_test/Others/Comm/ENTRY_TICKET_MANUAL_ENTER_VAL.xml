@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<input_description>
+
+	<widget type="Label" name="lblTitle" text="ENTRY_TICKET_MANUAL_ENTER_TITLE"/>
+
+	<widget type="Label" name="lblUsingCode" text="LABEL_USING_CODE"/>
+
+	<widget type="LineEditExt" name="txtUsingCode" text=""/>
+
+	<widget type="Label" name="lblEntrylane" text="LABEL_ENTRY_LANE"/>
+
+	<widget type="LineEditExt" name="txtEntryLane" text=""/>
+	
+	<widget type="Label" name="lblEntryDHM" text="LABEL_ENTRY_DHM"/>
+
+	<widget type="LineEditExt" name="txtEntryDHM" text=""/>
+	
+	<widget type="Label" name="lblTrsID" text="LABEL_TRS_ID"/>
+
+	<widget type="LineEditExt" name="txtTrsID" text=""/>
+	
+	<widget type="Label" name="lblAlprCtrl" text="LABEL_ALPR_CTRL"/>
+
+	<widget type="LineEditExt" name="txtAlprCtrl" text=""/>
+
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0"/>
+
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_CANCEL_TEXT" readonly="0"/>
+
+</input_description>

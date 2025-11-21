@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IHM_CONFIG_CURSORS>
+	<!-- Qt::ArrowCursor = 0, Qt::PointingHandCursor =13, Qt::WhatsThisCursor = 15, Qt::BusyCursor = 16 -->
+	<CURSOR ID="QUESTIONCURSOR" IMAGE="" QT_CURSOR="15"/>
+	<CURSOR ID="HANDCURSOR" IMAGE="" QT_CURSOR="13"/>
+	<CURSOR ID="EDITCURSOR" IMAGE="ImgLuhnKeyOK" QT_CURSOR=""/>
+	<CURSOR ID="MAGNIFIER_CURSOR" IMAGE="ImgMagnifierCursor" QT_CURSOR=""/>
+	<CURSOR ID="PENCIL_CURSOR" IMAGE="ImgPencilCursor" QT_CURSOR=""/>
+	<CURSOR ID="QUESTION_CURSOR" IMAGE="ImgQuestionCursor" QT_CURSOR=""/>
+</IHM_CONFIG_CURSORS>

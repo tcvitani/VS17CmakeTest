@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="TEST LECTEUR A INSERTION"/>
+	<widget type="Label" name="lblMessage" text="Veuillez introduire une carte dans lecteur ? insertion."/>
+	<widget type="PushButtonOK" name="btnOK" text="ANNULER"/>
+</input_description>

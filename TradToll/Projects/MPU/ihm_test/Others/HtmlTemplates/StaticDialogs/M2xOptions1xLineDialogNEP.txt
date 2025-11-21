@@ -1,0 +1,53 @@
+<div id="Dialog" class="panel" style="">
+
+	<script type="text/javascript">
+		// initialize the dialog validator
+		dialogValidator.init();
+	</script>
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblOptionListLabel1" class="control text label" style=""><div class="text-holder">%lblOptionListLabel1-text%</div></div>
+			<select id="cmbOptionList1" style="width: 349px; margin: 0px 0px 5px 0px;" %cmbOptionList1-readonly%>
+				%cmbOptionList1-data%
+			</select>
+		</div>
+		<div>
+			<div id="lblOptionListLabel2" class="control text label" style=""><div class="text-holder">%lblOptionListLabel2-text%</div></div>
+			<select id="cmbOptionList2" style="width: 349px; margin: 0px 0px 5px 0px;" %cmbOptionList2-readonly%>
+				%cmbOptionList2-data%
+			</select>
+		</div>
+
+
+		<div>
+			<div id="lblLineInputLabel" class="control text label" style=""><div class="text-holder">%lblLineInputLabel-text%</div></div>
+			<input id="txtLineInput" value="%txtLineInput-text%" class="" type="text" %txtLineInput-readonly%>
+			<script type="text/javascript">
+				// add regex validation for txtLineInput control
+				dialogValidator.addValidation('txtLineInput', 'regex', { regex: '%txtLineInput-regex%' } );
+			</script>
+
+		</div>
+
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+		dialogsHandler.updateOkButtonOnValidation = %dialog-update-ok-button-on-validation%;
+
+	</script>
+
+</div>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+
+	<widget type="Label" name="lblTitle" text="ATTENTE_LIBERATION" />
+
+	<widget type="Label" name="lblMessage" text="L'equipement est deja en main, l'utilisateru a ete averti que vous sohaitez pendre la main. Vouillez patentier afin d'attendre sa reponse." />
+
+	<widget type="PushButtonOK" name="btnOK" text="Annuller" readonly="0"  />
+
+</input_description>

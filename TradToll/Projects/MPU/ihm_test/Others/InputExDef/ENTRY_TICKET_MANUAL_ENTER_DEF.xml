@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css" >
+
+	<widget type="Label" name="lblTitle" />
+
+	<widget type="Label" name="lblUsingCode" />
+	<widget type="LineEditExt" name="txtUsingCode" format="M" format_detail="N;_"/>
+	<widget type="Label" name="lblEntrylane" />
+	<widget type="LineEditExt" name="txtEntryLane" format="M" format_detail="9999;_"/>
+	<widget type="Label" name="lblEntryDHM" />
+	<widget type="LineEditExt" name="txtEntryDHM" format="M" format_detail="999999999999;_" />
+	<widget type="Label" name="lblTrsID" />
+	<widget type="LineEditExt" name="txtTrsID" format="M" format_detail="99999999;_" />
+	<widget type="Label" name="lblAlprCtrl" />
+	<widget type="LineEditExt" name="txtAlprCtrl" format="C" format_detail="" min_len="0" max_len="11" />
+
+	<widget type="PushButtonOK" name="btnOK" />
+	<widget type="PushButtonCancel" name="btnCancel" />
+
+</input_definition>

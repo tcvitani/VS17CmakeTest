@@ -1,0 +1,32 @@
+<div id="Dialog" class="panel" style="">
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblLoginName" class="control text label" style=""><div class="text-holder">%lblLoginName-text%</div></div>
+			<input id="txtUserName" value="%txtUserName-text%" class="" type="text" maxlength="19" size="10" %txtUserName-readonly%>
+		</div>
+
+		<div>
+			<div id="lblPassword" class="control text label" style=""><div class="text-holder">%lblPassword-text%</div></div>
+			<input id="txtPassword" value="%txtPassword-text%" class="" type="password" maxlength="20" size="10" %txtPassword-readonly%>
+		</div>
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+
+	</script>
+
+</div>

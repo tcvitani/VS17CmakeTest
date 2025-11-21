@@ -1,0 +1,3 @@
+<div class="image-holder">
+	<img src="%images-root%/%image-name%" />
+</div>

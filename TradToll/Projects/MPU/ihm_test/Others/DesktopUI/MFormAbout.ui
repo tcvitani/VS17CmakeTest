@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>425</width>
+    <height>378</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Help dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frContainer">
+     <property name="styleSheet">
+      <string notr="true">QDialog{
+	background-color: transparent;
+	display: none;
+}
+
+
+#frContainer
+{
+	background-color: transparent;
+	border-width: 8px;
+	border-image: url(./images/dialog/image-dialog-border-image_sozina.png) 8 10 10 8 stretch stretch;
+	
+}
+
+QFrame,
+QAbstractSpinBox,
+QAbstractButton,
+QAbstractItemView,
+QComboBox,
+QLineEdit,
+QProgressBar,
+QPushButton,
+QListView
+{
+	color: #000;
+	font-family: Century Gothic;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+QAbstractSpinBox,
+QComboBox,
+QAbstractItemView,
+QPlainTextEdit,
+QTextEdit,
+QLineEdit,
+QListView
+{
+	background-color: #fff;
+	border: 2px solid #633285;
+}
+
+QAbstractSpinBox,
+QComboBox,
+QAbstractItemView,
+QPlainTextEdit,
+QTextEdit,
+QLineEdit,
+QListView
+{
+	margin: 0px;
+}
+
+QLabel
+{
+	margin: 0px 5px 5px 0px;
+}
+
+QLabel,
+QPushButton,
+QRadioButton
+{
+	background-color: transparent;
+}
+
+QAbstractItemView
+{
+     selection-background-color: black;
+	 selection-color: white;
+}
+
+QLineEdit:disabled{
+	background-color: #d8cbe0;
+	color: #633285;
+}
+
+QPushButton, QLabel					{	color: #633285;	}
+
+
+QPushButton{	border-width: 8px;
+	border-image: url(./images/dialog/image-dialog-border-image_sozina.png) 8 10 10 8 stretch stretch;
+}
+
+QPushButton#btnOK					{	background-image: url(./images/dialog/button-default.png);			}
+QPushButton#btnOK:pressed			{	background-image: url(./images/dialog/button-default-pressed.png);	}
+QPushButton#btnOK:disabled			{	background-image: url(./images/dialog/button-default-disabled.png);	}
+
+QProgressBar
+{
+	border: 2px solid grey;
+	border-radius: 5px;
+	text-align: center;
+	color: #633285;
+}
+
+QProgressBar::chunk
+{
+	background-color: #d8cbe0;
+	width: 20px;
+}
+
+#lblTitle
+{
+	color: white;
+
+	border-width: 14px;
+	border-image: url(./images/dialog/image-title-background-border-image.png) 14 14 14 14 stretch stretch;
+	background-image: url(./images/dialog/image-title-background-background-image.png);
+
+	margin: 0px 0px 5px 0px;
+	padding: -5px 0px;
+}
+
+QPushButton, 
+#lblTitle,
+#lblSubtitle
+{
+	font-size: 19px;
+	text-transform: uppercase;
+}
+
+#lblSubtitle
+{
+	text-transform: none;
+}
+
+#lblMessage
+{
+	margin-bottom: 12px;
+}
+
+#frmOptions1,
+#frmOptions2,
+#frmOptions3,
+#frmOptions4
+{
+	padding-top: -9px;
+	background-color: transparent;
+}
+
+
+QComboBox::drop-down
+{
+	height: 20px;
+	width: 20px;
+}
+
+QLineEdit,
+QComboBox,
+QListView
+{
+	border-width: 5px;
+/*	margin: 0px 0px 3px 5px; */
+	border-image: url(./images/dialog/image-edit-border-image.png) 5 5 5 5 stretch stretch;
+}
+
+QLineEdit:focus,
+QComboBox:focus,
+QListView:focus
+{
+	border-image: url(./images/dialog/image-edit-border-image-focused.png) 5 5 5 5 stretch stretch;
+}
+ </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QFrame" name="frButtonsFrame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frExecute">
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="margin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <family>Century Gothic</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Command:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="txtExecuteLine">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Gothic</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnExec">
+           <property name="text">
+            <string>Execute</string>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+           <property name="default">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>268</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnOK">
+          <property name="text">
+           <string>Close</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

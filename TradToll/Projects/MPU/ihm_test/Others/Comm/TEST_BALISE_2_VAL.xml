@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="TEST DE BALISE DE TABLE - ZONE DE COM."/>
+	<widget type="Label" name="lblMessage" text="Veuillez présenter le badge devant la balise."/>
+	<widget type="PushButtonOK" name="btnOK" text="ANNULER"/>
+</input_description>

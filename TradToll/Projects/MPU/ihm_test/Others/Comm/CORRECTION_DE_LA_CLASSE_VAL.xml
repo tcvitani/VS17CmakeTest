@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="CORRECTION_DE_LA_CLASSE"/>
+	<widget type="Label" name="lblMessage" text="CLASS_CORRECTION_MSG"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_CANCEL_TEXT" readonly="0"/>
+</input_description>

@@ -1,0 +1,4 @@
+<div id="%id%" class="control button %class%" style="%style%">
+	%button-text%
+	%button-image%
+</div>

@@ -1,0 +1,5 @@
+<div id="%id%" class="image alarm-item %class%">
+	<div style="" class="image-holder">
+		<img src="%images-root%/%image-name%" title="%text%" />
+	</div>
+</div>

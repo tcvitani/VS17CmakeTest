@@ -1,0 +1,28 @@
+<IHM_SIMU_script>
+	<!-- <ACTION SERVICE="CONFIG" TYPE="SET" TYPE_OF_LANE="OPL" LANGUAGE="English" TYPE_OF_SHIFT="ShiftClosed" PROJECT="LaneControler" VERSION="1.6.0"/> -->
+	<!-- <ACTION SERVICE="AUTHORIZATION" TYPE="DEBUT"/> -->
+	<!-- CMD_TYPE:	IHM_AUTH_RSP = 2,	IHM_TAKE_CTRL_RSP = 4,	IHM_RETURN_CTRL_RSP = 6 -->
+	<!-- <ACTION SERVICE="AUTHORIZATION" TYPE="EFFECTUE" CMD_TYPE="2" IS_DESKTOP="1" RET_VAL="1" USER="Mate" SEC_CODE="Ante" IS_SEC_CODE_PWD="1" SESSION_ID=""/> -->
+	<!--<ACTION SERVICE="AUTHORIZATION" TYPE="EFFECTUE" CMD_TYPE="4" IS_DESKTOP="1" RET_VAL="1" USER="Mate" SEC_CODE="Ante" IS_SEC_CODE_PWD="1" SESSION_ID=""/> -->
+	<!--<ACTION SERVICE="SAISIE_EX" TYPE="DEMANDE" DIALOG_ID="SAISIE_CONFIRM_RECEIPT" IS_FILE="1" VALUE="SAISIE_CONFIRM_RECEIPT_VAL.xml"/>-->
+	<ACTION SERVICE="SAISIE_EX" TYPE="DEMANDE" DIALOG_ID="SAISIE_CONFIRM_RECEIPT">
+		<input_description>
+			<widget type="CheckBox" name="chkName1" value="true" text="CheckBox Text" readonly="0"/>
+			<widget type="RadioButton" name="radName1" value="true" text="RadioButton1 Text" readonly="0"/>
+			<widget type="RadioButton" name="radName2" value="false" text="RadioButton2 Text" readonly="0"/>
+			<widget type="ComboBox" name="cmbName3" value="0" readonly="0" src="CountryNames.xml"/>
+			<widget type="ListWidget" name="lstWidget" value="0" readonly="0">
+				<option value="1" text="VW"/>
+				<option value="2" text="BMW"/>
+				<option value="3" text="Renault"/>
+			</widget>
+			<widget type="LineEdit" name="txtName4" text="Renault" readonly="0"/>
+			<widget type="TextEdit" name="txtName5" text="Multi line text § Second line …" readonly="1"/>
+			<widget type="Label" name="lblName6" text="LABEL_TITLE" readonly="0" translate="1"/>
+			<widget type="PushButtonOK" name="btnOK" text="OK_BUTTON" readonly="0" translate="1"/>
+			<widget type="PushButtonCancel" name="btnCancel" text="CANCEL_BUTTON" readonly="0" translate="1"/>
+		</input_description>
+	</ACTION>
+	<!--<ACTION SERVICE="WAIT" MILISEC="10000"/>  -->
+	<!--<ACTION SERVICE="SAISIE_EX" TYPE="ANNULATION"/>  -->
+</IHM_SIMU_script>

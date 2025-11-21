@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+
+	<widget type="Label" name="lblTitle" text="RESTITUTION_DONNEES" />
+
+	<widget type="Label" name="lblMessage" text="Les donnees non emises ont ete restituees dans: [TODO]" />
+
+	<widget type="PushButtonOK" name="btnOK" text="Fermer" readonly="0" translate="1" />
+
+</input_description>

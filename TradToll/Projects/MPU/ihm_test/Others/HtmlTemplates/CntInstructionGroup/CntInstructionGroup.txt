@@ -1,0 +1,6 @@
+<div id="%id%" class="panel %class%" style="%style%">
+
+	%TxtInstruction%
+	%TxtInstruction2%
+
+</div>

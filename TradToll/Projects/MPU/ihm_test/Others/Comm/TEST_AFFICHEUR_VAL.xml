@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="TEST AFFICHEUR PCC"/>
+	<widget type="Label" name="lblMessage" text="Un message de test a été envoyé à l?afficheur PCC."/>
+	<widget type="PushButtonOK" name="btnOK" text="FERMER"/>
+</input_description>

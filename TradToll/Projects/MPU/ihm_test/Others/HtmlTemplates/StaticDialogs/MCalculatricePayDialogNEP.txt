@@ -1,0 +1,94 @@
+<div id="Dialog" class="panel" style="">
+
+	<script type="text/javascript">
+		// initialize the dialog validator
+		dialogValidator.init();
+	</script>
+
+	<script type="text/javascript">
+
+		calculatriceDialog.formatDetails = new Array();
+
+	</script>
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblDeviseNameTitle" class="control text label" style=""><div class="text-holder">%lblDeviseNameTitle-text%</div></div>
+			<input id="txtDeviseName" value="%txtDeviseName-text%" class="" type="text" %txtDeviseName-readonly%>
+			<script type="text/javascript">
+				calculatriceDialog.formatDetails['txtDeviseName'] = { formula: '%txtDeviseName-formula%', decimals: %txtDeviseName-resultPrecision% };
+			</script>
+		</div>
+
+		<div>
+			<div id="lblDeviseTitle" class="control text label" style=""><div class="text-holder">%lblDeviseTitle-text%</div></div>
+			<input id="txtDeviseRate" value="%txtDeviseRate-text%" class="" style="display: none;" type="text" %txtDeviseRate-readonly%>
+			<script type="text/javascript">
+				calculatriceDialog.formatDetails['txtDeviseRate'] = { formula: '%txtDeviseRate-formula%', decimals: %txtDeviseRate-resultPrecision% };
+			</script>
+			<input id="txtDeviseValue" value="%txtDeviseValue-text%" class="" style="" type="text" %txtDeviseValue-readonly%>
+			<script type="text/javascript">
+				calculatriceDialog.formatDetails['txtDeviseValue'] = { formula: '%txtDeviseValue-formula%', decimals: %txtDeviseValue-resultPrecision% };
+			</script>
+			<script type="text/javascript">
+
+				$('#txtDeviseValue').setBehaviour
+				(
+					"numeric", 
+					{
+						preDecimals:	%txtDeviseValue-preDecimals%,
+						decimals:	%txtDeviseValue-decimals%,
+						allowNegative:	%txtDeviseValue-allowNegative%,
+						separatorChar:	'%txtDeviseValue-separatorChar%'
+					}
+				);
+				$('#txtDeviseValue').val('%txtDeviseValue-text%');
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtDeviseValue control
+				dialogValidator.addValidation('txtDeviseValue', 'regex', { regex: '%txtDeviseValue-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblChangeTitle" class="control text label" style=""><div class="text-holder">%lblChangeTitle-text%</div></div>
+			<input id="txtChangeValue" value="%txtChangeValue-text%" class="" type="text" %txtChangeValue-readonly%>
+			<script type="text/javascript">
+				calculatriceDialog.formatDetails['txtChangeValue'] = { formula: '%txtChangeValue-formula%', decimals: %txtChangeValue-resultPrecision% };
+			</script>
+		</div>
+
+	</div>
+
+	<div id="calcScriptHolder" style="display: none;">
+		&nbsp;
+	</div>
+
+	<script type="text/javascript">
+
+		// generate the dynamic javascript for handling format details of provided functions
+		calculatriceDialog.generateDynCalculatorLogic('calcScriptHolder');
+
+		// execute the dynamically generated javascript
+		calculatriceDialog.initializeCalculatriceDialog();
+
+	</script>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+		dialogsHandler.updateOkButtonOnValidation = %dialog-update-ok-button-on-validation%;
+
+	</script>
+
+</div>

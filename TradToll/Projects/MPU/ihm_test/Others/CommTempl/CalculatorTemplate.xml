@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="CALCULATOR_TITLE"/>
+	<widget type="Label" name="lblAmountTitle" text="CALC_AMOUNT_DUE"/>
+	<widget type="LineEditExt" name="txtAmountValue" text="" value="%CALC_AMOUNT_DUE%" readonly="%READONLY_OPT%"/>
+	<widget type="Label" name="lblPayedTitle" text="CALC_AMOUNT_RECEIVED"/>
+	<widget type="LineEditExt" name="txtPayedValue" value="0,00"/>
+	<widget type="Label" name="lblChangeTitleA" text="CALC_AMOUNT_TO_RETURN"/>
+	<widget type="Label" name="lblChangeTitleB" text="CALC_AMOUNT_MISSING"/>
+	<widget type="LineEditExt" name="txtChangeValue" text="" readonly="1"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_CLOSE_TEXT"/>
+</input_description>

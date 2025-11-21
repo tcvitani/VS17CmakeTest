@@ -1,0 +1,1 @@
+<input id="%id%" value="%value%" class="line-edit-item" type="%type%" maxlength="%max-length%" size="%char-size%" %readonly% %disabled%>

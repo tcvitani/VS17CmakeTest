@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="TITLE_PAIEMENT_DEVISES_2"/>
+	<widget type="Label" name="lblMessage" text="%DEVISE_2_MESSAGE%" />
+	<widget type="Label" name="lblDeviseNameTitle" text="DEVISE_2_CURRENCY"/>
+	<widget type="LineEdit" name="txtDeviseName" value="%DEVISE_CURRENCY%" readonly="1"/>
+	<widget type="HiddenLineEdit" name="txtDeviseRate" value="%DEVISE_RATE%"/>
+	<widget type="Label" name="lblDeviseTitle" text="DEVISE_2_AMOUNT"/>
+	<widget type="LineEditExt" name="txtDeviseValue" value="0,00"/>
+	<widget type="Label" name="lblChangeTitle" text="DEVISE_2_VALUE"/>
+	<widget type="LineEditExt" name="txtChangeValue" readonly="1"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" />
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_PREVIOUS_TEXT" />
+</input_description>

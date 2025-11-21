@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+
+	<widget type="Label" name="lblTitle" text="RESULTAT_TEST_LECTEURS_CODE_BARRE_ET_CLAVIER" />
+
+	<widget type="Label" name="lblSubtitle" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+	<widget type="TextEdit" name="txtMessage" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta rhoncus diam, eu consectetur est egestas ut. Vestibulum condimentum auctor augue sed luctus. Vestibulum aliquam, turpis eget dapibus euismod, mi tellus interdum risus, sed consectetur nulla turpis et metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin augue justo, porttitor at pellentesque sit amet, hendrerit eget sapien. Duis sed diam a eros fringilla ullamcorper sed convallis est. Sed mauris erat, ultrices non sodales vel, pellentesque ac sapien. Phasellus scelerisque lectus sit amet neque ultricies ultricies. Quisque feugiat neque sit amet orci commodo lacinia. Proin sed magna nunc, non faucibus quam. Quisque eu varius quam. Maecenas eu diam leo, in viverra nisi. Ut sit amet felis sit amet metus commodo euismod consectetur sit amet enim. Nullam sodales tincidunt sagittis. Sed consectetur mollis lectus, euismod vehicula lorem mollis in. Ut dapibus mauris sed lacus mollis ac consectetur nibh bibendum. Proin pulvinar mauris eget orci posuere ullamcorper. Donec laoreet lacinia metus id suscipit. Aenean pellentesque eleifend leo vel mattis. Donec vitae lobortis nisi. Phasellus scelerisque lectus sit amet neque ultricies ultricies. Quisque feugiat neque sit amet orci commodo lacinia. Proin sed magna nunc, non faucibus quam. Quisque eu varius quam. Maecenas eu diam leo, in viverra nisi. Ut sit amet felis sit amet metus commodo euismod consectetur sit amet enim. Nullam sodales tincidunt sagittis. Sed consectetur mollis lectus, euismod vehicula lorem mollis in. Ut dapibus mauris sed lacus mollis ac consectetur nibh bibendum. Proin pulvinar mauris eget orci posuere ullamcorper. Donec laoreet lacinia metus id suscipit. Aenean pellentesque eleifend leo vel mattis. Donec vitae lobortis nisi." />
+
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0" translate="1" />
+
+</input_description>

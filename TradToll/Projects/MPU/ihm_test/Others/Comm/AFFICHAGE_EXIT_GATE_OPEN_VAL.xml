@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="DLG_BARPASSAGE_OPEN_TITRE"/>
+	<widget type="Label" name="lblMessage" text="DLG_BARPASSAGE_OPEN_TEXTE"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_CANCEL_TEXT" readonly="0" translate="1"/>
+</input_description>

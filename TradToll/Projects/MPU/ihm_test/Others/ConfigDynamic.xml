@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+<PARAM Id="MaxWebClients" Value="2"/>
+<PARAM Id="TakeCtrlTimeoutSec" Value="10"/>
+<PARAM Id="IdleTimeoutDskSec" Value="0"/>
+<PARAM Id="IdleTimeoutWebSec" Value="300000"/>
+
+</CONFIG>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="CALCULATE_IKOF_DIALOG_TITLE"/>
+	
+	<widget type="Label" name="lblPIB" text="CHAMP_IKOF_PIB"/>
+	<widget type="LineEditExt" name="txtPIB" text=""/>
+	<widget type="Label" name="lblDateTime" text="CHAMP_IKOF_DATE_TIME"/>
+	<widget type="LineEditExt" name="txtDateTime" text=""/>
+	<widget type="Label" name="lblReceiptNb" text="CHAMP_IKOF_NB_RECEIPT"/>
+	<widget type="LineEditExt" name="txtReceiptNb" text=""/>
+	<widget type="Label" name="lblBussinesID" text="CHAMP_IKOF_BUSSINES_ID"/>
+	<widget type="LineEditExt" name="txtBussinesID" text=""/>
+	<widget type="Label" name="lblEnu" text="CHAMP_IKOF_ENU"/>
+	<widget type="LineEditExt" name="txtEnu" text=""/>
+	<widget type="Label" name="lblSoftwareCode" text="CHAMP_IKOF_SOFTWARE_CODE"/>
+	<widget type="LineEditExt" name="txtSoftwareCode" text=""/>
+	<widget type="Label" name="lblPrice" text="CHAMP_IKOF_PRICE"/>
+	<widget type="LineEditExt" name="txtPrice" text=""/>
+
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_CANCEL_TEXT" readonly="0"/>
+</input_description>

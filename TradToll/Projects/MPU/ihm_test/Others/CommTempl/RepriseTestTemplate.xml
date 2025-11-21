@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="%MSGBOX_TITLE%"/>
+	<widget type="Label" name="lblMessage" text="%MSGBOX_MSGTEXT%"/>
+	<widget type="PushButtonOK" name="btnOK" text="%BTN_NEXT_TEXT%" readonly="0"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="%CANCEL_BUTTON_TEXT%" readonly="0" translate="1"/>
+</input_description>

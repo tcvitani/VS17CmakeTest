@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css">
+	<widget type="Label" name="lblTitle"/>
+	<widget type="Label" name="lblMessage"/>
+	<widget type="Label" name="lblStartMsgNumTitle"/>
+	<widget type="LineEditExt" name="txtStartMsgNumValue" format="M" format_detail="9999;_"/>
+	<widget type="Label" enabled="0" name="lblEndMsgNumTitle"/>
+	<widget type="LineEditExt" name="txtEndMsgNumValue" format="M" format_detail="9999;_"/>
+	<widget type="PushButtonOK" name="btnOK"/>
+	<widget type="PushButtonCancel" name="btnCancel"/>
+</input_definition>

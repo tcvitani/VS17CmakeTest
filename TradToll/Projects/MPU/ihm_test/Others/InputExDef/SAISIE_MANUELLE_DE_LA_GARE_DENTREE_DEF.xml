@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css">
+	<widget type="Label" name="lblTitle"/>
+	<widget type="Label" name="lblMessage"/>
+	<widget type="Label" name="lblFilterTitle"/>
+	<widget type="LineEdit" name="txtFilter" format="FILTER" format_detail="lstData"/>
+	<widget type="Label" name="lblDataTitle"/>
+	<widget type="ListWidget" name="lstData"/>
+	<widget type="PushButtonOK" name="btnOK"/>
+	<widget type="PushButtonCancel" name="btnCancel"/>
+</input_definition>

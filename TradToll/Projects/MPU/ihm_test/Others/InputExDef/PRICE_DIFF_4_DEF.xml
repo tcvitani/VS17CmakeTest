@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css">
+	<widget type="Label" name="lblTitle"/>
+	<widget type="Label" name="lblMessage"/>
+	<widget type="Label" name="lblNumberTitle"/>
+	<widget type="LineEditExt" name="txtNumberValue" format="C" format_detail="" min_len="0" max_len="19" validator="^([1-9][0-9]{0,19}|0|.*)$"/>
+	<widget type="Label" name="lblTypeTitle"/>
+	<widget type="ComboBox" name="cboTypeValue"/>
+	<widget type="Label" name="lblIssuedByTitle"/>
+	<widget type="LineEdit" name="txtIssuedByValue" validator="^.*$"/>
+	<widget type="Label" name="lblIssuedDate"/>
+	<widget type="LineEditExt" name="txtIssuedDate" format="M" format_detail="9999-99-99" validator="^((((19|20)(([02468][048])|([13579][26]))-02-29))|((20[0-9][0-9])|(19[0-9][0-9]))-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))$"/>
+	<widget type="PushButtonOK" name="btnOK"/>
+	<widget type="PushButtonCancel" name="btnCancel"/>
+</input_definition>

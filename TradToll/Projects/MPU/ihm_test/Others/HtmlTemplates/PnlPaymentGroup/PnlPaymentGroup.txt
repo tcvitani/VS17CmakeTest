@@ -1,0 +1,7 @@
+<div id="%id%" class="panel %class%" style="%style%">
+
+	%TxtRemark%
+	%TxtErrPayment%
+	%TxtPayment%
+
+</div>

@@ -1,0 +1,76 @@
+﻿<MENU LABEL="Main menu" TOOLTIP="Main menu">
+	<ITEM LABEL="Connexion autre équipement" ICON="" TOOLTIP="Connexion autre équipement">
+		<SUBMENU submenuID="MNU_CONNEX">
+			<ITEM LABEL="Début" ACTION="DEBUTCONNEX" ICON="" TOOLTIP=""/>
+			<ITEM LABEL="Fin" ACTION="FINCONNEX" ICON="" TOOLTIP=""/>
+		</SUBMENU>
+	</ITEM>
+	<ITEM LABEL="Fonctions de maintenance" ICON="" TOOLTIP="Fonctions de maintenance">
+		<SUBMENU submenuID="MNU_MNTCE">
+			<ITEM LABEL="Tests" ICON="" TOOLTIP="Tests">
+				<SUBMENU submenuID="MNU_TESTS">
+					<ITEM TOOLTIP="" LABEL="Lecteur de cartes sans contact" ACTION="TESTCSC" ICON=""/>
+					<ITEM TOOLTIP="" LABEL="Afficheurs" ACTION="TESTAFF" ICON=""/>
+					<ITEM TOOLTIP="" LABEL="Lecteur de carte magnétique motorisé" ACTION="TESTLECTIDP" ICON=""/>
+					<ITEM TOOLTIP="" LABEL="Lecteur de cartes à puces / coupleur monétique" ACTION="TESTEMV" ICON=""/>
+					<ITEM TOOLTIP="" LABEL="Afficheurs" ACTION="TESTBALTLP" ICON=""/>
+					<ITEM TOOLTIP="" LABEL="Lecteur de carte magnétique manuel et codes barres" ACTION="TESTZIP" ICON=""/>
+					<ITEM TOOLTIP="" LABEL="Imprimante" ACTION="TESTDDD" ICON=""/>
+				</SUBMENU>
+			</ITEM>
+			<ITEM LABEL="Gestion des paramètres" ICON="" TOOLTIP="Gestion des paramètres">
+				<SUBMENU submenuID="MNU_PARAM">
+					<ITEM LABEL="Voie" ACTION="PARAMVOIE" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="Périphériques" ACTION="PARAMPER" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="Système" ACTION="PARAMSYST" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="DHM" ACTION="PARAMDHM" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="Rétention" ACTION="PARAMRET" ICON="" TOOLTIP=""/>
+				</SUBMENU>
+			</ITEM>
+			<ITEM LABEL="Autres" ICON="" TOOLTIP="Autres">
+				<SUBMENU submenuID="MNU_AUTRES">
+					<ITEM LABEL="Voie" ACTION="MAJREF" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="Périphériques" ACTION="EXPORT" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="DHM" ACTION="PCP" ICON="" TOOLTIP=""/>
+				</SUBMENU>
+			</ITEM>
+			<ITEM ACTION="SIMUEXPLOIT" LABEL="Simulation mode exploitation" ICON="" TOOLTIP=""/>
+			<ITEM ACTION="IO" LABEL="Gestion des entrées/sorties" ICON="" TOOLTIP=""/>
+			<ITEM ACTION="CHARGTPARAM" LABEL="Chargement des paramètres" ICON="" TOOLTIP=""/>
+			<ITEM ACTION="ESPION" LABEL="Espion" ICON="" TOOLTIP=""/>
+		</SUBMENU>
+	</ITEM>
+	<ITEM LABEL="Fonctions de maintenance" ICON="" TOOLTIP="Fonctions de maintenance">
+		<SUBMENU submenuID="MNU_MNTCE">
+			<ITEM LABEL="Tests" ICON="" TOOLTIP="Tests">
+				<SUBMENU submenuID="MNU_TESTS">
+					<ITEM LABEL="Lecteur de cartes sans contact" ACTION="TESTCSC" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="Afficheurs" ACTION="TESTAFF" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="Lecteur de carte magnétique motorisé" ACTION="TESTLECTIDP" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="Lecteur de cartes à puces / coupleur monétique" ACTION="TESTEMV" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="Afficheurs" ACTION="TESTBALTLP" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="Lecteur de carte magnétique manuel et codes barres" ACTION="TESTZIP" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="Imprimante" ACTION="TESTDDD" ICON="" TOOLTIP=""/>
+				</SUBMENU>
+			</ITEM>
+			<ITEM LABEL="Gestion des paramètres" ICON="" TOOLTIP="Gestion des paramètres">
+				<SUBMENU submenuID="MNU_PARAM">
+					<ITEM LABEL="Voie" ACTION="PARAMVOIE" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="Périphériques" ACTION="PARAMPER" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="Système" ACTION="PARAMSYST" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="DHM" ACTION="PARAMDHM" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="Rétention" ACTION="PARAMRET" ICON="" TOOLTIP=""/>
+				</SUBMENU>
+			</ITEM>
+			<ITEM LABEL="Autres" ACTION="0" ICON="" TOOLTIP="Autres">
+				<SUBMENU submenuID="MNU_AUTRES">
+					<ITEM LABEL="Voie" ACTION="MAJREF" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="Périphériques" ACTION="EXPORT" ICON="" TOOLTIP=""/>
+					<ITEM LABEL="DHM" ACTION="PCP" ICON="" TOOLTIP=""/>
+				</SUBMENU>
+			</ITEM>
+		</SUBMENU>
+	</ITEM>
+	<ITEM LABEL="Début / Fin de poste" ACTION="DEBUTFINPOSTE" ICON="" TOOLTIP=""/>
+	<ITEM LABEL="Comptage Poste" ACTION="COMPTEUR" ICON="" TOOLTIP=""/>
+</MENU>

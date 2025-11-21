@@ -1,0 +1,29 @@
+<div id="%id%" class="panel %class%" style="%style%">
+
+	%TxtClassTitle%
+	%TxtClass%
+
+	%TxtTypeTitle%
+	%TxtType%
+
+	%TxtEntryTitle%
+	%TxtEntry%
+
+	%TxtBalanceTitle%
+	%TxtBalance%
+
+	%TxtFareTitle%
+	%TxtFare%
+
+	%TxtAxlesTitle%
+	%TxtAxles%
+
+	%TxtSaleTitle%
+	%TxtSale%
+
+	%TxtSaleDueTitle%
+	%TxtSaleDue%
+
+	%PnlLaneSchema%
+
+</div>

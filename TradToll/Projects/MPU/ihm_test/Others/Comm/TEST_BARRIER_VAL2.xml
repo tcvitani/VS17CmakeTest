@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="TEST GABARIT"/>
+	<widget type="Label" name="lblMessage" text="Appuyez sur ENTREE ou cliquez sur TESTER pour rétablir le limiteur de hauteur à sa position initiale."/>
+	<widget type="PushButtonOK" name="btnOK" text="Terminer"/>
+</input_description>

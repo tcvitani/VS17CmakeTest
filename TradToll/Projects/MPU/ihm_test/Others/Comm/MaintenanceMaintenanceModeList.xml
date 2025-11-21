@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom_button_list show_generic="1"><option value="ACT_EXPLORER" text="Explorer"/><option value="ACT_TASKMNGR" text="Task manager"/><option value="ACT_REGEDIT" text="Regedit"/><option value="ACT_MAINT_RESET" text="Reset staze"/><option value="ACT_MAINT_TOOLS" text="Testovi uređaja"/></custom_button_list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text=""/>
+	<widget type="Label" name="lblMessage" text="Document interdit - Imprimante HS"/>
+	<widget type="PushButtonOK" name="btnOK" readonly="0" text="Valider"/>
+</input_description>

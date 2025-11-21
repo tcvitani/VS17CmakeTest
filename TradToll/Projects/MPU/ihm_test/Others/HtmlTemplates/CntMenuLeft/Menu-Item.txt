@@ -1,0 +1,4 @@
+<li id="%item-id%" class="%class%">
+	<a>%item-text%&nbsp;</a>
+	%item-submenu%
+</li>

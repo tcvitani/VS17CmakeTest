@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="%TEST_IMPRIMANTE%"/>
+	<widget type="Label" name="lblMessage" text="%TEST_IMPRIMANTE_MSG%"/>
+	<widget type="PushButtonOK" name="btnOK" text="%OK_BUTTON_TEXT%"/>
+</input_description>

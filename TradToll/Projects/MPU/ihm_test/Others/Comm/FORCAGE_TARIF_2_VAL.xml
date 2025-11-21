@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="FORCING_TARIF"/>
+	<widget type="Label" name="lblMessage" text="FORCING_TARIF_MSG"/>
+	<widget type="PushButtonOK" name="btnOK" text="IHM_CNT_OK" readonly="0"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_LOGIN_CANCEL_TEXT" readonly="0" translate="1"/>
+</input_description>

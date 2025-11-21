@@ -1,0 +1,5 @@
+<ul id="%id%" class="tabs %class%" style="%style%">
+
+	%tabs%
+
+</ul>

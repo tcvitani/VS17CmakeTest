@@ -59,8 +59,6 @@
 class LanguageLabel
 {
 public:
-	bool operator<(const LanguageLabel &x) const { return m_sLabelName < x.m_sLabelName; }
-
 	QString m_sLabelName;
 	QString m_sLabelTranslation;
 	QString m_sLabelTranslationForDsk;

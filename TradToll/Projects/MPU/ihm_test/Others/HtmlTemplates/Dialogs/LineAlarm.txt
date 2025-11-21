@@ -1,0 +1,5 @@
+<div>
+	<span>
+		%text-value%
+	</span>
+</div>

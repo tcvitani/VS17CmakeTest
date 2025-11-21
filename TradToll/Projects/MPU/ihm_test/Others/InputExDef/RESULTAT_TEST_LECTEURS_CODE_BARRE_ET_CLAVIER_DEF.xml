@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css" >
+
+	<widget type="Label" name="lblTitle" />
+
+	<widget type="Label" name="lblSubtitle" />
+	<widget type="TextEdit" name="txtMessage" />
+
+	<widget type="PushButtonOK" name="btnOK" />
+
+</input_definition>

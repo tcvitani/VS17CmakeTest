@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="VIDEO_TOLL_DIALOG_TITLE"/>
+	<widget type="Label" name="lblMessage" text="VIDEO_TOLL_DIALOG_MESSAGE"/>
+	<widget type="Label" name="lblLicensePlate" text="LABEL_LICENCE_PLATE"/>
+	<widget type="LineEditExt" name="txtLicencePlateID" value="" readonly="0"/>
+	<widget type="Label" name="lblCountryCode" text="LABEL_COUNTRY_CODE"/>
+	<widget type="ListWidget" name="lstData" value="" readonly="0" src="ListCountryCodes.xml"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0"/>		<widget type="PushButtonCancel" name="btnCancel" text="BTN_CANCEL_TEXT" readonly="0" />
+</input_description>

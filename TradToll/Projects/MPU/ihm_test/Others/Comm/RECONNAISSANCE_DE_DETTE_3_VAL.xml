@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="RECONNAISSANCE_DE_DETTE_3" />
+	<widget type="Label" name="lblMessage" text="IOU_3_MESSAGE" />
+	<widget type="Label" name="lblCompanyNameTitle" text="IOU_3_COMPANY_NAME" />
+	<widget type="LineEdit" name="txtCompanyNameValue" text="" value="" />
+	<widget type="Label" name="lblAddressTitle" text="IOU_3_ADDRESS" />
+	<widget type="LineEdit" name="txtAddressValue" text="" value=""/>
+	<widget type="Label" name="lblZIPAndCityTitle" text="IOU_3_POSTAL_CODE" />
+	<widget type="LineEdit" name="txtZIPValue" text="" value=""/>
+	<widget type="LineEdit" name="txtCityValue" text="" value=""/>
+	<widget type="Label" name="lblTelephoneTitle" text="IOU_3_PHONE" />
+	<widget type="LineEdit" name="txtTelephoneValue" text="" value=""/>
+	<widget type="Label" name="lblCountryTitle" text="IOU_3_COUNTRY"/>
+	<widget type="ComboBox" name="cboCountryValue" value="" readonly="0" src="CountryNames2.xml"/>
+	
+	<widget type="PushButtonOK" name="btnOK" text="BTN_NEXT_TEXT" readonly="0" translate="1" />
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_PREVIOUS_TEXT" readonly="0" translate="1" />
+</input_description>

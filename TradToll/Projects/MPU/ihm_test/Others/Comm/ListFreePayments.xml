@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<option_list>
+<option value="2" text="1 - Policija"/>
+<option value="3" text="2 - Vatrogasci"/>
+<option value="4" text="3 - Hitna pomoć"/>
+<option value="5" text="4 - Monteput"/>
+<option value="6" text="5 - Monteput – Sozina"/>
+<option value="7" text="6 - Delegacija"/>
+<option value="8" text="7 - Prethodno naplaćeno vozilo"/>
+<option value="9" text="8 - Lica sa invaliditetom"/>
+<option value="10" text="9 - Ostali"/>
+
+</option_list>

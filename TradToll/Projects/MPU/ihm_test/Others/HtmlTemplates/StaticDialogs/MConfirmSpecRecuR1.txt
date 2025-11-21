@@ -1,0 +1,47 @@
+<div id="Dialog" class="panel" style="">
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblOIB" class="control text label" style=""><div class="text-holder">%lblOIB-text%</div></div>
+			<input id="txtOIB" value="%txtOIB-text%" class="" type="text" %txtOIB-readonly%>
+		</div>
+
+		<div>
+			<div id="lblName" class="control text label" style=""><div class="text-holder">%lblName-text%</div></div>
+			<input id="txtName" value="%txtName-text%" class="" type="text" %txtName-readonly%>
+		</div>
+
+		<div>
+			<div id="lblAddress" class="control text label" style=""><div class="text-holder">%lblAddress-text%</div></div>
+			<input id="txtAddress" value="%txtAddress-text%" class="" type="text" %txtAddress-readonly%>
+		</div>
+
+		<div>
+			<div id="lblCity" class="control text label" style=""><div class="text-holder">%lblCity-text%</div></div>
+			<input id="txtCity" value="%txtCity-text%" class="" type="text" %txtCity-readonly%>
+		</div>
+
+		<div>
+			<div id="lblCountry" class="control text label" style=""><div class="text-holder">%lblCountry-text%</div></div>
+			<input id="txtCountry" value="%txtCountry-text%" class="" type="text" %txtCountry-readonly%>
+		</div>
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+
+	</script>
+
+</div>

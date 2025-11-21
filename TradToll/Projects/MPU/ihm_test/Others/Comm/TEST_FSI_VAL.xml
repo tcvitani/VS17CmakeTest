@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="TEST_FSI" translate="1"/>
+	<widget type="Label" name="lblMessage" text="TEST_FSI_MSG" translate="1"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_CLIENT_CLOSE_TEXT" readonly="0"/>
+</input_description>

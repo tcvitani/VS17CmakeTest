@@ -1,0 +1,106 @@
+<div id="Dialog" class="panel" style="">
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblNonFormatedText" class="control text label" style=""><div class="text-holder">%lblNonFormatedText-text%</div></div>
+			<input id="txtNonFormatedText" value="%txtNonFormatedText-text%" class="" type="text" %txtNonFormatedText-readonly%>
+		</div>
+
+		<div>
+			<div id="lblTitleString" class="control text label" style=""><div class="text-holder">%lblTitleString-text%</div></div>
+			<input id="txtMaxMinString" value="%txtMaxMinString-text%" class="" type="text" %txtMaxMinString-readonly%>
+		</div>
+
+		<div>
+			<div id="lblTitleNumber" class="control text label" style=""><div class="text-holder">%lblTitleNumber-text%</div></div>
+			<input id="txtMinMaxNumber" value="%txtMinMaxNumber-text%" class="" type="text" %txtMinMaxNumber-readonly%>
+			<script type="text/javascript">
+
+				$('#txtMinMaxNumber').setBehaviour
+				(
+					"numeric", 
+					{
+						preDecimals:	%txtMinMaxNumber-preDecimals%,
+						decimals:	%txtMinMaxNumber-decimals%,
+						allowNegative:	%txtMinMaxNumber-allowNegative%,
+						separatorChar:	'%txtMinMaxNumber-separatorChar%'
+					}
+				);
+
+			</script>
+		</div>
+
+		<div>
+			<div id="lblTitle4" class="control text label" style=""><div class="text-holder">%lblTitle4-text%</div></div>
+			<input id="txtRightMaskNumber" value="%txtRightMaskNumber-text%" class="" type="text" %txtRightMaskNumber-readonly%>
+			<script type="text/javascript">
+
+				$("#txtRightMaskNumber").mask
+				(
+					"%txtRightMaskNumber-mask%",
+					{
+						placeholder: "%txtRightMaskNumber-mask-placeholder%",
+						backwards: %txtRightMaskNumber-backward-input%
+					}
+				);
+				$('#txtRightMaskNumber').val('%txtRightMaskNumber-text%');
+
+
+			</script>
+		</div>
+
+		<div>
+			<div id="lblTitle1_5" class="control text label" style=""><div class="text-holder">%lblTitle1_5-text%</div></div>
+			<input id="txtDecimalNumber" value="%txtDecimalNumber-text%" class="" type="text" %txtDecimalNumber-readonly%>
+			<script type="text/javascript">
+
+				$('#txtDecimalNumber').setBehaviour
+				(
+					"numeric", 
+					{
+						preDecimals:	%txtDecimalNumber-preDecimals%,
+						decimals:	%txtDecimalNumber-decimals%,
+						allowNegative:	%txtDecimalNumber-allowNegative%,
+						separatorChar:	'%txtDecimalNumber-separatorChar%'
+					}
+				);
+
+			</script>
+		</div>
+
+		<div>
+			<div id="lblTitle1_6" class="control text label" style=""><div class="text-holder">%lblTitle1_6-text%</div></div>
+			<input id="txtFormattedInputMask" value="%txtFormattedInputMask-text%" class="" type="text" %txtFormattedInputMask-readonly%>
+			<script type="text/javascript">
+
+				$("#txtFormattedInputMask").mask
+				(
+					"%txtFormattedInputMask-mask%",
+					{
+						placeholder: "%txtFormattedInputMask-mask-placeholder%"
+					}
+				);
+				$('#txtFormattedInputMask').val('%txtFormattedInputMask-text%');
+
+			</script>
+		</div>
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+
+	</script>
+
+</div>

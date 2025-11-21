@@ -1,0 +1,68 @@
+<div id="Dialog" class="panel" style="">
+
+	<script type="text/javascript">
+		// initialize the dialog validator
+		dialogValidator.init();
+	</script>
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblTitle1" class="control text label" style=""><div class="text-holder">%lblTitle1-text%</div></div>
+			<input id="txtValue1" value="%txtValue1-text%" class="" type="text" %txtValue1-readonly%>
+			<script type="text/javascript">
+
+				$("#txtValue1").mask
+				(
+					"%txtValue1-mask%",
+					{
+						placeholder: "%txtValue1-mask-placeholder%"
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtValue1', 'regex', { regex: '%txtValue1-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblTitle2" class="control text label" style=""><div class="text-holder">%lblTitle2-text%</div></div>
+			<input id="txtValue2" value="%txtValue2-text%" class="" type="text" %txtValue2-readonly%>
+			<script type="text/javascript">
+
+				$("#txtValue2").mask
+				(
+					"%txtValue2-mask%",
+					{
+						placeholder: "%txtValue2-mask-placeholder%"
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtValue2', 'regex', { regex: '%txtValue2-regex%' } );
+			</script>
+		</div>
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+		dialogsHandler.updateOkButtonOnValidation = %dialog-update-ok-button-on-validation%;
+
+	</script>
+
+</div>

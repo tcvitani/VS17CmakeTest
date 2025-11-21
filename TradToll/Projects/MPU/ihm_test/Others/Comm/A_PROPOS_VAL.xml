@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<input_description>
+ 	<widget type="Label" name="lblTitle" text="A_PROPOS_TITLE"/>
+ 	<widget type="Label" name="lblMessage" text="EP§Logiciel d'exploitation des§Equipements de Paiement§Cofiroute§§Version EP : 2.3.0.4§Version ConfigEP : 1.3.9.0"/>
+ 	<widget type="PushButtonOK" name="btnOK" readonly="0" text="Valider"/>
+</input_description> 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TABLE_DATA>
+	<TITLE text="CHAMP_LICENCE_PLATE"/>
+	
+	<HEADER height="30" resize="true">
+		<COLUMN text="CHAMP_ETAT_PED"  width="100" align="right"/>
+		<COLUMN text="CHAMP_ANNEE1_BACKUP" width="240" align="center"/>
+		<COLUMN text="Column3" width="200" align="right"/>
+		<COLUMN text="Column4" width="100" align="right"/>
+	</HEADER>
+	
+	<BODY height="20">
+	   <ROW>
+		<COLUMN align="right" text="CHAMP_ETAT_TLP" ico="" action=""/>
+		<COLUMN align="left" text="Column2, Row1" ico="" action="" action_params="123,1"/>
+		<COLUMN align="Center" text="Column3, Row1" ico="" action="link" action_params="www.google.com?1"/>
+		<COLUMN align="right" text="Column4, Row1" />
+	   </ROW>
+	   <ROW >
+		<COLUMN align="left" text="Column1, Row2" ico="" action=""/>
+		<COLUMN align="Center" text="Column2, Row2" ico="" action="key" action_params="123,2"/>
+		<COLUMN align="Center" text="Column3, Row2" ico="" action="link" action_params="www.google.com?2"/>
+		<COLUMN align="right" text="Column4, Row21" />
+	   </ROW>
+	   <ROW>
+		<COLUMN align="Center" text="Column1, Row3" ico="" action=""/>
+		<COLUMN align="Center" text="Column2, Row3" ico="" action="key" action_params="123,3"/>
+		<COLUMN align="Center" text="Column3, Row3" ico="" action="link" action_params="www.google.com?3"/>
+		<COLUMN align="right" text="Column4, Row1" />
+	   </ROW>
+	</BODY>
+</TABLE_DATA>

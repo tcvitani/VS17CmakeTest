@@ -1,0 +1,11 @@
+<div>
+
+	<input type="text" class="line-edit-title label" value="%line-edit-label-value%" style="%line-edit-label-style%" size="%line-edit-label-char-size%" readonly="readonly" tabIndex="-1"><input type="hidden" value="%line-edit-item-desc%" class="line-edit-description">%line-edit-items%
+
+	<script type="text/javascript">
+
+		%line-edit-scripts%
+
+	</script>
+
+</div>

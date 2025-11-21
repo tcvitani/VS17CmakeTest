@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="CheckBox" name="chkAV1" text="AV1" value="false"/>
+	<widget type="CheckBox" name="chkTTA" text="TTA" value="false"/>
+	<widget type="CheckBox" name="chk1_2T" text="1/2T" value="false"/>
+	<widget type="CheckBox" name="chkJEP" text="JEP" value="false"/>
+	<widget type="CheckBox" name="chkAutre" text="Autre" value="false"/>
+	<widget type="ComboBox" name="cmbCountry" value="" src="CountryNames.xml"/>
+	<widget type="LineEdit" name="txtLicence" value=""/>
+	<widget type="LineEdit" name="txtMark" value=""/>
+	<widget type="LineEdit" name="txtModel" value=""/>
+	<widget type="LineEdit" name="txtColour" value=""/>
+	<widget type="LineEdit" name="txtName" value=""  readonly="1"/>
+	<widget type="LineEdit" name="txtLastName" value=""  readonly="1"/>
+	<widget type="LineEdit" name="txtAdress" value=""  readonly="1"/>
+	<widget type="LineEdit" name="txtCP" value=""  readonly="1"/>
+	<widget type="LineEdit" name="txtTown" value=""  readonly="1"/>
+	<widget type="LineEdit" name="txtComment" value=""/>
+</input_description>

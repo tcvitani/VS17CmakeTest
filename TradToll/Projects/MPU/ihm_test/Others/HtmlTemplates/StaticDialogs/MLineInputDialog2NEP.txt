@@ -1,0 +1,120 @@
+<div id="Dialog" class="panel" style="">
+
+	<script type="text/javascript">
+		// initialize the dialog validator
+		dialogValidator.init();
+	</script>
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblTitle1" class="control text label" style=""><div class="text-holder">%lblTitle1-text%</div></div>
+			<input id="txtValue1" value="%txtValue1-text%" class="" type="text" %txtValue1-readonly%>
+			<script type="text/javascript">
+
+				$('#txtValue1').setBehaviour
+				(
+					"numeric", 
+					{
+						preDecimals:	%txtValue1-preDecimals%,
+						decimals:	%txtValue1-decimals%,
+						allowNegative:	%txtValue1-allowNegative%,
+						separatorChar:	'%txtValue1-separatorChar%'
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtValue1', 'regex', { regex: '%txtValue1-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblTitle2" class="control text label" style=""><div class="text-holder">%lblTitle2-text%</div></div>
+			<input id="txtValue2" value="%txtValue2-text%" class="" type="text" %txtValue2-readonly%>
+			<script type="text/javascript">
+
+				$('#txtValue2').setBehaviour
+				(
+					"numeric", 
+					{
+						preDecimals:	%txtValue2-preDecimals%,
+						decimals:	%txtValue2-decimals%,
+						allowNegative:	%txtValue2-allowNegative%,
+						separatorChar:	'%txtValue2-separatorChar%'
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtValue2', 'regex', { regex: '%txtValue2-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblTitle3" class="control text label" style=""><div class="text-holder">%lblTitle3-text%</div></div>
+			<input id="txtValue3" value="%txtValue3-text%" class="" type="text" %txtValue3-readonly%>
+			<script type="text/javascript">
+
+				$('#txtValue3').setBehaviour
+				(
+					"numeric", 
+					{
+						preDecimals:	%txtValue3-preDecimals%,
+						decimals:	%txtValue3-decimals%,
+						allowNegative:	%txtValue3-allowNegative%,
+						separatorChar:	'%txtValue3-separatorChar%'
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtValue3', 'regex', { regex: '%txtValue3-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblTitle4" class="control text label" style=""><div class="text-holder">%lblTitle4-text%</div></div>
+			<input id="txtValue4" value="%txtValue4-text%" class="" type="text" %txtValue4-readonly%>
+			<script type="text/javascript">
+
+				$('#txtValue4').setBehaviour
+				(
+					"numeric", 
+					{
+						preDecimals:	%txtValue4-preDecimals%,
+						decimals:	%txtValue4-decimals%,
+						allowNegative:	%txtValue4-allowNegative%,
+						separatorChar:	'%txtValue4-separatorChar%'
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtValue4', 'regex', { regex: '%txtValue4-regex%' } );
+			</script>
+		</div>
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+		dialogsHandler.updateOkButtonOnValidation = %dialog-update-ok-button-on-validation%;
+
+	</script>
+
+</div>

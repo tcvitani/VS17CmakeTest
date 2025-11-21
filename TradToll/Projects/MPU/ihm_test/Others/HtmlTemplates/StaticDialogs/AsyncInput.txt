@@ -1,0 +1,79 @@
+<div id="WebAsyncInput">
+
+	<div class="title-bar">
+		<div class="title">Comments</div>
+		<div class="options">
+
+			<div class="control" style=""><input id="chkAV1" type="checkbox" %chkAV1-checked% %chkAV1-readonly%/><label for="chkAV1">%chkAV1-text%</label></div>
+			<div class="control" style=""><input id="chkTTA" type="checkbox" %chkTTA-checked% %chkTTA-readonly%/><label for="chkTTA">%chkTTA-text%</label></div>
+			<div class="control" style=""><input id="chk1_2T" type="checkbox" %chk1_2T-checked% %chk1_2T-readonly%/><label for="chk1_2T">%chk1_2T-text%</label></div>
+			<div class="control" style=""><input id="chkJEP" type="checkbox" %chkJEP-checked% %chkJEP-readonly%/><label for="chkJEP">%chkJEP-text%</label></div>
+			<div class="control" style=""><input id="chkAutre" type="checkbox" %chkAutre-checked% %chkAutre-readonly%/><label for="chkAutre">%chkAutre-text%</label></div>
+
+		</div>
+	</div>
+
+	<div class="contents">
+
+		<div id="label_4" class="control text" style="">Pays d'immatriculation :</div>
+		<div class="control" style="">
+			<select id="cmbCountry" class="list-control" %cmbCountry-readonly% >
+				%cmbCountry-data%
+			</select>
+		</div>
+
+		<div id="label_5" class="control text" style="">Immatriculation :</div>
+		<div class="control" style="">
+			<input id="txtLicence" type="text" value="%txtLicence-text%" %txtLicence-readonly%>
+		</div>
+
+		<div id="label_6" class="control text" style="">Marques & Modele :</div>
+		<div class="control" style="">
+			<input id="txtMark" type="text" value="%txtMark-text%"  %txtMark-readonly%>
+			<input id="txtModel" type="text" value="%txtModel-text%" %txtModel-readonly%>
+		</div>
+
+		<div id="label_7" class="control text" style="">Couleur :</div>
+		<div class="control" style="">
+			<input id="txtColour" type="text" value="%txtColour-text%" %txtColour-readonly%>
+		</div>
+
+		<div id="label_8" class="control text" style="">Nom :</div>
+		<div class="control" style="">
+			<input id="txtName" type="text" value="%txtName-text%" %txtName-readonly%>
+		</div>
+
+		<div id="label_9" class="control text" style="">Prenom :</div>
+		<div class="control" style="">
+			<input id="txtLastName" type="text" value="%txtLastName-text%" %txtLastName-readonly%>
+		</div>
+
+		<div id="label_10" class="control text" style="">Adresse :</div>
+		<div class="control" style="">
+			<input id="txtAdress" type="text" value="%txtAdress-text%" %txtAdress-readonly%>
+		</div>
+
+		<div id="label_11" class="control text" style="">CP / Ville :</div>
+		<div class="control" style="">
+			<input id="txtCP" type="text" value="%txtCP-text%" %txtCP-readonly%>
+			<input id="txtTown" type="text" value="%txtTown-text%" %txtTown-readonly%>
+		</div>
+
+		<div id="label_12" class="control text" style="">Commentaire :</div>
+		<div class="control" style="">
+			<input id="txtComment" type="text" value="%txtComment-text%" style="width: 287px;" %txtComment-readonly%>
+		</div>
+
+	</div>
+
+	<div class="buttons">
+
+		<div id="btnCommHide" class="control button clickable" style="">
+			<div class="image-holder">
+				<img src="./images/nep/ihm-images/empty.gif" />
+			</div>
+		</div>
+
+	</div>
+
+</div>

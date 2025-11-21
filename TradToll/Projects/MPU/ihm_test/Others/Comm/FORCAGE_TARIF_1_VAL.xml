@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="FORCING_TARIF" translate="1"/>
+	<widget type="Label" name="lblMessage" text="FORCING_TARIF_MSG5" translate="1"/>
+	<widget type="Label" name="lblDateTitle" text="FORCING_TARIF_DATE" translate="1"/>
+	<widget type="LineEditExt" name="txtDateValue" text="" value="20120404"/>
+	<widget type="Label" name="lblTimeTitle" text="FORCING_TARIF_TIME" translate="1"/>
+	<widget type="LineEditExt" name="txtTimeValue" text="" value="123541"/>
+	<widget type="Label" name="lblColorValue" text="OK_BUTTON_TEXT" readonly="0" translate="1"/>
+	<widget type="ComboBox" name="cboColorValue" readonly="0" enabled="1" src="ListTarifColors.xml">
+	</widget>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_LOGIN_OK_TEXT" readonly="0" translate="1"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_LOGIN_CANCEL_TEXT" readonly="0" translate="1"/>
+</input_description>

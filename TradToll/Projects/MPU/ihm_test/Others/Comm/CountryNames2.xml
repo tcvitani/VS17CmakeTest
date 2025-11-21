@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<option_list>
+	<option value="033:FRANCE" text="FRANCE"/>
+	<option value="093:AFGHANISTAN" text="AFGHANISTAN"/>
+	<option value="027:AFRIQUE DU SUD" text="AFRIQUE DU SUD"/>
+	<option value="355:ALBANIE" text="ALBANIE"/>
+	<option value="049:ALLEMAGNE" text="ALLEMAGNE"/>
+	<option value="244:ANGOLA" text="ANGOLA"/>
+	<option value="596:ANTILLES FRANÇAISES" text="ANTILLES FRANÇAISES"/>
+	<option value="599:ANTILLES NEERLANDAISES" text="ANTILLES NEERLANDAISES"/>
+	<option value="966:ARABIE SAOUDITE" text="ARABIE SAOUDITE"/>
+	<option value="054:ARGENTINE" text="ARGENTINE"/>
+	<option value="374:ARMENIE" text="ARMENIE"/>
+	<option value="061:AUSTRALIE" text="AUSTRALIE"/>
+	<option value="043:AUTRICHE" text="AUTRICHE"/>
+	<option value="994:AZERBAIDJAN" text="AZERBAIDJAN"/>
+	<option value="973:BAHREIN" text="BAHREIN"/>
+	<option value="880:BANGLADESH" text="BANGLADESH"/>
+	<option value="032:BELGIQUE" text="BELGIQUE"/>
+	<option value="229:BENIN" text="BENIN"/>
+	<option value="375:BIELORUSSIE" text="BIELORUSSIE"/>
+	<option value="591:BOLIVIE" text="BOLIVIE"/>
+	<option value="387:BOSNIE-HERZEGOVINE" text="BOSNIE-HERZEGOVINE"/>
+	<option value="267:BOTSWANA" text="BOTSWANA"/>
+	<option value="055:BRESIL" text="BRESIL"/>
+	<option value="673:BRUNEI" text="BRUNEI"/>
+	<option value="359:BULGARIE" text="BULGARIE"/>
+	<option value="226:BURKINA" text="BURKINA"/>
+	<option value="257:BURUNDI" text="BURUNDI"/>
+	<option value="855:CAMBODGE" text="CAMBODGE"/>
+	<option value="237:CAMEROUN" text="CAMEROUN"/>
+	<option value="001:CANADA" text="CANADA"/>
+	<option value="238:CAP-VERT" text="CAP-VERT"/>
+	<option value="056:CHILI" text="CHILI"/>
+	<option value="086:CHINE" text="CHINE"/>
+	<option value="357:CHYPRE" text="CHYPRE"/>
+	<option value="057:COLOMBIE" text="COLOMBIE"/>
+	<option value="269:COMORES" text="COMORES"/>
+	<option value="242:CONGO" text="CONGO"/>
+	<option value="850:COREE DU NORD" text="COREE DU NORD"/>
+	<option value="082:COREE DU SUD" text="COREE DU SUD"/>
+	<option value="506:COSTA RICA" text="COSTA RICA"/>
+	<option value="225:COTE D'IVOIRE" text="COTE D'IVOIRE"/>
+	<option value="385:CROATIE" text="CROATIE"/>
+	<option value="053:CUBA" text="CUBA"/>
+	<option value="045:DANEMARK" text="DANEMARK"/>
+	<option value="253:DJIBOUTI" text="DJIBOUTI"/>
+	<option value="020:EGYPTE" text="EGYPTE"/>
+	<option value="971:EMIRATS ARABES UNIS" text="EMIRATS ARABES UNIS"/>
+	<option value="593:EQUATEUR" text="EQUATEUR"/>
+	<option value="291:ERYTHREE" text="ERYTHREE"/>
+	<option value="034:ESPAGNE" text="ESPAGNE"/>
+	<option value="372:ESTONIE" text="ESTONIE"/>
+	<option value="001:ETATS-UNIS" text="ETATS-UNIS"/>
+	<option value="251:ETHIOPIE" text="ETHIOPIE"/>
+	<option value="679:FIDJI" text="FIDJI"/>
+	<option value="358:FINLANDE" text="FINLANDE"/>
+	<option value="241:GABON" text="GABON"/>
+	<option value="220:GAMBIE" text="GAMBIE"/>
+	<option value="995:GEORGIE" text="GEORGIE"/>
+	<option value="233:GHANA" text="GHANA"/>
+	<option value="350:GIBRALTAR" text="GIBRALTAR"/>
+	<option value="030:GRECE" text="GRECE"/>
+	<option value="473:GRENADE" text="GRENADE"/>
+	<option value="299:GROENLAND" text="GROENLAND"/>
+	<option value="590:GUADELOUPE" text="GUADELOUPE"/>
+	<option value="502:GUATEMALA" text="GUATEMALA"/>
+	<option value="594:GUIANA" text="GUIANA"/>
+	<option value="224:GUINEE" text="GUINEE"/>
+	<option value="240:GUINEE EQUATORIALE" text="GUINEE EQUATORIALE"/>
+	<option value="245:GUINEE-BISSAO" text="GUINEE-BISSAO"/>
+	<option value="594:GUYANNE FRANÇAISE" text="GUYANNE FRANÇAISE"/>
+	<option value="509:HAITI" text="HAITI"/>
+	<option value="504:HONDURAS" text="HONDURAS"/>
+	<option value="852:HONG KONG" text="HONG KONG"/>
+	<option value="036:HONGRIE" text="HONGRIE"/>
+	<option value="262:ILE DE LA REUNION" text="ILE DE LA REUNION"/>
+	<option value="230:ILE MAURICE" text="ILE MAURICE"/>
+	<option value="091:INDE" text="INDE"/>
+	<option value="062:INDONESIE" text="INDONESIE"/>
+	<option value="098:IRAN" text="IRAN"/>
+	<option value="964:IRAQ" text="IRAQ"/>
+	<option value="353:IRLANDE" text="IRLANDE"/>
+	<option value="354:ISLANDE" text="ISLANDE"/>
+	<option value="972:ISRAEL" text="ISRAEL"/>
+	<option value="039:ITALIE" text="ITALIE"/>
+	<option value="876:JAMAIQUE" text="JAMAIQUE"/>
+	<option value="081:JAPON" text="JAPON"/>
+	<option value="962:JORDANIE" text="JORDANIE"/>
+	<option value="007:KAZAKHSTAN" text="KAZAKHSTAN"/>
+	<option value="254:KENYA" text="KENYA"/>
+	<option value="996:KIRGHIZISTAN" text="KIRGHIZISTAN"/>
+	<option value="965:KOWEIT" text="KOWEIT"/>
+	<option value="856:LAOS" text="LAOS"/>
+	<option value="266:LESOTHO" text="LESOTHO"/>
+	<option value="371:LETTONIE" text="LETTONIE"/>
+	<option value="961:LIBAN" text="LIBAN"/>
+	<option value="231:LIBERIA" text="LIBERIA"/>
+	<option value="218:LIBYE" text="LIBYE"/>
+	<option value="423:LIECHTENSTEIN" text="LIECHTENSTEIN"/>
+	<option value="370:LITUANIE" text="LITUANIE"/>
+	<option value="352:LUXEMBOURG" text="LUXEMBOURG"/>
+	<option value="853:MACAO" text="MACAO"/>
+	<option value="389:MACEDOINE" text="MACEDOINE"/>
+	<option value="261:MADAGASCAR" text="MADAGASCAR"/>
+	<option value="060:MALAISIE" text="MALAISIE"/>
+	<option value="265:MALAWI" text="MALAWI"/>
+	<option value="960:MALDIVES" text="MALDIVES"/>
+	<option value="223:MALI" text="MALI"/>
+	<option value="356:MALTE" text="MALTE"/>
+	<option value="212:MAROC" text="MAROC"/>
+	<option value="596:MARTINIQUE" text="MARTINIQUE"/>
+	<option value="222:MAURITANIE" text="MAURITANIE"/>
+	<option value="269:MAYOTTE" text="MAYOTTE"/>
+	<option value="052:MEXIQUE" text="MEXIQUE"/>
+	<option value="508:MIQUELON" text="MIQUELON"/>
+	<option value="373:MOLDAVIE" text="MOLDAVIE"/>
+	<option value="377:MONACO" text="MONACO"/>
+	<option value="976:MONGOLIE" text="MONGOLIE"/>
+	<option value="664:MONTSERRAT" text="MONTSERRAT"/>
+	<option value="258:MOZAMBIQUE" text="MOZAMBIQUE"/>
+	<option value="264:NAMIBIE" text="NAMIBIE"/>
+	<option value="674:NAURU" text="NAURU"/>
+	<option value="977:NEPAL" text="NEPAL"/>
+	<option value="869:NEVIS" text="NEVIS"/>
+	<option value="505:NICARAGUA" text="NICARAGUA"/>
+	<option value="227:NIGER" text="NIGER"/>
+	<option value="234:NIGERIA" text="NIGERIA"/>
+	<option value="683:NIUE" text="NIUE"/>
+	<option value="047:NORVEGE" text="NORVEGE"/>
+	<option value="687:NOUVELLE CALEDONIE" text="NOUVELLE CALEDONIE"/>
+	<option value="064:NOUVELLE-ZELANDE" text="NOUVELLE-ZELANDE"/>
+	<option value="968:OMAN" text="OMAN"/>
+	<option value="256:OUGANDA" text="OUGANDA"/>
+	<option value="007:OUZBEKISTAN" text="OUZBEKISTAN"/>
+	<option value="092:PAKISTAN" text="PAKISTAN"/>
+	<option value="680:PALAU" text="PALAU"/>
+	<option value="507:PANAMA" text="PANAMA"/>
+	<option value="675:PAPOUASIE - NELLE GUINEE" text="PAPOUASIE - NELLE GUINEE"/>
+	<option value="595:PARAGUAY" text="PARAGUAY"/>
+	<option value="031:PAYS-BAS" text="PAYS-BAS"/>
+	<option value="051:PEROU" text="PEROU"/>
+	<option value="063:PHILIPPINES" text="PHILIPPINES"/>
+	<option value="048:POLOGNE" text="POLOGNE"/>
+	<option value="689:POLYNESIE FRANÇAISE" text="POLYNESIE FRANÇAISE"/>
+	<option value="351:PORTUGAL" text="PORTUGAL"/>
+	<option value="974:QATAR" text="QATAR"/>
+	<option value="236:REP. CENTRAFRICAINE" text="REP. CENTRAFRICAINE"/>
+	<option value="809:REPUBLIQUE DOMINICAINE" text="REPUBLIQUE DOMINICAINE"/>
+	<option value="420:REPUBLIQUE TCHEQUE" text="REPUBLIQUE TCHEQUE"/>
+	<option value="040:ROUMANIE" text="ROUMANIE"/>
+	<option value="044:ROYAUME-UNI" text="ROYAUME-UNI"/>
+	<option value="007:RUSSIE" text="RUSSIE"/>
+	<option value="250:RWANDA" text="RWANDA"/>
+	<option value="784:SAINT VINCENT-GRENADINES" text="SAINT VINCENT-GRENADINES"/>
+	<option value="378:SAINT-MARIN" text="SAINT-MARIN"/>
+	<option value="758:SAINTE-LUCIE" text="SAINTE-LUCIE"/>
+	<option value="503:SALVADOR" text="SALVADOR"/>
+	<option value="221:SENEGAL" text="SENEGAL"/>
+	<option value="381:SERBIE" text="SERBIE"/>
+	<option value="248:SEYCHELLES" text="SEYCHELLES"/>
+	<option value="232:SIERRA LEONE" text="SIERRA LEONE"/>
+	<option value="065:SINGAPOUR" text="SINGAPOUR"/>
+	<option value="421:SLOVAQUIE" text="SLOVAQUIE"/>
+	<option value="386:SLOVENIE" text="SLOVENIE"/>
+	<option value="252:SOMALIE" text="SOMALIE"/>
+	<option value="249:SOUDAN" text="SOUDAN"/>
+	<option value="094:SRI LANKA" text="SRI LANKA"/>
+	<option value="290:ST HELENE" text="ST HELENE"/>
+	<option value="508:ST PIERRE ET MIQUELON" text="ST PIERRE ET MIQUELON"/>
+	<option value="046:SUEDE" text="SUEDE"/>
+	<option value="041:SUISSE" text="SUISSE"/>
+	<option value="597:SURINAME" text="SURINAME"/>
+	<option value="268:SWAZILAND" text="SWAZILAND"/>
+	<option value="963:SYRIE" text="SYRIE"/>
+	<option value="007:TADJIKISTAN" text="TADJIKISTAN"/>
+	<option value="886:TAIWAN" text="TAIWAN"/>
+	<option value="255:TANZANIE" text="TANZANIE"/>
+	<option value="235:TCHAD" text="TCHAD"/>
+	<option value="066:THAILANDE" text="THAILANDE"/>
+	<option value="228:TOGO" text="TOGO"/>
+	<option value="216:TUNISIE" text="TUNISIE"/>
+	<option value="993:TURKMENISTAN" text="TURKMENISTAN"/>
+	<option value="090:TURQUIE" text="TURQUIE"/>
+	<option value="380:UKRAINE" text="UKRAINE"/>
+	<option value="598:URUGUAY" text="URUGUAY"/>
+	<option value="678:VANUATU" text="VANUATU"/>
+	<option value="039:VATICAN" text="VATICAN"/>
+	<option value="058:VENEZUELA" text="VENEZUELA"/>
+	<option value="084:VIET NAM" text="VIET NAM"/>
+	<option value="967:YEMEN" text="YEMEN"/>
+	<option value="381:YOUGOSLAVIE" text="YOUGOSLAVIE"/>
+	<option value="260:ZAMBIE" text="ZAMBIE"/>
+	<option value="259:ZANZIBAR" text="ZANZIBAR"/>
+	<option value="263:ZIMBABWE" text="ZIMBABWE"/>
+</option_list>

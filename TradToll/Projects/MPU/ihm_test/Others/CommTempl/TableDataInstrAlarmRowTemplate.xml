@@ -1,0 +1,6 @@
+<ROW>
+	<COLUMN align="center" text="%TYPE%" BOLD="%BOLDED%" ACTION="INSTR_ALARM" ACTION_PARAMS="%ID%"/>
+	<COLUMN align="center" text="%DATE%" BOLD="%BOLDED%" ACTION="INSTR_ALARM" ACTION_PARAMS="%ID%"/>
+	<COLUMN align="center" text="%TIME%" BOLD="%BOLDED%" ACTION="INSTR_ALARM" ACTION_PARAMS="%ID%"/>
+	<COLUMN align="left" text="%LABEL%" BOLD="%BOLDED%" ACTION="INSTR_ALARM" ACTION_PARAMS="%ID%"/>
+</ROW>

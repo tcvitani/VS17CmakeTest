@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css" >
+	<widget type="Label" name="lblTitle" />
+	<widget type="Label" name="lblColumn1Title" />
+	<widget type="Label" name="lblColumn1Contents" />
+	<widget type="Label" name="lblColumn2Title" />
+	<widget type="Label" name="lblColumn2Contents" />
+	<widget type="PushButtonOK" name="btnOK" />
+</input_definition>

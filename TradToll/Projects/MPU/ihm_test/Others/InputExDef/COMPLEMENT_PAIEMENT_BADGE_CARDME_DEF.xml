@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css">
+	<widget type="Label" name="lblTitle"/>
+	<widget type="Label" name="lblMessage"/>
+	<widget type="Label" name="lblRegistrationTitle"/>
+	<widget type="LineEditExt" name="txtRegistrationValue" format="C"/>
+	<widget type="Label" name="lblExpirationDateTitle"/>
+	<widget type="LineEditExt" name="txtExpirationDateValue" format="M" format_detail="99/99;_" validator="^(0[1-9]|1[012])\/[0-9]{2}$"/>
+	<widget type="Label" name="lblIssuerCodeTitle"/>
+	<widget type="LineEditExt" name="txtLuhnKey" format="LUHN_KEY" format_detail="lblLuhnKeyValidator" min_len="17" max_len="17"/>
+	<widget type="LabelLuhnCheck" name="lblLuhnKeyValidator"/>
+	<widget type="PushButtonOK" name="btnOK"/>
+	<widget type="PushButtonCancel" name="btnCancel"/>
+</input_definition>

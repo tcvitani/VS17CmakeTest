@@ -1,0 +1,5 @@
+<div id="%id%" class="panel %class%" style="%style%">
+
+	%LstAlarms%
+
+</div>

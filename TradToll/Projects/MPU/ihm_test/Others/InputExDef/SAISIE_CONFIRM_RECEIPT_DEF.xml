@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css" >
+	<widget type="CheckBox" name="chkName1"/>
+	<widget type="RadioButton" name="radName1"/>
+	<widget type="RadioButton" name="radName2"/>
+	<widget type="ComboBox" name="cmbName3"/>
+	<widget type="ListWidget" name="lstWidget"/>
+	<widget type="LineEdit" name="txtName4" format="C" format_detail=""/>
+	<widget type="TextEdit" name="txtName5"/>
+	<widget type="Label" name="lblName6"/>
+	<widget type="PushButtonOK" name="btnOK"/>
+	<widget type="PushButtonCancel" name="btnCancel"/>
+</input_definition>

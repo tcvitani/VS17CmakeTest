@@ -1,0 +1,66 @@
+<div id="Dialog" class="panel" style="">
+
+	<script type="text/javascript">
+		// initialize the dialog validator
+		dialogValidator.init();
+	</script>
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" >
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblRegistrationTitle" class="control text label" style="width: 40%;"><div class="text-holder">%lblRegistrationTitle-text%</div></div>
+			<input id="txtRegistrationValue" style="width: 270px;" value="%txtRegistrationValue-text%" class="" type="text" %txtRegistrationValue-readonly%>
+			<script type="text/javascript">
+				dialogValidator.addValidation('txtRegistrationValue', 'regex', { regex: '%txtRegistrationValue-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblCountryTitle" class="control text label" style="width: 40%;"><div class="text-holder">%lblCountryTitle-text%</div></div>
+			<select id="cboCountryValue" style="width: 200px; margin: 0px 0px 5px 0px;" %cboCountryValue-readonly%>
+				%cboCountryValue-data%
+			</select>
+			<script type="text/javascript">
+				// dialogValidator.addValidation('cboCountryValue', 'regex', { regex: '%cboCountryValue-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblMakeAndModelTitle" class="control text label" style="width: 40%;"><div class="text-holder">%lblMakeAndModelTitle-text%</div></div>
+			<input id="txtMakeValue" style="width: 100px;  margin-right: 0px;" value="%txtMakeValue-text%" class="" type="text" %txtMakeValue-readonly%>
+			<input id="txtModelValue" style="width: 162px; margin-left: 4px;" value="%txtModelValue-text%" class="" type="text" %txtModelValue-readonly%>
+			<script type="text/javascript">
+				dialogValidator.addValidation('txtMakeValue', 'regex', { regex: '%txtMakeValue-regex%' } );
+			</script>
+			<script type="text/javascript">
+				dialogValidator.addValidation('txtModelValue', 'regex', { regex: '%txtModelValue-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblColorValue" class="control text label" style="width: 40%;"><div class="text-holder">%lblColorValue-text%</div></div>
+			<input id="txtColorValue" style="width: 270px;" value="%txtColorValue-text%" class="" type="text" %txtColorValue-readonly%>
+			<script type="text/javascript">
+				dialogValidator.addValidation('txtColorValue', 'regex', { regex: '%txtColorValue-regex%' } );
+			</script>
+		</div>
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+		dialogsHandler.updateOkButtonOnValidation = %dialog-update-ok-button-on-validation%;
+
+	</script>
+
+</div>

@@ -1,0 +1,3 @@
+<div class="text-holder">
+	%text%
+</div>

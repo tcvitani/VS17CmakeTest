@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<option_list>
+<option value="1" text="1 - FRANC SUISSE"/>
+<option value="2" text="2 - COURONNE DANOISE"/>
+<option value="3" text="3 - DOLLAR AMERICAIN"/>
+<option value="4" text="4 - LIVRE STERLING"/>
+<option value="5" text="5 - DOLLAR CANADIEN"/>
+<option value="6" text="6 - YEN JAPONAIS"/>
+<option value="7" text="7 - COURONNE SUEDOIS"/>
+
+</option_list>

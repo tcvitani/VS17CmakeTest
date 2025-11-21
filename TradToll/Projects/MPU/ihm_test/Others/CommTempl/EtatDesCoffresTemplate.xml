@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="%VAULTS_STATUS_TITLE%" />
+	<widget type="Label" name="lblColumn1Title" text="%STATUS_NOTES_TITLE%" />
+	<widget type="Label" name="lblColumn1Contents" text="%STATUS_NOTES%" />
+	<widget type="Label" name="lblColumn2Title" text="%STATUS_COINS_TITLE%" />
+	<widget type="Label" name="lblColumn2Contents" text="%STATUS_COINS%" />
+	<widget type="PushButtonOK" name="btnOK" text="Fermer" readonly="0"  />
+</input_description>

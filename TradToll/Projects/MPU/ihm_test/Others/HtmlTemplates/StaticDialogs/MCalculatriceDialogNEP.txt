@@ -1,0 +1,117 @@
+<div id="Dialog" class="panel" style="">
+
+	<script type="text/javascript">
+		// initialize the dialog validator
+		dialogValidator.init();
+	</script>
+
+	<script type="text/javascript">
+
+		calculatriceDialog.formatDetails = new Array();
+
+	</script>
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div>
+			<div id="lblAmountTitle" class="control text label" style=""><div class="text-holder">%lblAmountTitle-text%</div></div>
+			<input id="txtAmountValue" value="%txtAmountValue-text%" class="" type="text" %txtAmountValue-readonly%>
+			<script type="text/javascript">
+				calculatriceDialog.formatDetails['txtAmountValue'] = { formula: '%txtAmountValue-formula%', decimals: %txtAmountValue-resultPrecision%};
+			</script>
+			<script type="text/javascript">
+
+				$('#txtAmountValue').setBehaviour
+				(
+					"numeric", 
+					{
+						preDecimals:	%txtAmountValue-preDecimals%,
+						decimals:	%txtAmountValue-decimals%,
+						allowNegative:	%txtAmountValue-allowNegative%,
+						separatorChar:	'%txtAmountValue-separatorChar%'
+					}
+				);
+				$('#txtAmountValue').val('%txtAmountValue-text%');
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtAmountValue control
+				dialogValidator.addValidation('txtAmountValue', 'regex', { regex: '%txtAmountValue-regex%' } );
+			</script>
+
+		</div>
+
+		<div>
+			<div id="lblPayedTitle" class="control text label" style=""><div class="text-holder">%lblPayedTitle-text%</div></div>
+			<input id="txtPayedValue" value="%txtPayedValue-text%" class="" type="text" %txtPayedValue-readonly%>
+			<script type="text/javascript">
+				calculatriceDialog.formatDetails['txtPayedValue'] = { formula: '%txtPayedValue-formula%', decimals: %txtPayedValue-resultPrecision% };
+			</script>
+			<script type="text/javascript">
+
+				$('#txtPayedValue').setBehaviour
+				(
+					"numeric", 
+					{
+						preDecimals:	%txtPayedValue-preDecimals%,
+						decimals:	%txtPayedValue-decimals%,
+						allowNegative:	%txtPayedValue-allowNegative%,
+						separatorChar:	'%txtPayedValue-separatorChar%'
+					}
+				);
+				$('#txtPayedValue').val('%txtPayedValue-text%');
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtPayedValue control
+				dialogValidator.addValidation('txtPayedValue', 'regex', { regex: '%txtPayedValue-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblChangeTitleA" class="control text label " style=""><div class="text-holder">%lblChangeTitleA-text%</div></div>
+			<div id="lblChangeTitleB" class="control text label " style=""><div class="text-holder">%lblChangeTitleB-text%</div></div>
+			<input id="txtChangeValue" value="%txtChangeValue-text%" class="" type="text" %txtChangeValue-readonly%>
+			<script type="text/javascript">
+				calculatriceDialog.formatDetails['txtChangeValue'] = 
+				{
+					formula: '%txtChangeValue-formula%',
+					decimals: %txtChangeValue-resultPrecision%,
+					useSwitchLogic: %txtChangeValue-useSwitchLogic%,
+					switchFormula: '%txtChangeValue-switchFormula%',
+					trueMessageContainer: '%txtChangeValue-trueMessageContainer%',
+					falseMessageContainer: '%txtChangeValue-falseMessageContainer%'
+				};
+			</script>
+		</div>
+
+	</div>
+
+	<div id="calcScriptHolder" style="display: none;">
+		&nbsp;
+	</div>
+
+	<script type="text/javascript">
+
+		// generate the dynamic javascript for handling format details of provided functions
+		calculatriceDialog.generateDynCalculatorLogic('calcScriptHolder');
+
+		// execute the dynamically generated javascript
+		calculatriceDialog.initializeCalculatriceDialog();
+
+	</script>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+		dialogsHandler.updateOkButtonOnValidation = %dialog-update-ok-button-on-validation%;
+
+	</script>
+
+</div>

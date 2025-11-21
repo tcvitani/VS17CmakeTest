@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css" >
+
+	<widget type="Label" name="lblTitle" />
+
+	<widget type="Label" name="lblMessage" />
+
+	<widget type="Label" name="lblLastNameTitle" />
+	<widget type="LineEdit" name="txtLastNameValue" />
+	<widget type="Label" name="lblFirstNameTitle" />
+	<widget type="LineEdit" name="txtFirstNameValue" />
+	<widget type="Label" name="lblAddressTitle" />
+	<widget type="LineEdit" name="txtAddressValue" />
+	<widget type="Label" name="lblZIPAndCityTitle" />
+	<widget type="LineEdit" name="txtZIPValue" />
+	<widget type="LineEdit" name="txtCityValue" />
+	<widget type="Label" name="lblCountryTitle" />
+	<widget type="ComboBox" name="cboCountryValue" />
+	<widget type="Label" name="lblOnBehalfOfCompanyTitle" />
+	<widget type="RadioButton" name="rbtnOnBehalfOfCompanyYes" />
+	<widget type="RadioButton" name="rbtnOnBehalfOfCompanyNo" />
+	<widget type="PushButtonOK" name="btnOK" />
+	<widget type="PushButtonCancel" name="btnCancel" />
+
+</input_definition>

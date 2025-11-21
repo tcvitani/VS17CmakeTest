@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="%ADDREV_OTHERS_TITLE%"/>
+	<widget type="Label" name="lblMessage" text="ADDREV_OVER_MAX_PRICE_MESSAGE"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_PREVIOUS_TEXT"/>
+</input_description>

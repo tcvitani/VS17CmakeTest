@@ -1,0 +1,5 @@
+remoteVideoDialog.init();
+remoteVideoDialog.addVideoStream("WebClientCamera1", "%WebClientCamera1Src%", "%WebClientCamera1BaseUrl%", "Cam&eacute;ra 1", "%VideoUserName1%", "%VideoPassword1%");
+remoteVideoDialog.addVideoStream("WebClientCamera2", "%WebClientCamera2Src%", "%WebClientCamera2BaseUrl%", "Cam&eacute;ra 2", "%VideoUserName2%", "%VideoPassword2%");
+remoteVideoDialog.enable();
+remoteVideoDialog.activateStream("WebClientCamera1");

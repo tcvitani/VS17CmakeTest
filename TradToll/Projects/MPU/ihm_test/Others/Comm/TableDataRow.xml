@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TABLE_DATA>
+	<BODY>
+		<ROW>
+			<COLUMN ALIGN="center" TEXT="0091111" ACTION="TRANSACTION_HIS_EDIT" ACTION_PARAMS="0099101"   TOOLTIP="Trs.Num: 0099101 Hour:12:55:58  Class:1 Payment:TLP"/>
+			<COLUMN ALIGN="center" TEXT="12:55:58"  TOOLTIP="Trs.Num: 0099101 Hour:12:55:58  Class:1 Payment:TLP"/>
+			<COLUMN ALIGN="center" TEXT="1"  ACTION="TRANSACTION_HIS_EDIT_CLASS" ACTION_PARAMS="0099101"  TOOLTIP="Trs.Num: 0099101 Hour:12:55:58  Class:1 Payment:TLP"/>
+			<COLUMN ALIGN="center" TEXT="TLP"  TOOLTIP="Trs.Num: 0099101 Hour:12:55:58  Class:1 Payment:TLP"/>
+		</ROW>
+	</BODY>
+</TABLE_DATA>

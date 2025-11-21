@@ -1,0 +1,17 @@
+<div id="%id%" class="panel %class%" style="%style%">
+
+	%IcoCollector%
+	%IcoLaneStatus%
+	%IcoLaneMode%
+	%TxtCollectorName%
+	%TxtCollectorId%
+	%TxtPlazaNameTitle%
+	%TxtPlazaName%
+	%TxtLaneNameTitle%
+	%TxtLaneName%
+	%TxtPlazaNbrTitle%
+	%TxtPlazaNbr%
+	%TxtLaneNbrTitle%
+	%TxtLaneNbr%
+
+</div>

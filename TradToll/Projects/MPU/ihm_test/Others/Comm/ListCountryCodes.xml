@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<option_list>
+<option value="MNE" text="MNE Montenegro "/>
+<option value="ALB" text="AL Albania "/>
+<option value="AND" text="AND Andorra "/>
+<option value="AUT" text="A Austria "/>
+<option value="BEL" text="B Belgium "/>
+<option value="BGR" text="BG Bulgaria "/>
+<option value="BIH" text="BIH Bosnia and Herzegovina "/>
+<option value="CHE" text="CH Switzerland "/>
+<option value="CYP" text="CY Cyprus "/>
+<option value="CZE" text="CZ Czech Republic "/>
+<option value="DEU" text="D Germany "/>
+<option value="DNK" text="DK Denmark "/>
+<option value="ESP" text="E Spain "/>
+<option value="EST" text="EST Estonia "/>
+<option value="FRA" text="F France "/>
+<option value="FIN" text="FIN Finland "/>
+<option value="LIE" text="FL Liechtenstein "/>
+<option value="GBR" text="UK United Kingdom "/>
+<option value="GRC" text="GR Greece "/>
+<option value="HUN" text="H Hungary "/>
+<option value="HRV" text="HR Croatia "/>
+<option value="ITA" text="I Italy "/>
+<option value="IRL" text="IRL Ireland "/>
+<option value="ISL" text="IS Iceland "/>
+<option value="LUX" text="L Luxembourg "/>
+<option value="LTU" text="LT Lithuania "/>
+<option value="LVA" text="LV Latvia "/>
+<option value="MCO" text="MC Monaco "/>
+<option value="MDA" text="MD Moldova "/>
+<option value="MKD" text="MK North Macedonia "/>
+<option value="MLT" text="M Malta "/>
+<option value="NOR" text="N Norway "/>
+<option value="NLD" text="NL Netherlands "/>
+<option value="POL" text="PL Poland "/>
+<option value="PRT" text="P Portugal "/>
+<option value="KOS" text="RKS Kosovo "/>
+<option value="ROU" text="RO Romania "/>
+<option value="RUS" text="RUS Russia "/>
+<option value="SMR" text="RSM San Marino "/>
+<option value="SWE" text="S Sweden "/>
+<option value="VAT" text="SCV Vatican City "/>
+<option value="SVK" text="SK Slovakia "/>
+<option value="SVN" text="SLO Slovenia "/>
+<option value="SRB" text="SRB Serbia "/>
+<option value="TUR" text="TR Turkey "/>
+<option value="UKR" text="UKR Ukraine "/>
+
+</option_list>

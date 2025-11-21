@@ -1,0 +1,26 @@
+<div id="Dialog" class="panel" style="%dialog-style%">
+
+	<div class="control Dialog-Title" style="%dialog-title-style%">
+
+		<span>%dialog-title%</span>
+
+	</div>
+
+	<div class="control Dialog-Body" style="%dialog-body-style%">
+
+		%dialog-body%
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="%dialog-buttons-style%">
+
+		%dialog-buttons%
+
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+
+	</script>
+</div>

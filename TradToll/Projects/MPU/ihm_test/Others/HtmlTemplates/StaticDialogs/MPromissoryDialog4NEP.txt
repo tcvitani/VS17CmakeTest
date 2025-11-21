@@ -1,0 +1,70 @@
+<div id="Dialog" class="panel" style="">
+
+	<script type="text/javascript">
+		// initialize the dialog validator
+		dialogValidator.init();
+	</script>
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+		<div>
+			<div id="lblNumberTitle" class="control text label" style=""><div class="text-holder">%lblNumberTitle-text%</div></div>
+			<input id="txtNumberValue" value="%txtNumberValue-text%" class="" type="text" %txtNumberValue-readonly%>
+			<script type="text/javascript">
+				dialogValidator.addValidation('txtNumberValue', 'regex', { regex: '%txtNumberValue-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblTypeTitle" class="control text label" style=""><div class="text-holder">%lblTypeTitle-text%</div></div>
+			<select id="cboTypeValue" style="width: 349px; margin: 0px 0px 5px 0px;" %cboTypeValue-readonly%>
+				%cboTypeValue-data%
+			</select>
+		</div>
+
+
+		<div>
+			<div id="lblIssuedByTitle" class="control text label" style=""><div class="text-holder">%lblIssuedByTitle-text%</div></div>
+			<input id="txtIssuedByValue" value="%txtIssuedByValue-text%" class="" type="text" %txtIssuedByValue-readonly%>
+		</div>
+
+		<div>
+			<div id="lblIssuedDate" class="control text label" style=""><div class="text-holder">%lblIssuedDate-text%</div></div>
+			<input id="txtIssuedDate" value="%txtIssuedDate-text%" class="" type="text" style="width: 280px;" %txtIssuedDate-readonly%>
+			<script type="text/javascript">
+
+				$("#txtIssuedDate").mask
+				(
+					"%txtIssuedDate-mask%",
+					{
+						placeholder: "%txtIssuedDate-mask-placeholder%"
+					}
+				);
+				$('#txtIssuedDate').val('%txtIssuedDate-text%');
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtIssuedDate', 'regex', { regex: '%txtIssuedDate-regex%' } );
+			</script>
+		</div>
+
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+		dialogsHandler.updateOkButtonOnValidation = %dialog-update-ok-button-on-validation%;
+
+	</script>
+
+</div>

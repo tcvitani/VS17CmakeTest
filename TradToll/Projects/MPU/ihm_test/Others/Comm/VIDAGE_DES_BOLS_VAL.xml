@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="EMPTYING_BOWLS_TITLE"/>
+	<widget type="Label" name="lblMessage" text="EMPTYING_BOWLS_MESSAGE"/>
+	<widget type="Label" name="lblTitle1" text="Bol 1 (x0.10€):"/>
+	<widget type="RadioButton" name="rbtnValue1Yes" value="false" text="EMPTYING_BOWLS_CONFIRM"/>
+	<widget type="RadioButton" name="rbtnValue1No" value="true" text="EMPTYING_BOWLS_DECLINE"/>
+	<widget type="Label" name="lblTitle2" text="Bol 2 (x0.20€):"/>
+	<widget type="RadioButton" name="rbtnValue2Yes" value="false" text="EMPTYING_BOWLS_CONFIRM"/>
+	<widget type="RadioButton" name="rbtnValue2No" value="true" text="EMPTYING_BOWLS_DECLINE"/>
+	<widget type="Label" name="lblTitle3" text="Bol 3 (x1.00€):"/>
+	<widget type="RadioButton" name="rbtnValue3Yes" value="false" text="EMPTYING_BOWLS_CONFIRM"/>
+	<widget type="RadioButton" name="rbtnValue3No" value="true" text="EMPTYING_BOWLS_DECLINE"/>
+	<widget type="Label" name="lblTitle4" text="Bol 4 (x1.00€):"/>
+	<widget type="RadioButton" name="rbtnValue4Yes" value="false" text="EMPTYING_BOWLS_CONFIRM"/>
+	<widget type="RadioButton" name="rbtnValue4No" value="true" text="EMPTYING_BOWLS_DECLINE"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_CANCEL_TEXT" readonly="0"/>
+</input_description>

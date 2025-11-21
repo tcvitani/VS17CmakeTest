@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by MFR (CS Systems D'information) -->
+<input_description>
+	<widget type="Label" name="lblTitle" text="RECONNAISSANCE_DE_DETTE_5"/>
+	<widget type="Label" name="lblMessage" text="IOU_5_MESSAGE"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0" translate="1"/>
+</input_description>

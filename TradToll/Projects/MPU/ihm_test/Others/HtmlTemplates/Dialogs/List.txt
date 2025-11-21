@@ -1,0 +1,15 @@
+<div>
+
+	<div class="holder">
+
+		<span class="list-title">%list-title%</span>
+
+	</div>
+
+	<select id="%control-id%" size="%list-item-count%" class="list-control" %disabled%>
+
+		%list-items%
+
+	</select>
+
+</div>

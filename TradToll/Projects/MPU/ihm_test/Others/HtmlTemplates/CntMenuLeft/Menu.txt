@@ -1,0 +1,21 @@
+<div id="%id%" class="">
+
+	<ul class="sf-menu">
+
+		%menu-body%
+
+	</ul>
+
+	<script type="text/javascript">
+
+		jQuery
+		(
+			function()
+			{
+				jQuery('#%id% ul.sf-menu').superfish();
+			}
+		);
+
+	</script>
+
+</div>

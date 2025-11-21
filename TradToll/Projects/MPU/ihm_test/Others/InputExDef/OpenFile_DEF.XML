@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css">
+	<widget type="Label" name="lblTitle" />
+	<widget type="ComboBox" name="cbDrive" format_detail="a,b,c,d" />
+	<widget type="PushButton" name="btnUp" />
+	<widget type="ListWidget" name="listViewFiles" multiselection="0"/>
+	<widget type="LineEdit" name="txtPath" format="C" format_detail="" min_len="0" max_len="255"/>
+	<widget type="ComboBox" name="cbFilter" />
+	<widget type="LineEdit" name="txtFile" format="C" format_detail="" min_len="0" max_len="255"/>
+	<widget type="PushButtonOK" name="btnOK" />
+	<widget type="PushButtonCancel" name="btnCancel" />
+</input_definition>

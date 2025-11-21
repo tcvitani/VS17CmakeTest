@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css" >
+	<widget type="Label" name="lblTitle" />
+	<widget type="Label" name="lblMessage" />
+	<widget type="Label" name="lblTitle1" />
+	<widget type="LineEditExt" name="txtValue1" format="N" format_detail="N4" validator="(^[1-9][0-9]{0,2}$)|(^[1][0-9]{3,3}$)|(^[0]$)|(^[2][0][0][0]$)"/>
+	<widget type="Label" name="lblTitle2" />
+	<widget type="LineEditExt" name="txtValue2" format="N" format_detail="N4" validator="(^[1-9][0-9]{0,2}$)|(^[1][0-9]{3,3}$)|(^[0]$)|(^[2][0][0][0]$)"/>
+	<widget type="Label" name="lblTitle3" />
+	<widget type="LineEditExt" name="txtValue3" format="N" format_detail="N4" validator="(^[1-9][0-9]{0,2}$)|(^[1][0-9]{3,3}$)|(^[0]$)|(^[2][0][0][0]$)"/>
+	<widget type="Label" name="lblTitle4" />
+	<widget type="LineEditExt" name="txtValue4" format="N" format_detail="N4" validator="(^[1-9][0-9]{0,2}$)|(^[1][0-9]{3,3}$)|(^[0]$)|(^[2][0][0][0]$)"/>
+	<widget type="PushButtonOK" name="btnOK" />
+	<widget type="PushButtonCancel" name="btnCancel" />
+</input_definition>

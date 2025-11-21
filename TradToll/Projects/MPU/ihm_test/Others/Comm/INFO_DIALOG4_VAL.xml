@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="TITRE_SAISIE_PAIEMENT_INCOMPLETE"/>
+	<widget type="Label" name="lblMessage" text="INCOMPLETE_MESSAGE"/>
+	<widget type="Label" name="lblTitle1" text="INCOMPLETE_AMOUNT"/>
+	<widget type="LineEdit" name="txtValue1" readonly="1" value="20,50"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0" translate="1"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_PREVIOUS_TEXT" readonly="0" translate="1" />
+</input_description>

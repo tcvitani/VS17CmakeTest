@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="TEST_LECTEURS_CODE_BARRE_2"/>
+	<widget type="Label" name="lblMessage" text="Tabuler des touches du clavier, lire une carte par friction ou scanner§un code barre. VALID pour sortir du test."/>
+	<widget type="Label" name="lblTitle1" text="Touches classiques:"/>
+	<widget type="LineEditExt" name="txtValue1" value=""/>
+	<widget type="Label" name="lblTitle2" text="Codes spéciaux:" />
+	<widget type="LineEditExt" name="txtValue2" value="" readonly="1"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_CLIENT_QUIT_TEXT" readonly="0"/>
+</input_description>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="TITRE_SAISIE_TROP_PERCU"/>
+	<widget type="Label" name="lblMessage" text="OVERPAYED_MESSAGE"/>
+	<widget type="Label" name="lblTitle1" text="OVERPAYED_AMOUNT"/>
+	<widget type="LineEdit" name="txtValue1" readonly="1" value="%OVERPAYED_AMOUNT_TO_RETURN%"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0" translate="1"/>
+</input_description>

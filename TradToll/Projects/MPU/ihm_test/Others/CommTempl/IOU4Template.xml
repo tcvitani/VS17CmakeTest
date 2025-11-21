@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by MFR (CS Systems D'information) -->
+<input_description>
+	<widget type="Label" name="lblTitle" text="RECONNAISSANCE_DE_DETTE_4"/>
+	<widget type="Label" name="lblMessage" text="IOU_4_MESSAGE"/>
+	<widget type="Label" name="lblNumberTitle" text="IOU_4_NUMBER"/>
+	<widget type="LineEdit" name="txtNumberValue" text="" value="%IOU_ID_NUMBER%"/>
+	<widget type="Label" name="lblTypeTitle" text="IOU_4_TYPE"/>
+	<widget type="ComboBox" name="cboTypeValue" value="%IOU_ID_TYPE%" readonly="0" src="IdentDocs.xml"/>
+	<widget type="Label" name="lblIssuedByTitle" text="IOU_4_ISSUER"/>
+	<widget type="LineEdit" name="txtIssuedByValue" text="%IOU_ID_ISSUER%" value="%IOU_ID_ISSUER%"/>
+	<widget type="Label" name="lblIssuedDate" text="IOU_4_DATE"/>
+	<widget type="LineEditExt" name="txtIssuedDate" text="%IOU_ID_DATE%" value="%IOU_ID_DATE%" format="M" format_detail="9999-99-99" validator="^((((19|20)(([02468][048])|([13579][26]))-02-29))|((20[0-9][0-9])|(19[0-9][0-9]))-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))$"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_FINISH_TEXT" readonly="0" translate="1"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_PREVIOUS_TEXT" readonly="0" translate="1"/>
+</input_description>

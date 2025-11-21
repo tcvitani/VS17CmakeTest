@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="LABEL_TITLE_CLIENT_DIALOG_INFO"/>
+	<widget type="Label" name="lblMessage" text="Z4_ER_OPERA_PRFL"/>
+	<widget type="PushButtonOK" name="btnOK" readonly="0" text="OK_BUTTON_TEXT"/>
+</input_description>

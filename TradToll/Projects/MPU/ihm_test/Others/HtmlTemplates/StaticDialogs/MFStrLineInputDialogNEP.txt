@@ -1,0 +1,36 @@
+<div id="Dialog" class="panel" style="">
+	<script type="text/javascript">
+		// initialize the dialog validator
+		dialogValidator.init();
+	</script>
+
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblTitle1" class="control text label" style=""><div class="text-holder">%lblTitle1-text%</div></div>
+			<input id="txtValue1" value="%txtValue1-text%" class="" type="text" %txtValue1-readonly%>
+			<script type="text/javascript">
+				// add regex validation for txtValue1 control
+				dialogValidator.addValidation('txtValue1', 'regex', { regex: '%txtValue1-regex%' } );
+			</script>
+		</div>
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+
+	</script>
+
+</div>

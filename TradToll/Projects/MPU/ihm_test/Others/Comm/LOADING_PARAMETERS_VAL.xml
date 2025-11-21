@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="LOADING_PARAMETERS"/>
+	<widget type="ComboBox" name="cbDrive" text="" value="C:\Csr">
+		<option value="1" text="C:\Csr"/>
+		<option value="2" text="C:\Csr\exe"/>
+	</widget>
+	<widget type="ListWidget" name="listViewFiles"/>
+	<widget type="PushButton" name="btnUp" text="BTN_OK_TEXT" readonly="0"/>
+	<widget type="LineEdit" name="txtPath" text="" value="TEST" readonly="1"/>
+	<widget type="ComboBox" name="cbFilter" readonly="0">
+		<option value="1" text="*.*(Tours)"/>
+		<option value="2" text="*.xml(XML)"/>
+		<option value="3" text="*.h(C/C++ Header file)"/>
+	</widget>
+	<widget type="LineEdit" name="txtFile"  text="" value="TEST" readonly="1"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_CANCEL_TEXT" readonly="0"/>
+</input_description>

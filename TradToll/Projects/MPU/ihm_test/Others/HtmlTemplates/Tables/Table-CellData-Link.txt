@@ -1,0 +1,1 @@
+<a target="self" href="%url%" style="%style%">%text%</a>

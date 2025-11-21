@@ -1,0 +1,54 @@
+<div id="Dialog" class="panel" style="">
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblTitle1" class="control text label" style=""><div class="text-holder">%lblTitle1-text%</div></div>
+			<div class="controlsHolder">
+				<input id="rbtnValue1Yes" value="%rbtnValue1Yes-value%" class="" type="radio" name="rbtnValue1" %rbtnValue1Yes-checked% %rbtnValue1Yes-readonly%><label for="rbtnValue1Yes">%rbtnValue1Yes-text%</label>
+				<input id="rbtnValue1No" value="%rbtnValue1No-value%" class="" type="radio" name="rbtnValue1" %rbtnValue1No-checked% %rbtnValue1No-readonly%><label for="rbtnValue1No">%rbtnValue1No-text%</label>
+			</div>
+		</div>
+		<br style="line-height: 1.5em;">
+		<div>
+			<div id="lblTitle2" class="control text label" style=""><div class="text-holder">%lblTitle2-text%</div></div>
+			<div class="controlsHolder">
+				<input id="rbtnValue2Yes" value="%rbtnValue2Yes-value%" class="" type="radio" name="rbtnValue2" %rbtnValue2Yes-checked% %rbtnValue2Yes-readonly%><label for="rbtnValue2Yes">%rbtnValue2Yes-text%</label>
+				<input id="rbtnValue2No" value="%rbtnValue2No-value%" class="" type="radio" name="rbtnValue2" %rbtnValue2No-checked% %rbtnValue2No-readonly%><label for="rbtnValue2No">%rbtnValue2No-text%</label>
+			</div>
+		</div>
+		<br style="line-height: 1.5em;">
+		<div>
+			<div id="lblTitle3" class="control text label" style=""><div class="text-holder">%lblTitle3-text%</div></div>
+			<div class="controlsHolder">
+				<input id="rbtnValue3Yes" value="%rbtnValue3Yes-value%" class="" type="radio" name="rbtnValue3" %rbtnValue3Yes-checked% %rbtnValue3Yes-readonly%><label for="rbtnValue3Yes">%rbtnValue3Yes-text%</label>
+				<input id="rbtnValue3No" value="%rbtnValue3No-value%" class="" type="radio" name="rbtnValue3" %rbtnValue3No-checked% %rbtnValue3No-readonly%><label for="rbtnValue3No">%rbtnValue3No-text%</label>
+			</div>
+		</div>
+		<br style="line-height: 1.5em;">
+		<div>
+			<div id="lblTitle4" class="control text label" style=""><div class="text-holder">%lblTitle4-text%</div></div>
+			<div class="controlsHolder">
+				<input id="rbtnValue4Yes" value="%rbtnValue4Yes-value%" class="" type="radio" name="rbtnValue4" %rbtnValue4Yes-checked% %rbtnValue4Yes-readonly%><label for="rbtnValue4Yes">%rbtnValue4Yes-text%</label>
+				<input id="rbtnValue4No" value="%rbtnValue4No-value%" class="" type="radio" name="rbtnValue4" %rbtnValue4No-checked% %rbtnValue4No-readonly%><label for="rbtnValue4No">%rbtnValue4No-text%</label>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+
+	</script>
+
+</div>

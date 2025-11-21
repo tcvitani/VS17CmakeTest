@@ -1,0 +1,17 @@
+<div id="%id%" class="panel %class%" style="%style%">
+
+	%IcoEntryGate%
+	
+	%IcoEntryLoop%
+	
+	%IcoCar%
+	
+	%IcoViolation%
+	
+	%IcoTrafficLight%
+	
+	%IcoExitGate%
+
+	%IcoExitLoop%
+
+</div>

@@ -1,0 +1,3 @@
+<IHM_SIMU_script>																										
+	<ACTION SERVICE="SAISIE_EX" TYPE="DEMANDE" DIALOG_ID="PRICE_DIFF_4" IS_FILE="1" VALUE="PRICE_DIFF_4_VAL.xml"/>
+</IHM_SIMU_script>

@@ -1,0 +1,5 @@
+<div id="%id%" class="control button clickable" style="">
+	<div class="image-holder">
+		<img src="./images/nep/ihm-images/empty.gif" />
+	</div>
+</div>

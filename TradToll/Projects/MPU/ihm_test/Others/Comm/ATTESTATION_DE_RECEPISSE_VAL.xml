@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+
+	<widget type="Label" name="lblTitle" text="LABEL_ATTESTATION_DE_RECEPISSE_TITLE"/>
+
+	<widget type="Label" name="lblMessage" text="LABEL_ATTESTATION_DE_RECEPISSE_MESSAGE"/>
+
+	<widget type="Label" name="lblOptionListLabel1" text="LABEL_ATTESTATION_DE_RECEPISSE_TYPE"/>
+	<widget type="ComboBox" name="cmbOptionList1" value="1">
+		<option value="1" text="LABEL_TAG"/>
+		<option value="2" text="LABEL_CARTE"/>
+	</widget>
+
+	<widget type="Label" name="lblOptionListLabel2" text="LABEL_ATTESTATION_DE_RECEPISSE_REASON" />
+	<widget type="ComboBox" name="cmbOptionList2" value="1">
+		<option value="1" text="LABEL_DEPOSIT_REASON_OPTION1"/>
+		<option value="2" text="LABEL_DEPOSIT_REASON_OPTION2"/>
+		<option value="3" text="LABEL_DEPOSIT_REASON_OPTION3"/>
+		<option value="4" text="LABEL_DEPOSIT_REASON_OPTION4"/>
+	</widget>
+
+
+	<widget type="Label" name="lblLineInputLabel" text="LABEL_ATTESTATION_DE_RECEPISSE_PAN"/>
+	<widget type="LineEditEx" name="txtLineInput" value=""/>
+
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_CANCEL_TEXT"/>
+
+</input_description>

@@ -1,0 +1,2 @@
+$('#%id%').setBehaviour("numeric", { preDecimals: %pre-decimals%, decimals: 0, allowNegative: %allow-negative% });
+$("#%id%").val("%value%");

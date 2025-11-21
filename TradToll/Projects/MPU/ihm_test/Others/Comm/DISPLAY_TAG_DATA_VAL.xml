@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by MFR (CS Systems D'information) -->
+<input_description>
+	<widget type="Label" name="lblTitle" text="TEST DE BALISE DE TABLE - LECTURE ATTRIBUTS"/>
+	<widget type="Label" name="lblSubtitle" text="Données lues"/>
+	<widget type="TextEdit" name="txtMessage" readonly="1" src="DisplayTagDataGeneratedTable.html" is_html="1"/>
+	<widget type="PushButtonOK" name="btnOK" text="Données lues"/>
+</input_description>

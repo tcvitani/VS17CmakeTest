@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom_button_list ui_file="" show_generic="0"><option value="ACT_MAINT_RESET" text="Reset staze"/><option value="ACT_MAINT_IMPORT" text="Import podataka"/></custom_button_list>

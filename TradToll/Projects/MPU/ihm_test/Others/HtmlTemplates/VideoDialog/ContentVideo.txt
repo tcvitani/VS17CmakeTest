@@ -1,0 +1,5 @@
+<div id="%id%" class="contents %class%" style="%style%">
+
+	<iframe src="video.html?camera_src=%restream-video-src%&base_url=%restream-video-base-url%" noresize="noresize" frameborder="0" border="0" cellspacing="0" scrolling="no" marginwidth="0" marginheight="0"></iframe>
+
+</div>

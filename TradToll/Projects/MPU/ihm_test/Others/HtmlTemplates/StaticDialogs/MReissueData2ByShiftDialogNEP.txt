@@ -1,0 +1,82 @@
+<div id="Dialog" class="panel" style="">
+
+	<script type="text/javascript">
+		// initialize the dialog validator
+		dialogValidator.init();
+	</script>
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblPostIDTitle" class="control text label" style=""><div class="text-holder">%lblPostIDTitle-text%</div></div>
+			<input id="txtPostIDValue" value="%txtPostIDValue-text%" class="" style="width: 120px; margin-right: 5px;" type="text" %txtPostIDValue-readonly%>
+			<script type="text/javascript">
+
+				$("#txtPostIDValue").mask
+				(
+					"%txtPostIDValue-mask%",
+					{
+						placeholder: "%txtPostIDValue-mask-placeholder%"
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtPostIDValue', 'regex', { regex: '%txtPostIDValue-regex%' } );
+			</script>
+
+			<input id="txtPostIDTimeValue" value="%txtPostIDTimeValue-text%" class="" style="width: 100px; margin-right: 5px;" type="text" %txtPostIDTimeValue-readonly%>
+			<script type="text/javascript">
+
+				$("#txtPostIDTimeValue").mask
+				(
+					"%txtPostIDTimeValue-mask%",
+					{
+						placeholder: "%txtPostIDTimeValue-mask-placeholder%"
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtPostIDTimeValue control
+				dialogValidator.addValidation('txtPostIDTimeValue', 'regex', { regex: '%txtPostIDTimeValue-regex%' } );
+			</script>
+
+			<input id="txtPostIDNumber" value="%txtPostIDNumber-text%" class="" style="width: 65px;" type="text" %txtPostIDNumber-readonly%>
+			<script type="text/javascript">
+
+				$("#txtPostIDNumber").mask
+				(
+					"%txtPostIDNumber-mask%",
+					{
+						placeholder: "%txtPostIDNumber-mask-placeholder%"
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtPostIDNumber', 'regex', { regex: '%txtPostIDNumber-regex%' } );
+			</script>
+		</div>
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%">
+		<input class="btnCancel" type="button" value="%btnCancel-text%">
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+		dialogsHandler.updateOkButtonOnValidation = %dialog-update-ok-button-on-validation%;
+
+	</script>
+
+</div>

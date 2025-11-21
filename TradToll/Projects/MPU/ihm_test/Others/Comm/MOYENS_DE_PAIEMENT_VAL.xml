@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+
+	<widget type="Label" name="lblTitle" text="MOYENS_DE_PAIEMENT" />
+
+	<widget type="Label" name="lblMessage" text="Introduire une carte dans le lecteur, scanner un code barre ou chosir un des moyens de paiement ci-dessous:" />
+
+	<widget type="ListWidget" name="lstData" value="0" readonly="0">
+		<option value="1" text="1-Cheque bancaire"/>
+		<option value="2" text="2-Especes (partiel)"/>
+		<option value="3" text="3-Devises"/>
+		<option value="4" text="4-Carte (tabulation)"/>
+		<option value="5" text="5-Badge (tabulation)"/>
+		<option value="6" text="6-Reconnaissance de dette"/>
+		<option value="7" text="7-Autres (requisition, travaux, etc.)"/>
+	</widget>
+
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0"  />
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_CANCEL_TEXT" readonly="0"  />
+
+</input_description>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="CORRECTION_BOWLS_TITLE"/>
+	<widget type="Label" name="lblMessage" text="BOWLS_CORRECTION_ERROR"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0"/>
+</input_description>

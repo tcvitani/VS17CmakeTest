@@ -1,0 +1,51 @@
+<div id="Dialog" class="panel" style="">
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div>
+			<div id="lblUsingCode" class="control text label" style=""><div class="text-holder">%lblUsingCode-text%</div></div>
+			<input id="txtUsingCode" value="%txtUsingCode-text%" class="" type="text" maxlength="19" size="10" %txtUsingCode-readonly%>
+		</div>
+
+		<div>
+			<div id="lblEntryPlaza" class="control text label" style=""><div class="text-holder">%lblEntryPlaza-text%</div></div>
+			<input id="txtEntryPlaza" value="%txtEntryPlaza-text%" class="" type="password" maxlength="20" size="10" %txtEntryPlaza-readonly%>
+		</div>
+		
+		<div>
+			<div id="lblEntrylane" class="control text label" style=""><div class="text-holder">%lblEntrylane-text%</div></div>
+			<input id="txtEntryLane" value="%txtEntryLane-text%" class="" type="text" maxlength="19" size="10" %txtEntryLane-readonly%>
+		</div>
+
+		<div>
+			<div id="lblEntryDHM" class="control text label" style=""><div class="text-holder">%lblEntryDHM-text%</div></div>
+			<input id="txtEntryDHM" value="%txtEntryDHM-text%" class="" type="password" maxlength="20" size="10" %txtEntryDHM-readonly%>
+		</div>
+		
+		<div>
+			<div id="lblTrsID" class="control text label" style=""><div class="text-holder">%lblTrsID-text%</div></div>
+			<input id="txtTrsID" value="%txtTrsID-text%" class="" type="text" maxlength="19" size="10" %txtTrsID-readonly%>
+		</div>
+
+		<div>
+			<div id="lblAlprCtrl" class="control text label" style=""><div class="text-holder">%lblAlprCtrl-text%</div></div>
+			<input id="txtAlprCtrl" value="%txtAlprCtrl-text%" class="" type="password" maxlength="20" size="10" %txtAlprCtrl-readonly%>
+		</div>
+		
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+
+	</script>
+
+</div>

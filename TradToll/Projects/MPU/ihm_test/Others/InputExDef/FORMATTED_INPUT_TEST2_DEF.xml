@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css">
+	<widget type="Label" name="lblTitle"/>
+	<widget type="Label" name="lblMessage"/>
+	<widget type="LineEdit" name="txtNonFormatedText"/>
+	<widget type="LineEditExt" name="txtLuhnKey" format="LUHN_KEY" format_detail="lblLuhnKeyValidator" min_len="4" max_len="8"  />
+	<widget type="LabelLuhnCheck" name="lblLuhnKeyValidator"/>
+	<widget type="LineEditExt" name="txtMinMaxNumber" format="F" format_detail="txtNonFormatedText+txtLuhnKey"/>
+	<widget type="LineEditExt" name="txtDecimalNumber" format="N" format_detail="N+6,2"/>
+	<widget type="LineEditExt" name="txtCalculatedValue" format="F" format_detail="txtMinMaxNumber *  txtDecimalNumber /100 - 45"/>
+	<widget type="PushButtonOK" name="btnOK"/>
+	<widget type="PushButtonCancel" name="btnCancel"/>
+</input_definition>

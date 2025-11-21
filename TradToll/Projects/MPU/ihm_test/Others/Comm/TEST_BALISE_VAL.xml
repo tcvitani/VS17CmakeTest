@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="TEST DE BALISE DE TABLE"/>
+	<widget type="Label" name="lblMessage" text=""/>
+	<widget type="ListWidget" name="lstData" value="0" readonly="0" src="ListTestBalise.xml"/>
+	<widget type="PushButtonOK" name="btnOK" text="SUIVANT >>" readonly="0" translate="1"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="ANNULER" readonly="0" translate="1"/>
+</input_description>

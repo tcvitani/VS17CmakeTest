@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="CONSULTATION COMPTEURS"/>
+	<widget type="Label" name="lblMessage" text="Veuillez sélectionner le type de compteur à consulter : "/>
+	<widget type="ListWidget" name="lstData" src="ListCounters1.xml" value="0" readonly="0"></widget>
+	<widget type="PushButtonOK" name="btnOK" text="SUIVANT >>" readonly="0"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="ANNULER" readonly="0"/>
+</input_description>

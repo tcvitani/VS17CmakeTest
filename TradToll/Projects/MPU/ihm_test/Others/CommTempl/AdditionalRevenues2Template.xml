@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="%ADD_REV_2_TITLE%"/>
+	<widget type="Label" name="lblMessage" text="ADD_REV_MSG2"/>
+	<widget type="ListWidget" name="lstData" value="0" readonly="0" src="ListAdditionalRevenues2.xml"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_NEXT_TEXT" readonly="0" translate="1"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_PREVIOUS_TEXT" readonly="0" translate="1"/>
+</input_description>

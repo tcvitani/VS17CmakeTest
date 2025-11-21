@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css">
+	<widget type="Label" name="lblTitle"/>
+	<widget type="Label" name="lblMessage"/>
+	<widget type="Label" name="lblStationTitle"/>
+	<widget type="LineEditExt" name="txtStationValue" format="M" format_detail="9999;_" validator="^([0-9]{0,4})$"/>
+	<widget type="Label" name="lblScheduleTitle"/>
+	<widget type="LineEditExt" name="txtScheduleValue" format="M" format_detail="99;_" validator="^([0-9]{0,2})$"/>
+	<widget type="PushButtonOK" name="btnOK"/>
+	<widget type="PushButtonCancel" name="btnCancel"/>
+</input_definition>

@@ -1,0 +1,77 @@
+<div id="Dialog" class="panel" style="">
+
+	<script type="text/javascript">
+		// initialize the dialog validator
+		dialogValidator.init();
+	</script>
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblRegistrationTitle" class="control text label" style=""><div class="text-holder">%lblRegistrationTitle-text%</div></div>
+			<input id="txtRegistrationValue" value="%txtRegistrationValue-text%" class="" type="text" style="width: 300px;" %txtRegistrationValue-readonly%>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtRegistrationValue', 'regex', { regex: '%txtRegistrationValue-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblExpirationDateTitle" class="control text label" style=""><div class="text-holder">%lblExpirationDateTitle-text%</div></div>
+			<input id="txtExpirationDateValue" value="%txtExpirationDateValue-text%" class="" type="text" style="width: 280px;" %txtExpirationDateValue-readonly%>
+			<script type="text/javascript">
+
+				$("#txtExpirationDateValue").mask
+				(
+					"%txtExpirationDateValue-mask%",
+					{
+						placeholder: "%txtExpirationDateValue-mask-placeholder%"
+					}
+				);
+				$('#txtExpirationDateValue').val('%txtExpirationDateValue-text%');
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtExpirationDateValue', 'regex', { regex: '%txtExpirationDateValue-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblIssuerCodeTitle" class="control text label" style=""><div class="text-holder">%lblIssuerCodeTitle-text%</div></div>
+			<input id="txtLuhnKey" value="%txtLuhnKey-text%" class="" type="text" style="width: 315px;" %txtLuhnKey-readonly% maxlength="%txtLuhnKey-maxlen%">
+			<div id="lblLuhnKeyValidator" class="luhn-validator">&nbsp;</div>
+
+			<script type="text/javascript">
+
+				addLuhnValidation('txtLuhnKey', 'lblLuhnKeyValidator', %txtLuhnKey-minlen%, %txtLuhnKey-maxlen%);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtLuhnKey', 'regex', { regex: '%txtLuhnKey-regex%' } );
+				dialogValidator.addValidation('txtLuhnKey', 'luhn', { minlen: %txtLuhnKey-minlen%, maxlen: %txtLuhnKey-maxlen% } );
+			</script>
+		</div>
+
+		
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+		dialogsHandler.updateOkButtonOnValidation = %dialog-update-ok-button-on-validation%;
+
+	</script>
+
+</div>

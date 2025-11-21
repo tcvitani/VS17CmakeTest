@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by MFR (CS Systems D'information) -->
+<input_description>
+	<widget type="Label" name="lblTitle" text="PRICE_DIFF_4"/>
+	<widget type="Label" name="lblMessage" text="IOU_4_MESSAGE"/>
+	<widget type="Label" name="lblNumberTitle" text="IOU_4_NUMBER"/>
+	<widget type="LineEdit" name="txtNumberValue" text="" value=""/>
+	<widget type="Label" name="lblTypeTitle" text="IOU_4_TYPE"/>
+	<widget type="ComboBox" name="cboTypeValue" value="" readonly="0" src="IdentDocs.xml"/>
+	<widget type="Label" name="lblIssuedByTitle" text="IOU_4_ISSUER"/>
+	<widget type="LineEdit" name="txtIssuedByValue" text="" value=""/>
+	<widget type="Label" name="lblIssuedDate" text="IOU_4_DATE"/>
+	<widget type="LineEditExt" name="txtIssuedDate" text="2000-01-01" value="2000-01-01" />
+	<widget type="PushButtonOK" name="btnOK" text="BTN_FINISH_TEXT" readonly="0" translate="1"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_PREVIOUS_TEXT" readonly="0" translate="1"/>
+</input_description>

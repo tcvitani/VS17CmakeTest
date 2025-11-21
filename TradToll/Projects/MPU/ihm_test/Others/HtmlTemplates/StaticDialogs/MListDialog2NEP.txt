@@ -1,0 +1,107 @@
+<div id="Dialog" class="panel" style="">
+
+	<script type="text/javascript">
+		// initialize the dialog validator
+		dialogValidator.init();
+	</script>
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblFilterTitle" class="control text label" style=""><div class="text-holder">%lblFilterTitle-text%</div></div>
+			<input id="txtFilter" value="%txtFilter-text%" class="" type="text" %txtFilter-readonly%>
+		</div>
+		<div>
+			<div id="lblDataTitle" class="control text label" style=""><div class="text-holder">%lblDataTitle-text%</div></div>
+			<select id="lstData" size="11" style="width: 349px;" %lstData-readonly%>
+				%lstData-data%
+			</select>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('lstData', 'regex', { regex: '.*' } );
+			</script>
+		</div>
+		<script type="text/javascript">
+
+			function bindFilteredList(listName, data, filter)
+			{
+				// case insensitive regex for acceptable values
+				includeRegEx = new RegExp(filter, 'i');
+
+				// unacceptable values - remove all by default
+				excludeRegEx = new RegExp('.*', 'i');
+
+				filteredData = data;
+				if(filter != '')
+				{
+					filteredData = new Array();
+					$.each
+					(
+						data,
+						function(key, val)
+						{
+							if(includeRegEx.test(val))
+								filteredData[key] = val;
+
+						}
+					)
+				}
+
+				// remove all list items
+				$(listName).removeOption(excludeRegEx);
+
+				// add filtered items
+				$(listName).addOption(filteredData, false);
+			}
+			
+		</script>
+		<script type="text/javascript">
+
+			// copy the list items into an array
+			var lstDataItems = Array();
+			$("#lstData option").each
+			(
+				function(index, item)
+				{
+					lstDataItems[$(item).attr('value')] = $(item).html();
+				}
+			);
+
+			// bind the list for the first time
+			bindFilteredList('#lstData', lstDataItems, '');
+
+			// add handler for the keyup event on the textbox to filter the list contents
+			$('#txtFilter').keyup
+			(
+				function(event)
+				{
+					// if the "down" key has been pressed, shift focus to the list
+					if(event.keyCode == 40)
+					{
+						$('#lstData').focus();
+						return;
+					}
+					bindFilteredList('#lstData', lstDataItems, $('#txtFilter').val());
+				}
+			);
+
+		</script>
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+		dialogsHandler.updateOkButtonOnValidation = %dialog-update-ok-button-on-validation%;
+
+	</script>
+
+</div>

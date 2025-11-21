@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TABLE_DATA>
+	<TITLE text="CHAMP_LICENCE_PLATE"/>
+	
+	<HEADER height="30" resize="false">
+		<COLUMN text="CHAMP_ETAT_PED"  width="200" align="right"  font="Arial,11,-1,5,50,0,0,1,0,0"/>
+		<COLUMN text="CHAMP_ANNEE1_BACKUP" width="240" align="center" font="Arial,14,-1,5,50,0,0,0,0,0"/>
+		<COLUMN text="Column3" width="255" align="right"/>
+		<COLUMN text="" width="20" align="right"/>
+	</HEADER>
+	
+	<BODY height="25">
+	   <ROW>
+		<COLUMN align="right" text="CHAMP_ETAT_TLP" ico="ImgProcess" font="Arial,14,-1,5,50,0,0,0,0,0" />
+		<COLUMN text="Column2, Row1" action="GENERICEXECUTE" action_params="cmd"/>
+		<COLUMN align="right" text="Column3, Row1"  />
+		<COLUMN text="" ico="ImgProcess" action="GENERICOPENLINK" action_params="http://www.google.com?1"/>
+	   </ROW>
+	   <ROW >
+		<COLUMN align="left" text="Column1, Row2" />
+		<COLUMN text="Column2, Row2" ico="ImgVac" action="GENERICSENDKEY" action_params="123"/>
+		<COLUMN align="right" text="Column3, Row2" />
+		<COLUMN text="" ico="ImgProcess" action="GENERICOPENLINK" action_params="http://www.google.com?2"/>
+	   </ROW>
+	   <ROW>
+		<COLUMN align="Center" text="Column1, Row3" />
+		<COLUMN text="Column2, Row3" ico="ImgVac" action="GENERICSENDKEY" action_params="123"/>
+		<COLUMN align="right" text="Column3, Row3" />
+		<COLUMN text="" ico="ImgProcess" action="GENERICOPENLINK" action_params="http://www.google.com?3"/>
+	   </ROW>
+	   <ROW>
+		<COLUMN align="Center" text="Column1, Row3" />
+		<COLUMN text="Column2, Row3" ico="ImgVac" action="GENERICSENDKEY" action_params="123"/>
+		<COLUMN align="right" text="Column3, Row3" />
+		<COLUMN text="" ico="ImgProcess" action="GENERICOPENLINK" action_params="http://www.google.com?3"/>
+	   </ROW>
+	   <ROW>
+		<COLUMN align="Center" text="Column1, Row3" />
+		<COLUMN text="Column2, Row3" ico="ImgVac" action="GENERICSENDKEY" action_params="123"/>
+		<COLUMN align="right" text="Column3, Row3" />
+		<COLUMN text="" ico="ImgProcess" action="GENERICOPENLINK" action_params="http://www.google.com?3"/>
+	   </ROW>
+	   <ROW>
+		<COLUMN align="Center" text="Column1, Row3" />
+		<COLUMN text="Column2, Row3" ico="ImgVac" action="GENERICSENDKEY" action_params="123"/>
+		<COLUMN align="right" text="Column3, Row3" />
+		<COLUMN text="" ico="ImgProcess" action="GENERICOPENLINK" action_params="http://www.google.com?3"/>
+	   </ROW>
+	   <ROW>
+		<COLUMN align="Center" text="Column1, Row3" />
+		<COLUMN text="Column2, Row3" ico="ImgVac" action="GENERICSENDKEY" action_params="123"/>
+		<COLUMN align="right" text="Column3, Row3" />
+		<COLUMN text="" ico="ImgProcess" action="GENERICOPENLINK" action_params="http://www.google.com?3"/>
+	   </ROW>
+	   <ROW>
+		<COLUMN align="Center" text="Column1, Row3" />
+		<COLUMN text="Column2, Row3" ico="ImgVac" action="GENERICSENDKEY" action_params="123"/>
+		<COLUMN align="right" text="Column3, Row3" />
+		<COLUMN text="" ico="ImgProcess" action="GENERICOPENLINK" action_params="http://www.google.com?3"/>
+	   </ROW>
+	   <ROW>
+		<COLUMN align="Center" text="Column1, Row3" />
+		<COLUMN text="Column2, Row3" ico="ImgVac" action="GENERICSENDKEY" action_params="123"/>
+		<COLUMN align="right" text="Column3, Row3" />
+		<COLUMN text="" ico="ImgProcess" action="GENERICOPENLINK" action_params="http://www.google.com?3"/>
+	   </ROW>
+	   <ROW>
+		<COLUMN align="Center" text="Column1, Row3" />
+		<COLUMN text="Column2, Row3" ico="ImgVac" action="GENERICSENDKEY" action_params="123"/>
+		<COLUMN align="right" text="Column3, Row3" />
+		<COLUMN text="" ico="ImgProcess" action="GENERICOPENLINK" action_params="http://www.google.com?3"/>
+	   </ROW>
+	</BODY>
+</TABLE_DATA>

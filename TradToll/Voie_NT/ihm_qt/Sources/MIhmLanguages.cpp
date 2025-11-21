@@ -502,7 +502,7 @@ LanguageList::~LanguageList()
 
 bool LanguageList::lessThan(const LanguageLabel* x1, const LanguageLabel* x2) 
 { 
-	return *x1 < *x2; 
+	return QString::compare(x1->m_sLabelName, x2->m_sLabelName) > 0; 
 }
 
 

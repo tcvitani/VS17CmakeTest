@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="TEST_FEU_DE_PASSAGE" translate="1"/>
+	<widget type="Label" name="lblMessage" text="Le feu de passage est commande pour alterner feu rouge et feu vert."/>
+	<widget type="PushButtonOK" name="btnOK" text="Fermer" readonly="0"/>
+</input_description>

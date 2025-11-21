@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="ETAT DES COFFRES (Total : 0.00€)" />
+	<widget type="Label" name="lblColumn1Title" text="Billets (0000)§0€" />
+	<widget type="Label" name="lblColumn1Contents" text="(déconnecté)§" />
+	<widget type="Label" name="lblColumn2Title" text="Pièces (1234)§0.00€" />
+	<widget type="Label" name="lblColumn2Contents" text="(actif)§0.10€ x 0§0.20€ x 0§0.50€ x 0§1.00€ x 0§2.00€ x 0§" />
+	<widget type="PushButtonOK" name="btnOK" text="Fermer" readonly="0"  />
+</input_description>

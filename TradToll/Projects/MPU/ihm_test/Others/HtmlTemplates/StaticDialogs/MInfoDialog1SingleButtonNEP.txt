@@ -1,0 +1,23 @@
+<div id="Dialog" class="panel" style="">
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="height: 260px;">
+
+		<div id="lblSubtitle" class="control text" style=""><div class="text-holder">%lblSubtitle-text%</div></div>
+
+		<div class="control text" style=""><textarea id="txtMessage" class="text-holder" %txtMessage-readonly%>%txtMessage-text%</textarea></div>
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+
+	</script>
+
+</div>

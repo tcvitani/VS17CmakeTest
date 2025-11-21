@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="DATA_RETRANSMISSION_DATE"/>
+	<widget type="Label" name="lblMessage" text="DATA_RETRANSMISSION_SUB_MSG_DATE"/>
+	<widget type="Label" name="lblStartDateTitle" text="DATE_BEGIN"/>
+	<widget type="LineEditExt" name="txtStartDateValue" text="" value="%DATE%"/>
+	<widget type="Label" name="lblStartTimeTitle" text="TIME_BEGIN"/>
+	<widget type="LineEditExt" name="txtStartTimeValue" value="%TIME%"/>
+	<widget type="Label" name="lblEndDateTitle" text="DATE_END"/>
+	<widget type="LineEditExt" name="txtEndDateValue" value="%DATE_END%"/>
+	<widget type="Label" name="lblEndTimeTitle" text="TIME_END"/>
+	<widget type="LineEditExt" name="txtEndTimeValue" value="%TIME_END%"/>
+	<widget type="PushButtonOK" name="btnOK" text="SUIVANT &gt;&gt;"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="&lt;&lt; PRECEDENT"/>
+</input_description>

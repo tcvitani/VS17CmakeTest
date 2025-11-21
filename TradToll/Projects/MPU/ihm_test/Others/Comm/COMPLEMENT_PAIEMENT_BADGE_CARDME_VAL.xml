@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="COMPLEMENT_PAIEMENT_BADGE_CARDME"/>
+	<widget type="Label" name="lblMessage" text="COMPLEMENT_PAIEMENT_BADGE_TIS_MESSAGE"/>
+	<widget type="Label" name="lblRegistrationTitle" text="COMPLEMENT_PAIEMENT_BADGE_CARDME_LP"/>
+	<widget type="LineEditExt" name="txtRegistrationValue" value=""/>
+	<widget type="Label" name="lblExpirationDateTitle" text="COMPLEMENT_PAIEMENT_BADGE_CARDME_EXPIRY"/>
+	<widget type="LineEditExt" name="txtExpirationDateValue"/>
+	<widget type="Label" name="lblIssuerCodeTitle" text="COMPLEMENT_PAIEMENT_BADGE_CARDME_CONTRACT"/>
+	<widget type="LineEditExt" name="txtLuhnKey" value=""/>
+	<widget type="LabelLuhnCheck" name="lblLuhnKeyValidator" text=""/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_CANCEL_TEXT" readonly="0"/>
+</input_description>

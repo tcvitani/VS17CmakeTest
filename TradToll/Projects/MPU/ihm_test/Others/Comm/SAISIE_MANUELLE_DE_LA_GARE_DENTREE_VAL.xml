@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="SAISIE_MANUELLE_DE_LA_GARE_DENTREE"/>
+	<widget type="Label" name="lblMessage" text="Entrer un nom au un numero de gare, un km, un nom de ville ou un mot cle et selectionner la gare correspondante"/>
+	<widget type="Label" name="lblFilterTitle" text="Rechercher:"/>
+	<widget type="LineEdit" name="txtFilterValue" text="lorem"/>
+	<widget type="Label" name="lblDataTitle" text="Gares trouves:"/>
+	<widget type="ListWidget" name="lstData" value="0" readonly="0" src="GEList.xml"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0" translate="1"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_CANCEL_TEXT" readonly="0" translate="1"/>
+</input_description>

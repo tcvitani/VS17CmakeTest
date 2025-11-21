@@ -1,0 +1,68 @@
+<div id="Dialog" class="panel" style="">
+
+	<script type="text/javascript">
+		// initialize the dialog validator
+		dialogValidator.init();
+	</script>
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblStartMsgNumTitle" class="control text label" style=""><div class="text-holder">%lblStartMsgNumTitle-text%</div></div>
+			<input id="txtStartMsgNumValue" value="%txtStartMsgNumValue-text%" class="" type="text" %txtStartMsgNumValue-readonly%>
+			<script type="text/javascript">
+
+				$("#txtStartMsgNumValue").mask
+				(
+					"%txtStartMsgNumValue-mask%",
+					{
+						placeholder: "%txtStartMsgNumValue-mask-placeholder%"
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtStartMsgNumValue', 'regex', { regex: '%txtStartMsgNumValue-regex%' } );
+			</script>
+		</div>
+
+		<div>
+			<div id="lblEndMsgNumTitle" class="control text label" style=""><div class="text-holder">%lblEndMsgNumTitle-text%</div></div>
+			<input id="txtEndMsgNumValue" value="%txtEndMsgNumValue-text%" class="" type="text" %txtEndMsgNumValue-readonly%>
+			<script type="text/javascript">
+
+				$("#txtEndMsgNumValue").mask
+				(
+					"%txtEndMsgNumValue-mask%",
+					{
+						placeholder: "%txtEndMsgNumValue-mask-placeholder%"
+					}
+				);
+
+			</script>
+			<script type="text/javascript">
+				// add regex validation for txtUserName control
+				dialogValidator.addValidation('txtEndMsgNumValue', 'regex', { regex: '%txtEndMsgNumValue-regex%' } );
+			</script>
+		</div>
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%">
+		<input class="btnCancel" type="button" value="%btnCancel-text%">
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+		dialogsHandler.updateOkButtonOnValidation = %dialog-update-ok-button-on-validation%;
+
+	</script>
+
+</div>

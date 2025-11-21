@@ -1,0 +1,1 @@
+<option value="%list-item-value%" %list-item-selected%>%list-item-text%</option>

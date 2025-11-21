@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by mfr (CS Systems D'information) -->
+<input_description>
+	<widget type="Label" name="lblTitle" text="DATA_RETRANSMISSION_VAULT"/>
+	<widget type="Label" name="lblMessage" text="DATA_RETRANSMISSION_SUB_MSG_VAULT"/>
+	<widget type="Label" name="lblPostIDTitle" text="VAULT_ID"/>
+	<widget type="LineEditExt" name="txtPostIDValue" value="%DATE%"/>
+	<widget type="LineEditExt" name="txtPostIDTimeValue" value="%TIME%"/>
+	<widget type="LineEditExt" name="txtPostIDNumber" value="%VAULT%"/>
+	<widget type="PushButtonOK" name="btnOK" text="SUIVANT &gt;&gt;"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="&lt;&lt; PRECEDENT"/>
+</input_description>

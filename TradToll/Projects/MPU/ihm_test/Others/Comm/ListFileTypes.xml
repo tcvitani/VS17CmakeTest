@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<option_list>
+<option value="1" text="TYPE_ALL"/>
+<option value="2" text="TYPE_EFS"/>
+
+</option_list>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="PRICE_DIFF_2"/>
+	<widget type="Label" name="lblMessage" text="IOU_2_MESSAGE"/>
+	<widget type="Label" name="lblLastNameTitle" text="IOU_2_FIRST_NAME"/>
+	<widget type="LineEdit" name="txtLastNameValue" text="" value=""/>
+	<widget type="Label" name="lblFirstNameTitle" text="IOU_2_SECOND_NAME"/>
+	<widget type="LineEdit" name="txtFirstNameValue" text="" value=""/>
+	<widget type="Label" name="lblAddressTitle" text="IOU_2_ADDRESS"/>
+	<widget type="LineEdit" name="txtAddressValue" text="" value=""/>
+	<widget type="Label" name="lblZIPAndCityTitle" text="IOU_2_POSTAL_CODE"/>
+	<widget type="LineEdit" name="txtZIPValue" text="" value=""/>
+	<widget type="LineEdit" name="txtCityValue" text="" value=""/>
+	<widget type="Label" name="lblCountryTitle" text="IOU_2_COUNTRY"/>
+	<widget type="ComboBox" name="cboCountryValue" value="" readonly="0" src="CountryNames2.xml"/>
+	<widget type="Label" name="lblOnBehalfOfCompanyTitle" text="IOU_2_BEHALF_COMPANY"/>
+	<widget type="RadioButton" name="rbtnOnBehalfOfCompanyYes" value="false" text="Oui"/>
+	<widget type="RadioButton" name="rbtnOnBehalfOfCompanyNo" value="true" text="Non"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_NEXT_TEXT" readonly="0" translate="1"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_PREVIOUS_TEXT" readonly="0" translate="1"/>
+</input_description>

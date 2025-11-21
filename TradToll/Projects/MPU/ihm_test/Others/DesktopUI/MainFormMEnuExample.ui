@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+background-color: rgb(0, 0, 0);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="CntHMenuView1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>180</y>
+      <width>681</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="CntHMenuView2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>370</y>
+      <width>681</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string>QMenuBar { 
+	background-color: rgb(0, 85, 255);
+	margin: 2px;
+ }
+
+ QMenuBar::item {
+	background-color: rgb(170, 170, 255);
+ }
+
+ QMenuBar::item:selected { /* when selected using mouse or keyboard */
+	background-color: rgb(216, 220, 255);
+ }
+
+ QMenuBar::item:pressed { 
+	background-color: rgb(216, 220, 255);
+ }
+
+QMenu { 
+	background-color: rgb(170, 170, 255);      /* some spacing around the menu */
+ }
+
+ QMenu::item {
+	background-color: rgb(170, 170, 255);
+ }
+
+ QMenu::item:selected {
+     	background-color: rgb(216, 220, 255);
+
+ }
+</string>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menuMode">
+    <property name="title">
+     <string>Mode</string>
+    </property>
+    <addaction name="actionArrete"/>
+   </widget>
+   <widget class="QMenu" name="menuActions">
+    <property name="title">
+     <string>Actions</string>
+    </property>
+    <addaction name="actionSimulateur_Passage"/>
+    <addaction name="actionOption1"/>
+    <addaction name="actionOption2"/>
+    <addaction name="actionOption3"/>
+   </widget>
+   <widget class="QMenu" name="menuMaintenance">
+    <property name="title">
+     <string>Maintenance</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuTests">
+    <property name="title">
+     <string>Tests</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+   </widget>
+   <addaction name="menuMode"/>
+   <addaction name="menuActions"/>
+   <addaction name="menuMaintenance"/>
+   <addaction name="menuTests"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionArrete">
+   <property name="text">
+    <string>Arrete</string>
+   </property>
+  </action>
+  <action name="actionSimulateur_Passage">
+   <property name="text">
+    <string>Simulateur Passage</string>
+   </property>
+  </action>
+  <action name="actionOption1">
+   <property name="text">
+    <string>Option1</string>
+   </property>
+  </action>
+  <action name="actionOption2">
+   <property name="text">
+    <string>Option2</string>
+   </property>
+  </action>
+  <action name="actionOption3">
+   <property name="text">
+    <string>Option3</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

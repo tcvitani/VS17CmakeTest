@@ -1,0 +1,11 @@
+<div id="%id%" class="control button afficheur %class%" style="%style%">
+	%button-text%
+	%button-image%
+</div>
+<script type="text/javascript">
+
+	// add the click handler for the control's parent (wrapper)
+	$("#%id%.afficheur").parent().unbind('click');
+	$("#%id%.afficheur").parent().bind('click', afficheurClickCommandHandler);
+
+</script>

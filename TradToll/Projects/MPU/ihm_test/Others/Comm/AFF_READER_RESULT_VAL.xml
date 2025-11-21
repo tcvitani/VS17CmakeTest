@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by MFR (CS Systems D'information) -->
+<input_description>
+	<widget type="Label" name="lblTitle" text="TEST LECTEUR DE CARTE"/>
+	<widget type="Label" name="lblMessage" text="Le contenu de la piste ISO3 est :"/>
+	<widget type="TextEdit" name="txtMessage" text="" value="365789425" readonly="1"/>
+	<widget type="PushButtonOK" name="btnOK" text="ANNULER"/>
+</input_description>

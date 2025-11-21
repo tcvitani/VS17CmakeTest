@@ -1,0 +1,39 @@
+<div id="Dialog" class="panel" style="">
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div id="lblMessage" class="control text" style=""><div class="text-holder">%lblMessage-text%</div></div>
+
+		<div>
+			<div id="lblDateTitle" class="control text label" style=""><div class="text-holder">%lblDateTitle-text%</div></div>
+			<input id="txtDateValue" value="%txtDateValue-text%" class="" type="text" %txtDateValue-readonly%>
+		</div>
+
+		<div>
+			<div id="lblTimeTitle" class="control text label" style=""><div class="text-holder">%lblTimeTitle-text%</div></div>
+			<input id="txtTimeValue" value="%txtTimeValue-text%" class="" type="text" %txtTimeValue-readonly%>
+		</div>
+
+		<div>
+			<div id="lblColorValue" class="control text label" style=""><div class="text-holder">%lblColorValue-text%</div></div>
+			<select id="cboColorValue" style="width: 349px; margin: 0px 0px 5px 0px;" %cboColorValue-readonly%>
+				%cboColorValue-data%
+			</select>
+		</div>
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+
+	</script>
+
+</div>

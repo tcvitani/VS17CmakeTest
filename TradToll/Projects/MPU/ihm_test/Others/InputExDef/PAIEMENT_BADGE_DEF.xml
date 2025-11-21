@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css">
+	<widget type="Label" name="lblTitle"/>
+	<widget type="Label" name="lblMessage"/>
+	<widget type="Label" name="lblProductCodeTitle"/>
+	<widget type="LineEditExt" name="txtProductCodeValue" format="LUHN_KEY" format_detail="lblLuhnKeyValidator" min_len="18" max_len="19" validator="(?=.*[^0].*)(\d+)"/>
+	<widget type="LabelLuhnCheck" name="lblLuhnKeyValidator"/>
+	<widget type="PushButtonOK" name="btnOK"/>
+	<widget type="PushButtonCancel" name="btnCancel"/>
+</input_definition>

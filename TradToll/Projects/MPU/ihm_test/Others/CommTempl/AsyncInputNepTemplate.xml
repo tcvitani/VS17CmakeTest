@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="CheckBox" name="chkAV1" text="AV1" value="%COM_CHK_AV1%"/>
+	<widget type="CheckBox" name="chkTTA" text="TTA" value="%COM_CHK_TTA%"/>
+	<widget type="CheckBox" name="chk1_2T" text="1/2T" value="%COM_CHK_1_2T%"/>
+	<widget type="CheckBox" name="chkJEP" text="JEP" value="%COM_CHK_JEP%"/>
+	<widget type="CheckBox" name="chkAutre" text="Autre" value="%COM_CHK_AUTRE%"/>
+	<widget type="ComboBox" name="cmbCountry" value="%COM_CMB_COUNTRY%" src="CountryNames.xml"/>
+	<widget type="LineEdit" name="txtLicence" value="%COM_TXT_LICENCE%"/>
+	<widget type="LineEdit" name="txtMark" value="%COM_TXT_MARK%"/>
+	<widget type="LineEdit" name="txtModel" value="%COM_TXT_MODEL%"/>
+	<widget type="LineEdit" name="txtColour" value="%COM_TXT_COLOUR%"/>
+	<widget type="LineEdit" name="txtName" value="%COM_TXT_NAME%"  readonly="%COM_ENABLE%"/>
+	<widget type="LineEdit" name="txtLastName" value="%COM_TXT_LASTNAME%"  readonly="%COM_ENABLE%"/>
+	<widget type="LineEdit" name="txtAdress" value="%COM_TXT_ADDRESS%"  readonly="%COM_ENABLE%"/>
+	<widget type="LineEdit" name="txtCP" value="%COM_TXT_CP%"  readonly="%COM_ENABLE%"/>
+	<widget type="LineEdit" name="txtTown" value="%COM_TXT_TOWN%"  readonly="%COM_ENABLE%"/>
+	<widget type="LineEdit" name="txtComment" value="%COM_TXT_COMMENT%"/>
+</input_description>

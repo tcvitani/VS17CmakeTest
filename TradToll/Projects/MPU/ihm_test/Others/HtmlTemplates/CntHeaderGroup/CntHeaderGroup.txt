@@ -1,0 +1,8 @@
+<div id="%id%" class="panel %class%" style="%style%">
+
+	%IcoLogo%
+
+	%ClkDate%
+	%ClkTime%
+
+</div>

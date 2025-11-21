@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TABLE_DATA>
+	<TITLE TEXT=""/>
+	<HEADER HEIGHT="26" RESIZE="false">
+		<COLUMN TEXT="IDP" WIDTH="70" ALIGN="center"/>
+		<COLUMN TEXT="Details" WIDTH="387" ALIGN="center"/>
+		<COLUMN TEXT="Montant" WIDTH="131" ALIGN="center"/>
+	</HEADER>
+	<BODY HEIGHT="25">
+				<ROW>
+			<COLUMN align="center" text=""/>
+			<COLUMN align="left" text=""/>
+			<COLUMN align="right" text=""/>
+		</ROW>
+			<ROW>
+			<COLUMN align="center" text=""/>
+			<COLUMN align="left" text=""/>
+			<COLUMN align="right" text=""/>
+		</ROW>
+			<ROW>
+			<COLUMN align="center" text=""/>
+			<COLUMN align="left" text=""/>
+			<COLUMN align="right" text=""/>
+		</ROW>
+			<ROW>
+			<COLUMN align="center" text=""/>
+			<COLUMN align="left" text=""/>
+			<COLUMN align="right" text=""/>
+		</ROW>
+			<ROW>
+			<COLUMN align="center" text=""/>
+			<COLUMN align="left" text=""/>
+			<COLUMN align="right" text=""/>
+		</ROW>
+			<ROW>
+			<COLUMN align="center" text=""/>
+			<COLUMN align="left" text=""/>
+			<COLUMN align="right" text=""/>
+		</ROW>
+	
+	</BODY>
+</TABLE_DATA>

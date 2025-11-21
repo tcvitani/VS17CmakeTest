@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description desktop_css_file="DialogStyleNEP.css">
+	<widget type="Label" name="lblTitle" text="TITLE_ADD_REVENUE_2"/>
+	<widget type="Label" name="lblMessage" text="CHAMP_ADD_REVENUE_2_MESSAGE"/>
+	<widget type="Label" name="lblTitle1"  text="CHAMP_ADD_REVENUE_2_SMART_ID"/>
+	<widget type="LineEditExt" name="txtValue1"  value="" readonly="1"/>
+	<widget type="Label" name="lblTitle2" text="CHAMP_ADD_REVENUE_2_CLASS"/>
+	<widget type="LineEditExt" name="txtValue2" value="" readonly="1"/>
+	<widget type="Label" name="lblTitle3" text="CHAMP_ADD_REVENUE_2_AMOUNT"/>
+	<widget type="LineEditExt" name="txtValue3" value="" />
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_CANCEL_TEXT"/>
+</input_description>

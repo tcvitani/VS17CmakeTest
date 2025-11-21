@@ -1,0 +1,1 @@
+<img id="%id%" class="%class%" src="%images-root%/%image-name%" title="%text%" />

@@ -1,0 +1,38 @@
+<div id="Dialog" class="panel" style="">
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body">
+
+		<table>
+			<thead>
+				<tr>
+					<td>%lblColumn1Title-text%</td>
+					<td>%lblColumn2Title-text%</td>
+					<td>%lblColumn3Title-text%</td>
+					<td>%lblColumn4Title-text%</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>%lblColumn1Contents-text%</td>
+					<td>%lblColumn2Contents-text%</td>
+					<td>%lblColumn3Contents-text%</td>
+					<td>%lblColumn4Contents-text%</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+
+	</script>
+
+</div>

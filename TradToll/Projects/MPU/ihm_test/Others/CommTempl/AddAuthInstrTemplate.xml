@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="HABILITATION_PONCTUELLE_REQUISE"/>
+	<widget type="Label" name="lblMessage" text="%ADD_AUTH_INSTR%"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_KEYBOARD_ENTRY_TEXT" readonly="%BTN_READ_ONLY%"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_CANCEL_TEXT" readonly="0"/>
+</input_description>

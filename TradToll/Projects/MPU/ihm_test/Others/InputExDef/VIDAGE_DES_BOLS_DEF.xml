@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css" >
+	<widget type="Label" name="lblTitle" />
+	<widget type="Label" name="lblMessage" />
+	<widget type="Label" name="lblTitle1" />
+	<widget type="RadioButton" name="rbtnValue1Yes" />
+	<widget type="RadioButton" name="rbtnValue1No" />
+	<widget type="Label" name="lblTitle2" />
+	<widget type="RadioButton" name="rbtnValue2Yes" />
+	<widget type="RadioButton" name="rbtnValue2No" />
+	<widget type="Label" name="lblTitle3" />
+	<widget type="RadioButton" name="rbtnValue3Yes" />
+	<widget type="RadioButton" name="rbtnValue3No" />
+	<widget type="Label" name="lblTitle4" />
+	<widget type="RadioButton" name="rbtnValue4Yes" />
+	<widget type="RadioButton" name="rbtnValue4No" />
+	<widget type="PushButtonOK" name="btnOK" />
+	<widget type="PushButtonCancel" name="btnCancel" />
+</input_definition>

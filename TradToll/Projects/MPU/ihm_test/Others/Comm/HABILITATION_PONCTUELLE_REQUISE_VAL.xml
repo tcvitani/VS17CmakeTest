@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="HABILITATION_PONCTUELLE_REQUISE"/>
+	<widget type="Label" name="lblMessage" text="L'action 'Ouverture porte maintenance' que vous souhaitez effectuer nécessite une habilitation que vous n'avez pas. Une autre carte disposant des habilitations nécessaires doit être utilisée. Merci de la passer devant le lecteur de proximité, de scanner son code barre ou de l'introduire dans le lecteur motorisé."/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_KEYBOARD_ENTRY_TEXT" readonly="0"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_CANCEL_TEXT" readonly="0"/>
+</input_description>

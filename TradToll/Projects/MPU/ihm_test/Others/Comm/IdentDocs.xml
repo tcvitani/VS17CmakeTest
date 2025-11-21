@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by MFR (CS Systems D'information) -->
+<option_list>
+	<option value="Carte nationale d'identité" text="Carte nationale d'identité"/>
+	<option value="Passeport " text="Passeport "/>
+	<option value="Permis de conduire" text="Permis de conduire"/>
+	<option value="Autre" text="Autre"/>
+</option_list>

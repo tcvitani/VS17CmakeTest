@@ -1,0 +1,56 @@
+<div id="Dialog" class="panel" style="">
+
+	<div id="lblTitle" class="control text Dialog-Title" style=""><div class="text-holder">%lblTitle-text%</div></div>
+
+	<div class="control Dialog-Body" style="">
+
+		<div>
+			<div id="lblPIB" class="control text label" style=""><div class="text-holder">%lblPIB-text%</div></div>
+			<input id="txtPIB" value="%txtPIB-text%" class="" type="text" maxlength="19" size="10" %txtPIB-readonly%>
+		</div>
+		
+		<div>
+			<div id="lblDateTime" class="control text label" style=""><div class="text-holder">%lblDateTime-text%</div></div>
+			<input id="txtDateTime" value="%txtDateTime-text%" class="" type="text" maxlength="19" size="10" %txtDateTime-readonly%>
+		</div>
+
+		<div>
+			<div id="lblReceiptNb" class="control text label" style=""><div class="text-holder">%lblReceiptNb-text%</div></div>
+			<input id="txtReceiptNb" value="%txtReceiptNb-text%" class="" type="text" maxlength="19" size="10" %txtReceiptNb-readonly%>
+		</div>
+		
+		<div>
+			<div id="lblBussinesID" class="control text label" style=""><div class="text-holder">%lblBussinesID-text%</div></div>
+			<input id="txtBussinesID" value="%txtBussinesID-text%" class="" type="text" maxlength="19" size="10" %txtBussinesID-readonly%>
+		</div>
+		
+		<div>
+			<div id="lblEnu" class="control text label" style=""><div class="text-holder">%lblEnu-text%</div></div>
+			<input id="txtEnu" value="%txtEnu-text%" class="" type="text" maxlength="19" size="10" %txtEnu-readonly%>
+		</div>
+
+		<div>
+			<div id="lblSoftwareCode" class="control text label" style=""><div class="text-holder">%lblSoftwareCode-text%</div></div>
+			<input id="txtSoftwareCode" value="%txtSoftwareCode-text%" class="" type="text" maxlength="19" size="10" %txtSoftwareCode-readonly%>
+		</div>
+		
+		<div>
+			<div id="lblPrice" class="control text label" style=""><div class="text-holder">%lblPrice-text%</div></div>
+			<input id="txtPrice" value="%txtPrice-text%" class="" type="text" maxlength="19" size="10" %txtPrice-readonly%>
+		</div>
+		
+
+	</div>
+
+	<div class="control Dialog-Buttons" style="">
+		<input class="btnOK" type="button" value="%btnOK-text%" %btnOK-readonly%>
+		<input class="btnCancel" type="button" value="%btnCancel-text%" %btnCancel-readonly%>
+	</div>
+
+	<script type="text/javascript">
+
+		dialogsHandler.dialogId = "%dialog-id%";
+
+	</script>
+
+</div>

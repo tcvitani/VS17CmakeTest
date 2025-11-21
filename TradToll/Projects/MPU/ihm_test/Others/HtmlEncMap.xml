@@ -1,0 +1,102 @@
+<HTML_ENC_MAP_ROOT>
+	<CHAR_ITEM VALUE="§" HTML="&amp;sect;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="&quot;" HTML="&amp;quot;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="'" HTML="&amp;#39;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="’" HTML="&amp;#39;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="`" HTML="&amp;acute;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="&lt;" HTML="&amp;lt;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="&gt;" HTML="&amp;gt;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="£" HTML="&amp;pound;" ALTER_HTML="&amp;#163;"/>
+	<CHAR_ITEM VALUE="€" HTML="&amp;euro;" ALTER_HTML="&amp;#8364;"/>
+	<CHAR_ITEM VALUE="À" HTML="&amp;Agrave;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="à" HTML="&amp;agrave;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="Â" HTML="&amp;Acirc;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="â" HTML="&amp;acirc;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="Ç" HTML="&amp;#199;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="ç" HTML="&amp;#231;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="È" HTML="&amp;Egrave;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="è" HTML="&amp;egrave;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="É" HTML="&amp;Eacute;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="é" HTML="&amp;eacute;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="Ê" HTML="&amp;#202;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="ê" HTML="&amp;#234;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="Ë" HTML="&amp;Euml;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="ë" HTML="&amp;euml;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="Î" HTML="&amp;Icirc;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="î" HTML="&amp;icirc;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="Ï" HTML="&amp;Iuml;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="ï" HTML="&amp;iuml;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="Ô" HTML="&amp;#212;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="ô" HTML="&amp;#244;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="Œ" HTML="&amp;OElig;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="œ" HTML="&amp;oelig;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="Ù" HTML="&amp;Ugrave;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="ù" HTML="&amp;ugrave;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="Û" HTML="&amp;Ucirc;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="û" HTML="&amp;ucirc;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="Ü" HTML="&amp;Uuml;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="ü" HTML="&amp;uuml;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="Ÿ" HTML="&amp;#376;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="ÿ" HTML="&amp;yuml;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="°" HTML="&amp;deg;" ALTER_HTML=""/>
+	<CHAR_ITEM VALUE="Đ" HTML="&amp;#208;" ALTER_HTML=""/>
+	<!--
+Ã &#195; &Atilde; capital a, tilde 
+Ä &#196; &Auml; capital a, umlaut mark 
+Å &#197; &Aring; capital a, ring 
+Æ &#198; &AElig; capital ae 
+Ç &#199; &Ccedil; capital c, cedilla 
+È &#200; &Egrave; capital e, grave accent 
+É &#201; &Eacute; capital e, acute accent 
+Ê &#202; &Ecirc; capital e, circumflex accent 
+Ë &#203; &Euml; capital e, umlaut mark 
+Ì &#204; &Igrave; capital i, grave accent 
+Í &#205; &Iacute; capital i, acute accent 
+Î &#206; &Icirc; capital i, circumflex accent 
+Ï &#207; &Iuml; capital i, umlaut mark 
+Ð &#208; &ETH; capital eth, Icelandic 
+Ñ &#209; &Ntilde; capital n, tilde 
+Ò &#210; &Ograve; capital o, grave accent 
+Ó &#211; &Oacute; capital o, acute accent 
+Ô &#212; &Ocirc; capital o, circumflex accent 
+Õ &#213; &Otilde; capital o, tilde 
+Ö &#214; &Ouml; capital o, umlaut mark 
+Ø &#216; &Oslash; capital o, slash 
+Ù &#217; &Ugrave; capital u, grave accent 
+Ú &#218; &Uacute; capital u, acute accent 
+Û &#219; &Ucirc; capital u, circumflex accent 
+Ü &#220; &Uuml; capital u, umlaut mark 
+Ý &#221; &Yacute; capital y, acute accent 
+Þ &#222; &THORN; capital THORN, Icelandic 
+ß &#223; &szlig; small sharp s, German 
+à &#224; &agrave; small a, grave accent 
+á &#225; &aacute; small a, acute accent 
+â &#226; &acirc; small a, circumflex accent 
+ã &#227; &atilde; small a, tilde 
+ä &#228; &auml; small a, umlaut mark 
+å &#229; &aring; small a, ring 
+æ &#230; &aelig; small ae 
+ç &#231; &ccedil; small c, cedilla 
+è &#232; &egrave; small e, grave accent 
+ê &#234; &ecirc; small e, circumflex accent 
+ë &#235; &euml; small e, umlaut mark 
+ì &#236; &igrave; small i, grave accent 
+í &#237; &iacute; small i, acute accent 
+î &#238; &icirc; small i, circumflex accent 
+ï &#239; &iuml; small i, umlaut mark 
+ð &#240; &eth; small eth, Icelandic 
+ñ &#241; &ntilde; small n, tilde 
+ò &#242; &ograve; small o, grave accent 
+ó &#243; &oacute; small o, acute accent 
+ô &#244; &ocirc; small o, circumflex accent 
+õ &#245; &otilde; small o, tilde 
+ö &#246; &ouml; small o, umlaut mark 
+ø &#248; &oslash; small o, slash 
+ù &#249; &ugrave; small u, grave accent 
+ú &#250; &uacute; small u, acute accent 
+û &#251; &ucirc; small u, circumflex accent 
+ü &#252; &uuml; small u, umlaut mark 
+ý &#253; &yacute; small y, acute accent 
+þ &#254; &thorn; small thorn, Icelandic 
+ÿ &#255; &yuml; small y, umlaut mark -->
+</HTML_ENC_MAP_ROOT>

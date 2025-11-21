@@ -1,0 +1,2246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by MFR (CS Systems D'information) -->
+<IHM_CONFIG>
+	<LANE_TYPES>
+		<LANE_TYPE ID="OPL" ASYNC_INPUT_DEF_FILE="">
+			<DESKTOP>
+				<PARAM ID="MAIN_DIALOG" VALUE="MFormMainWidget.ui"/>
+				<PARAM ID="CLIENT_LOGIN_DLG" VALUE="MFormLogin.ui"/>
+				<PARAM ID="CLIENT_TAKEOVER_DLG" VALUE="MFormTakeOverDlg.ui"/>
+				<PARAM ID="CLIENT_DLG_EMBEDED_TO" VALUE="CntSpare5"/>
+				<PARAM ID="CLIENT_CSS_FILE" VALUE="DialogStyleNEP.css"/>
+				<PARAM ID="TASK_BAR_BROWSER_DLG_TEMPLATE" VALUE="MIhmTaskBarWebBrowserDlg.ui"/>
+				<PARAM ID="TASK_BAR_DLG_TYPES" VALUE=""/>
+				<VISIBLE_OBJ ID="CntHeaderGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntModeGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntMiniWeb" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntTrsGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntPaymentGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntInstructionGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntDynPicture" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntDynPicture2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="IcoDynImage" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoDynImage2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName3" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="ClkDate" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="ClkTime" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="LstAlarms" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" IS_ICON_MODE="1" SHOW_TEXT="0" SHOW_ICON="1" TOOLTIP_SHOW_LAST_ITEM="1"/>
+				<VISIBLE_OBJ ID="LstWarnings" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitGate" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtClass" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtClassTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFare" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareTitle" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareType" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareTypeTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAxles" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAxlesTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAdditionalRevenue" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAdditionalRevenueTitle" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtType" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTypeTitle" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSale" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDue" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDueTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDuePaid" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtBalance" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtBalanceTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtEntry" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtEntryTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTransactionNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTransactionNbrTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtReceiptNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtReceiptNbrTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorId" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorName" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaNameTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneName" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneName1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneName2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNameTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" />
+				<VISIBLE_OBJ ID="TxtPlazaNbrTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNbrTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare3" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_CAMERA1"/>
+				<VISIBLE_OBJ ID="TxtSpare4" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_CAMERA2"/>
+				<VISIBLE_OBJ ID="TxtSpare5" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare6" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare7" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare8" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare9" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare10" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare11" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare12" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare13" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare14" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare15" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare16" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_SCANNER1"/>
+				<VISIBLE_OBJ ID="TxtSpare17" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_SCANNER2"/>
+				<VISIBLE_OBJ ID="TxtSpare18" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare19" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare20" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare21" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare22" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare23" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare24" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare25" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare26" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare27" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare28" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare29" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare30" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="TxtSpare31" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare32" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare33" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare34" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare35" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare36" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare37" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare38" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare39" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare40" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare41" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare42" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare43" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare44" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare45" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare46" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare47" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare48" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare49" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare50" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare51" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare52" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare53" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare54" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare55" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare56" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare57" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare58" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare59" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare60" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				
+				
+				
+				<VISIBLE_OBJ ID="TxtRemark" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInstruction" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInstruction2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPayment" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtErrPayment" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLogo" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoCar" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoCollector" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntryGate" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntryLoop" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitLoop" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLaneMode" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLaneStatus" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoTrafficLight" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoViolation" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare1" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_SCANNER1"/>
+				<VISIBLE_OBJ ID="IcoSpare4" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_SCANNER2"/>
+				<VISIBLE_OBJ ID="IcoSpare5" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoBeacon2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSignalizationLight" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitOpticalBarrier" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntFileView1" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" TEMPLATE="TableDataTrsFormat.xml" MAX_ROWS = "20"/>
+				<VISIBLE_OBJ ID="CntFileView2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" TEMPLATE="TableDataTrsHistoryFormat.xml" SET_FOCUS_KEY="263" MAX_ROWS = "20"/>
+				<VISIBLE_OBJ ID="CntFileView3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" TEMPLATE="TableDataInstrAlarmFormat.xml" SET_FOCUS_KEY="264" MAX_ROWS = "20"/>
+				<VISIBLE_OBJ ID="btnProduct1" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnProduct2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnProduct3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnProduct4" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnProduct5" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpeedLimitOff" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SPEED_LIMIT"/>
+				<VISIBLE_OBJ ID="btnSpeedLimitOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SPEED_LIMIT"/>
+				<VISIBLE_OBJ ID="btnWarningOff" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_WARNING"/>
+				<VISIBLE_OBJ ID="btnWarningOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_WARNING"/>
+				<VISIBLE_OBJ ID="CntTabView1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CntTabView1"/>
+				<VISIBLE_OBJ ID="CntTabView2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CntTabView2"/>
+				<VISIBLE_OBJ ID="CntSpare1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntSpare2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntSpare3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntSpare4" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntSpare5" INIT_VISIBLE="0" LEFT="374" TOP="226" WIDTH="517" HEIGHT="380" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInControlStatus" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUser" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUser1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtModeTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtMode" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUserTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTrsContainerTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAlarmsTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTrsHistoryTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAlertesTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnTakeCtrl" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnReturnCtrl" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnClass" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CORCLA" CURSOR_ID="HANDCURSOR"/>
+				<VISIBLE_OBJ ID="btnEntryPoint" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnEntryPointNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnExternalDisplay" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnExternalDisplay2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="btnMode" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_MODE"/>
+				<VISIBLE_OBJ ID="btnArrowOn" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_GREEN_ARROW"/>
+				<VISIBLE_OBJ ID="btnArrowOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_GREEN_ARROW"/>
+				<VISIBLE_OBJ ID="btnCrossOn" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_RED_CROSS"/>
+				<VISIBLE_OBJ ID="btnCrossOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_RED_CROSS"/>
+				<VISIBLE_OBJ ID="btnDsrcOn" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_T_SIGN"/>
+				<VISIBLE_OBJ ID="btnDsrcOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_T_SIGN"/>
+				<VISIBLE_OBJ ID="btnMagneticOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_BC_SIGN"/>
+				<VISIBLE_OBJ ID="btnMagneticOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_BC_SIGN"/>
+				<VISIBLE_OBJ ID="btnCollectorOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_TC_SIGN"/>
+				<VISIBLE_OBJ ID="btnCollectorOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_TC_SIGN"/>
+				<VISIBLE_OBJ ID="btnDsrcTsaOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_T_TSA_SIGN"/>
+				<VISIBLE_OBJ ID="btnDsrcTsaOff" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_T_TSA_SIGN"/>
+
+				<VISIBLE_OBJ ID="btnSpare1" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_DF"/>
+				<VISIBLE_OBJ ID="btnSpare2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CL1"/>
+				<VISIBLE_OBJ ID="btnSpare3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CL3"/>
+				<VISIBLE_OBJ ID="btnSpare4" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CL4"/>
+				<VISIBLE_OBJ ID="btnSpare5" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CL2"/>
+				<VISIBLE_OBJ ID="btnSpare6" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="ANNULATION"/>
+				<VISIBLE_OBJ ID="btnSpare7" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_IKOF"/>
+				<VISIBLE_OBJ ID="btnSpare8" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PMT_R1"/>
+				<VISIBLE_OBJ ID="btnSpare9" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_STOP_VIOL"/>
+				<VISIBLE_OBJ ID="btnSpare10" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PMTESP"/>
+				<VISIBLE_OBJ ID="btnSpare11" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_BEACON_B2"/>
+				<VISIBLE_OBJ ID="btnSpare12" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PMT_POS"/>
+				<VISIBLE_OBJ ID="btnSpare13" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PMTOBU"/>
+				<VISIBLE_OBJ ID="btnSpare14" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PMT_VT"/>
+				<VISIBLE_OBJ ID="btnSpare15" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PMTFREE"/>
+				<VISIBLE_OBJ ID="btnSpare16" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare17" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CL5"/>
+				<VISIBLE_OBJ ID="btnSpare18" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare19" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare20" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CL6"/>
+				<VISIBLE_OBJ ID="btnSpare21" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare22" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare23" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare24" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare25" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare26" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare27" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare28" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare29" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare30" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="btnCamera" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAMERA"/>
+				<VISIBLE_OBJ ID="btnScanner" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER"/>
+				<VISIBLE_OBJ ID="btnComment" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_COMMENT"/>
+				<VISIBLE_OBJ ID="IcoBeacon" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_BEACON_B2"/>
+				<VISIBLE_OBJ ID="IcoEntOpticalBarrier" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnGabarite" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_H_LIMITER"/>
+				<VISIBLE_OBJ ID="btnEntryGate" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PERBAEN"/>
+				<VISIBLE_OBJ ID="btnExitGate" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PERBAPA"/>
+				<VISIBLE_OBJ ID="btnCar" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAR1"/>
+				<VISIBLE_OBJ ID="btnCar2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAR2"/>
+				<VISIBLE_OBJ ID="btnCar3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAR3"/>
+				<VISIBLE_OBJ ID="btnEntryLoop" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PERSIMBPR"/>
+				<VISIBLE_OBJ ID="btnExitLoop" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PERSIMBPA"/>
+				<VISIBLE_OBJ ID="btnTblBeacon" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_BEACON_TBL"/>
+				<VISIBLE_OBJ ID="btnCommHide" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_COMMENT_HIDE"/>
+				<VISIBLE_OBJ ID="btnScanSend" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER_SEND"/>
+				<VISIBLE_OBJ ID="IcoCamera1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_CAMERA1"/>
+				<VISIBLE_OBJ ID="IcoCamera2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_CAMERA2"/>
+				<VISIBLE_OBJ ID="btnCamGrab" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAMERA_GRAB"/>
+				<VISIBLE_OBJ ID="btnCamHide" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAMERA_HIDE"/>
+				<VISIBLE_OBJ ID="btnScanGrab" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER_GRAB"/>
+				<VISIBLE_OBJ ID="btnScanHide" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER_HIDE"/>
+				<VISIBLE_OBJ ID="btnScanSave" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER_SAVE"/>
+				<VISIBLE_OBJ ID="TxtNbCar" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCamNumPic" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtScanNumPic" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtNbCarSAS" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntCamera" INIT_VISIBLE="0" LEFT="584" TOP="508" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntScanner" INIT_VISIBLE="0" LEFT="584" TOP="506" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntComments" INIT_VISIBLE="0" LEFT="584" TOP="59" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntTaskBar" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntHMenuView1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntHMenuView2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntRestreamVideoView1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntRestreamVideoView2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+			</DESKTOP>
+			<WEB>
+				<PARAM ID="MAIN_PAGE" VALUE="normal-mode-nep-opa.html"/>
+				<PARAM ID="MINI_WEB_PAGE" VALUE="mini.html"/>
+				
+				<PARAM ID="HTMLTemplateRoot" VALUE=".\others\HtmlTemplates"/>
+				<PARAM ID="TASK_BAR_DLG_TYPES" VALUE=""/>
+				<VISIBLE_OBJ ID="CntHeaderGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntModeGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntMiniWeb" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntTrsGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntPaymentGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntInstructionGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntDynPicture" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntDynPicture2" TEMPLATE="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="TxtPlazaName" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName1" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtPlazaName2" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtPlazaName3" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="ClkDate" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="ClkTime" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="LstAlarms" TEMPLATE="\CntAlarmsGroup\LstAlarms.txt" ACTION_ID="">
+					<PARAM ID="IsIconMode" VALUE="1"/>
+					<SUB_TEMPLATE ID="LstItemIcon" VALUE="\CntAlarmsGroup\LstAlarmsItem-Icon.txt"/>
+					<SUB_TEMPLATE ID="LstItemText" VALUE="\CntAlarmsGroup\LstAlarmsItem-Text.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="LstWarnings" TEMPLATE="\CntAlarmsGroup\LstAlarms.txt" ACTION_ID="">
+					<PARAM ID="IsIconMode" VALUE="0"/>
+					<SUB_TEMPLATE ID="LstItemIcon" VALUE="\CntAlarmsGroup\LstAlarmsItem-Icon.txt"/>
+					<SUB_TEMPLATE ID="LstItemText" VALUE="\CntAlarmsGroup\LstAlarmsItem-Text.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="IcoExitGate" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtClass" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtClassTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFare" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareType" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareTypeTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAxles" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAxlesTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAdditionalRevenue" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAdditionalRevenueTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtType" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTypeTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSale" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDue" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDueTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDuePaid" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtBalance" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtBalanceTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtEntry" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtEntryTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTransactionNbr" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTransactionNbrTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtReceiptNbr" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtReceiptNbrTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorId" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorName" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaNameTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1" />
+				<VISIBLE_OBJ ID="TxtLaneName" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneName1" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtLaneName2" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtLaneNameTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtPlazaNbrTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaNbr" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNbrTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNbr" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare1" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare2" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare3" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="CHK_CAMERA1"/>
+				<VISIBLE_OBJ ID="TxtSpare4" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="CHK_CAMERA2"/>
+				<VISIBLE_OBJ ID="TxtSpare5" TEMPLATE="\ControlTypes\LabelAffTitle.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare6" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare7" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare8" TEMPLATE="\ControlTypes\LabelAffTitle.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare9" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare10" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare11" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare12" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare13" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare14" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare15" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare16" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="CHK_SCANNER1"/>
+				<VISIBLE_OBJ ID="TxtSpare17" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="CHK_SCANNER2"/>
+				<VISIBLE_OBJ ID="TxtSpare18" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare19" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare20" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare21" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare22" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare23" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare24" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare25" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare26" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare27" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare28" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare29" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare30" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare31" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare32" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare33" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare34" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare35" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare36" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare37" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare38" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare39" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare40" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare41" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare42" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare43" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare44" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare45" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare46" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare47" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare48" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare49" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare50" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare51" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare52" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare53" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtSpare54" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare55" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare56" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare57" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare58" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare59" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare60" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="TxtRemark" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInstruction" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInstruction2" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPayment" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtErrPayment" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLogo" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoCar" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoCollector" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntryGate" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntryLoop" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitLoop" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLaneMode" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLaneStatus" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoTrafficLight" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoViolation" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare1" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare2" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare3" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID="CHK_SCANNER1"/>
+				<VISIBLE_OBJ ID="IcoSpare4" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID="CHK_SCANNER2"/>
+				<VISIBLE_OBJ ID="IcoSpare5" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoBeacon2" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSignalizationLight" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitOpticalBarrier" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoDynImage" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoDynImage2" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntFileView1" TEMPLATE="\Tables\Table.txt" ACTION_ID="" FORMAT_FILE="TableDataTrsFormat.xml" MAX_ROWS="12">
+					<SUB_TEMPLATE ID="TableCell" VALUE="\Tables\Table-Cell.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataImage" VALUE="\Tables\Table-CellData-Image.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataText" VALUE="\Tables\Table-CellData-Text.txt"/>
+					<SUB_TEMPLATE ID="TableRow" VALUE="\Tables\Table-Row.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataLink" VALUE="\Tables\Table-CellData-Link.txt"/>
+					<SUB_TEMPLATE ID="TableTitle" VALUE="\Tables\Table-Title.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntFileView2" TEMPLATE="\Tables\Table.txt" ACTION_ID="" FORMAT_FILE="TableDataTrsHistoryFormat.xml" MAX_ROWS="12">
+					<SUB_TEMPLATE ID="TableCell" VALUE="\Tables\Table-Cell.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataImage" VALUE="\Tables\Table-CellData-Image.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataText" VALUE="\Tables\Table-CellData-Text.txt"/>
+					<SUB_TEMPLATE ID="TableRow" VALUE="\Tables\Table-Row.txt"/>
+					<SUB_TEMPLATE ID="TableTitle" VALUE="\Tables\Table-Title.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntFileView3" TEMPLATE="\Tables\Table.txt" ACTION_ID="" FORMAT_FILE="TableDataInstrAlarmFormat.xml" MAX_ROWS="12">
+					<SUB_TEMPLATE ID="TableCell" VALUE="\Tables\Table-Cell.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataImage" VALUE="\Tables\Table-CellData-Image.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataText" VALUE="\Tables\Table-CellData-Text.txt"/>
+					<SUB_TEMPLATE ID="TableRow" VALUE="\Tables\Table-Row.txt"/>
+					<SUB_TEMPLATE ID="TableTitle" VALUE="\Tables\Table-Title.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct1" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct2" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct3" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct4" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct5" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpeedLimitOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SPEED_LIMIT" NOT_USED="1" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpeedLimitOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SPEED_LIMIT" NOT_USED="1" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnWarningOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_WARNING" NOT_USED="1" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnWarningOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_WARNING" NOT_USED="1" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntSpare1" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="CntSpare2" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="CntSpare3" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="CntSpare4" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="CntSpare5" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="TxtInControlStatus" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUser" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUser1" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtModeTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtMode" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtCollectorTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUserTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtTrsContainerTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAlarmsTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTrsHistoryTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAlertesTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnTakeCtrl" TEMPLATE="\Buttons\Button.txt" ACTION_ID="" INIT_VISIBLE="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnReturnCtrl" TEMPLATE="\Buttons\Button.txt" ACTION_ID="" INIT_VISIBLE="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnClass" TEMPLATE="\Buttons\Button.txt" ACTION_ID="CORCLA" CURSOR_ID="HANDCURSOR">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnEntryPoint" TEMPLATE="\Buttons\Button.txt" ACTION_ID="CORGE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnEntryPointNbr" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnMode" TEMPLATE="\Buttons\ButtonVertCentered.txt" ACTION_ID="BTN_MODE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnArrowOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_GREEN_ARROW" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnArrowOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_GREEN_ARROW" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCrossOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_RED_CROSS" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCrossOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_RED_CROSS" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnDsrcOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_T_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnDsrcOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_T_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnMagneticOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_BC_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnMagneticOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_BC_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCollectorOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_TC_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCollectorOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_TC_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnDsrcTsaOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_T_TSA_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnDsrcTsaOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_T_TSA_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare1" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare2" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare3" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare4" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare5" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCamera" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAMERA">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanner" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnComment" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_COMMENT">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="IcoBeacon" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntOpticalBarrier" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnGabarite" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_H_LIMITER">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnEntryGate" TEMPLATE="\Buttons\Button.txt" ACTION_ID="PERBAEN">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnExitGate" TEMPLATE="\Buttons\Button.txt" ACTION_ID="PERBAPA">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCar" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAR1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCar2" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAR2">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCar3" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAR3">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnEntryLoop" TEMPLATE="\Buttons\Button.txt" ACTION_ID="PERSIMBPR">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnExitLoop" TEMPLATE="\Buttons\Button.txt" ACTION_ID="PERSIMBPA">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnTblBeacon" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_BEACON_TBL">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCommHide" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_COMMENT_HIDE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanSend" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER_SEND">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="IcoCamera1" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID="CHK_CAMERA1"/>
+				<VISIBLE_OBJ ID="IcoCamera2" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID="CHK_CAMERA2"/>
+				<VISIBLE_OBJ ID="btnCamGrab" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAMERA_GRAB">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCamHide" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAMERA_HIDE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanGrab" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER_GRAB">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanHide" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER_HIDE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanSave" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER_SAVE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="TxtNbCar" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCamNumPic" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" NOT_USED="1"/>
+				<VISIBLE_OBJ ID="TxtScanNumPic" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" NOT_USED="1"/>
+				<VISIBLE_OBJ ID="TxtNbCarSAS" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" />
+				<VISIBLE_OBJ ID="CntCamera" TEMPLATE="" INIT_VISIBLE="0" />
+				<VISIBLE_OBJ ID="CntScanner" TEMPLATE="" INIT_VISIBLE="0" />
+				<VISIBLE_OBJ ID="CntComments" TEMPLATE="" INIT_VISIBLE="0" />
+				<VISIBLE_OBJ ID="CntTaskBar" TEMPLATE=""/>
+				
+				
+				<VISIBLE_OBJ ID="btnExternalDisplay" TEMPLATE="\Buttons\ButtonAfficheur.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+
+				<VISIBLE_OBJ ID="btnExternalDisplay2" TEMPLATE="\Buttons\ButtonAfficheur.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+
+				
+				<VISIBLE_OBJ ID="DlgInputDialog" TEMPLATE="\Dialogs\Dialog.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="LineEdit" VALUE="\Dialogs\LineEdit.txt"/>
+					<SUB_TEMPLATE ID="LineEdit-Item" VALUE="\Dialogs\LineEdit-Item.txt"/>
+					<SUB_TEMPLATE ID="LineEdit-Item-Script-Decimal" VALUE="\Dialogs\LineEdit-Item-Script-Decimal.txt"/>
+					<SUB_TEMPLATE ID="LineEdit-Item-Script-Integer" VALUE="\Dialogs\LineEdit-Item-Script-Integer.txt"/>
+					<SUB_TEMPLATE ID="LineEdit-Item-Script-Mask" VALUE="\Dialogs\LineEdit-Item-Script-Mask.txt"/>
+					<SUB_TEMPLATE ID="List" VALUE="\Dialogs\List.txt"/>
+					<SUB_TEMPLATE ID="List-Item" VALUE="\Dialogs\List-Item.txt"/>
+					<SUB_TEMPLATE ID="LineAlarm" VALUE="\Dialogs\LineAlarm.txt"/>
+					<SUB_TEMPLATE ID="ButtonOK" VALUE="\Dialogs\ButtonOK.txt"/>
+					<SUB_TEMPLATE ID="ButtonCANCEL" VALUE="\Dialogs\ButtonCancel.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="DlgInputDialogEx" TEMPLATE="" ACTION_ID="">
+					<!-- each DialogId (defined in registry InputEx) contains a different template file
+					Names from definition and values xml files are used to generate the final structure of html for the dialog -->
+				</VISIBLE_OBJ>
+			<VISIBLE_OBJ ID="DlgHPrioInputDialog" TEMPLATE="\StaticDialogs\HPLoginDialogNEP.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="QuestionTemplate" VALUE="\StaticDialogs\HPQuestDialogNEP.txt"/>
+					<SUB_TEMPLATE ID="InfoTemplate" VALUE="\StaticDialogs\HPInfoDialogNEP.txt"/>
+					<SUB_TEMPLATE ID="ConnectingTemplate" VALUE="\StaticDialogs\HPConnectingDialogNEP.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="WebAsyncInput" TEMPLATE="\StaticDialogs\AsyncInput.txt"/>
+				<VISIBLE_OBJ ID="CntMenuView1" TEMPLATE="\CntMenuLeft\Menu.txt">
+					<SUB_TEMPLATE ID="MenuItem" VALUE="\CntMenuLeft\Menu-Item.txt"/>
+					<SUB_TEMPLATE ID="MenuItemSubmenu" VALUE="\CntMenuLeft\Menu-Item-Submenu.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntMenuView2" TEMPLATE="\CntMenuLeft\Menu.txt">
+					<SUB_TEMPLATE ID="MenuItem" VALUE="\CntMenuLeft\Menu-Item.txt"/>
+					<SUB_TEMPLATE ID="MenuItemSubmenu" VALUE="\CntMenuLeft\Menu-Item-Submenu.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntTabView1" TEMPLATE="\VideoDialog\TabView.txt" ACTION_ID="CntTabView1">
+					<SUB_TEMPLATE ID="TAB" VALUE="\VideoDialog\TabView-Tab.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntTabView2" TEMPLATE="\VideoDialog\TabView.txt" ACTION_ID="CntTabView2">
+					<SUB_TEMPLATE ID="TAB" VALUE="\VideoDialog\TabView-Tab.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntRestreamVideoView1" TEMPLATE="\VideoDialog\ContentVideo.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntRestreamVideoView2" TEMPLATE="\VideoDialog\ContentVideo.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="WindowTitle" TEMPLATE="\Scripts\ChangePageTitleScript.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="WebClientDirectVideo" TEMPLATE="" ACTION_ID="">
+					<SUB_TEMPLATE ID="ON_GOT_CTRL_SCRIPT" VALUE="\Scripts\RemoteVideoDestroyScript.txt"/>
+					<SUB_TEMPLATE ID="ON_LOST_CTRL_SCRIPT" VALUE="\Scripts\RemoteVideoInitScript.txt"/>
+				</VISIBLE_OBJ>
+			</WEB>
+		</LANE_TYPE>
+		
+		<LANE_TYPE ID="EXL" ASYNC_INPUT_DEF_FILE="">
+			<DESKTOP>
+				<PARAM ID="MAIN_DIALOG" VALUE="MFormMainWidgetEXL.ui"/>
+				<PARAM ID="CLIENT_LOGIN_DLG" VALUE="MFormLogin.ui"/>
+				<PARAM ID="CLIENT_TAKEOVER_DLG" VALUE="MFormTakeOverDlg.ui"/>
+				<PARAM ID="CLIENT_DLG_EMBEDED_TO" VALUE="CntSpare5"/>
+				<PARAM ID="CLIENT_CSS_FILE" VALUE="DialogStyleNEP.css"/>
+				<PARAM ID="TASK_BAR_BROWSER_DLG_TEMPLATE" VALUE="MIhmTaskBarWebBrowserDlg.ui"/>
+				<PARAM ID="TASK_BAR_DLG_TYPES" VALUE=""/>
+				<VISIBLE_OBJ ID="CntHeaderGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntModeGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntMiniWeb" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntTrsGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntPaymentGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntInstructionGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntDynPicture" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntDynPicture2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="IcoDynImage" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoDynImage2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName3" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="ClkDate" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="ClkTime" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="LstAlarms" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" IS_ICON_MODE="1" SHOW_TEXT="0" SHOW_ICON="1" TOOLTIP_SHOW_LAST_ITEM="1"/>
+				<VISIBLE_OBJ ID="LstWarnings" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitGate" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtClass" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtClassTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFare" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareTitle" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareType" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareTypeTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAxles" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAxlesTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAdditionalRevenue" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAdditionalRevenueTitle" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtType" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTypeTitle" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSale" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDue" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDueTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDuePaid" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtBalance" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtBalanceTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtEntry" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtEntryTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTransactionNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTransactionNbrTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtReceiptNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtReceiptNbrTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorId" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorName" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaNameTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneName" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneName1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneName2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNameTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" />
+				<VISIBLE_OBJ ID="TxtPlazaNbrTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNbrTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare3" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_CAMERA1"/>
+				<VISIBLE_OBJ ID="TxtSpare4" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_CAMERA2"/>
+				<VISIBLE_OBJ ID="TxtSpare5" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare6" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare7" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare8" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare9" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare10" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare11" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare12" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare13" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare14" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare15" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare16" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_SCANNER1"/>
+				<VISIBLE_OBJ ID="TxtSpare17" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_SCANNER2"/>
+				<VISIBLE_OBJ ID="TxtSpare18" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare19" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare20" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare21" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare22" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare23" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare24" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare25" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare26" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare27" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare28" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare29" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare30" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="TxtSpare31" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare32" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare33" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare34" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare35" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare36" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare37" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare38" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare39" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare40" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare41" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare42" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare43" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare44" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare45" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare46" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare47" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare48" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare49" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare50" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare51" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare52" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare53" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare54" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare55" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare56" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare57" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare58" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare59" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare60" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				
+				
+				
+				<VISIBLE_OBJ ID="TxtRemark" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInstruction" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInstruction2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPayment" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtErrPayment" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLogo" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoCar" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoCollector" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntryGate" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntryLoop" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitLoop" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLaneMode" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLaneStatus" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoTrafficLight" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoViolation" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare1" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_SCANNER1"/>
+				<VISIBLE_OBJ ID="IcoSpare4" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_SCANNER2"/>
+				<VISIBLE_OBJ ID="IcoSpare5" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoBeacon2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSignalizationLight" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitOpticalBarrier" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntFileView1" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" TEMPLATE="TableDataTrsFormat.xml" MAX_ROWS = "20"/>
+				<VISIBLE_OBJ ID="CntFileView2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" TEMPLATE="TableDataTrsHistoryFormat.xml" SET_FOCUS_KEY="263" MAX_ROWS = "20"/>
+				<VISIBLE_OBJ ID="CntFileView3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" TEMPLATE="TableDataInstrAlarmFormat.xml" SET_FOCUS_KEY="264" MAX_ROWS = "20"/>
+				<VISIBLE_OBJ ID="btnProduct1" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnProduct2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnProduct3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnProduct4" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnProduct5" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpeedLimitOff" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SPEED_LIMIT"/>
+				<VISIBLE_OBJ ID="btnSpeedLimitOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SPEED_LIMIT"/>
+				<VISIBLE_OBJ ID="btnWarningOff" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_WARNING"/>
+				<VISIBLE_OBJ ID="btnWarningOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_WARNING"/>
+				<VISIBLE_OBJ ID="CntTabView1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CntTabView1"/>
+				<VISIBLE_OBJ ID="CntTabView2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CntTabView2"/>
+				<VISIBLE_OBJ ID="CntSpare1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntSpare2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntSpare3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntSpare4" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntSpare5" INIT_VISIBLE="0" LEFT="374" TOP="226" WIDTH="517" HEIGHT="380" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInControlStatus" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUser" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUser1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtModeTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtMode" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUserTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTrsContainerTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAlarmsTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTrsHistoryTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAlertesTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnTakeCtrl" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnReturnCtrl" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnClass" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CORCLA" CURSOR_ID="HANDCURSOR"/>
+				<VISIBLE_OBJ ID="btnEntryPoint" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="KBTN_ENL_TCK"/>
+				<VISIBLE_OBJ ID="btnEntryPointNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnExternalDisplay" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnExternalDisplay2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="btnMode" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_MODE"/>
+				<VISIBLE_OBJ ID="btnArrowOn" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_GREEN_ARROW"/>
+				<VISIBLE_OBJ ID="btnArrowOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_GREEN_ARROW"/>
+				<VISIBLE_OBJ ID="btnCrossOn" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_RED_CROSS"/>
+				<VISIBLE_OBJ ID="btnCrossOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_RED_CROSS"/>
+				<VISIBLE_OBJ ID="btnDsrcOn" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_T_SIGN"/>
+				<VISIBLE_OBJ ID="btnDsrcOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_T_SIGN"/>
+				<VISIBLE_OBJ ID="btnMagneticOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_BC_SIGN"/>
+				<VISIBLE_OBJ ID="btnMagneticOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_BC_SIGN"/>
+				<VISIBLE_OBJ ID="btnCollectorOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_TC_SIGN"/>
+				<VISIBLE_OBJ ID="btnCollectorOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_TC_SIGN"/>
+				<VISIBLE_OBJ ID="btnDsrcTsaOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_T_TSA_SIGN"/>
+				<VISIBLE_OBJ ID="btnDsrcTsaOff" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_T_TSA_SIGN"/>
+
+				<VISIBLE_OBJ ID="btnSpare1" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_DF"/>
+				<VISIBLE_OBJ ID="btnSpare2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CL1"/>
+				<VISIBLE_OBJ ID="btnSpare3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CL3"/>
+				<VISIBLE_OBJ ID="btnSpare4" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CL4"/>
+				<VISIBLE_OBJ ID="btnSpare5" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CL2"/>
+				<VISIBLE_OBJ ID="btnSpare6" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="ANNULATION"/>
+				<VISIBLE_OBJ ID="btnSpare7" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_IKOF"/>
+				<VISIBLE_OBJ ID="btnSpare8" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PMT_R1"/>
+				<VISIBLE_OBJ ID="btnSpare9" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_STOP_VIOL"/>
+				<VISIBLE_OBJ ID="btnSpare10" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PMTESP"/>
+				<VISIBLE_OBJ ID="btnSpare11" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_BEACON_B2"/>
+				<VISIBLE_OBJ ID="btnSpare12" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PMT_POS"/>
+				<VISIBLE_OBJ ID="btnSpare13" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PMTOBU"/>
+				<VISIBLE_OBJ ID="btnSpare14" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PMT_VT"/>
+				<VISIBLE_OBJ ID="btnSpare15" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PMTFREE"/>
+				<VISIBLE_OBJ ID="btnSpare16" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare17" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CL5"/>
+				<VISIBLE_OBJ ID="btnSpare18" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare19" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare20" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CL6"/>
+				<VISIBLE_OBJ ID="btnSpare21" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare22" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare23" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare24" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare25" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare26" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare27" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare28" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare29" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare30" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="btnCamera" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAMERA"/>
+				<VISIBLE_OBJ ID="btnScanner" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER"/>
+				<VISIBLE_OBJ ID="btnComment" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_COMMENT"/>
+				<VISIBLE_OBJ ID="IcoBeacon" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_BEACON_B2"/>
+				<VISIBLE_OBJ ID="IcoEntOpticalBarrier" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnGabarite" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_H_LIMITER"/>
+				<VISIBLE_OBJ ID="btnEntryGate" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PERBAEN"/>
+				<VISIBLE_OBJ ID="btnExitGate" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PERBAPA"/>
+				<VISIBLE_OBJ ID="btnCar" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAR1"/>
+				<VISIBLE_OBJ ID="btnCar2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAR2"/>
+				<VISIBLE_OBJ ID="btnCar3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAR3"/>
+				<VISIBLE_OBJ ID="btnEntryLoop" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PERSIMBPR"/>
+				<VISIBLE_OBJ ID="btnExitLoop" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PERSIMBPA"/>
+				<VISIBLE_OBJ ID="btnTblBeacon" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_BEACON_TBL"/>
+				<VISIBLE_OBJ ID="btnCommHide" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_COMMENT_HIDE"/>
+				<VISIBLE_OBJ ID="btnScanSend" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER_SEND"/>
+				<VISIBLE_OBJ ID="IcoCamera1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_CAMERA1"/>
+				<VISIBLE_OBJ ID="IcoCamera2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_CAMERA2"/>
+				<VISIBLE_OBJ ID="btnCamGrab" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAMERA_GRAB"/>
+				<VISIBLE_OBJ ID="btnCamHide" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAMERA_HIDE"/>
+				<VISIBLE_OBJ ID="btnScanGrab" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER_GRAB"/>
+				<VISIBLE_OBJ ID="btnScanHide" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER_HIDE"/>
+				<VISIBLE_OBJ ID="btnScanSave" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER_SAVE"/>
+				<VISIBLE_OBJ ID="TxtNbCar" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCamNumPic" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtScanNumPic" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtNbCarSAS" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntCamera" INIT_VISIBLE="0" LEFT="584" TOP="508" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntScanner" INIT_VISIBLE="0" LEFT="584" TOP="506" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntComments" INIT_VISIBLE="0" LEFT="584" TOP="59" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntTaskBar" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntHMenuView1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntHMenuView2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntRestreamVideoView1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntRestreamVideoView2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+			</DESKTOP>
+			<WEB>
+				<PARAM ID="MAIN_PAGE" VALUE="normal-mode-nep-opa.html"/>
+				<PARAM ID="MINI_WEB_PAGE" VALUE="mini.html"/>
+				
+				<PARAM ID="HTMLTemplateRoot" VALUE=".\others\HtmlTemplates"/>
+				<PARAM ID="TASK_BAR_DLG_TYPES" VALUE=""/>
+				<VISIBLE_OBJ ID="CntHeaderGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntModeGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntMiniWeb" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntTrsGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntPaymentGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntInstructionGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntDynPicture" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntDynPicture2" TEMPLATE="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="TxtPlazaName" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName1" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtPlazaName2" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtPlazaName3" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="ClkDate" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="ClkTime" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="LstAlarms" TEMPLATE="\CntAlarmsGroup\LstAlarms.txt" ACTION_ID="">
+					<PARAM ID="IsIconMode" VALUE="1"/>
+					<SUB_TEMPLATE ID="LstItemIcon" VALUE="\CntAlarmsGroup\LstAlarmsItem-Icon.txt"/>
+					<SUB_TEMPLATE ID="LstItemText" VALUE="\CntAlarmsGroup\LstAlarmsItem-Text.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="LstWarnings" TEMPLATE="\CntAlarmsGroup\LstAlarms.txt" ACTION_ID="">
+					<PARAM ID="IsIconMode" VALUE="0"/>
+					<SUB_TEMPLATE ID="LstItemIcon" VALUE="\CntAlarmsGroup\LstAlarmsItem-Icon.txt"/>
+					<SUB_TEMPLATE ID="LstItemText" VALUE="\CntAlarmsGroup\LstAlarmsItem-Text.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="IcoExitGate" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtClass" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtClassTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFare" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareType" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareTypeTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAxles" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAxlesTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAdditionalRevenue" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAdditionalRevenueTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtType" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTypeTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSale" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDue" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDueTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDuePaid" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtBalance" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtBalanceTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtEntry" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtEntryTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTransactionNbr" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTransactionNbrTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtReceiptNbr" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtReceiptNbrTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorId" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorName" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaNameTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1" />
+				<VISIBLE_OBJ ID="TxtLaneName" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneName1" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtLaneName2" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtLaneNameTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtPlazaNbrTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaNbr" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNbrTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNbr" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare1" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare2" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare3" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="CHK_CAMERA1"/>
+				<VISIBLE_OBJ ID="TxtSpare4" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="CHK_CAMERA2"/>
+				<VISIBLE_OBJ ID="TxtSpare5" TEMPLATE="\ControlTypes\LabelAffTitle.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare6" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare7" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare8" TEMPLATE="\ControlTypes\LabelAffTitle.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare9" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare10" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare11" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare12" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare13" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare14" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare15" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare16" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="CHK_SCANNER1"/>
+				<VISIBLE_OBJ ID="TxtSpare17" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="CHK_SCANNER2"/>
+				<VISIBLE_OBJ ID="TxtSpare18" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare19" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare20" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare21" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare22" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare23" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare24" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare25" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare26" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare27" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare28" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare29" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare30" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare31" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare32" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare33" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare34" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare35" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare36" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare37" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare38" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare39" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare40" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare41" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare42" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare43" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare44" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare45" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare46" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare47" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare48" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare49" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare50" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare51" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare52" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare53" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtSpare54" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare55" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare56" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare57" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare58" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare59" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare60" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="TxtRemark" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInstruction" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInstruction2" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPayment" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtErrPayment" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLogo" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoCar" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoCollector" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntryGate" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntryLoop" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitLoop" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLaneMode" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLaneStatus" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoTrafficLight" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoViolation" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare1" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare2" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare3" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID="CHK_SCANNER1"/>
+				<VISIBLE_OBJ ID="IcoSpare4" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID="CHK_SCANNER2"/>
+				<VISIBLE_OBJ ID="IcoSpare5" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoBeacon2" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSignalizationLight" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitOpticalBarrier" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoDynImage" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoDynImage2" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntFileView1" TEMPLATE="\Tables\Table.txt" ACTION_ID="" FORMAT_FILE="TableDataTrsFormat.xml" MAX_ROWS="12">
+					<SUB_TEMPLATE ID="TableCell" VALUE="\Tables\Table-Cell.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataImage" VALUE="\Tables\Table-CellData-Image.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataText" VALUE="\Tables\Table-CellData-Text.txt"/>
+					<SUB_TEMPLATE ID="TableRow" VALUE="\Tables\Table-Row.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataLink" VALUE="\Tables\Table-CellData-Link.txt"/>
+					<SUB_TEMPLATE ID="TableTitle" VALUE="\Tables\Table-Title.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntFileView2" TEMPLATE="\Tables\Table.txt" ACTION_ID="" FORMAT_FILE="TableDataTrsHistoryFormat.xml" MAX_ROWS="12">
+					<SUB_TEMPLATE ID="TableCell" VALUE="\Tables\Table-Cell.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataImage" VALUE="\Tables\Table-CellData-Image.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataText" VALUE="\Tables\Table-CellData-Text.txt"/>
+					<SUB_TEMPLATE ID="TableRow" VALUE="\Tables\Table-Row.txt"/>
+					<SUB_TEMPLATE ID="TableTitle" VALUE="\Tables\Table-Title.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntFileView3" TEMPLATE="\Tables\Table.txt" ACTION_ID="" FORMAT_FILE="TableDataInstrAlarmFormat.xml" MAX_ROWS="12">
+					<SUB_TEMPLATE ID="TableCell" VALUE="\Tables\Table-Cell.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataImage" VALUE="\Tables\Table-CellData-Image.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataText" VALUE="\Tables\Table-CellData-Text.txt"/>
+					<SUB_TEMPLATE ID="TableRow" VALUE="\Tables\Table-Row.txt"/>
+					<SUB_TEMPLATE ID="TableTitle" VALUE="\Tables\Table-Title.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct1" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct2" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct3" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct4" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct5" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpeedLimitOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SPEED_LIMIT" NOT_USED="1" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpeedLimitOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SPEED_LIMIT" NOT_USED="1" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnWarningOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_WARNING" NOT_USED="1" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnWarningOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_WARNING" NOT_USED="1" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntSpare1" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="CntSpare2" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="CntSpare3" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="CntSpare4" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="CntSpare5" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="TxtInControlStatus" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUser" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUser1" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtModeTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtMode" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtCollectorTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUserTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtTrsContainerTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAlarmsTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTrsHistoryTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAlertesTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnTakeCtrl" TEMPLATE="\Buttons\Button.txt" ACTION_ID="" INIT_VISIBLE="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnReturnCtrl" TEMPLATE="\Buttons\Button.txt" ACTION_ID="" INIT_VISIBLE="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnClass" TEMPLATE="\Buttons\Button.txt" ACTION_ID="CORCLA" CURSOR_ID="HANDCURSOR">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnEntryPoint" TEMPLATE="\Buttons\Button.txt" ACTION_ID="KBTN_ENL_TCK">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnEntryPointNbr" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnMode" TEMPLATE="\Buttons\ButtonVertCentered.txt" ACTION_ID="BTN_MODE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnArrowOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_GREEN_ARROW" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnArrowOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_GREEN_ARROW" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCrossOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_RED_CROSS" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCrossOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_RED_CROSS" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnDsrcOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_T_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnDsrcOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_T_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnMagneticOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_BC_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnMagneticOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_BC_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCollectorOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_TC_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCollectorOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_TC_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnDsrcTsaOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_T_TSA_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnDsrcTsaOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_T_TSA_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare1" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare2" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare3" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare4" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare5" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCamera" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAMERA">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanner" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnComment" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_COMMENT">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="IcoBeacon" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntOpticalBarrier" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnGabarite" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_H_LIMITER">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnEntryGate" TEMPLATE="\Buttons\Button.txt" ACTION_ID="PERBAEN">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnExitGate" TEMPLATE="\Buttons\Button.txt" ACTION_ID="PERBAPA">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCar" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAR1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCar2" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAR2">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCar3" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAR3">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnEntryLoop" TEMPLATE="\Buttons\Button.txt" ACTION_ID="PERSIMBPR">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnExitLoop" TEMPLATE="\Buttons\Button.txt" ACTION_ID="PERSIMBPA">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnTblBeacon" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_BEACON_TBL">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCommHide" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_COMMENT_HIDE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanSend" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER_SEND">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="IcoCamera1" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID="CHK_CAMERA1"/>
+				<VISIBLE_OBJ ID="IcoCamera2" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID="CHK_CAMERA2"/>
+				<VISIBLE_OBJ ID="btnCamGrab" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAMERA_GRAB">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCamHide" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAMERA_HIDE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanGrab" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER_GRAB">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanHide" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER_HIDE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanSave" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER_SAVE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="TxtNbCar" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCamNumPic" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" NOT_USED="1"/>
+				<VISIBLE_OBJ ID="TxtScanNumPic" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" NOT_USED="1"/>
+				<VISIBLE_OBJ ID="TxtNbCarSAS" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" />
+				<VISIBLE_OBJ ID="CntCamera" TEMPLATE="" INIT_VISIBLE="0" />
+				<VISIBLE_OBJ ID="CntScanner" TEMPLATE="" INIT_VISIBLE="0" />
+				<VISIBLE_OBJ ID="CntComments" TEMPLATE="" INIT_VISIBLE="0" />
+				<VISIBLE_OBJ ID="CntTaskBar" TEMPLATE=""/>
+				
+				
+				<VISIBLE_OBJ ID="btnExternalDisplay" TEMPLATE="\Buttons\ButtonAfficheur.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+
+				<VISIBLE_OBJ ID="btnExternalDisplay2" TEMPLATE="\Buttons\ButtonAfficheur.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+
+				
+				<VISIBLE_OBJ ID="DlgInputDialog" TEMPLATE="\Dialogs\Dialog.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="LineEdit" VALUE="\Dialogs\LineEdit.txt"/>
+					<SUB_TEMPLATE ID="LineEdit-Item" VALUE="\Dialogs\LineEdit-Item.txt"/>
+					<SUB_TEMPLATE ID="LineEdit-Item-Script-Decimal" VALUE="\Dialogs\LineEdit-Item-Script-Decimal.txt"/>
+					<SUB_TEMPLATE ID="LineEdit-Item-Script-Integer" VALUE="\Dialogs\LineEdit-Item-Script-Integer.txt"/>
+					<SUB_TEMPLATE ID="LineEdit-Item-Script-Mask" VALUE="\Dialogs\LineEdit-Item-Script-Mask.txt"/>
+					<SUB_TEMPLATE ID="List" VALUE="\Dialogs\List.txt"/>
+					<SUB_TEMPLATE ID="List-Item" VALUE="\Dialogs\List-Item.txt"/>
+					<SUB_TEMPLATE ID="LineAlarm" VALUE="\Dialogs\LineAlarm.txt"/>
+					<SUB_TEMPLATE ID="ButtonOK" VALUE="\Dialogs\ButtonOK.txt"/>
+					<SUB_TEMPLATE ID="ButtonCANCEL" VALUE="\Dialogs\ButtonCancel.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="DlgInputDialogEx" TEMPLATE="" ACTION_ID="">
+					<!-- each DialogId (defined in registry InputEx) contains a different template file
+					Names from definition and values xml files are used to generate the final structure of html for the dialog -->
+				</VISIBLE_OBJ>
+			<VISIBLE_OBJ ID="DlgHPrioInputDialog" TEMPLATE="\StaticDialogs\HPLoginDialogNEP.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="QuestionTemplate" VALUE="\StaticDialogs\HPQuestDialogNEP.txt"/>
+					<SUB_TEMPLATE ID="InfoTemplate" VALUE="\StaticDialogs\HPInfoDialogNEP.txt"/>
+					<SUB_TEMPLATE ID="ConnectingTemplate" VALUE="\StaticDialogs\HPConnectingDialogNEP.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="WebAsyncInput" TEMPLATE="\StaticDialogs\AsyncInput.txt"/>
+				<VISIBLE_OBJ ID="CntMenuView1" TEMPLATE="\CntMenuLeft\Menu.txt">
+					<SUB_TEMPLATE ID="MenuItem" VALUE="\CntMenuLeft\Menu-Item.txt"/>
+					<SUB_TEMPLATE ID="MenuItemSubmenu" VALUE="\CntMenuLeft\Menu-Item-Submenu.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntMenuView2" TEMPLATE="\CntMenuLeft\Menu.txt">
+					<SUB_TEMPLATE ID="MenuItem" VALUE="\CntMenuLeft\Menu-Item.txt"/>
+					<SUB_TEMPLATE ID="MenuItemSubmenu" VALUE="\CntMenuLeft\Menu-Item-Submenu.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntTabView1" TEMPLATE="\VideoDialog\TabView.txt" ACTION_ID="CntTabView1">
+					<SUB_TEMPLATE ID="TAB" VALUE="\VideoDialog\TabView-Tab.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntTabView2" TEMPLATE="\VideoDialog\TabView.txt" ACTION_ID="CntTabView2">
+					<SUB_TEMPLATE ID="TAB" VALUE="\VideoDialog\TabView-Tab.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntRestreamVideoView1" TEMPLATE="\VideoDialog\ContentVideo.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntRestreamVideoView2" TEMPLATE="\VideoDialog\ContentVideo.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="WindowTitle" TEMPLATE="\Scripts\ChangePageTitleScript.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="WebClientDirectVideo" TEMPLATE="" ACTION_ID="">
+					<SUB_TEMPLATE ID="ON_GOT_CTRL_SCRIPT" VALUE="\Scripts\RemoteVideoDestroyScript.txt"/>
+					<SUB_TEMPLATE ID="ON_LOST_CTRL_SCRIPT" VALUE="\Scripts\RemoteVideoInitScript.txt"/>
+				</VISIBLE_OBJ>
+			</WEB>
+		</LANE_TYPE>
+		
+		<LANE_TYPE ID="ENL" ASYNC_INPUT_DEF_FILE="">
+			<DESKTOP>
+				<PARAM ID="MAIN_DIALOG" VALUE="MFormMainWidgetENL.ui"/>
+				<PARAM ID="CLIENT_LOGIN_DLG" VALUE="MFormLogin.ui"/>
+				<PARAM ID="CLIENT_TAKEOVER_DLG" VALUE="MFormTakeOverDlg.ui"/>
+				<PARAM ID="CLIENT_DLG_EMBEDED_TO" VALUE="CntSpare5"/>
+				<PARAM ID="CLIENT_CSS_FILE" VALUE="DialogStyleNEP.css"/>
+				<PARAM ID="TASK_BAR_BROWSER_DLG_TEMPLATE" VALUE="MIhmTaskBarWebBrowserDlg.ui"/>
+				<PARAM ID="TASK_BAR_DLG_TYPES" VALUE=""/>
+				<VISIBLE_OBJ ID="CntHeaderGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntModeGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntMiniWeb" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntTrsGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntPaymentGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntInstructionGroup" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntDynPicture" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntDynPicture2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="IcoDynImage" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoDynImage2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName3" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="ClkDate" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="ClkTime" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="LstAlarms" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" IS_ICON_MODE="1" SHOW_TEXT="0" SHOW_ICON="1" TOOLTIP_SHOW_LAST_ITEM="1"/>
+				<VISIBLE_OBJ ID="LstWarnings" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitGate" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtClass" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtClassTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFare" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareTitle" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareType" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareTypeTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAxles" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAxlesTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAdditionalRevenue" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAdditionalRevenueTitle" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtType" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTypeTitle" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSale" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDue" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDueTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDuePaid" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtBalance" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtBalanceTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtEntry" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtEntryTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTransactionNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTransactionNbrTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtReceiptNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtReceiptNbrTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorId" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorName" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaNameTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneName" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneName1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneName2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNameTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" />
+				<VISIBLE_OBJ ID="TxtPlazaNbrTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNbrTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare3" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_CAMERA1"/>
+				<VISIBLE_OBJ ID="TxtSpare4" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_CAMERA2"/>
+				<VISIBLE_OBJ ID="TxtSpare5" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare6" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare7" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare8" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare9" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare10" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare11" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare12" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare13" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare14" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare15" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare16" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_SCANNER1"/>
+				<VISIBLE_OBJ ID="TxtSpare17" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_SCANNER2"/>
+				<VISIBLE_OBJ ID="TxtSpare18" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare19" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare20" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare21" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare22" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare23" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare24" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare25" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare26" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare27" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare28" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare29" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare30" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="TxtSpare31" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare32" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare33" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare34" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare35" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare36" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare37" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare38" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare39" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare40" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare41" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare42" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare43" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare44" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare45" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare46" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare47" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare48" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare49" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare50" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare51" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare52" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare53" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare54" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare55" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare56" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare57" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare58" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare59" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare60" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				
+				
+				
+				<VISIBLE_OBJ ID="TxtRemark" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInstruction" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInstruction2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPayment" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtErrPayment" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLogo" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoCar" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoCollector" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntryGate" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntryLoop" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitLoop" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLaneMode" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLaneStatus" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoTrafficLight" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoViolation" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare1" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_SCANNER1"/>
+				<VISIBLE_OBJ ID="IcoSpare4" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_SCANNER2"/>
+				<VISIBLE_OBJ ID="IcoSpare5" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoBeacon2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSignalizationLight" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitOpticalBarrier" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntFileView1" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" TEMPLATE="TableDataTrsFormat.xml" MAX_ROWS = "20"/>
+				<VISIBLE_OBJ ID="CntFileView2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" TEMPLATE="TableDataTrsHistoryFormat.xml" SET_FOCUS_KEY="263" MAX_ROWS = "20"/>
+				<VISIBLE_OBJ ID="CntFileView3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="" TEMPLATE="TableDataInstrAlarmFormat.xml" SET_FOCUS_KEY="264" MAX_ROWS = "20"/>
+				<VISIBLE_OBJ ID="btnProduct1" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnProduct2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnProduct3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnProduct4" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnProduct5" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpeedLimitOff" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SPEED_LIMIT"/>
+				<VISIBLE_OBJ ID="btnSpeedLimitOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SPEED_LIMIT"/>
+				<VISIBLE_OBJ ID="btnWarningOff" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_WARNING"/>
+				<VISIBLE_OBJ ID="btnWarningOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_WARNING"/>
+				<VISIBLE_OBJ ID="CntTabView1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CntTabView1"/>
+				<VISIBLE_OBJ ID="CntTabView2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CntTabView2"/>
+				<VISIBLE_OBJ ID="CntSpare1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntSpare2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntSpare3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntSpare4" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntSpare5" INIT_VISIBLE="0" LEFT="374" TOP="226" WIDTH="517" HEIGHT="380" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInControlStatus" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUser" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUser1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtModeTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtMode" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUserTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTrsContainerTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAlarmsTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTrsHistoryTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAlertesTitle" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnTakeCtrl" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnReturnCtrl" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnClass" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CORCLA" CURSOR_ID="HANDCURSOR"/>
+				<VISIBLE_OBJ ID="btnEntryPoint" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnEntryPointNbr" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnExternalDisplay" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnExternalDisplay2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="btnMode" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_MODE"/>
+				<VISIBLE_OBJ ID="btnArrowOn" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_GREEN_ARROW"/>
+				<VISIBLE_OBJ ID="btnArrowOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_GREEN_ARROW"/>
+				<VISIBLE_OBJ ID="btnCrossOn" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_RED_CROSS"/>
+				<VISIBLE_OBJ ID="btnCrossOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_RED_CROSS"/>
+				<VISIBLE_OBJ ID="btnDsrcOn" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_T_SIGN"/>
+				<VISIBLE_OBJ ID="btnDsrcOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_T_SIGN"/>
+				<VISIBLE_OBJ ID="btnMagneticOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_BC_SIGN"/>
+				<VISIBLE_OBJ ID="btnMagneticOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_BC_SIGN"/>
+				<VISIBLE_OBJ ID="btnCollectorOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_TC_SIGN"/>
+				<VISIBLE_OBJ ID="btnCollectorOff" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_TC_SIGN"/>
+				<VISIBLE_OBJ ID="btnDsrcTsaOn" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_T_TSA_SIGN"/>
+				<VISIBLE_OBJ ID="btnDsrcTsaOff" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_T_TSA_SIGN"/>
+
+				<VISIBLE_OBJ ID="btnSpare1" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_DF"/>
+				<VISIBLE_OBJ ID="btnSpare2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="KBTN_CUT_TICKET"/>
+				<VISIBLE_OBJ ID="btnSpare3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare4" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="KBTN_AUTO_MANUAL_MODE"/>
+				<VISIBLE_OBJ ID="btnSpare5" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare6" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare7" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare8" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare9" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare10" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare11" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare12" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare13" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare14" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare15" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare16" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare17" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="KBTN_ISSUE_TCK"/>
+				<VISIBLE_OBJ ID="btnSpare18" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare19" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare20" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare21" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare22" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare23" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare24" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare25" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare26" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare27" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare28" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare29" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnSpare30" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="btnCamera" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAMERA"/>
+				<VISIBLE_OBJ ID="btnScanner" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER"/>
+				<VISIBLE_OBJ ID="btnComment" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_COMMENT"/>
+				<VISIBLE_OBJ ID="IcoBeacon" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_BEACON_B2"/>
+				<VISIBLE_OBJ ID="IcoEntOpticalBarrier" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnGabarite" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_H_LIMITER"/>
+				<VISIBLE_OBJ ID="btnEntryGate" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PERBAEN"/>
+				<VISIBLE_OBJ ID="btnExitGate" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PERBAPA"/>
+				<VISIBLE_OBJ ID="btnCar" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAR1"/>
+				<VISIBLE_OBJ ID="btnCar2" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAR2"/>
+				<VISIBLE_OBJ ID="btnCar3" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAR3"/>
+				<VISIBLE_OBJ ID="btnEntryLoop" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PERSIMBPR"/>
+				<VISIBLE_OBJ ID="btnExitLoop" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="PERSIMBPA"/>
+				<VISIBLE_OBJ ID="btnTblBeacon" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_BEACON_TBL"/>
+				<VISIBLE_OBJ ID="btnCommHide" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_COMMENT_HIDE"/>
+				<VISIBLE_OBJ ID="btnScanSend" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER_SEND"/>
+				<VISIBLE_OBJ ID="IcoCamera1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_CAMERA1"/>
+				<VISIBLE_OBJ ID="IcoCamera2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="CHK_CAMERA2"/>
+				<VISIBLE_OBJ ID="btnCamGrab" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAMERA_GRAB"/>
+				<VISIBLE_OBJ ID="btnCamHide" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_CAMERA_HIDE"/>
+				<VISIBLE_OBJ ID="btnScanGrab" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER_GRAB"/>
+				<VISIBLE_OBJ ID="btnScanHide" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER_HIDE"/>
+				<VISIBLE_OBJ ID="btnScanSave" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID="BTN_SCANNER_SAVE"/>
+				<VISIBLE_OBJ ID="TxtNbCar" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCamNumPic" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtScanNumPic" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtNbCarSAS" INIT_VISIBLE="0" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntCamera" INIT_VISIBLE="0" LEFT="584" TOP="508" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntScanner" INIT_VISIBLE="0" LEFT="584" TOP="506" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntComments" INIT_VISIBLE="0" LEFT="584" TOP="59" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntTaskBar" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntHMenuView1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntHMenuView2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntRestreamVideoView1" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntRestreamVideoView2" INIT_VISIBLE="1" LEFT="" TOP="" WIDTH="" HEIGHT="" ACTION_ID=""/>
+			</DESKTOP>
+			<WEB>
+				<PARAM ID="MAIN_PAGE" VALUE="normal-mode-nep-opa.html"/>
+				<PARAM ID="MINI_WEB_PAGE" VALUE="mini.html"/>
+				
+				<PARAM ID="HTMLTemplateRoot" VALUE=".\others\HtmlTemplates"/>
+				<PARAM ID="TASK_BAR_DLG_TYPES" VALUE=""/>
+				<VISIBLE_OBJ ID="CntHeaderGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntModeGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntMiniWeb" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntTrsGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntPaymentGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntInstructionGroup" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntDynPicture" TEMPLATE="" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntDynPicture2" TEMPLATE="" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="TxtPlazaName" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaName1" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtPlazaName2" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtPlazaName3" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="ClkDate" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="ClkTime" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="LstAlarms" TEMPLATE="\CntAlarmsGroup\LstAlarms.txt" ACTION_ID="">
+					<PARAM ID="IsIconMode" VALUE="1"/>
+					<SUB_TEMPLATE ID="LstItemIcon" VALUE="\CntAlarmsGroup\LstAlarmsItem-Icon.txt"/>
+					<SUB_TEMPLATE ID="LstItemText" VALUE="\CntAlarmsGroup\LstAlarmsItem-Text.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="LstWarnings" TEMPLATE="\CntAlarmsGroup\LstAlarms.txt" ACTION_ID="">
+					<PARAM ID="IsIconMode" VALUE="0"/>
+					<SUB_TEMPLATE ID="LstItemIcon" VALUE="\CntAlarmsGroup\LstAlarmsItem-Icon.txt"/>
+					<SUB_TEMPLATE ID="LstItemText" VALUE="\CntAlarmsGroup\LstAlarmsItem-Text.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="IcoExitGate" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtClass" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtClassTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFare" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareType" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtFareTypeTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAxles" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAxlesTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAdditionalRevenue" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAdditionalRevenueTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtType" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTypeTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSale" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDue" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDueTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSaleDuePaid" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtBalance" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtBalanceTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtEntry" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtEntryTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTransactionNbr" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTransactionNbrTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtReceiptNbr" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtReceiptNbrTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorId" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCollectorName" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaNameTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1" />
+				<VISIBLE_OBJ ID="TxtLaneName" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneName1" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtLaneName2" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtLaneNameTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtPlazaNbrTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPlazaNbr" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNbrTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtLaneNbr" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare1" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare2" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare3" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="CHK_CAMERA1"/>
+				<VISIBLE_OBJ ID="TxtSpare4" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="CHK_CAMERA2"/>
+				<VISIBLE_OBJ ID="TxtSpare5" TEMPLATE="\ControlTypes\LabelAffTitle.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare6" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare7" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare8" TEMPLATE="\ControlTypes\LabelAffTitle.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare9" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare10" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare11" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare12" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare13" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare14" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare15" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare16" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="CHK_SCANNER1"/>
+				<VISIBLE_OBJ ID="TxtSpare17" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="CHK_SCANNER2"/>
+				<VISIBLE_OBJ ID="TxtSpare18" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare19" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare20" TEMPLATE="\ControlTypes\LabelAffNormal.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare21" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare22" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare23" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare24" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare25" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare26" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare27" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare28" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare29" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare30" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare31" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare32" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare33" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare34" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare35" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare36" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare37" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare38" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare39" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare40" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare41" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare42" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare43" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare44" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare45" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare46" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare47" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare48" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare49" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare50" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="TxtSpare51" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare52" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare53" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtSpare54" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare55" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare56" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare57" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare58" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare59" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtSpare60" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				
+				<VISIBLE_OBJ ID="TxtRemark" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInstruction" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInstruction2" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtPayment" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtErrPayment" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLogo" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoCar" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoCollector" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntryGate" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntryLoop" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitLoop" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLaneMode" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoLaneStatus" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoTrafficLight" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoViolation" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare1" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare2" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSpare3" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID="CHK_SCANNER1"/>
+				<VISIBLE_OBJ ID="IcoSpare4" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID="CHK_SCANNER2"/>
+				<VISIBLE_OBJ ID="IcoSpare5" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoBeacon2" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoSignalizationLight" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoExitOpticalBarrier" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoDynImage" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoDynImage2" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntFileView1" TEMPLATE="\Tables\Table.txt" ACTION_ID="" FORMAT_FILE="TableDataTrsFormat.xml" MAX_ROWS="12">
+					<SUB_TEMPLATE ID="TableCell" VALUE="\Tables\Table-Cell.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataImage" VALUE="\Tables\Table-CellData-Image.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataText" VALUE="\Tables\Table-CellData-Text.txt"/>
+					<SUB_TEMPLATE ID="TableRow" VALUE="\Tables\Table-Row.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataLink" VALUE="\Tables\Table-CellData-Link.txt"/>
+					<SUB_TEMPLATE ID="TableTitle" VALUE="\Tables\Table-Title.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntFileView2" TEMPLATE="\Tables\Table.txt" ACTION_ID="" FORMAT_FILE="TableDataTrsHistoryFormat.xml" MAX_ROWS="12">
+					<SUB_TEMPLATE ID="TableCell" VALUE="\Tables\Table-Cell.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataImage" VALUE="\Tables\Table-CellData-Image.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataText" VALUE="\Tables\Table-CellData-Text.txt"/>
+					<SUB_TEMPLATE ID="TableRow" VALUE="\Tables\Table-Row.txt"/>
+					<SUB_TEMPLATE ID="TableTitle" VALUE="\Tables\Table-Title.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntFileView3" TEMPLATE="\Tables\Table.txt" ACTION_ID="" FORMAT_FILE="TableDataInstrAlarmFormat.xml" MAX_ROWS="12">
+					<SUB_TEMPLATE ID="TableCell" VALUE="\Tables\Table-Cell.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataImage" VALUE="\Tables\Table-CellData-Image.txt"/>
+					<SUB_TEMPLATE ID="TableCellDataText" VALUE="\Tables\Table-CellData-Text.txt"/>
+					<SUB_TEMPLATE ID="TableRow" VALUE="\Tables\Table-Row.txt"/>
+					<SUB_TEMPLATE ID="TableTitle" VALUE="\Tables\Table-Title.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct1" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct2" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct3" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct4" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnProduct5" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpeedLimitOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SPEED_LIMIT" NOT_USED="1" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpeedLimitOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SPEED_LIMIT" NOT_USED="1" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnWarningOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_WARNING" NOT_USED="1" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnWarningOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_WARNING" NOT_USED="1" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntSpare1" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="CntSpare2" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="CntSpare3" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="CntSpare4" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="CntSpare5" TEMPLATE=""/>
+				<VISIBLE_OBJ ID="TxtInControlStatus" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUser" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUser1" TEMPLATE="\ControlTypes\LabelVertCentered.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtModeTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtMode" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtCollectorTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtInCtrlUserTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" USED_AT_MINI_WEB="1"/>
+				<VISIBLE_OBJ ID="TxtTrsContainerTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAlarmsTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtTrsHistoryTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtAlertesTitle" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnTakeCtrl" TEMPLATE="\Buttons\Button.txt" ACTION_ID="" INIT_VISIBLE="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnReturnCtrl" TEMPLATE="\Buttons\Button.txt" ACTION_ID="" INIT_VISIBLE="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnClass" TEMPLATE="\Buttons\Button.txt" ACTION_ID="CORCLA" CURSOR_ID="HANDCURSOR">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnEntryPoint" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnEntryPointNbr" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnMode" TEMPLATE="\Buttons\ButtonVertCentered.txt" ACTION_ID="BTN_MODE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnArrowOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_GREEN_ARROW" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnArrowOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_GREEN_ARROW" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCrossOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_RED_CROSS" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCrossOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_RED_CROSS" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnDsrcOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_T_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnDsrcOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_T_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnMagneticOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_BC_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnMagneticOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_BC_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCollectorOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_TC_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCollectorOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_TC_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnDsrcTsaOn" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_T_TSA_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnDsrcTsaOff" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_T_TSA_SIGN" USED_AT_MINI_WEB="1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare1" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare2" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare3" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare4" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnSpare5" TEMPLATE="\Buttons\Button.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCamera" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAMERA">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanner" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnComment" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_COMMENT">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="IcoBeacon" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="IcoEntOpticalBarrier" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="btnGabarite" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_H_LIMITER">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnEntryGate" TEMPLATE="\Buttons\Button.txt" ACTION_ID="PERBAEN">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnExitGate" TEMPLATE="\Buttons\Button.txt" ACTION_ID="PERBAPA">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCar" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAR1">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCar2" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAR2">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCar3" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAR3">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnEntryLoop" TEMPLATE="\Buttons\Button.txt" ACTION_ID="PERSIMBPR">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnExitLoop" TEMPLATE="\Buttons\Button.txt" ACTION_ID="PERSIMBPA">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnTblBeacon" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_BEACON_TBL">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCommHide" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_COMMENT_HIDE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanSend" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER_SEND">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="IcoCamera1" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID="CHK_CAMERA1"/>
+				<VISIBLE_OBJ ID="IcoCamera2" TEMPLATE="\ControlTypes\Image.txt" ACTION_ID="CHK_CAMERA2"/>
+				<VISIBLE_OBJ ID="btnCamGrab" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAMERA_GRAB">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnCamHide" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_CAMERA_HIDE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanGrab" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER_GRAB">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanHide" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER_HIDE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="btnScanSave" TEMPLATE="\Buttons\Button.txt" ACTION_ID="BTN_SCANNER_SAVE">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="TxtNbCar" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="TxtCamNumPic" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" NOT_USED="1"/>
+				<VISIBLE_OBJ ID="TxtScanNumPic" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" NOT_USED="1"/>
+				<VISIBLE_OBJ ID="TxtNbCarSAS" TEMPLATE="\ControlTypes\Label.txt" ACTION_ID="" />
+				<VISIBLE_OBJ ID="CntCamera" TEMPLATE="" INIT_VISIBLE="0" />
+				<VISIBLE_OBJ ID="CntScanner" TEMPLATE="" INIT_VISIBLE="0" />
+				<VISIBLE_OBJ ID="CntComments" TEMPLATE="" INIT_VISIBLE="0" />
+				<VISIBLE_OBJ ID="CntTaskBar" TEMPLATE=""/>
+				
+				
+				<VISIBLE_OBJ ID="btnExternalDisplay" TEMPLATE="\Buttons\ButtonAfficheur.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+
+				<VISIBLE_OBJ ID="btnExternalDisplay2" TEMPLATE="\Buttons\ButtonAfficheur.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="ButtonImage" VALUE="\Buttons\ButtonImage.txt"/>
+					<SUB_TEMPLATE ID="ButtonText" VALUE="\Buttons\ButtonText.txt"/>
+				</VISIBLE_OBJ>
+
+				
+				<VISIBLE_OBJ ID="DlgInputDialog" TEMPLATE="\Dialogs\Dialog.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="LineEdit" VALUE="\Dialogs\LineEdit.txt"/>
+					<SUB_TEMPLATE ID="LineEdit-Item" VALUE="\Dialogs\LineEdit-Item.txt"/>
+					<SUB_TEMPLATE ID="LineEdit-Item-Script-Decimal" VALUE="\Dialogs\LineEdit-Item-Script-Decimal.txt"/>
+					<SUB_TEMPLATE ID="LineEdit-Item-Script-Integer" VALUE="\Dialogs\LineEdit-Item-Script-Integer.txt"/>
+					<SUB_TEMPLATE ID="LineEdit-Item-Script-Mask" VALUE="\Dialogs\LineEdit-Item-Script-Mask.txt"/>
+					<SUB_TEMPLATE ID="List" VALUE="\Dialogs\List.txt"/>
+					<SUB_TEMPLATE ID="List-Item" VALUE="\Dialogs\List-Item.txt"/>
+					<SUB_TEMPLATE ID="LineAlarm" VALUE="\Dialogs\LineAlarm.txt"/>
+					<SUB_TEMPLATE ID="ButtonOK" VALUE="\Dialogs\ButtonOK.txt"/>
+					<SUB_TEMPLATE ID="ButtonCANCEL" VALUE="\Dialogs\ButtonCancel.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="DlgInputDialogEx" TEMPLATE="" ACTION_ID="">
+					<!-- each DialogId (defined in registry InputEx) contains a different template file
+					Names from definition and values xml files are used to generate the final structure of html for the dialog -->
+				</VISIBLE_OBJ>
+			<VISIBLE_OBJ ID="DlgHPrioInputDialog" TEMPLATE="\StaticDialogs\HPLoginDialogNEP.txt" ACTION_ID="">
+					<SUB_TEMPLATE ID="QuestionTemplate" VALUE="\StaticDialogs\HPQuestDialogNEP.txt"/>
+					<SUB_TEMPLATE ID="InfoTemplate" VALUE="\StaticDialogs\HPInfoDialogNEP.txt"/>
+					<SUB_TEMPLATE ID="ConnectingTemplate" VALUE="\StaticDialogs\HPConnectingDialogNEP.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="WebAsyncInput" TEMPLATE="\StaticDialogs\AsyncInput.txt"/>
+				<VISIBLE_OBJ ID="CntMenuView1" TEMPLATE="\CntMenuLeft\Menu.txt">
+					<SUB_TEMPLATE ID="MenuItem" VALUE="\CntMenuLeft\Menu-Item.txt"/>
+					<SUB_TEMPLATE ID="MenuItemSubmenu" VALUE="\CntMenuLeft\Menu-Item-Submenu.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntMenuView2" TEMPLATE="\CntMenuLeft\Menu.txt">
+					<SUB_TEMPLATE ID="MenuItem" VALUE="\CntMenuLeft\Menu-Item.txt"/>
+					<SUB_TEMPLATE ID="MenuItemSubmenu" VALUE="\CntMenuLeft\Menu-Item-Submenu.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntTabView1" TEMPLATE="\VideoDialog\TabView.txt" ACTION_ID="CntTabView1">
+					<SUB_TEMPLATE ID="TAB" VALUE="\VideoDialog\TabView-Tab.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntTabView2" TEMPLATE="\VideoDialog\TabView.txt" ACTION_ID="CntTabView2">
+					<SUB_TEMPLATE ID="TAB" VALUE="\VideoDialog\TabView-Tab.txt"/>
+				</VISIBLE_OBJ>
+				<VISIBLE_OBJ ID="CntRestreamVideoView1" TEMPLATE="\VideoDialog\ContentVideo.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="CntRestreamVideoView2" TEMPLATE="\VideoDialog\ContentVideo.txt" ACTION_ID=""/>
+				<VISIBLE_OBJ ID="WindowTitle" TEMPLATE="\Scripts\ChangePageTitleScript.txt" ACTION_ID=""/>
+
+				<VISIBLE_OBJ ID="WebClientDirectVideo" TEMPLATE="" ACTION_ID="">
+					<SUB_TEMPLATE ID="ON_GOT_CTRL_SCRIPT" VALUE="\Scripts\RemoteVideoDestroyScript.txt"/>
+					<SUB_TEMPLATE ID="ON_LOST_CTRL_SCRIPT" VALUE="\Scripts\RemoteVideoInitScript.txt"/>
+				</VISIBLE_OBJ>
+			</WEB>
+		</LANE_TYPE>
+	</LANE_TYPES>
+</IHM_CONFIG>

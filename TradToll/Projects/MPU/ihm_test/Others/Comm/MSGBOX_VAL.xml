@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by MFR (CS Systems D'information) -->
+<input_description>
+	<widget type="Label" name="lblTitle" text=""/>
+	<widget type="Label" name="lblMessage" text=""/>
+	<widget type="TextEdit" name="txtMessage" value="0" readonly="0" src="HTMLTableRsultTemplate.html"/>
+	<widget type="PushButtonOK" name="btnOK" text=""/>
+</input_description>

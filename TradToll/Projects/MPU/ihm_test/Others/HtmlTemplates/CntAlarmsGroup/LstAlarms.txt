@@ -1,0 +1,10 @@
+<div id="%id%" class="control text %class%" style="%style%">%text%</div>
+<script type="text/javascript">
+
+	// add presenting of the image tooltip to the tooltip label on mouse hover
+	$("#%id% .alarm-item img").unbind('mouseover');
+	$("#%id% .alarm-item img").bind('mouseover', alarmsMouseOverCommandHandler);
+	$("#%id% .alarm-item img").unbind('mouseout');
+	$("#%id% .alarm-item img").bind('mouseout', alarmsMouseOutCommandHandler);
+
+</script>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="TEST LECTEURS CODE BARRE, FRICTION ET CLAVIER"/>
+	<widget type="Label" name="lblMessage" text="Pour lancer ce test, appyuez sur ENTREE ou cliquer sur le bouton TESTER.§Lorsque le test est en cours, il peut ?tre interrompu par un appui sur la touche ECHAP ou la touche ENTREE."/>
+	<widget type="PushButtonOK" name="btnOK" text="TESTER" readonly="0"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="ANNULER" readonly="0" translate="1"/>
+</input_description>

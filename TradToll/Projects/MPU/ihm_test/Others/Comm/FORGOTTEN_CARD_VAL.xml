@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="FORGOTTEN_CARD"/>
+	<widget type="Label" name="lblMessage" text="FORGOTTEN_CARD_MSG"/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0"/>
+</input_description>

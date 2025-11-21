@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="REPLENISHMENT_BOWLS_TITLE"/>
+	<widget type="Label" name="lblMessage" text="REPLENISHMENT_BOWLS_MESSAGE"/>
+	<widget type="Label" name="lblTitle1" text="Bol 1 (x0.10€):"/>
+	<widget type="LineEditExt" name="txtValue1" value=""/>
+	<widget type="Label" name="lblTitle2" text="Bol 2 (x0.20€):"/>
+	<widget type="LineEditExt" name="txtValue2" value=""/>
+	<widget type="Label" name="lblTitle3" text="Bol 3 (x1.00€):"/>
+	<widget type="LineEditExt" name="txtValue3" value=""/>
+	<widget type="Label" name="lblTitle4" text="Bol 4 (x1.00€):"/>
+	<widget type="LineEditExt" name="txtValue4" value=""/>
+	<widget type="PushButtonOK" name="btnOK" text="BTN_OK_TEXT" readonly="0"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_CANCEL_TEXT" readonly="0"/>
+</input_description>

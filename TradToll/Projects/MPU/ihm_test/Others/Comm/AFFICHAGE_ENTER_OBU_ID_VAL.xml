@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="TITRE_ENTER_OBU_ID"/>
+	<widget type="Label" name="lblMessage" text="LABEL_ENTER_OBU_ID_MSG"/>
+	<widget type="Label" name="lblTitle1" text="CHAMP_OBU_ID"/>
+	<widget type="LineEditExt" name="txtValue1" value=""/>
+	<widget type="PushButtonOK" name="btnOK" text="LABEL_BTN_OK_TEXT" readonly="0"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="LABEL_BTN_CANCEL_TEXT" readonly="0"/>
+</input_description>
+

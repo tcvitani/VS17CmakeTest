@@ -1,0 +1,25 @@
+<div id="%id%" class="%class%">
+
+	<div class="title-bar">
+		<div class="title">%title%</div>
+	</div>
+
+	<ul class="tabs">
+
+		%tabs%
+
+	</ul>
+
+	<div class="contents">
+
+		%source%
+
+	</div>
+
+	<div class="buttons">
+
+		%buttons%
+
+	</div>
+
+</div>

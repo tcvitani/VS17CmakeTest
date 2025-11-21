@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by MFR (CS Systems D'information) -->
+<input_description>
+	<widget type="Label" name="lblTitle" text="%MSGBOX_TITLE%"/>
+	<widget type="Label" name="lblSubtitle" text="%MSGBOX_MSGTITLE%"/>
+	<widget type="TextEdit" name="txtMessage" readonly="1" src="DisplayCounterGeneratedTable.html" is_html="1"/>
+	<widget type="PushButtonOK" name="btnOK" text="%OK_BUTTON_TEXT%"/>
+	<widget type="PushButtonCancel" name="btnCancel" text="BTN_PREVIOUS_TEXT"/>
+</input_description>

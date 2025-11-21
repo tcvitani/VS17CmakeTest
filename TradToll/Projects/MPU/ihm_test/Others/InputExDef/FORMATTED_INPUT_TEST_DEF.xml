@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css">
+	<widget type="Label" name="lblTitle"/>
+	<widget type="Label" name="lblMessage"/>
+	<widget type="LineEdit" name="txtNonFormatedText"/>
+	<widget type="LineEditExt" name="txtMaxMinString" format="N" format_detail="N06"/>
+	<widget type="LineEditExt" name="txtMinMaxNumber" format="N" format_detail="N+6"/>
+	<widget type="LineEditExt" name="txtRightMaskNumber" format="R" format_detail="999999;0"/>
+	<widget type="LineEditExt" name="txtDecimalNumber" format="N" format_detail="N+5,3"/>
+	<widget type="LineEditExt" name="txtFormattedInputMask" format="M" format_detail="HH:HH:HH:HH:HH:HH;_"/>
+	<widget type="PushButtonOK" name="btnOK"/>
+	<widget type="PushButtonCancel" name="btnCancel"/>
+</input_definition>

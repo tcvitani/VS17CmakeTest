@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="Label" name="lblTitle" text="%CONFIRM_MSGBOX_TITLE%"/>
+	<widget type="Label" name="lblMessage" text="%CONFIRM_MSGBOX_MSGTEXT%"/>
+	<widget type="PushButtonOK" name="btnOK" readonly="%btnTypeOK-readonly%" text="%OK_BUTTON_TEXT%"/>
+</input_description>

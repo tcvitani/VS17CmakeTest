@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<option_list>
+<option value="1" text="1 - Chèque bancaire"/>
+<option value="2" text="2 - Devises"/>
+<option value="3" text="3 - Carte (tabulation)"/>
+<option value="4" text="4 - Badge (tabulation)"/>
+<option value="5" text="5 - Reconnaissance de dette"/>
+<option value="6" text="6 - Autres (réquisition, travaux, etc.)"/>
+<option value="7" text="7 - Activation temporaire de paiements en espèces"/>
+
+</option_list>

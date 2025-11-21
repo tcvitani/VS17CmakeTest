@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_definition desktop_css_file="DialogStyleNEP.css" >
+	<widget type="Label" name="lblTitle" />
+	<widget type="Label" name="lblOIB"  />
+	<widget type="LineEdit" name="txtOIB" format="FILTER" format_detail="lstData"/>
+	<widget type="Label" name="lblName"  />
+	<widget type="LineEdit" name="txtName" format="FILTER" format_detail="lstData"/>
+	<widget type="Label" name="lblPIB" />
+	<widget type="Label" name="lblCompanyName" />
+	<widget type="Label" name="lblAddress" />
+	<widget type="Label" name="lblCity" />
+	<widget type="Label" name="lblCountry" />
+	<widget type="ListWidget" name="lstData" validator="*" />
+	<widget type="PushButtonOK" name="btnOK"  />
+	<widget type="PushButtonCancel" name="btnCancel"  />
+</input_definition>

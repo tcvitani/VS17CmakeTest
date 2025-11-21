@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<input_description>
+	<widget type="ListWidget" name="listViewActions"/>
+	<widget type="PushButton" name="pushButton" btn_id="27" text="KBD_KEY_ESC" readonly="0"/>
+	<widget type="PushButton" name="pushButton_2" btn_id="261" text="KBD_KEY_F1" readonly="0"/>
+	<widget type="PushButton" name="pushButton_3" btn_id="262" text="KBD_KEY_F2" readonly="0"/>
+	<widget type="PushButton" name="pushButton_4" btn_id="263" text="KBD_KEY_F3" readonly="0"/>
+	<widget type="PushButton" name="pushButton_5" btn_id="264" text="KBD_KEY_F4" readonly="0"/>
+	<widget type="PushButton" name="pushButton_6" btn_id="" readonly="0"/>
+	<widget type="PushButton" name="pushButton_7" btn_id="" readonly="0"/>
+	<widget type="PushButton" name="pushButton_8" btn_id="" readonly="0"/>
+	<widget type="PushButton" name="pushButton_9" btn_id="" readonly="0"/>
+	<widget type="PushButton" name="pushButton_10" btn_id="305" text="KBD_KEY_CAMERA" readonly="0"/>
+	<widget type="PushButton" name="pushButton_11" btn_id="306" text="KBD_KEY_SCANER" readonly="0"/>
+	<widget type="PushButton" name="pushButton_12" btn_id="307" text="KBD_KEY_ENTRY_BAR" readonly="0"/>
+	<widget type="PushButton" name="pushButton_13" btn_id="308" text="KBD_KEY_FAV" readonly="0"/>
+	<widget type="PushButton" name="pushButton_14" btn_id="309" text="KBD_KEY_COM" readonly="0"/>
+	<widget type="PushButton" name="pushButton_15" btn_id="310" text="KBD_KEY_MENU" readonly="0"/>
+	<widget type="PushButton" name="pushButton_16" btn_id="311" text="KBD_KEY_CAL" readonly="0"/>
+	<widget type="PushButton" name="pushButton_17" btn_id="65" text="A" readonly="0"/>
+	<widget type="PushButton" name="pushButton_18" btn_id="90" text="Z" readonly="0"/>
+	<widget type="PushButton" name="pushButton_19" btn_id="69" text="E" readonly="0"/>
+	<widget type="PushButton" name="pushButton_20" btn_id="82" text="R" readonly="0"/>
+	<widget type="PushButton" name="pushButton_21" btn_id="84" text="T" readonly="0"/>
+	<widget type="PushButton" name="pushButton_22" btn_id="89" text="Y" readonly="0"/>
+	<widget type="PushButton" name="pushButton_23" btn_id="85" text="U" readonly="0"/>
+	<widget type="PushButton" name="pushButton_24" btn_id="73" text="I" readonly="0"/>
+	<widget type="PushButton" name="pushButton_25" btn_id="79" text="O" readonly="0"/>
+	<widget type="PushButton" name="pushButton_26" btn_id="80" text="P" readonly="0"/>
+	<widget type="PushButton" name="pushButton_27" btn_id="8" text="" readonly="0"/>
+	<widget type="PushButton" name="pushButton_28" btn_id="257" text="KBD_KEY_DELETE" readonly="0"/>
+	<widget type="PushButton" name="pushButton_29" btn_id="" text="" readonly="1"/>
+	<widget type="PushButton" name="pushButton_30" btn_id="55" text="7" readonly="0"/>
+	<widget type="PushButton" name="pushButton_31" btn_id="56" text="8" readonly="0"/>
+	<widget type="PushButton" name="pushButton_32" btn_id="57" text="9" readonly="0"/>
+	<widget type="PushButton" name="pushButton_33" btn_id="81" text="Q" readonly="0"/>
+	<widget type="PushButton" name="pushButton_34" btn_id="83" text="S" readonly="0"/>
+	<widget type="PushButton" name="pushButton_35" btn_id="68" text="D" readonly="0"/>
+	<widget type="PushButton" name="pushButton_36" btn_id="70" text="F" readonly="0"/>
+	<widget type="PushButton" name="pushButton_37" btn_id="71" text="G" readonly="0"/>
+	<widget type="PushButton" name="pushButton_38" btn_id="72" text="H" readonly="0"/>
+	<widget type="PushButton" name="pushButton_39" btn_id="74" text="J" readonly="0"/>
+	<widget type="PushButton" name="pushButton_40" btn_id="75" text="K" readonly="0"/>
+	<widget type="PushButton" name="pushButton_41" btn_id="76" text="L" readonly="0"/>
+	<widget type="PushButton" name="pushButton_42" btn_id="77" text="M" readonly="0"/>
+	<widget type="PushButton" name="pushButton_43" btn_id="13" text="KBD_KEY_ENTER" readonly="0"/>
+	<widget type="PushButton" name="pushButton_44" btn_id="" text="" readonly="1"/>
+	<widget type="PushButton" name="pushButton_45" btn_id="52" text="4" readonly="0"/>
+	<widget type="PushButton" name="pushButton_46" btn_id="53" text="5" readonly="0"/>
+	<widget type="PushButton" name="pushButton_47" btn_id="54" text="6" readonly="0"/>
+	<widget type="PushButton" name="pushButton_48" btn_id="9" text="" readonly="0"/>
+	<widget type="PushButton" name="pushButton_49" btn_id="87" text="W" readonly="0"/>
+	<widget type="PushButton" name="pushButton_50" btn_id="88" text="X" readonly="0"/>
+	<widget type="PushButton" name="pushButton_51" btn_id="67" text="C" readonly="0"/>
+	<widget type="PushButton" name="pushButton_52" btn_id="86" text="V" readonly="0"/>
+	<widget type="PushButton" name="pushButton_53" btn_id="66" text="B" readonly="0"/>
+	<widget type="PushButton" name="pushButton_54" btn_id="78" text="N" readonly="0"/>
+	<widget type="PushButton" name="pushButton_55" btn_id="46" text="." readonly="0"/>
+	<widget type="PushButton" name="pushButton_56" btn_id="47" text="/" readonly="0"/>
+	<widget type="PushButton" name="pushButton_57" btn_id="39" text="'" readonly="0"/>
+	<widget type="PushButton" name="pushButton_58" btn_id="45" text="-" readonly="0"/>
+	<widget type="PushButton" name="pushButton_59" btn_id="95" text="_" readonly="0"/>
+	<widget type="PushButton" name="pushButton_60" btn_id="" text="" readonly="1"/>
+	<widget type="PushButton" name="pushButton_61" btn_id="49" text="1" readonly="0"/>
+	<widget type="PushButton" name="pushButton_62" btn_id="50" text="2" readonly="0"/>
+	<widget type="PushButton" name="pushButton_63" btn_id="51" text="3" readonly="0"/>
+	<widget type="PushButton" name="pushButton_64" btn_id="312" text="KBD_KEY_CANCEL_TRS" readonly="0"/>
+	<widget type="PushButton" name="pushButton_65" btn_id="" text="" readonly="1"/>
+	<widget type="PushButton" name="pushButton_66" btn_id="258" text="KBD_KEY_ALT" readonly="0"/>
+	<widget type="PushButton" name="pushButton_67" btn_id="32" text="KBD_KEY_SPACE" readonly="0"/>
+	<widget type="PushButton" name="pushButton_68" btn_id="32" text="KBD_KEY_SPACE" readonly="0"/>
+	<widget type="PushButton" name="pushButton_69" btn_id="259" text="KBD_KEY_CTRL" readonly="0"/>
+	<widget type="PushButton" name="pushButton_70" btn_id="64" text="@" readonly="0"/>
+	<widget type="PushButton" name="pushButton_71" btn_id="" text="" readonly="1"/>
+	<widget type="PushButton" name="pushButton_72" btn_id="281" readonly="0"/>
+	<widget type="PushButton" name="pushButton_73" btn_id="" text="" readonly="1"/>
+	<widget type="PushButton" name="pushButton_74" btn_id="" text="" readonly="1"/>
+	<widget type="PushButton" name="pushButton_75" btn_id="48" text="0" readonly="0"/>
+	<widget type="PushButton" name="pushButton_76" btn_id="44" text="," readonly="0"/>
+	<widget type="PushButton" name="pushButton_77" btn_id="317" text="KBD_KEY_CL5" readonly="0"/>
+	<widget type="PushButton" name="pushButton_78" btn_id="318" text="KBD_KEY_CL6" readonly="0"/>
+	<widget type="PushButton" name="pushButton_79" btn_id="319" text="KBD_KEY_CL7" readonly="0"/>
+	<widget type="PushButton" name="pushButton_80" btn_id="320" text="KBD_KEY_OB" readonly="0"/>
+	<widget type="PushButton" name="pushButton_81" btn_id="321" text="KBD_KEY_STATION_ENTRANCE" readonly="0"/>
+	<widget type="PushButton" name="pushButton_82" btn_id="323" text="KBD_KEY_RAN" readonly="0"/>
+	<widget type="PushButton" name="pushButton_83" btn_id="324" text="KBD_KEY_CHECK_VAC" readonly="0"/>
+	<widget type="PushButton" name="pushButton_84" btn_id="325" text="KBD_KEY_BARCODE_ACTIVATION" readonly="0"/>
+	<widget type="PushButton" name="pushButton_85" btn_id="326" text="KBD_KEY_TABLE_ANTENA" readonly="0"/>
+	<widget type="PushButton" name="pushButton_86" btn_id="280" readonly="0"/>
+	<widget type="PushButton" name="pushButton_87" btn_id="283" readonly="0"/>
+	<widget type="PushButton" name="pushButton_88" btn_id="282" readonly="0"/>
+	<widget type="PushButton" name="pushButton_89" btn_id="" text="" readonly="1"/>
+	<widget type="PushButton" name="pushButton_90" btn_id="" text="" readonly="1"/>
+	<widget type="PushButton" name="pushButton_91" btn_id="13" text="KBD_KEY_ENTER" readonly="0"/>
+	<widget type="PushButton" name="pushButton_92" btn_id="315" text="KBD_KEY_CL3" readonly="0"/>
+	<widget type="PushButton" name="pushButton_93" btn_id="316" text="KBD_KEY_CL4" readonly="0"/>
+	<widget type="PushButton" name="pushButton_94" btn_id="322" text="KBD_KEY_APA" readonly="0"/>
+	<widget type="PushButton" name="pushButton_95" btn_id="327" text="KBD_KEY_PAYMENT_LIST" readonly="0"/>
+	<widget type="PushButton" name="pushButton_96" btn_id="329" text="KBD_KEY_DOC" readonly="0"/>
+	<widget type="PushButton" name="pushButton_97" btn_id="" text="" readonly="1"/>
+	<widget type="PushButton" name="pushButton_98" btn_id="" text="" readonly="1"/>
+	<widget type="PushButton" name="pushButton_99" btn_id="" text="" readonly="1"/>
+	<widget type="PushButton" name="pushButton_100" btn_id="332" text="KBD_KEY_LOOP_SIM" readonly="0"/>
+	<widget type="PushButton" name="pushButton_101" btn_id="333" text="KBD_KEY_LOOP_SIM_PASSAGE" readonly="0"/>
+	<widget type="PushButton" name="pushButton_102" btn_id="335" text="KBD_KEY_CORR_SAS" readonly="0"/>
+	<widget type="PushButton" name="pushButton_103" btn_id="337" text="KBD_KEY_RESET_TRANSIT" readonly="0"/>
+	<widget type="PushButton" name="pushButton_104" btn_id="313" text="KBD_KEY_CL1" readonly="0"/>
+	<widget type="PushButton" name="pushButton_105" btn_id="314" text="KBD_KEY_CL2" readonly="0"/>
+	<widget type="PushButton" name="pushButton_106" btn_id="" text="" readonly="1"/>
+	<widget type="PushButton" name="pushButton_107" btn_id="328" text="KBD_KEY_ESP" readonly="0"/>
+	<widget type="PushButton" name="pushButton_108" btn_id="330" text="KBD_KEY_RECEIPT" readonly="0"/>
+	<widget type="PushButton" name="pushButton_109" btn_id="331" text="KBD_KEY_VALID" readonly="0"/>
+	<widget type="PushButton" name="pushButton_110" btn_id="" text="" readonly="1"/>
+	<widget type="PushButton" name="pushButton_111" btn_id="334" text="KBD_KEY_EXIT_BARRIER" readonly="0"/>
+	<widget type="PushButton" name="pushButton_112" btn_id="336" text="KBD_KEY_CORR_CLS" readonly="0"/>
+	<widget type="PushButton" name="pushButton_113" btn_id="338" text="KBD_KEY_RESET_IDP" readonly="0"/>
+	<widget type="PushButton" name="pushButton_114" btn_id="Douchette" text="KBD_KEY_BARCODE_INTER" readonly="0"/>
+	<widget type="PushButton" name="pushButton_115" btn_id="Douchette2" text="KBD_KEY_BARCODE_EXTER_VL" readonly="0"/>
+	<widget type="PushButton" name="pushButton_116" btn_id="Douchette2" text="KBD_KEY_BARCODE_EXTER_PL" readonly="0"/>
+	<widget type="PushButton" name="pushButton_117" btn_id="Zip" readonly="0"/>
+</input_description>

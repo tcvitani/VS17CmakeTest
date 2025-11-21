@@ -1,0 +1,1 @@
+<div id="%id%" class="control text vertically-centered %class%" style="%style%"><div class="text-holder">%text%</div></div>

@@ -1,0 +1,1 @@
+<input class="btnCANCEL" type="button" value="%text%" %disabled%/>

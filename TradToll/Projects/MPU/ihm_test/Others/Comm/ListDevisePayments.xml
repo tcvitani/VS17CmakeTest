@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<option_list>
+<option value="2" text="1.Euro                "/>
+<option value="1" text="2.Kuna"/>
+<option value="3" text="3.Dolar SAD           "/>
+<option value="5" text="4.Australski dolar    "/>
+<option value="6" text="5.Èeška kruna         "/>
+<option value="7" text="6.Danska kruna        "/>
+<option value="8" text="7.Engleska funta      "/>
+<option value="9" text="8.Japanski jen        "/>
+<option value="10" text="9.Kanadski dolar      "/>
+<option value="11" text="10.Maðarska forinta    "/>
+<option value="12" text="11.Norveška kruna      "/>
+<option value="13" text="12.Poljski zlot        "/>
+<option value="15" text="13.Švedska kruna       "/>
+<option value="16" text="14.Švicarski franak    "/>
+
+</option_list>

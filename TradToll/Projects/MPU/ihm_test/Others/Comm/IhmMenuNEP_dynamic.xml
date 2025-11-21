@@ -1,0 +1,198 @@
+<MENU TOOLTIP="Main menu" LABEL="Main menu" >
+ <ITEM ICON="" TOOLTIP="Commandes de changement de mode" LABEL="MODE" >
+  <SUBMENU submenuID="MNU_MODE" >
+   <ITEM ACTION="MDARRET" ENABLED="0" ICON="" TOOLTIP="" LABEL="Arrêt" />
+   <ITEM ENABLED="0" ICON="" TOOLTIP="Exploitation" LABEL="Exploitation" >
+    <SUBMENU submenuID="MDEXP" >
+     <ITEM ACTION="MDEXPNORM" ENABLED="0" ICON="" TOOLTIP="" LABEL="Normal" />
+     <ITEM ACTION="MDEXPTAUTO" ENABLED="0" ICON="" TOOLTIP="" LABEL="Tout automatique" />
+     <ITEM ACTION="MDEXPST" ENABLED="0" ICON="" TOOLTIP="" LABEL="Spécialisé télépéage" />
+     <ITEM ACTION="MDEXPSTVL" ENABLED="0" ICON="" TOOLTIP="" LABEL="Spécialisé télépéage VL" />
+     <ITEM ACTION="MDEXPSTPL" ENABLED="0" ICON="" TOOLTIP="" LABEL="Spécialisé télépéage PL" />
+     <ITEM ACTION="MDEXPSM" ENABLED="0" ICON="" TOOLTIP="" LABEL="Spécialisé magnétique" />
+     <ITEM ACTION="MDEXPSMVL" ENABLED="0" ICON="" TOOLTIP="" LABEL="Spécialisé magnétique VL" />
+     <ITEM ACTION="MDEXPSMPL" ENABLED="0" ICON="" TOOLTIP="" LABEL="Spécialisé magnétique PL" />
+     <ITEM ACTION="MDEXPTSA" ENABLED="0" ICON="" TOOLTIP="" LABEL="Télépeage sans arrêt" />
+     <ITEM ACTION="MDEXPFORM" ENABLED="0" ICON="" TOOLTIP="" LABEL="Formation" />
+     <ITEM ACTION="MDEXPLIBRE" ENABLED="0" ICON="" TOOLTIP="" LABEL="Libre" />
+    </SUBMENU>
+   </ITEM>
+   <ITEM ENABLED="0" ICON="" TOOLTIP="Commandes de changement de mode / état « maintenance »" LABEL="Maintenance" >
+    <SUBMENU submenuID="MDMNT" >
+     <ITEM ACTION="MDMNTNORM" ENABLED="0" ICON="" TOOLTIP="" LABEL="Normal" />
+     <ITEM ACTION="MDMNTTA" ENABLED="0" ICON="" TOOLTIP="" LABEL="Tout automatique" />
+     <ITEM ACTION="MDMNTST" ENABLED="0" ICON="" TOOLTIP="" LABEL="Spécialisé télépéage" />
+     <ITEM ACTION="MDMNTSTVL" ENABLED="0" ICON="" TOOLTIP="" LABEL="Spécialisé télépéage VL" />
+     <ITEM ACTION="MDMNTSTPL" ENABLED="0" ICON="" TOOLTIP="" LABEL="Spécialisé télépéage PL" />
+     <ITEM ACTION="MDMNTSM" ENABLED="0" ICON="" TOOLTIP="" LABEL="Spécialisé magnétique" />
+     <ITEM ACTION="MDMNTSMVL" ENABLED="0" ICON="" TOOLTIP="" LABEL="Spécialisé magnétique VL" />
+     <ITEM ACTION="MDMNTSMPL" ENABLED="0" ICON="" TOOLTIP="" LABEL="Spécialisé magnétique PL" />
+     <ITEM ACTION="MDMNTTSA" ENABLED="0" ICON="" TOOLTIP="" LABEL="Télépeage sans arrêt" />
+     <ITEM ACTION="MDMNTADM" ENABLED="0" ICON="" TOOLTIP="" LABEL="Administration" />
+     <ITEM ACTION="MDMNTTEST" ENABLED="0" ICON="" TOOLTIP="" LABEL="Test" />
+    </SUBMENU>
+   </ITEM>
+  </SUBMENU>
+ </ITEM>
+ <ITEM ACTION="" ENABLED="0" ICON="" TOOLTIP="" LABEL="        " >
+  <SUBMENU submenuID="MNU_DUMMY" />
+ </ITEM>
+ <ITEM ENABLED="0" ICON="" TOOLTIP="Actions liées au contrôle des portes" LABEL="PORTES" >
+  <SUBMENU submenuID="MNU_PORTES" >
+   <ITEM ACTION="PORLECT" ENABLED="0" ICON="" TOOLTIP="" LABEL="Tiroir lecteurs" />
+   <ITEM ACTION="PORMAINT" ENABLED="0" ICON="" TOOLTIP="" LABEL="Porte maintenance" />
+   <ITEM ACTION="POREXP" ENABLED="0" ICON="" TOOLTIP="" LABEL="Porte exploitation" />
+   <ITEM ACTION="PORRDM" ENABLED="0" ICON="" TOOLTIP="" LABEL="Porte rendu monnaie" />
+   <ITEM ACTION="PORESP" ENABLED="0" ICON="" TOOLTIP="" LABEL="Porte retrait espèces" />
+  </SUBMENU>
+ </ITEM>
+ <ITEM ENABLED="1" ICON="" TOOLTIP="Actions liées à l’exploitation" LABEL="ACTIONS" >
+  <SUBMENU submenuID="MNU_ACTIONS" >
+   <ITEM ENABLED="0" ICON="" TOOLTIP="" LABEL="Transaction" >
+    <SUBMENU submenuID="PMT" >
+     <ITEM ACTION="PMTESP" ENABLED="0" ICON="" TOOLTIP="" LABEL="Espèces" />
+     <ITEM ACTION="PMTCHV" ENABLED="0" ICON="" TOOLTIP="" LABEL="Chèques vacance" />
+     <ITEM ACTION="PMTCBR" ENABLED="0" ICON="" TOOLTIP="" LABEL="Douchette extérieure" />
+     <ITEM ACTION="PMTBT" ENABLED="0" ICON="" TOOLTIP="" LABEL="Balise de table" />
+     <ITEM ACTION="PMTPAI" ENABLED="0" ICON="" TOOLTIP="" LABEL="Autres IDP" />
+     <ITEM ACTION="PMTCAL" ENABLED="0" ICON="" TOOLTIP="" LABEL="Calculatrice" />
+     <ITEM ACTION="PMTDOC" ENABLED="0" ICON="" TOOLTIP="" LABEL="Documents" />
+    </SUBMENU>
+   </ITEM>
+   <ITEM ENABLED="0" ICON="" TOOLTIP="" LABEL="Classification" >
+    <SUBMENU submenuID="CLS" >
+     <ITEM ACTION="CL1" ENABLED="0" ICON="" TOOLTIP="" LABEL="Classe 1" />
+     <ITEM ACTION="CL2" ENABLED="0" ICON="" TOOLTIP="" LABEL="Classe 2" />
+     <ITEM ACTION="CL3" ENABLED="0" ICON="" TOOLTIP="" LABEL="Classe 3" />
+     <ITEM ACTION="CL4" ENABLED="0" ICON="" TOOLTIP="" LABEL="Classe 4" />
+     <ITEM ACTION="CL5" ENABLED="0" ICON="" TOOLTIP="" LABEL="Classe 5" />
+     <ITEM ACTION="AUTREEP" ENABLED="0" ICON="" TOOLTIP="" LABEL="0/B" />
+     <ITEM ACTION="CLMAN" ENABLED="0" ICON="" TOOLTIP="" LABEL="Passage en mode manuel" />
+    </SUBMENU>
+   </ITEM>
+   <ITEM ENABLED="0" ICON="" TOOLTIP="" LABEL="Corrections" >
+    <SUBMENU submenuID="COR" >
+     <ITEM ACTION="CORANT" ENABLED="0" ICON="" TOOLTIP="" LABEL="Annulation Transaction" />
+     <ITEM ACTION="CORCLA" ENABLED="0" ICON="" TOOLTIP="" LABEL="Corriger la classe" />
+     <ITEM ACTION="CORGE" ENABLED="0" ICON="" TOOLTIP="" LABEL="Saisie GE" />
+     <ITEM ACTION="CORAPA" ENABLED="0" ICON="" TOOLTIP="" LABEL="Annualtion provenance acceptée" />
+    </SUBMENU>
+   </ITEM>
+   <ITEM ENABLED="0" ICON="" TOOLTIP="" LABEL="Périphériques" >
+    <SUBMENU submenuID="PER" >
+     <ITEM ACTION="PERGAB" ENABLED="0" ICON="" TOOLTIP="" LABEL="Gabarit" />
+     <ITEM ACTION="PERGMV" ENABLED="0" ICON="" TOOLTIP="" LABEL="Affichage gabarit" />
+     <ITEM ACTION="PERBAPA" ENABLED="0" ICON="" TOOLTIP="" LABEL="Barrière de passage" />
+     <ITEM ACTION="PERBAPAM" ENABLED="0" ICON="" TOOLTIP="" LABEL="Maintient barrière de  passage après passage" />
+     <ITEM ACTION="PERSIMBPA" ENABLED="0" ICON="" TOOLTIP="" LABEL="Simulation boucle passage" />
+     <ITEM ACTION="PERSIMBPR" ENABLED="0" ICON="" TOOLTIP="" LABEL="Simulation boucle présence" />
+     <ITEM ACTION="PERCORSAS" ENABLED="0" ICON="" TOOLTIP="" LABEL="Correction sur sas" />
+     <ITEM ACTION="PERRESTIDP" ENABLED="0" ICON="" TOOLTIP="" LABEL="Restitution IDP" />
+     <ITEM ACTION="PERFAV" ENABLED="0" ICON="" TOOLTIP="" LABEL="Affichage auvent" />
+     <ITEM ACTION="PERBAEN" ENABLED="0" ICON="" TOOLTIP="" LABEL="Barrière entrée" />
+     <ITEM ACTION="PERRESTTT" ENABLED="0" ICON="" TOOLTIP="" LABEL="Restitution titre de transit" />
+     <ITEM ACTION="DEVPORTILLON" ENABLED="0" ICON="" TOOLTIP="" LABEL="Déverrouillage du portillon" />
+    </SUBMENU>
+   </ITEM>
+   <ITEM ENABLED="0" ICON="" TOOLTIP="" LABEL="Coffres et boite à lettres" >
+    <SUBMENU submenuID="CU" >
+     <ITEM ACTION="CUOUVURN" ENABLED="0" ICON="" TOOLTIP="" LABEL="Ouverture clapet boîte à lettres" />
+     <ITEM ACTION="CUETAT" ENABLED="0" ICON="" TOOLTIP="" LABEL="État coffres et boîte à lettres" />
+     <ITEM ACTION="CUPIEOFF" ENABLED="0" ICON="" TOOLTIP="" LABEL="Désactivation sac à pièces" />
+     <ITEM ACTION="CUPIEON" ENABLED="0" ICON="" TOOLTIP="" LABEL="Activation sac à pièce" />
+     <ITEM ACTION="CUBILOFF" ENABLED="0" ICON="" TOOLTIP="" LABEL="Désactivation coffre à billets" />
+     <ITEM ACTION="CUBILON" ENABLED="0" ICON="" TOOLTIP="" LABEL="Activation coffre à billets" />
+     <ITEM ACTION="CURAZURN" ENABLED="0" ICON="" TOOLTIP="" LABEL="Remise à zéro boîte à lettres" />
+    </SUBMENU>
+   </ITEM>
+   <ITEM ENABLED="0" ICON="" TOOLTIP="" LABEL="Bols" >
+    <SUBMENU submenuID="BO" >
+     <ITEM ACTION="BOETAT" ENABLED="0" ICON="" TOOLTIP="" LABEL="État bols" />
+     <ITEM ACTION="BOAPPRO" ENABLED="0" ICON="" TOOLTIP="" LABEL="Réapprovisionnement" />
+     <ITEM ACTION="BOVID" ENABLED="0" ICON="" TOOLTIP="" LABEL="Vidage" />
+     <ITEM ACTION="BOCOR" ENABLED="0" ICON="" TOOLTIP="" LABEL="Correction" />
+     <ITEM ACTION="BOBAL" ENABLED="0" ICON="" TOOLTIP="" LABEL="Bascule" />
+    </SUBMENU>
+   </ITEM>
+   <ITEM ENABLED="0" ICON="" TOOLTIP="" LABEL="Listes" >
+    <SUBMENU submenuID="LST" >
+     <ITEM ACTION="LSTCA" ENABLED="0" ICON="" TOOLTIP="" LABEL="Consignes et alertes" />
+     <ITEM ACTION="LSTTS" ENABLED="0" ICON="" TOOLTIP="" LABEL="Historique des transactions" />
+    </SUBMENU>
+   </ITEM>
+  </SUBMENU>
+ </ITEM>
+ <ITEM ENABLED="1" ICON="" TOOLTIP="Actions liées à la maintenance" LABEL="MAINTENANCE" >
+  <SUBMENU submenuID="MNU_MNT" >
+   <ITEM ENABLED="0" ICON="" TOOLTIP="" LABEL="Administration" >
+    <SUBMENU submenuID="ADM" >
+     <ITEM ACTION="ADMCHGPAR" ENABLED="0" ICON="" TOOLTIP="" LABEL="Chargement des paramètres" />
+     <ITEM ACTION="ADMRSTDON" ENABLED="0" ICON="" TOOLTIP="" LABEL="Restitution des données sur support externe" />
+     <ITEM ACTION="ADMREMDON" ENABLED="0" ICON="" TOOLTIP="" LABEL="Réémission des données" />
+     <ITEM ACTION="ADMCHGDHM" ENABLED="0" ICON="" TOOLTIP="" LABEL="Changement dates et heures" />
+     <ITEM ACTION="ADMRELAPP" ENABLED="0" ICON="" TOOLTIP="" LABEL="Redémarrage de l’application" />
+     <ITEM ACTION="ADMFRMSES" ENABLED="0" ICON="" TOOLTIP="" LABEL="Fermeture de session système" />
+     <ITEM ACTION="ADMAPROPOS" ENABLED="0" ICON="" TOOLTIP="" LABEL="A propos" />
+    </SUBMENU>
+   </ITEM>
+   <ITEM ACTION="TARFORCE" ENABLED="0" ICON="" TOOLTIP="" LABEL="Forçage tarif" />
+   <ITEM ACTION="REGUL" ENABLED="0" ICON="" TOOLTIP="" LABEL="Régulation" />
+   <ITEM ACTION="RETARD" ENABLED="1" ICON="" TOOLTIP="" LABEL="Retardement" />
+   <ITEM ENABLED="0" ICON="" TOOLTIP="" LABEL="Compteurs" >
+    <SUBMENU submenuID="CMPT" >
+     <ITEM ACTION="CMPTCONS" ENABLED="0" ICON="" TOOLTIP="" LABEL="Consultation" />
+     <ITEM ACTION="CMPTRAZI" ENABLED="0" ICON="" TOOLTIP="" LABEL="RAZ individuel" />
+     <ITEM ACTION="CMPTRAZG" ENABLED="0" ICON="" TOOLTIP="" LABEL="RAZ global" />
+    </SUBMENU>
+   </ITEM>
+   <ITEM ENABLED="0" ICON="" TOOLTIP="Actions liées aux tests de périphériques" LABEL="Tests" >
+    <SUBMENU submenuID="TST" >
+     <ITEM ENABLED="0" ICON="" TOOLTIP="" LABEL="Lecteurs" >
+      <SUBMENU submenuID="TSTLTT" >
+       <ITEM ACTION="TSTLTTX" ENABLED="0" ICON="" TOOLTIP="" LABEL="Lecteur de titre de transit" />
+       <ITEM ACTION="TSTLTTB" ENABLED="0" ICON="" TOOLTIP="" LABEL="Lecteur de titre de transit bas" />
+       <ITEM ACTION="TSTLTTH" ENABLED="0" ICON="" TOOLTIP="" LABEL="Lecteur de titre de transit haut" />
+       <ITEM ACTION="TSTLCP" ENABLED="0" ICON="" TOOLTIP="" LABEL="Lecteur de cartest" />
+       <ITEM ACTION="TSTLCPB" ENABLED="0" ICON="" TOOLTIP="" LABEL="Lecteur de cartes bas" />
+       <ITEM ACTION="TSTLCPH" ENABLED="0" ICON="" TOOLTIP="" LABEL="Lecteur de cartes haut" />
+       <ITEM ACTION="TSTLCPI" ENABLED="0" ICON="" TOOLTIP="" LABEL="Lecteur à insertion" />
+       <ITEM ACTION="TSTCSC" ENABLED="0" ICON="" TOOLTIP="" LABEL="Lecteur de cartes sans contact" />
+      </SUBMENU>
+     </ITEM>
+     <ITEM ENABLED="0" ICON="" TOOLTIP="" LABEL="Télépéage" >
+      <SUBMENU submenuID="TSTBAL" >
+       <ITEM ACTION="TSTBALT" ENABLED="0" ICON="" TOOLTIP="" LABEL="Balise de table" />
+       <ITEM ACTION="TSTBALP" ENABLED="0" ICON="" TOOLTIP="" LABEL="Balise principale" />
+       <ITEM ACTION="TSTBALR" ENABLED="0" ICON="" TOOLTIP="" LABEL="Balise de rattrapage" />
+      </SUBMENU>
+     </ITEM>
+     <ITEM ENABLED="0" ICON="" TOOLTIP="" LABEL="Afficheurs" >
+      <SUBMENU submenuID="TSTAFF" >
+       <ITEM ACTION="TSTAFFAFX" ENABLED="0" ICON="" TOOLTIP="" LABEL="Afficheur extérieur" />
+       <ITEM ACTION="TSTAFFPVE" ENABLED="0" ICON="" TOOLTIP="" LABEL="PVE" />
+       <ITEM ACTION="TSTAFFPCC" ENABLED="0" ICON="" TOOLTIP="" LABEL="PCC" />
+      </SUBMENU>
+     </ITEM>
+     <ITEM ACTION="TSTCBR" ENABLED="0" ICON="" TOOLTIP="" LABEL="Lecteurs codes barre, à friction et clavier" />
+     <ITEM ENABLED="0" ICON="" TOOLTIP="" LABEL="Imprimantes" >
+      <SUBMENU submenuID="TSTDCP" >
+       <ITEM ACTION="TSTDCPM" ENABLED="0" ICON="" TOOLTIP="" LABEL="Imprimante reçu" />
+       <ITEM ACTION="TSTDCPB" ENABLED="0" ICON="" TOOLTIP="" LABEL="Imprimante reçu bas" />
+       <ITEM ACTION="TSTDCPH" ENABLED="0" ICON="" TOOLTIP="" LABEL="Imprimante reçu haut" />
+      </SUBMENU>
+     </ITEM>
+     <ITEM ACTION="TSTFEU" ENABLED="0" ICON="" TOOLTIP="" LABEL="Feu de passage" />
+     <ITEM ACTION="TSTFSI" ENABLED="0" ICON="" TOOLTIP="" LABEL="Feu de signalisation" />
+     <ITEM ENABLED="0" ICON="" TOOLTIP="" LABEL="Barrières et gabarit" >
+      <SUBMENU submenuID="TSTBG" >
+       <ITEM ACTION="TSTBAM" ENABLED="0" ICON="" TOOLTIP="" LABEL="Barrière amont" />
+       <ITEM ACTION="TSTBPA" ENABLED="0" ICON="" TOOLTIP="" LABEL="Barrière de passage" />
+       <ITEM ACTION="TSTGAB" ENABLED="0" ICON="" TOOLTIP="" LABEL="Gabarit" />
+      </SUBMENU>
+     </ITEM>
+     <ITEM ACTION="TSTSPY" ENABLED="0" ICON="" TOOLTIP="Outil de maintenance poussée" LABEL="Espion périphériques" />
+    </SUBMENU>
+   </ITEM>
+  </SUBMENU>
+ </ITEM>
+</MENU>

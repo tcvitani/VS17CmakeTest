@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<input_description>
+ 	<widget type="Label" name="lblTitle" text="A_PROPOS_TITLE"/>
+ 	<widget type="Label" name="lblMessage" text="%A_PROPOS_TEXT%"/>
+ 	<widget type="PushButtonOK" name="btnOK" readonly="0" text="Valider"/>
+</input_description> 

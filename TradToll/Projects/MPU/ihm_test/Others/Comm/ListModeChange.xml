@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<option_list>
+<option value="0" text="1 - Ručno"/>
+<option value="1" text="2 - Mješoviti"/>
+<option value="2" text="3 - Automatski"/>
+<option value="3" text="4 - Automatski brzi"/>
+
+</option_list>

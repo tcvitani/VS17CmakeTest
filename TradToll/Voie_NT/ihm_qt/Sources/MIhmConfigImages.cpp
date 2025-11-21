@@ -230,7 +230,7 @@ ImagesList::~ImagesList()
 
 bool ImagesList::lessThan(const ConfigImage* x1, const ConfigImage* x2) 
 { 
-	return x1->m_sImgName < x2->m_sImgName; 
+	return QString::compare(x1->m_sImgName, x2->m_sImgName) > 0; 
 }
 
 
