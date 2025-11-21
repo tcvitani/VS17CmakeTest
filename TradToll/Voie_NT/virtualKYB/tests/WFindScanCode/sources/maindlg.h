@@ -1,7 +1,9 @@
 
 #ifndef MAINDLG_H
 #define MAINDLG_H
-#include <QtGui/QMainWindow>
+
+#include <QtGui>
+#include <QMainWindow>
 #include <QTimer>
 #include "ui_MainDlg.h"
 

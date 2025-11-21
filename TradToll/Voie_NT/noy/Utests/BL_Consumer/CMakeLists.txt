@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 project(BL_Consumer LANGUAGES CXX)
 
-set(PROJECT_EXE "${PROJECT_NAME}_vs22_x64")
+set(PROJECT_EXE "${PROJECT_NAME}_vs17_x64")
 
 include(qt.cmake)
 

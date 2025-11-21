@@ -1,6 +1,7 @@
 #include <qdatetime.h>
 #include <QSettings>
 #include <QFile>
+#include <QtLogging>
 
 #include "mtracer.h"
 
@@ -12,6 +13,7 @@ extern "C"
 };
 
 MTracer* MTracer::m_pTracer = NULL;
+MTracer* MTracer::m_pWebTracer = NULL;
 
 #define DEFAULT_ERR_PATH "c:\\csr\\_errors\\"
 #define DEFAULT_TRC_PATH "c:\\csr\\_traces\\"
@@ -65,6 +67,35 @@ void MTracer::doTRACE_W(QString sMessage, QString sFileName, int iLineNumber)
 	}
 }
 
+void MTracer::doTRACE_WEB_D(QString sMessage)
+{
+	MTracer * pTrc = MTracer::getWebTracer();
+
+	if(pTrc!=NULL)
+	{
+		if(pTrc->isTrcEnabled())
+		{
+			pTrc->lock();
+				pTrc->log_debug(sMessage);
+			pTrc->unlock();
+		}
+	}
+}
+
+void MTracer::doTRACE_WEB_W(QString sMessage, QString sFileName, int iLineNumber)
+{
+	MTracer * pTrc = MTracer::getWebTracer();
+
+	if(pTrc!=NULL)
+	{
+		if(pTrc->isTrcEnabled())
+		{
+			pTrc->lock();
+				pTrc->log_warning(sMessage, sFileName, iLineNumber);
+			pTrc->unlock();
+		}
+	}
+}
 
 void MTracer::initData(MTracer * pTracer, int iMaxTraceSize)
 {
@@ -73,7 +104,8 @@ void MTracer::initData(MTracer * pTracer, int iMaxTraceSize)
 	pTracer->m_sERR_PATH = regValues.value(QString("%1").arg(CSR_REG_KEYv_ERRORPATH), QString(DEFAULT_ERR_PATH)).toString();
 	pTracer->m_sTRC_PATH = regValues.value(QString("%1").arg(CSR_REG_KEYv_TRACEPATH), QString(DEFAULT_TRC_PATH)).toString();
 
-	QSettings regValues2(QString("%1TRC\\").arg(CSR_REG_KEYn_CSRBASE), QSettings::NativeFormat);
+	QString sRegPath2 = QString("HKEY_LOCAL_MACHINE\\%1TRC\\").arg(CSR_REG_KEYn_CSRBASE);
+	QSettings regValues2(sRegPath2, QSettings::NativeFormat);
 	int iErr = regValues2.value(QString("%1.ERR").arg(m_sBallID), 0).toInt();
 	int iTrc = regValues2.value(QString("%1.TRC").arg(m_sBallID), 0).toInt();
 	
@@ -84,7 +116,7 @@ void MTracer::initData(MTracer * pTracer, int iMaxTraceSize)
 	{
 		pTracer->m_sFullErrFileName = QString("%1\\%2.ERR").arg(m_sERR_PATH).arg(m_sBallID);
 
-		pTracer->m_hError = CreateFile(m_sFullErrFileName.utf16(),   
+		pTracer->m_hError = CreateFile((LPCWSTR)m_sFullErrFileName.utf16(),   
 			GENERIC_WRITE,                // open for writing 
 			FILE_SHARE_READ,              
 			NULL,                         // no security 
@@ -104,7 +136,7 @@ void MTracer::initData(MTracer * pTracer, int iMaxTraceSize)
 	{
 		pTracer->m_sFullTrcFileName = QString("%1\\%2.TRC").arg(m_sTRC_PATH).arg(m_sBallID);
 
-		pTracer->m_hTrace = CreateFile(m_sFullTrcFileName.utf16(),   // open TWO.TXT 
+		pTracer->m_hTrace = CreateFile((LPCWSTR)m_sFullTrcFileName.utf16(),   // open TWO.TXT 
 			GENERIC_WRITE,                // open for writing 
 			FILE_SHARE_READ,               
 			NULL,                         // no security 
@@ -125,7 +157,7 @@ void MTracer::initData(MTracer * pTracer, int iMaxTraceSize)
 	
 }
 
-void MTracer::Init(QString &sBallID, int iMaxTraceSize)
+void MTracer::Init(QString sBallID, int iMaxTraceSize)
 {
 	if(MTracer::m_pTracer!=NULL)
 		return;
@@ -135,17 +167,39 @@ void MTracer::Init(QString &sBallID, int iMaxTraceSize)
 
 	m_pTracer->initData(MTracer::m_pTracer, iMaxTraceSize);
 
-	qInstallMsgHandler(myMessageOutput);
+	qInstallMessageHandler(MTracer::myMessageOutput);
 	
 }
 
-void MTracer::Deinit(QString &sBallID)
+void MTracer::Deinit(QString sBallID)
 {
 	if(MTracer::m_pTracer!=NULL)
 	{
 		delete MTracer::m_pTracer;
 		MTracer::m_pTracer = NULL;
 	}
+}
+
+
+void MTracer::InitWeb(QString sBallID, int iMaxTraceSize)
+{
+	if(MTracer::m_pWebTracer!=NULL)
+				return;
+	
+	MTracer::m_pWebTracer = new MTracer();
+	m_pWebTracer->m_sBallID = sBallID;
+
+	m_pWebTracer->initData(MTracer::m_pWebTracer, iMaxTraceSize);
+}
+
+void MTracer::DeinitWeb(QString sBallID)
+{
+	if(MTracer::m_pWebTracer!=NULL)
+	{
+		delete MTracer::m_pWebTracer;
+		MTracer::m_pWebTracer = NULL;
+	}
+
 }
 
 MTracer::~MTracer()
@@ -203,7 +257,7 @@ void MTracer::writeDebug(QString sMsg)
 	{
 		DWORD dwBytesWritten;
 
-		QByteArray ba = sMsg.toAscii();
+		QByteArray ba = sMsg.toLatin1();
 		
 		if(ba.size()>0)
 		{
@@ -218,7 +272,7 @@ void MTracer::writeWarning(QString sMsg)
 	if(checkSize(&m_hError,false)) 
 	{
 		DWORD dwBytesWritten;
-		QByteArray ba = sMsg.toAscii();
+		QByteArray ba = sMsg.toLatin1();
 		
 		if(ba.size()>0)
 		{
@@ -273,7 +327,7 @@ bool MTracer::checkSize(HANDLE *phHandle, bool bIsTrace)
 				
 			if(QFile::rename(sCurrName, sNewName))
 			{
-				*phHandle = CreateFile(sCurrName.utf16(),   
+				*phHandle = CreateFile((LPCWSTR)sCurrName.utf16(),
 					GENERIC_WRITE,                // open for writing 
 					FILE_SHARE_READ,                            // do not share 
 					NULL,                         // no security 
@@ -293,7 +347,7 @@ bool MTracer::checkSize(HANDLE *phHandle, bool bIsTrace)
 	}
 	else
 	{
-		*phHandle = CreateFile(sCurrName.utf16(),   
+		*phHandle = CreateFile((LPCWSTR)sCurrName.utf16(),
 			GENERIC_WRITE,                // open for writing 
 			FILE_SHARE_READ,                            // do not share 
 			NULL,                         // no security 
@@ -314,13 +368,16 @@ bool MTracer::checkSize(HANDLE *phHandle, bool bIsTrace)
 	return *phHandle != INVALID_HANDLE_VALUE;
 }
 
-void MTracer::myMessageOutput( QtMsgType type, const char *msg )
+void MTracer::myMessageOutput( QtMsgType type, const QMessageLogContext& ctx, const QString& msg)
 {
 	switch(type)
 	{
+	case QtInfoMsg:
+	case QtDebugMsg:
 	case QtWarningMsg:
 		doTRACE_W(msg,"",0);
 		break;
+	case QtCriticalMsg:
 	case QtFatalMsg:
 		doTRACE_W(msg,"",0);
 		break;

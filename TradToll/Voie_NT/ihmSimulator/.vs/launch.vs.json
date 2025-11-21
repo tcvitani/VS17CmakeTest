@@ -2,19 +2,20 @@
   "version": "0.2.1",
   "defaults": {},
   "configurations": [
-    {
+     {
       "type": "default",
       "project": "CMakeLists.txt",
-      "projectTarget": "ihmSimulator_vs22_x64.exe",
-      "name": "ihmSimulator_vs22_x64.exe",
+      "projectTarget": "ihmSimulator_vs17_x64.exe",
+      "name": "ihmSimulator_vs17_x64.exe",
       "currentDir": "C:/csr/exe",
-      "args": [ "" ],
+      "args": [
+        ""
+      ],
       "env": {
         "DEBUG_LOGGING_LEVEL": "trace;info",
         "ENABLE_TRACING": "true",
         "PATH": "%PATH%;C:\\csr\\exe;C:\\qt\\6.5.2\\bin;C:\\qt\\6.5.2;"
       }
-
     }
   ]
 }

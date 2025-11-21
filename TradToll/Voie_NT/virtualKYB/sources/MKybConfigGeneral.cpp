@@ -56,7 +56,7 @@ bool MKybConfigGeneral::loadConfigFromRegistry(QString sMboxName)
     m_sModuleConfigKey = QString("%1%2").arg(VIRT_KYB_REG_KEY_BASE)
 										.arg(m_sModuleMboxName);
 	
-	strcpy(pcRegKey, m_sModuleConfigKey.toAscii().data());
+	strcpy(pcRegKey, m_sModuleConfigKey.toLatin1().data());
 
     TRACE_D("MKybConfigGeneral::loadConfigFromRegistry..." );
 // 	QString m_sUITemplateRoot;
@@ -64,7 +64,7 @@ bool MKybConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 	if ((dwRes = REG_Lire_Chaine (
                         CSR_REG_KEYi_ROOT, 
                         pcRegKey,
-                        KYB_REG_VAL_UI_TEMPLATE_ROOT, 
+                        (char*)KYB_REG_VAL_UI_TEMPLATE_ROOT, 
                         szTemp, 
                         &dwValeurLen) ) != ERROR_SUCCESS)
 	{
@@ -79,7 +79,7 @@ bool MKybConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 	if ((dwRes = REG_Lire_Chaine (
                         CSR_REG_KEYi_ROOT, 
                         pcRegKey,
-                        KYB_REG_VAL_CFG_FILES_ROOT, 
+                        (char*)KYB_REG_VAL_CFG_FILES_ROOT, 
                         szTemp, 
                         &dwValeurLen) ) != ERROR_SUCCESS)
 	{
@@ -95,7 +95,7 @@ bool MKybConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 	if ((dwRes = REG_Lire_Entier (
 		CSR_REG_KEYi_ROOT, 
 		pcRegKey,
-		KYB_REG_VAL_ANI_THREAD_PRIORITY, 
+		(char*)KYB_REG_VAL_ANI_THREAD_PRIORITY, 
 		&dwTemp)) != ERROR_SUCCESS)
 	{
         TRACE_W(QString( "MKybConfigGeneral::loadConfigFromRegistry: Error key %1[%2]. Default QThread::NormalPriority (3) is used!")
@@ -114,11 +114,11 @@ bool MKybConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 	if ((dwRes = REG_Lire_Entier (
 		CSR_REG_KEYi_ROOT, 
 		pcRegKey,
-		REG_VAL_MAX_TRACE_SIZE_MB, 
+		(char*)IHM_REG_VAL_MAX_TRACE_SIZE_MB,
 		&dwTemp)) != ERROR_SUCCESS)
 	{
         TRACE_W(QString( "MKybConfigGeneral::loadConfigFromRegistry: Error key %1[%2]! Using default 1!")
-			.arg(pcRegKey).arg( REG_VAL_MAX_TRACE_SIZE_MB));
+			.arg(pcRegKey).arg(IHM_REG_VAL_MAX_TRACE_SIZE_MB));
 	}
 	else
 		MTracer::getTracer()->setMaxTraceSize(dwTemp);
@@ -127,7 +127,7 @@ bool MKybConfigGeneral::loadConfigFromRegistry(QString sMboxName)
 	if ((dwRes = REG_Lire_Entier(
 		CSR_REG_KEYi_ROOT,
 		pcRegKey,
-		IHM_REG_VAL_HIDE_CURSOR,
+		(char*)IHM_REG_VAL_HIDE_CURSOR,
 		&dwTemp)) != ERROR_SUCCESS)
 	{
 		TRACE_W(QString("MIhmConfigGeneral::loadConfigFromRegistry: Error key %1[%2]").arg(pcRegKey).arg(IHM_REG_VAL_HIDE_CURSOR));
@@ -161,7 +161,7 @@ bool MKybConfigGeneral::loadKeyboardConfigurations()
 	QString sRegBaseKey;
 	bool bRetValue = true;
 
-	sRegBaseKey = m_sModuleConfigKey + QString("\\Configurations");
+	sRegBaseKey = QString("HKEY_LOCAL_MACHINE\\") + m_sModuleConfigKey + QString("\\Configurations");
 	QSettings regBaseValuesIHM(sRegBaseKey, QSettings::NativeFormat);
 	
 	QStringList sList = regBaseValuesIHM.allKeys();

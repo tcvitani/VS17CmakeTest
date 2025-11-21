@@ -188,7 +188,7 @@ void MKybAniThread::KybAniInit()
     // publication de la BAL ANI
 	QString mbox = m_pInitData->getMboxName();
     
-	m_iAniBalId = PublieBAL( mbox.toAscii().data(), NOYAU_BAL_ILLIMITEE );
+	m_iAniBalId = PublieBAL( mbox.toLatin1().data(), NOYAU_BAL_ILLIMITEE );
     if ( m_iAniBalId <= 0 )
     {
         TRACE_W(QString("MKybAniThread::KybAniInit: PublieBAL retourne %1").

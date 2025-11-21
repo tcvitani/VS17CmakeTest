@@ -110,7 +110,7 @@ enum_instance_result MKybMainLogic::Initialize(QString sBlName, QString sMode)
 	m_pAniThread->start(m_oConfGenData.getAniPriority());
 
     // Attendre l'initialisation de la BAL du module par ANI
-	iBalId = AttendBAL( sBlName.toAscii().data());
+	iBalId = AttendBAL( sBlName.toLatin1().data());
     
 	if ( iBalId <= 0 )
     {

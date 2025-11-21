@@ -42,7 +42,7 @@ protected:
 	void readRecivedMailslot();
 	QString SimuGetMsgSrv(enum_srv_service eSrv);
 	QString SimuGetMsgType(enum_srv_type eType);
-	void SetTextToMainDlg(QString &szText);
+	void SetTextToMainDlg(QString szText);
 
 private:
 	QString generateReadableMessage(struct_VIRT_KYB_message  * psMessage);

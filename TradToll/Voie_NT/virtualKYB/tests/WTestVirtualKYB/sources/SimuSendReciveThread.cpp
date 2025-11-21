@@ -48,7 +48,7 @@ void SimuSendReciveThread::run()
 	m_sSimuBalName = QString("SIMU_%1%2").arg(m_sTargetMboxName).arg(m_iInstanceCounter);
 
 	// create
-    if((m_stSimuData.m_piBalSimu = PublieBAL(m_sSimuBalName.toAscii().data(), NOYAU_BAL_ILLIMITEE)) < 0)
+    if((m_stSimuData.m_piBalSimu = PublieBAL(m_sSimuBalName.toLatin1().data(), NOYAU_BAL_ILLIMITEE)) < 0)
     {
 		SetTextToMainDlg(QString("SIMU ERROR: PublieBAL() return error for BAL %1").arg(m_sSimuBalName));
 		return;
@@ -59,7 +59,7 @@ void SimuSendReciveThread::run()
 		
     SetTextToMainDlg(QString("SIMU: Waiting BAL=%1 ...").arg(m_sTargetMboxName));
 		
-	m_stSimuData.m_piBalModule = AttendBAL(m_sTargetMboxName.toAscii().data()) ;
+	m_stSimuData.m_piBalModule = AttendBAL(m_sTargetMboxName.toLatin1().data()) ;
     SetTextToMainDlg(QString("OK : No. of BAL = %1 ").arg(m_stSimuData.m_piBalModule));
 		
 	m_stSimuData.m_bAlive = true;
@@ -176,7 +176,7 @@ void SimuSendReciveThread::sendInitConfig(QString sKeybID)
 {
 	struct_VIRT_KYB_srv_affichage sAff={0};
 	
-	strncpy((char*)sAff.keyboard_id,(char*)sKeybID.toAscii().data(), sizeof(sAff.keyboard_id));
+	strncpy((char*)sAff.keyboard_id,(char*)sKeybID.toLatin1().data(), sizeof(sAff.keyboard_id));
 	sendMessage((enum_srv_service)M_VIRT_KYB_AFFICHAGE, (enum_srv_type)VIRT_KYB_INIT_CONFIG, &sAff);
 }
 
@@ -281,7 +281,7 @@ QString SimuSendReciveThread::generateReadableMessage(struct_VIRT_KYB_message  *
 
 
 
-void SimuSendReciveThread::SetTextToMainDlg(QString &szText)
+void SimuSendReciveThread::SetTextToMainDlg(QString szText)
 {
 //	incMsgsEvents();
 

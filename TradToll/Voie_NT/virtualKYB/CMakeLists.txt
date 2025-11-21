@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
-project(ihmSimulator LANGUAGES CXX)
+project(VIRT_KYB LANGUAGES CXX)
 
-set(SIMULATOR_EXE "${PROJECT_NAME}_vs17_x64")
+set(PROJECT_EXE "csr_${PROJECT_NAME}_vs17_x64")
 
 include(qt.cmake)
 
@@ -17,8 +17,8 @@ find_package(Qt6 #${QT_VERSION_MAJOR}
         Core
         Gui
         Widgets
-		Xml
 		Core5Compat
+		UiTools
 PATHS
     $<$<PLATFORM_ID:Windows>:"C:/QT/6.5.2/lib/cmake"
 ) 
@@ -27,85 +27,81 @@ qt_standard_project_setup()
 
 
 set(SIMULATOR_SOURCES_DIR   ${CMAKE_CURRENT_SOURCE_DIR}/sources)
+set(EXPORT_HEADERS_DIR   ${CMAKE_CURRENT_SOURCE_DIR}/includes)
 set(SIMULATOR_RESOURCES_DIR ${CMAKE_CURRENT_SOURCE_DIR}/resources)
 
- 
-configure_file("${SIMULATOR_RESOURCES_DIR}/version.rc.in" Resources.rc @ONLY)
- 
-qt_wrap_ui(SIMULATOR_UI_GEN_HEADERS
-	${SIMULATOR_SOURCES_DIR}/maindlg.ui	
-	${SIMULATOR_SOURCES_DIR}/affichage.ui		
-	${SIMULATOR_SOURCES_DIR}/waitUser.ui
-	${SIMULATOR_SOURCES_DIR}/videodlg.ui
-	${SIMULATOR_SOURCES_DIR}/touchedlg.ui
-	${SIMULATOR_SOURCES_DIR}/scriptdlg.ui
-	${SIMULATOR_SOURCES_DIR}/saisieexdlg.ui
-	${SIMULATOR_SOURCES_DIR}/saisiedlg.ui
-	${SIMULATOR_SOURCES_DIR}/policedlg.ui
-	${SIMULATOR_SOURCES_DIR}/LinkDlg.ui
-	${SIMULATOR_SOURCES_DIR}/detectiondlg.ui
-	${SIMULATOR_SOURCES_DIR}/config.ui
-	${SIMULATOR_SOURCES_DIR}/authorization.ui
-	${SIMULATOR_SOURCES_DIR}/AsyncInputDlg.ui
-
+set(EXPORT_HEADERS
+    ${EXPORT_HEADERS_DIR}/virt_kyb.h
 )
+
+ 
+configure_file("${SIMULATOR_RESOURCES_DIR}/virtualkb.rc.in" Resources.rc @ONLY)
 
 set(PROJECT_SOURCES
-	${SIMULATOR_UI_GEN_HEADERS}
-	${SIMULATOR_SOURCES_DIR}/videodlg.cpp
-	${SIMULATOR_SOURCES_DIR}/touchedlg.cpp
-	${SIMULATOR_SOURCES_DIR}/SimuSendReciveThread.cpp
-	${SIMULATOR_SOURCES_DIR}/saisieexdlg.cpp
-	${SIMULATOR_SOURCES_DIR}/saisiedlg.cpp
-	${SIMULATOR_SOURCES_DIR}/policedlg.cpp
-	${SIMULATOR_SOURCES_DIR}/MWaitUserDlg.cpp
-	${SIMULATOR_SOURCES_DIR}/maindlg.cpp
 	${SIMULATOR_SOURCES_DIR}/main.cpp
-	${SIMULATOR_SOURCES_DIR}/linkdlg.cpp
-	${SIMULATOR_SOURCES_DIR}/IHMSimuDld.cpp
-	${SIMULATOR_SOURCES_DIR}/detectiondlg.cpp
-	${SIMULATOR_SOURCES_DIR}/config.cpp
-	${SIMULATOR_SOURCES_DIR}/authorization.cpp
-	${SIMULATOR_SOURCES_DIR}/AsyncInputDlg.cpp
-	${SIMULATOR_SOURCES_DIR}/affichage.cpp
- 	${SIMULATOR_SOURCES_DIR}/videodlg.h
-	${SIMULATOR_SOURCES_DIR}/touchedlg.h
-	${SIMULATOR_SOURCES_DIR}/SimuSendReciveThread.h
-	${SIMULATOR_SOURCES_DIR}/saisieexdlg.h
-	${SIMULATOR_SOURCES_DIR}/saisiedlg.h
-	${SIMULATOR_SOURCES_DIR}/policedlg.h
-	${SIMULATOR_SOURCES_DIR}/MWaitUserDlg.h
-	${SIMULATOR_SOURCES_DIR}/maindlg.h
-	${SIMULATOR_SOURCES_DIR}/linkdlg.h
-	${SIMULATOR_SOURCES_DIR}/IHMSimuDld.h
-	${SIMULATOR_SOURCES_DIR}/detectiondlg.h
-	${SIMULATOR_SOURCES_DIR}/constants.h
-	${SIMULATOR_SOURCES_DIR}/config.h
-	${SIMULATOR_SOURCES_DIR}/authorization.h
-	${SIMULATOR_SOURCES_DIR}/AsyncInputDlg.h
-	${SIMULATOR_SOURCES_DIR}/affichage.h
+	${SIMULATOR_SOURCES_DIR}/MTracer.cpp
+	${SIMULATOR_SOURCES_DIR}/MKybWDThread.cpp
+	${SIMULATOR_SOURCES_DIR}/MKybConfigGeneral.cpp
+	${SIMULATOR_SOURCES_DIR}/MKybMainLogic.cpp
+	${SIMULATOR_SOURCES_DIR}/MKybFormMain.cpp
+	${SIMULATOR_SOURCES_DIR}/MKybAniInitData.cpp
+	${SIMULATOR_SOURCES_DIR}/MKybAniThread.cpp
+	${SIMULATOR_SOURCES_DIR}/MKybSrv.cpp
+	${SIMULATOR_SOURCES_DIR}/MKybMsg.cpp
+	${SIMULATOR_SOURCES_DIR}/MKybVisibleObject.cpp
+	${SIMULATOR_SOURCES_DIR}/MKybTypeSettings.cpp
+	${SIMULATOR_SOURCES_DIR}/MTracer.h
+	${SIMULATOR_SOURCES_DIR}/MKybWDThread.h
+	${SIMULATOR_SOURCES_DIR}/MKybConfigGeneral.h
+	${SIMULATOR_SOURCES_DIR}/MKybMainLogic.h
+ 	${SIMULATOR_SOURCES_DIR}/MKybFormMain.h
+	${SIMULATOR_SOURCES_DIR}/MKybAniInitData.h
+	${SIMULATOR_SOURCES_DIR}/MKybAniThread.h
+	${SIMULATOR_SOURCES_DIR}/MKybSrv.h
+	${SIMULATOR_SOURCES_DIR}/MKybMsg.h
+	${SIMULATOR_SOURCES_DIR}/MKybVisibleObject.h
+	${SIMULATOR_SOURCES_DIR}/MKybTypeSettings.h
 
 )
 
 
-qt_add_executable(${SIMULATOR_EXE} 
-					${PROJECT_SOURCES} 
+qt_add_executable(${PROJECT_EXE} 
+					${PROJECT_SOURCES}  
+					${EXPORT_HEADERS}  
 )
 
-target_include_directories(${SIMULATOR_EXE} PRIVATE
+target_include_directories(${PROJECT_EXE} PRIVATE
 							${SIMULATOR_SOURCES_DIR}
 							${SIMULATOR_RESOURCES_DIR}
-							${CMAKE_CURRENT_BINARY_DIR}
-							#${EXPORT_HEADERS_DIR}
-							"${CMAKE_SOURCE_DIR}/../../Voie_NT/ihm_qt/includes"
+							#${CMAKE_CURRENT_BINARY_DIR}
+							${EXPORT_HEADERS_DIR}
 							"${CMAKE_SOURCE_DIR}/../../Commun_NT/declare/includes"
 							"${CMAKE_SOURCE_DIR}/../../Voie_NT/commun/includes"
 							"${CMAKE_SOURCE_DIR}/../../Voie_NT/run/includes"	
-							"${CMAKE_SOURCE_DIR}/../../Voie_NT/virtualKYB/includes"
 							"${CMAKE_SOURCE_DIR}/../../Voie_NT/lwd/startup/includes"				
 )
 
 ##-----------------------------------------------------------------------------------------------
+add_library(CSR::Reg SHARED IMPORTED GLOBAL)
+set_target_properties(CSR::Reg PROPERTIES
+					  INTERFACE_INCLUDE_DIRECTORIES
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/Reg/includes/"
+					  IMPORTED_IMPLIB_RELEASE
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/Reg/out/build/release/csr_reg_VS17_x64_r.lib"
+					  IMPORTED_LOCATION_RELEASE
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/Reg/out/build/release/csr_reg_VS17_x64_r.dll"
+					  IMPORTED_IMPLIB_DEBUG
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/Reg/out/build/debug/csr_reg_VS17_x64.lib"
+					  IMPORTED_LOCATION_DEBUG
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/Reg/out/build/debug/csr_reg_VS17_x64.dll"
+					  MAP_IMPORTED_CONFIG_MINSIZEREL
+					  	Release
+					  MAP_IMPORTED_CONFIG_RELWITHDEBINFO
+					  	Release
+)							
+
+
+
 	add_library(CSR::Noy SHARED IMPORTED GLOBAL)
 set_target_properties(CSR::Noy PROPERTIES
 					  INTERFACE_INCLUDE_DIRECTORIES
@@ -144,7 +140,7 @@ set_target_properties(CSR::Srv PROPERTIES
 )																		
 ##-----------------------------------------------------------------------------------------------
 							
-set_target_properties(${SIMULATOR_EXE}
+set_target_properties(${PROJECT_EXE}
     PROPERTIES
         WIN32_EXECUTABLE TRUE
 		RELEASE_POSTFIX "_r"            
@@ -153,29 +149,29 @@ set_target_properties(${SIMULATOR_EXE}
 )
 
 
-target_link_libraries(${SIMULATOR_EXE}
+target_link_libraries(${PROJECT_EXE}
     PUBLIC
         Qt::Core
         Qt::Gui
         Qt::Widgets
-		Qt::Xml
 		Qt::Core5Compat
+		Qt::UiTools
 		CSR::Noy
 		CSR::Srv
+		CSR::Reg
 )
 
 set(CMAKE_INSTALL_PREFIX  "C:/csr/exe")
 
 
 add_custom_command(
-    TARGET ${SIMULATOR_EXE} POST_BUILD
+    TARGET ${PROJECT_EXE} POST_BUILD
     COMMAND ${CMAKE_COMMAND}
         -E copy
         -t ${CMAKE_INSTALL_PREFIX} 
-        $<TARGET_FILE:${SIMULATOR_EXE}>
+        $<TARGET_FILE:${PROJECT_EXE}>
     COMMAND_EXPAND_LISTS
 )
 
-#include(${CMAKE_SOURCE_DIR}/cmake/copy_runtime_dlls.cmake)
 
-#copy_runtime_dlls(${PROJECT_EXE} $<TARGET_FILE_DIR:${PROJECT_EXE}>)
+add_subdirectory(tests)

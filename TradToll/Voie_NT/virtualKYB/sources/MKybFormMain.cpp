@@ -2,10 +2,13 @@
 
 #include <QtCore>
 #include <QtGui>
-#include <QtGui/QHBoxLayout>
-#include <QtUiTools>
+#include <QHBoxLayout>
+#include <QUiLoader>
 #include <QFont>
+#include <QFrame>
 #include <QFileInfo>
+#include <QPushButton>
+
 #include "MTracer.h"
 #include "MKybFormMain.h"
 #include "MKybVisibleObject.h"
@@ -23,7 +26,7 @@ MKybFormMain::MKybFormMain(bool bShowTitle, QWidget *parent)
 		setWindowFlags(Qt::WindowStaysOnTopHint); 
 
 	setFocusPolicy(Qt::NoFocus);
-	SetWindowLong (this->winId(), GWL_EXSTYLE, GetWindowLong(this->winId(), GWL_EXSTYLE) | WS_EX_NOACTIVATE);
+	SetWindowLong ((HWND)this->winId(), GWL_EXSTYLE, GetWindowLong((HWND)this->winId(), GWL_EXSTYLE) | WS_EX_NOACTIVATE);
 
 	if (MKybConfigGeneral::getCfg()->shouldHideCursor())
 		this->setCursor(Qt::BlankCursor);
@@ -45,8 +48,8 @@ MKybFormMain::~MKybFormMain()
 void MKybFormMain::center()
 {
 	//make the window appear at the center
-	QDesktopWidget *deskWidget = qApp->desktop();
-	QRect screenRect = deskWidget->screenGeometry(this);
+	QScreen* myScr = qApp->primaryScreen();
+	QRect screenRect = myScr->availableGeometry();
 	QRect rectTarget = this->geometry();
 	
 	
@@ -151,7 +154,7 @@ bool MKybFormMain::loadTemplate(QString sUIFilePath)
 		this->setContentsMargins(0,0,0,0);
 		this->setCentralWidget(m_mainFrame);
 
-		m_frContainer = qFindChild<QFrame*>(m_mainFrame, "frMainFrame");
+		m_frContainer = m_mainFrame->findChild<QFrame*>("frMainFrame");
 		
 		if(m_frContainer != NULL)
 		{
@@ -196,7 +199,7 @@ bool MKybFormMain::connectVisibleObjects(QList <MKybKeyCfg*> * pLst)
 			continue;
 		}
 
-		pPushButton = qFindChild<QPushButton*>(this, pCurrentKeyCfg->getWidgetName());
+		pPushButton = this->findChild<QPushButton*>(pCurrentKeyCfg->getWidgetName());
 		
 		if(pPushButton!=NULL)
 		{

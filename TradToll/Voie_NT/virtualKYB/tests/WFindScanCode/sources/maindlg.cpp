@@ -134,7 +134,7 @@ bool MainDlg::keyPressEventHandler(QObject *target, QKeyEvent * event )
 	QString s = event->text();
 	unsigned char cAscii = 0;
 	if(s.size()>0) 
-		cAscii = (unsigned char)s.at(0).toAscii();
+		cAscii = (unsigned char)s.at(0).toLatin1();
 
 	QString msg = QString("KeyPressEvent: ScanCode:%1 VirtualCode:%2 Key:%3 Text:[%4] Ascii(%5)")
 									.arg(iScanCode)

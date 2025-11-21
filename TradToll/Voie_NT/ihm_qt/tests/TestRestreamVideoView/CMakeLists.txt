@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 project(TestRestreamVideoView LANGUAGES CXX)
 
-set(TEST_RVIDEO_EXE "${PROJECT_NAME}_vs22_x64")
+set(TEST_RVIDEO_EXE "${PROJECT_NAME}_vs17_x64")
 
 include(qt.cmake)
 
