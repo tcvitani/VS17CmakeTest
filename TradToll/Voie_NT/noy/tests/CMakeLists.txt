@@ -11,8 +11,8 @@ add_executable(NoyTest test.c )
 target_include_directories(NoyTest PRIVATE
     #${INCLUDES_DIR}
 	${EXPORT_HEADERS_DIR}
-	L:/Commun_NT/declare/10.0.0
-	L:/Voie_NT/commun/3.1.0							
+	"${CMAKE_SOURCE_DIR}/../../Commun_NT/declare/includes"	
+	"${CMAKE_SOURCE_DIR}/../../Voie_NT/commun/includes"
 )
 
 target_link_libraries(NoyTest PRIVATE ${PROJECT_LIB})
@@ -42,8 +42,8 @@ add_executable(NoyTestBal test_bal.c )
 target_include_directories(NoyTestBal PRIVATE
     #${INCLUDES_DIR}
 	${EXPORT_HEADERS_DIR}
-	L:/Commun_NT/declare/10.0.0
-	L:/Voie_NT/commun/3.1.0							
+	"${CMAKE_SOURCE_DIR}/../../Commun_NT/declare/includes"	
+	"${CMAKE_SOURCE_DIR}/../../Voie_NT/commun/includes"
 )
 
 target_link_libraries(NoyTestBal PRIVATE ${PROJECT_LIB})
@@ -71,8 +71,8 @@ add_executable(NoyTestChrono test_chrono.c )
 target_include_directories(NoyTestChrono PRIVATE
     #${INCLUDES_DIR}
 	${EXPORT_HEADERS_DIR}
-	L:/Commun_NT/declare/10.0.0
-	L:/Voie_NT/commun/3.1.0							
+	"${CMAKE_SOURCE_DIR}/../../Commun_NT/declare/includes"	
+	"${CMAKE_SOURCE_DIR}/../../Voie_NT/commun/includes"
 )
 
 target_link_libraries(NoyTestChrono PRIVATE ${PROJECT_LIB})

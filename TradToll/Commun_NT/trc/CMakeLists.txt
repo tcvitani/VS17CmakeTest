@@ -41,8 +41,8 @@ target_include_directories(${PROJECT_LIB} PRIVATE
 							${PROJECT_SOURCES_DIR}
 							${EXPORT_HEADERS_DIR}
 							${PROJECT_RESOURCES_DIR}
-							L:/Commun_NT/declare/10.0.0		
-							L:/voie_nt/commun/3.2.0
+							"${CMAKE_SOURCE_DIR}/../../Commun_NT/declare/includes"	
+							"${CMAKE_SOURCE_DIR}/../../Voie_NT/commun/includes"
 )
  
 target_compile_definitions(${PROJECT_LIB}

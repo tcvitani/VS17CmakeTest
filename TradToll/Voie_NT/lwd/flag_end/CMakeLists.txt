@@ -40,8 +40,8 @@ target_include_directories(${PROJECT_LIB} PRIVATE
 							${PROJECT_RESOURCES_DIR}
 							${CMAKE_CURRENT_SOURCE_DIR}/../startup/includes
 							${CMAKE_CURRENT_SOURCE_DIR}/../startup/sources
-							L:/Commun_NT/declare/10.0.0		
-							L:/voie_nt/commun/3.2.0
+							"${CMAKE_SOURCE_DIR}/../../Commun_NT/declare/includes"	
+							"${CMAKE_SOURCE_DIR}/../../Voie_NT/commun/includes"
 )
  
 target_compile_definitions(${PROJECT_LIB}

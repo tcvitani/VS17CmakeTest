@@ -18,8 +18,8 @@ target_include_directories(${PROJECT_EXE} PRIVATE
 	${PROJECT_RESOURCES_DIR}
 	${CMAKE_CURRENT_SOURCE_DIR}/../../startup/includes
 	${CMAKE_CURRENT_SOURCE_DIR}/../../startup/sources
-	L:/Commun_NT/declare/10.0.0
-	L:/Voie_NT/commun/3.1.0							
+	"${CMAKE_SOURCE_DIR}/../../Commun_NT/declare/includes"	
+	"${CMAKE_SOURCE_DIR}/../../Voie_NT/commun/includes"
 )
 
 target_link_libraries(${PROJECT_EXE} PRIVATE ${PROJECT_LIB})
