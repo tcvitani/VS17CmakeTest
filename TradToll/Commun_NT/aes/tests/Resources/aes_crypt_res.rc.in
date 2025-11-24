@@ -1,0 +1,177 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CRYPTTEST DIALOG DISCARDABLE  0, 0, 579, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_KEY,155,16,182,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENC_SRC_FILE,83,52,175,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENC_DEST_FILE,81,87,175,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MD5_FILE1,337,52,183,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Encrypt",IDC_ENCRYPT_FILE,103,70,50,14
+    PUSHBUTTON      "Decrypt",IDC_DECRYPT_FILE,105,106,50,14
+    EDITTEXT        IDC_MD5_FILE2,337,85,183,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Exit",IDEXIT,465,163,50,14
+    GROUPBOX        "Key",IDC_STATIC,7,7,565,31
+    GROUPBOX        "File",IDC_STATIC,7,44,565,115
+    LTEXT           "ENC Source file :",IDC_STATIC,15,55,55,8
+    LTEXT           "Key:",IDC_STATIC,15,19,15,8
+    LTEXT           "ENC Dest/DEC Src",IDC_STATIC,15,92,63,8
+    LTEXT           "MD5:",IDC_STATIC,310,54,18,8
+    LTEXT           "MD5:",IDC_STATIC,312,89,18,8
+    EDITTEXT        IDC_DEC_DEST_FILE,81,125,175,14,ES_AUTOHSCROLL
+    LTEXT           "DEC Dest",IDC_STATIC,15,125,32,8
+    EDITTEXT        IDC_MD5_FILE3,337,121,183,14,ES_AUTOHSCROLL
+    LTEXT           "MD5:",IDC_STATIC,313,126,18,8
+    PUSHBUTTON      "MD5",IDC_MD5_ENCSRC,259,52,40,14
+    PUSHBUTTON      "MD5",IDC_MD5_DECSRC,260,86,40,14
+    PUSHBUTTON      "MD5",IDC_MD5_DECDEST,260,125,40,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CRYPTTEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 572
+        VERTGUIDE, 15
+        VERTGUIDE, 337
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Croatian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HRV)
+#ifdef _WIN32
+LANGUAGE LANG_CROATIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041a04b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "ECSAT\0"
+            VALUE "FileDescription", "aes_test\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "aes_test\0"
+            VALUE "LegalCopyright", "Copyright © 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "aes_test.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ECSAT aes_test\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x41a, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // Croatian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
