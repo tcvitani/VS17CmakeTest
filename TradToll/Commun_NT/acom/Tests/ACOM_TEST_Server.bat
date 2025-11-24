@@ -1,0 +1,1 @@
+csr_ACOMTest_vs17_x64.exe /PS=\\.\pipe\TrfSvc\TRF,100000,10,100000,100000,1000,100000
