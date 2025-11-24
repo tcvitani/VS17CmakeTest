@@ -9,8 +9,9 @@ add_executable(ListTest  ${CMAKE_CURRENT_SOURCE_DIR}/sources/test_list.c )
 target_include_directories(ListTest PRIVATE
     #${INCLUDES_DIR}
 	${EXPORT_HEADERS_DIR}
-	L:/Commun_NT/declare/10.0.0
-	L:/Voie_NT/commun/3.1.0							
+	"${CMAKE_SOURCE_DIR}/../../Commun_NT/declare/includes"		
+	"${CMAKE_SOURCE_DIR}/../../Voie_NT/commun/includes"		
+					
 )
 
 target_link_libraries(ListTest PRIVATE ${PROJECT_LIB})
