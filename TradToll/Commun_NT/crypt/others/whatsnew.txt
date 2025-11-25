@@ -1,0 +1,4 @@
+1.0.0
+	Création
+2.0.0
+	Adaptation Crypt from lib to DLL
