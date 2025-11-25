@@ -47,15 +47,40 @@ PROTECTED int __cdecl main(IN int iArgc,  IN char ** ppcArgc )
 		dwVal = 0; 
 		if (BITBLGetNumber(&dwVal, 8, pSrc, &dwCurrentBitPos, &dwAvailableBits))
 		{
-			printf("BITBLGetNumber returned TRUE: Val:%X", dwVal);
+			printf("BITBLGetNumber returned TRUE: Val:%X \n", dwVal);
 		}
 		else
 		{
-			printf("BITBLGetNumber returned FALSE: ");
+			printf("BITBLGetNumber returned FALSE!  \n");
 
 		}
 
-        
+		dwCurrentBitPos = 8; dwAvailableBits = 24;
+		dwVal = 0xB9;
+
+		if (BITBLSetNumber(dwVal, 8, pSrc, &dwCurrentBitPos, &dwAvailableBits))
+		{
+			dwCurrentBitPos = 8; dwAvailableBits = 24;
+			dwVal = 0;
+			if (BITBLGetNumber(&dwVal, 8, pSrc, &dwCurrentBitPos, &dwAvailableBits))
+			{
+				printf("BITBLGetNumber2 returned TRUE: Val:%X  \n", dwVal);
+			}
+			else
+			{
+				printf("BITBLGetNumber2 returned FALSE  \n");
+
+			}
+		}
+		else
+		{
+			printf("BITBLSetNumber returned FALSE!  \n");
+
+		}
+
+
+		
+
     }
     __finally
     {
