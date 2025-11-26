@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile />
+    <ClCompile>
+      <AdditionalIncludeDirectories>
+		".\Includes";
+		"l:\_Third Party Libraries\GEA_IP_BEACON\BeaconManager\3.0.0";
+		"L:\COMMUN_NT\REG\10.0.0";
+		"L:\COMMUN_NT\DECLARE\10.0.0";
+		"L:\COMMUN_NT\QUEUE\10.0.0";
+		"L:\COMMUN_NT\TIMER\10.0.0";
+		"L:\COMMUN_NT\EXCPT\10.0.0";
+		"L:\COMMUN_NT\BITBL\10.0.1";
+		"L:\COMMUN_NT\DES\10.0.0";
+		"L:\COMMUN_NT\Trc\10.0.4";
+	  </AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

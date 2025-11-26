@@ -1,0 +1,187 @@
+Library : Tag
+
+1.0.0	- NBL - 25/07/2001
+		Creation API assynchrone de gestion des équipements de télépéage.
+
+2.0.0   - NBL - 13/11/2001
+		Intégration des version DLL des librairies DES et BITBL
+		Correction des bugs sur la sécurité DES
+		Retrait de l'option pack(1) et restauration de l'option par
+		défault (8) pour permettre l'exploitation des structures L7
+		depuis VB.
+      Encapsulation dans une classe COM VB.		
+
+2.0.1   - NBL - 13/11/2001
+		Ajout d'un hook par défaut permettant la trace des données échangées
+        sur console (par paramétrage à l'aide du paramètre "ConsoleTrace") ou
+        vers différents "objets" : fenêtre (par WM), tread (par thread queue),
+        et/ou FIFO spécifique.
+        Intégration de ces ajouts aux classes COM CSDsrcLib.CSDsrcLinkClass et
+        CSDsrcLib.CSDsrcRequestClass. La classe CSDsrcLinkClass permet désormais
+        de dissocié l'émission de la requète de sa réception et permet également
+        la concaténation de requètes.
+        Réalisation d'un simulateur DSRC permettant l'exécution de scripts de
+        tests (VBScript) avec une balise ou un ELI.
+
+2.0.2   - NBL - 13/01/2003
+        Le vidage automatique des buffers série avant émission est rendu optionnel.
+        Inversion entre bufferisation et mise en fifo d'input dans la transition
+        effectuant l'acquitement d'un message reçu.
+        Bufferisation des input de la couche serie pour éviter la lecture caractère
+        par caractère directement sur le port.
+        Suppression du WaitFor... dans la boucle infinie du module BAC dans le cas
+        où des caractères sont dispos dans le buffer série.
+
+2.0.3   - NBL - 20/02/2003
+        Correction des bugs sur la securité ALGO2 (badges Melodhy non GSSA1) où
+        le calcul de CRC était erroné.
+        Ajout d'une specifité permettant de ne pas préfixer les access credentials
+        par leur taille (cas des badges Melodhy non GSSA1).
+        Les fonctionnalité Algo2 sont rendues publiques pour permettre leur
+        utilisation par l'encapsulation VB.
+        Evolution de la classe librairie COM CSDsrcLib pour prendre en compte ces
+        évolutions.
+
+2.0.4   - NBL - 04/04/2003
+        Ajout de la methode GetLineStatus à la classe CSDsrcLinkClass (CSDsrcLib.Dll)
+        Aucune modification au code de la librairie C (CSR_TAG.DLL).
+
+2.0.5   - NBL - 05/04/2003
+        Ajout du transfer channel privé pour le badge CS V6.
+
+3.0.0   - NBL - 23/04/2003
+        
+        La compatibilité du code est garantie. Mais du fait du changement de certaines
+        constantes et de tailles de structures, une recompilation est nécessaire.
+        Pour des raisons de cohabitation entre versions majeurs et de compatibilité
+        binaire sur les classes OLE, les fichiers CSDsrcLibrary.DLL et CSR_TAG.DLL
+        changent donc de nom et deviennent CSDsrcLib3.DLL et CSR_TAG3.DLL. Le nom de
+        la librairie OLE devient CSDsrcLib3.
+
+        Les principales évolutions de CSR_TAG3.DLL sont :
+    
+          Changement des valeurs CENL7_MAX_ATTR_BYTES et CENL7_MAX_APP_PARAM_BYTES.
+          
+          Ajout des actions ADD/SUB/GETSECURE/SETSECURE.
+          
+          Evolution de la fonction TagOpen() pour prendre en compte les construction
+          de paramètres de communication par les nouvelles fonctions
+          TagBuildCommunicatorParams() et TagBuildWiredParams().
+          
+          Ajout de la fonction TagIsVersionCompatible() principalement pour permettre
+          à l'encapsulation OLE de détecter la version utilisée.
+          
+          Attention, les "SUBSTRACT" (faute d'ortaugrafe) deviennent "SUBTRACT".
+          
+          Il est mainteant possible d'envoyer des requètes vides par le mode transparent.
+
+          Lors de la réception d'un message DSRC contenant plusieurs réponses ou contenant
+          des données parasites à la fin, il est également possible de tronquer l'analyse
+          après un nombre choisi de morceaux.
+
+        Les principales évolutions de CSDsrcLib3.DLL sont :
+
+          Changement des tailles de structure pour coller aux structure de la librairie C.
+          Ajout des actions ADD/SUB/GETSECURE/SETSECURE.
+          Possibilité de paramétrer la communication autrement que par le registre
+          avec l'ajout des deux méthodes SetBeaconParameters() et SetWiredParameters().
+          Possibilité d'activer les traces console autremant qu'avec le registre
+          à l'aide de la propriété "ConsoleTrace".
+          Attention, les "SUBSTRACT" (faute d'ortaugrafe) deviennent "SUBTRACT".
+
+3.0.1   - NBL - 13/06/2003
+
+        Changement des paramètres par défaut pour les port série (en particulier au niveau
+        des valeurs odsr, octs et idsr).
+        Il est possible de simuler les requètes vide du mode transparent en liaison filaire.
+        Mise en place d'une sauvegarde complète des paramètres du port au moment de son
+        ouverture pour les restituer tels quels à sa fermeture.
+
+3.0.2   - NBL - 11/09/2003
+
+        Ajout d'une option permettant de faire varier la taille optionnelle du champ
+        OBEEquipmentStatus de la VST en y intégrant ou non la partie "Reserved"
+        Les classes OLE n'évoluant pas, elles restent en version 3.0.1
+
+
+3.1.0   - NBL - 10/2003
+
+        Ajout de la possibilité d'utiliser la couche 2 ISA de communication comme
+        protocole de liaison avec la balise au lieu de la couche 2 BAC.
+        Ajout des couches de transport Thales permettant d'accéder à leurs balises
+        de tables.
+        Ajout des fonctions de couche 2 : SetOption et GetOption.
+
+3.1.1   - NBL - 01/2005
+
+        Correction d'un bug sur la construction dynamique des paramètres pour une
+        balise en mode transparent (TagBuildCommunicatorParams). Le pointeur retourné
+        pointait 4 octets trop loin. Ce bug est spécifique au mode transparent pour
+        le communicateur avec l'interface Tag.
+
+
+3.2.0 - NBL - 21/10/2005
+
+        Ajout de code lié au codage/décodage d'une action SET_SECURE façon Thales.
+        Ajout de code lié au codage/décodage d'une action PERSO-APP spécifique Thales.
+        Ajout de code lié au décodage d'une réponse d'action GETNONCE façon QFree (augmentation de la taille max du RndOBE).
+        Ajout de code lié au codage/décodage d'une action TRANSFER-CHANNEL façon QFree.
+        Ajout de fonctions utilitaires à la class CSDsrcLink
+
+3.3.0 - TIC - 20/02/2006
+	
+	Added support for the QFree table beacons (MD5859T, ...) -New interface type TAG_INTERFACE_QFREE.
+	Added files QFL2.c, QFSL7.c, CSR_TAG_QFL2.h, CSR_TAG_QFSL7.h
+
+3.3.1 - NBL - 19/05/2006
+
+    Partial redesign of the QF code in order to avoid pipe message loss.
+    Changes of QF layer 2 have broken compatibility for this particular layer, but the compatibility
+    of the high level API (TAG) is preserved.
+    Fixed a minor bug in ISO input queue clearing
+
+3.4.0 - NBL - 11/09/2006
+
+    Changed timer type because of unexpected behaviour of waitable timer on some WNT4 workstations.
+    Extended configuration structure for BAC and ISA protocols keeping compatibility with previous
+    structure.
+
+3.5.0 - NBL - 02/2007
+
+  C DLL :
+    Added the ability to send custom interface requests and received custom responses from the TAG API thanks to the new
+    TagInterfaceRequestEx.
+    Added the abitily to change the behaviours in case of message collision with the BAC protocol.
+    In this case, the asynchronous error code returned is ERROR_CANCELLED.
+  OLE CLASS :
+    Added the ability to send custom interface requests using the new InterfaceCustomCommand method.
+    Added the abitily to change the behaviours in case of message collision with the BAC protocol using
+    the new property CollisionCancel. In this case, the asynchronous error code returned is
+    ERROR_CANCELLED + DsrcErrorSubModuleBase.
+    
+3.6.0 - MMA -
+C DLL: CARDME 
+ * données maitresses de la sécurité
+ * données dérivées de la sécurité
+ * dérivation des données de sécurité
+ * calcul des access credentials
+
+3.7.0 - NBL - 07/2007
+
+  C DLL :
+    Added the possibility to configure from another registry hive root than HKEY_LOCAL_MACHINE by prefixing the
+    registry path by specific headers ( "HKLM:", "HKCU", "HKU" ).
+    Fixed a bug on key sizes if CENL7SetDerivedSecurity and CENL7DeriveSecurity functions.
+
+  OLE CLASS
+    Added the possibility to configure from another registry hive root than HKEY_LOCAL_MACHINE by prefixing the
+    registry path by specific headers ( "HKLM:", "HKCU", "HKU" ).
+
+3.8.0 - NBL - 07/2007
+
+  C DLL :
+    Add new transfer channel parameter structure (including Rnd and PSW, not evaluated in the size of channel block)
+	to handle Melodhy ASIC v8 changes, by adding a new CENL7 flag : CENL7_FLAG_CHANNEL_PSW
+ 
+  OLD CLASS :
+    New tag type createad (Melodhy V8) to use CENL7_FLAG_CHANNEL_PSW flag.
