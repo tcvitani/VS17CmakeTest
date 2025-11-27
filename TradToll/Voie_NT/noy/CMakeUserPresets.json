@@ -44,16 +44,6 @@
     },
     {
       "hidden": true,
-      "name": "Qt-Default",
-      "inherits": "qt_6.5.2",
-      "vendor": {
-        "qt-project.org/Default": {
-          "checksum": "0ZiJrSLgueRMr668E7FL4Af90RU="
-        }
-      }
-    },
-    {
-      "hidden": true,
       "name": "qt_6.5.2",
       "inherits": "Qt",
       "environment": {
@@ -69,11 +59,21 @@
           "checksum": "LXgV03QWfuE+ygjt6bQUJJNvgEM="
         }
       }
+    },
+    {
+      "hidden": true,
+      "name": "Qt-Default",
+      "inherits": "QT_6.5.2",
+      "vendor": {
+        "qt-project.org/Default": {
+          "checksum": "hHn5gzUDPtQ1p+M/rARyOegGk2Q="
+        }
+      }
     }
   ],
   "vendor": {
     "qt-project.org/Presets": {
-      "checksum": "/7wMcs6RcmMKXZ2oEG4OQf2O9Oo="
+      "checksum": "nCmb1jNHWDWd+zssHW/Wqw+tPqM="
     }
   }
 }
