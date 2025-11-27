@@ -1,0 +1,31 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\PCS Communication]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\PCS Communication\Files]
+"path"="c:\\csr\\data"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\PCS Communication\Files\CUR]
+"subdir"="CUR"
+"current"="CUR.PCS0007.curr.V201"
+"new"=""
+"current_version"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\PCS Communication\Files\PRD]
+"subdir"="PRD"
+"current"="PRD.PCS0007.productprices.V20"
+"new"=""
+"current_version"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\PCS Communication\Files\TCI]
+"subdir"="TCI"
+"current"="TCI.PCS0007.tollcollector.V91"
+"new"=""
+"current_version"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\PCS Communication\Files\TFT]
+"subdir"="TFT"
+"current"="TFT.PCS0007.tollfare.V57"
+"new"=""
+"current_version"=""
+
