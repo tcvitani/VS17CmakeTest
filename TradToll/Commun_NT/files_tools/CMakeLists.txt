@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(file_tools LANGUAGES C)
+project(files_tools LANGUAGES C)
 
 
 set(PROJECT_LIB "csr_${PROJECT_NAME}_vs17_x64")
