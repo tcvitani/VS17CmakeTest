@@ -1,0 +1,13 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\Modules\RFR_TFT\BL_RFR_TFT]
+"bl_la_name"="BL_TFT"
+"bl_rfr_name"="BL_RFR"
+"path_temp_file"="c:\\csr\\rfr\\temp\\tft"
+"_Id"="TFT"
+"Pool"="Reserved"
+"Obligatoire"=dword:00000001
+"PriorityInit"=dword:00000004
+"PriorityMax"=dword:00000004
+"path_dest_file"="c:\\csr\\data\\tft"
+

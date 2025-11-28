@@ -1,0 +1,3 @@
+TFT[1]        =        D:\pcs\tft_1.txt      R[1234567890123456]
+TFT[2]        =        D:\pcs\tft_2.txt      R[1]
+TFT [3]        =       D:\pcs\tft_3.txt      R[abc]
