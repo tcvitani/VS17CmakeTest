@@ -256,6 +256,9 @@ PUBLIC unsigned long int HRDSecondesDepuis80 (struct_hrd_date_entree_hex date,
    unsigned short int jours_ecoulees_dans_dernier_paquets;
    unsigned short int jours_ecoules_completement;
 
+   if (date.annee < HRD_ANNEE_BASE)
+	   return 0;
+
    julien = HRDConversionDateJulien( &date);
    nb_paquets_4_annees = (date.annee - HRD_ANNEE_BASE) / 4;
    jours_ecoulees_dans_dernier_paquets = (date.annee - HRD_ANNEE_BASE) % 4;

@@ -49,7 +49,6 @@
 
 #include <noyau.h>
 
-#define INIT_DEF
 #include <init.h>
 
 #include <simu1.h>

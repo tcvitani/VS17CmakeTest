@@ -272,9 +272,16 @@ void messages_hrd(void)
   struct_hrd_gestion_date_heure message_date_heure;
   short int num_reveil;
   unsigned long int nb_secondes;
-  struct_hrd_date_entree_hex date,date_sortie,date1;
-  struct_hrd_date_entree_hex date2;
-  struct_hrd_heure_hex temps,temps_sortie,temps1,temps2;
+  struct_hrd_date_entree_hex date = {0};
+  struct_hrd_date_entree_hex date_sortie = { 0 };
+  struct_hrd_date_entree_hex date1 = { 0 };
+  struct_hrd_date_entree_hex date2 = { 0 };
+
+  struct_hrd_heure_hex temps = { 0 };
+  struct_hrd_heure_hex temps_sortie = { 0 };
+  struct_hrd_heure_hex temps1 = { 0 };
+  struct_hrd_heure_hex temps2 = { 0 };
+  
   int resultat;
 
   syst_ecrire_trace ("\nSimulation des messages M_HRD_XXX\n\n");
@@ -325,18 +332,18 @@ void messages_hrd(void)
         case 'b'  :
            printf("Donner la date du reveil.\n");
            printf("Annee : ");
-           scanf_s("%d",&message_alarme.date.annee);
+           scanf_s("%hd",&message_alarme.date.annee);
            printf("\nMois : ");
-           scanf_s("%d",&message_alarme.date.mois);
+           scanf_s("%hhd",&message_alarme.date.mois);
            printf("\nJour : ");
-           scanf_s("%d",&message_alarme.date.jour);
+           scanf_s("%hhd",&message_alarme.date.jour);
            printf("\nDonner l'heure du reveil");
            printf("\nHeure :");
-           scanf_s("%d",&message_alarme.temps.heure);
+           scanf_s("%hhd",&message_alarme.temps.heure);
            printf("\nMinute :");
-           scanf_s("%d",&message_alarme.temps.minute);
+           scanf_s("%hhd",&message_alarme.temps.minute);
            printf("\nSeconde :");
-           scanf_s("%d",&message_alarme.temps.seconde);
+           scanf_s("%hhd",&message_alarme.temps.seconde);
 
            resultat = HRDArmeReveilPonctuel (message_alarme.date,
                                              message_alarme.temps,
@@ -404,18 +411,18 @@ void messages_hrd(void)
            message_alarme.periode = 0x0;
            printf("Donner la date du reveil.\n");
            printf("Annee : ");
-           scanf_s("%d",&message_alarme.date.annee);
+           scanf_s("%hd",&message_alarme.date.annee);
            printf("\nMois : ");
-           scanf_s("%d",&message_alarme.date.mois);
+           scanf_s("%hhd",&message_alarme.date.mois);
            printf("\nJour : ");
-           scanf_s("%d",&message_alarme.date.jour);
+           scanf_s("%hhd",&message_alarme.date.jour);
            printf("\nDonner l'heure du reveil");
            printf("\nHeure :");
-           scanf_s("%d",&message_alarme.temps.heure);
+           scanf_s("%hhd",&message_alarme.temps.heure);
            printf("\nMinute :");
-           scanf_s("%d",&message_alarme.temps.minute);
+           scanf_s("%hhd",&message_alarme.temps.minute);
            printf("\nSeconde :");
-           scanf_s("%d",&message_alarme.temps.seconde);
+           scanf_s("%hhd",&message_alarme.temps.seconde);
            printf("\nDonner la periode du reveil : ");
            scanf_s("%d",&message_alarme.periode);
 
@@ -449,18 +456,18 @@ void messages_hrd(void)
         case 'f'  :
            printf("Donner la date du reveil.\n");
            printf("Annee : ");
-           scanf_s("%d",&message_alarme.date.annee);
+           scanf_s("%hd",&message_alarme.date.annee);
            printf("\nMois : ");
-           scanf_s("%d",&message_alarme.date.mois);
+           scanf_s("%hhd",&message_alarme.date.mois);
            printf("\nJour : ");
-           scanf_s("%d",&message_alarme.date.jour);
+           scanf_s("%hhd",&message_alarme.date.jour);
            printf("\nDonner l'heure du reveil");
            printf("\nHeure :");
-           scanf_s("%d",&message_alarme.temps.heure);
+           scanf_s("%hhd",&message_alarme.temps.heure);
            printf("\nMinute :");
-           scanf_s("%d",&message_alarme.temps.minute);
+           scanf_s("%hhd",&message_alarme.temps.minute);
            printf("\nSeconde :");
-           scanf_s("%d",&message_alarme.temps.seconde);
+           scanf_s("%hhd",&message_alarme.temps.seconde);
 
            resultat = HRDArmeReveilPonctuelFigeant (message_alarme.date,
                                                     message_alarme.temps,
@@ -528,20 +535,20 @@ void messages_hrd(void)
            message_alarme.periode = 0x0;
            printf("Donner la date du reveil.\n");
            printf("Annee : ");
-           scanf_s("%d",&message_alarme.date.annee);
+           scanf_s("%hd",&message_alarme.date.annee);
            printf("\nMois : ");
-           scanf_s("%d",&message_alarme.date.mois);
+           scanf_s("%hhd",&message_alarme.date.mois);
            printf("\nJour : ");
-           scanf_s("%d",&message_alarme.date.jour);
+           scanf_s("%hhd",&message_alarme.date.jour);
            printf("\nDonner l'heure du reveil");
            printf("\nHeure :");
-           scanf_s("%d",&message_alarme.temps.heure);
+           scanf_s("%hhd",&message_alarme.temps.heure);
            printf("\nMinute :");
-           scanf_s("%d",&message_alarme.temps.minute);
+           scanf_s("%hhd",&message_alarme.temps.minute);
            printf("\nSeconde :");
-           scanf_s("%d",&message_alarme.temps.seconde);
+           scanf_s("%hhd",&message_alarme.temps.seconde);
            printf("\nDonner la periode du reveil : ");
-           scanf_s("%d",&message_alarme.periode);
+           scanf_s("%ld",&message_alarme.periode);
 
 
            resultat = HRDArmeReveilRegulierFigeant (message_alarme.date,
@@ -572,7 +579,7 @@ void messages_hrd(void)
 
         case 'r'  :
            printf("Donner le numero de l'alarme a desarmer : ");
-           scanf_s("%d",&num_reveil);
+           scanf_s("%hd",&num_reveil);
 
            resultat = HRDAnnuleReveil (num_reveil);
 
@@ -642,18 +649,18 @@ void messages_hrd(void)
 
            printf("Donner la nouvelle date.\n");
            printf("Annee : ");
-           scanf_s("%d",&message_date_heure.date.annee);
+           scanf_s("%hd",&message_date_heure.date.annee);
            printf("\nMois : ");
-           scanf_s("%d",&message_date_heure.date.mois);
+           scanf_s("%hhd",&message_date_heure.date.mois);
            printf("\nJour : ");
-           scanf_s("%d",&message_date_heure.date.jour);
+           scanf_s("%hhd",&message_date_heure.date.jour);
            printf("\nDonner la nouvelle heure ");
            printf("\nHeure :");
-           scanf_s("%d",&message_date_heure.temps.heure);
+           scanf_s("%hhd",&message_date_heure.temps.heure);
            printf("\nMinute :");
-           scanf_s("%d",&message_date_heure.temps.minute);
+           scanf_s("%hhd",&message_date_heure.temps.minute);
            printf("\nSeconde :");
-           scanf_s("%d",&message_date_heure.temps.seconde);
+           scanf_s("%hhd",&message_date_heure.temps.seconde);
 
 
            simu_envoi_date_heure(M_HRD_GESTION_DATE_HEURE,
@@ -689,7 +696,7 @@ void messages_hrd(void)
         case 'n' :
            nb_secondes = 0x0;
            printf("Donner le nombre de secondes : ");
-           scanf_s("%I",&nb_secondes);
+           scanf_s("%lu",&nb_secondes);
            HRDConvSecondesEnDateHeure(nb_secondes,&date,&temps);
            printf("date : %02d / %02d / %04d\n",
                                       date.jour,date.mois,date.annee);
@@ -700,20 +707,20 @@ void messages_hrd(void)
         case 'o' :
            printf("Donner la date.\n");
            printf("Annee : ");
-           scanf_s("%d",&date.annee);
+           scanf_s("%hd",&date.annee);
            printf("\nMois : ");
-           scanf_s("%d",&date.mois);
+           scanf_s("%hhd",&date.mois);
            printf("\nJour : ");
-           scanf_s("%d",&date.jour);
+           scanf_s("%hhd",&date.jour);
            printf("\nDonner l'heure ");
            printf("\nHeure :");
-           scanf_s("%d",&temps.heure);
+           scanf_s("%hhd",&temps.heure);
            printf("\nMinute :");
-           scanf_s("%d",&temps.minute);
+           scanf_s("%hhd",&temps.minute);
            printf("\nSeconde :");
-           scanf_s("%d",&temps.seconde);
+           scanf_s("%hhd",&temps.seconde);
            printf("\nDonner le nombre de secondes a ajouter : ");
-           scanf_s("%I",&nb_secondes);
+           scanf_s("%lu",&nb_secondes);
            HRDAjouteDateHeure(date,temps,nb_secondes,&date_sortie,&temps_sortie);
            printf("date : %02d / %02d / %04d\n",
                                       date_sortie.jour,date_sortie.mois,date_sortie.annee);
@@ -724,20 +731,20 @@ void messages_hrd(void)
         case 'p' :
            printf("Donner la date.\n");
            printf("Annee : ");
-           scanf_s("%d",&date.annee);
+           scanf_s("%hd",&date.annee);
            printf("\nMois : ");
-           scanf_s("%d",&date.mois);
+           scanf_s("%hhd",&date.mois);
            printf("\nJour : ");
-           scanf_s("%d",&date.jour);
+           scanf_s("%hhd",&date.jour);
            printf("\nDonner l'heure");
            printf("\nHeure :");
-           scanf_s("%d",&temps.heure);
+           scanf_s("%hhd",&temps.heure);
            printf("\nMinute :");
-           scanf_s("%d",&temps.minute);
+           scanf_s("%hhd",&temps.minute);
            printf("\nSeconde :");
-           scanf_s("%d",&temps.seconde);
+           scanf_s("%hhd",&temps.seconde);
            printf("\nDonner le nombre de secondes a retrancher : ");
-           scanf_s("%I",&nb_secondes);
+           scanf_s("%lu",&nb_secondes);
            HRDRetrancheDateHeure(date,temps,nb_secondes,&date_sortie,&temps_sortie);
            printf("date : %02d / %02d / %04d\n",
                                       date_sortie.jour,date_sortie.mois,date_sortie.annee);
@@ -748,45 +755,46 @@ void messages_hrd(void)
         case 'q':
            printf("Donner la date1.\n");
            printf("Annee1 : ");
-           scanf_s("%d",&date1.annee);
+           scanf_s("%hd",&date1.annee);
            printf("\nMois1 : ");
-           scanf_s("%d",&mois);
+           scanf_s("%hhd",&mois);
            date1.mois = (unsigned char) mois;
            printf("\nJour1 : ");
-           scanf_s("%d",&jour);
+           scanf_s("%hhd",&jour);
            date1.jour = (unsigned char) jour;
 
            printf("\nDonner l'heure1");
            printf("\nHeure1 :");
-           scanf_s("%d",&heure);
+           scanf_s("%hhd",&heure);
            temps1.heure = (unsigned char) heure;
            printf("\nMinute1 :");
-           scanf_s("%d",&minute);
+           scanf_s("%hhd",&minute);
            temps1.minute = (unsigned char) minute;
            printf("\nSeconde1 :");
-           scanf_s("%d",&seconde);
+           scanf_s("%hhd",&seconde);
            temps1.seconde = (unsigned char) seconde;
 
            _flushall();
 
            printf("Donner la date2.\n");
            printf("Annee2 : ");
-           scanf_s("%d",&date2.annee);
+           scanf_s("%hd",&date2.annee);
            printf("\nMois2 : ");
-           scanf_s("%d",&mois);
+           scanf_s("%hhd",&mois);
            date2.mois = (unsigned char) mois;
            fflush(stdin);
            printf("\nJour2 : ");
-           scanf_s("%d",&jour);
+           scanf_s("%hhd",&jour);
            date2.jour = (unsigned char) jour;
 
            printf("\nDonner l'heure2");
            printf("\nHeure2 :");
-           scanf_s("%d",&temps2.heure);
+           scanf_s("%hhd",&temps2.heure);
            printf("\nMinute2 :");
-           scanf_s("%d",&temps2.minute);
+           scanf_s("%hhd",&temps2.minute);
            printf("\nSeconde2 :");
-           scanf_s("%d",&temps2.seconde);
+           scanf_s("%hhd",&temps2.seconde);
+
            resultat= HRDCompareDatesHeures(date1,temps1,date2,temps2);
            if (resultat == 0)
            {
@@ -1154,11 +1162,11 @@ DWORD WINAPI simu( LPVOID param)
           case 'c' :
           printf("\nDonner la date");
            printf("\nAnnee :");
-           scanf_s("%d",&date.annee);
+           scanf_s("%hd",&date.annee);
            printf("\nMois :");
-           scanf_s("%d",&date.mois);
+           scanf_s("%hhd",&date.mois);
            printf("\nJour :");
-           scanf_s("%d",&date.jour);
+           scanf_s("%hhd",&date.jour);
            res = HRDDateCoherence(date);
            if (res == 0)
            {
@@ -1175,11 +1183,11 @@ DWORD WINAPI simu( LPVOID param)
           case 'd' :
            printf("\nDonner l'heure");
            printf("\nHeure :");
-           scanf_s("%d",&temps.heure);
+           scanf_s("%hhd",&temps.heure);
            printf("\nMinute :");
-           scanf_s("%d",&temps.minute);
+           scanf_s("%hhd",&temps.minute);
            printf("\nSeconde :");
-           scanf_s("%d",&temps.seconde);
+           scanf_s("%hhd",&temps.seconde);
            res = HRDHeureCoherence(temps);
            if (res == 0)
            {
