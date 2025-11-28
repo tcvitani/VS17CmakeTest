@@ -1,0 +1,21 @@
+Library : FSEARCH
+
+1.0.0	20/12/2000
+		Creation
+		
+1.1.0   13/11/2001
+
+      Diversification des types de fichiers (par ajout des types ASCII et RAW)
+      La fonction FSearchKey est toujours présente et fonctionnelle, mais a été
+      rendue obsolète par la fonction FSearchKeyEx.
+		
+
+1.1.1   17/10/2003
+
+      Correction d'un bug portant sur la recherche séquentielles dans les fichiers
+      classés à enregistrements de taille variable.
+
+1.2.0 05/12/2006 - MMA
+      Ajout de la fonction FSearchKeyPosition qui permet de retourner la position du curseur 
+      au niveau du fichier ou d'un bloc de mémoire
+      La fonction FSearchKey est toujours présente et fonctionnelle,
