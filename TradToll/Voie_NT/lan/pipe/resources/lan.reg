@@ -1,0 +1,13 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\Modules\LAN\BL_LAN]
+"_Id"="PIPE / LAN MANAGER"
+"PriorityInit"=dword:00000004
+"PriorityMax"=dword:00000004
+"Pool"="Reserved"
+"_Keep_Alive"=dword:00000005
+"_FILE_Server"="\\\\CSRLC01\\Bal"
+"_MSG_Server"="\\\\.\\pipe\\CSR_LC_Interface"
+"_Connection_Delay"=dword:0000000a
+"_Max_Keep_Alive_Counter"=dword:00000003
+
