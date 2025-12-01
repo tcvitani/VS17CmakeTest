@@ -158,6 +158,10 @@
 #include <csr_files_tools.h>
 
 #include <rfr_appli.h>
+#include <io.h>
+#include<fcntl.h>
+#include<share.h>
+#include<sys\stat.h>
 
 /*--------------- RESERVED: ---------------*/
 
@@ -488,28 +492,31 @@ PRIVATE void EnregistreeEx(TpTRfrRecord p_record)
 
 PRIVATE TEnum_Verified Verifier(TpTIdContext IdContext, char *Commentaire)
 {
-	FILE *hFile;
+	int hFileHandle = 0;
 	struct_instance_data instance_data = {0};
+	errno_t err;
 
 	Instance_Find(instances, IdContext->Id, &instance_data);
 
 	/* Opening file to extract file size */
-	if((hFile = FIC_fopen(IdContext->NouveauFichier,"r+")) == NULL)
+	hFileHandle = FIC_open(IdContext->NouveauFichier, _O_RDWR, _S_IREAD | _S_IWRITE);
+
+	if(hFileHandle == 0)
 	{
 		STR_strncpy(RFR_MAX_COMMENTAIRE, Commentaire, "File not readable");
 		return(NACK);
 	}
 
 	/* Reading file size */
-	if(FIC_filelength(hFile->_file) == 0 && instance_data.allow_empty_file == FALSE)
+	if(FIC_filelength(hFileHandle) == 0 && instance_data.allow_empty_file == FALSE)
 	{		
 		sprintf_s(Commentaire, RFR_MAX_COMMENTAIRE, "Incoherent %s", IdContext->Id);
-	   FIC_fclose(hFile);
+	   FIC_close(hFileHandle);
 	   return(NACK);
 	}
 
 	/* Closing file */
-	if(FIC_fclose(hFile) != 0)
+	if(FIC_close(hFileHandle) != 0)
 	{
 	   STR_strncpy(RFR_MAX_COMMENTAIRE, Commentaire, "File not closable");
 	   return(NACK);
