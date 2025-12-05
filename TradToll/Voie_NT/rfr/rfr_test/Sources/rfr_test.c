@@ -183,7 +183,7 @@ void __cdecl main( int iArgc, char ** ppcArgv )
 	SIMU.bal_msg = PublieBAL ("BL_PCS" ,NOYAU_BAL_ILLIMITEE);
 
 	/* Recuperer les adresses des fonctions de lancement et d'arret */
-	if ((hinstance = LoadLibrary ("Referenc.dll")) != NULL)
+	if ((hinstance = LoadLibrary ("csr_referenc_vs17_x64.dll")) != NULL)
 	{
 		pREFLance = (PMOD_PROC_LANCE)GetProcAddress (hinstance, MOD_PROC_LANCE);
 		if (pREFLance == NULL)
@@ -241,7 +241,7 @@ void __cdecl main( int iArgc, char ** ppcArgv )
    	// Lancement du module  
    if( (result = pMODLance(
        szModulRegKey,
-       "BL_COMNAME", &void_bal) )!= INST_INIT_OK )
+       "BL_VRN", &void_bal) )!= INST_INIT_OK )
    {
       exit(result);
    }

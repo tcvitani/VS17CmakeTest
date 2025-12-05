@@ -46,9 +46,9 @@
 
 /* module noyau */
 #include "noyau.h"
-#include "tcp_ip.h"
+//#include "tcp_ip.h"
 #include "csr_lan.h"
-#include "console.h"
+//#include "console.h"
 
 #include "err.h"
 #include "str.h"
@@ -108,8 +108,8 @@ PROTECTED void SendReference( void)
    struct_rfr_message	msg;
    noyau_bal_id bal_src = SIMU.bal_msg;
    char  *chaine;
-   window( 1, 1, 80, 25);
-   cadre(80,13);
+   //window( 1, 1, 80, 25);
+   //cadre(80,13);
 
 
    p_message = &msg;
@@ -117,28 +117,28 @@ PROTECTED void SendReference( void)
    p_message->entete.service = M_RFR_REFERENCE;
    p_message->entete.type_message = RFR_RECEPTION_REFERENCE;
 
-   textcolor(YELLOW);
-   gotoxy(2,2);
-   cprintf("         MESSAGE REFERENCE \r");
-   gotoxy(2,4);
-   cprintf (" \t Reference file = ");
+   //textcolor(YELLOW);
+   ////gotoxy(2,2);
+   cprintf("         MESSAGE REFERENCE \n");
+   //gotoxy(2,4);
+   cprintf ("Reference file = \n");
 
-   SaisieChaine(p_message->u.message_ref.fichier, 50, 26, 4);
+   scanf("%s",p_message->u.message_ref.fichier);
    chaine = p_message->u.message_ref.fichier;
    if( ( (chaine[0] == 'q') || (chaine[0] == 'Q')) && (chaine[1] == '\0'))
      bal_src = -1;
 
-   gotoxy(2,5);
-   cprintf (" \t Reference = ");
+   //gotoxy(2,5);
+   cprintf (" Reference = \n");
    
-   SaisieChaine(p_message->u.message_ref.reference, 50, 26, 5);
+   scanf("%s",p_message->u.message_ref.reference);
    chaine = p_message->u.message_ref.reference;
    if( ( (chaine[0] == 'q') || (chaine[0] == 'Q')) && (chaine[1] == '\0'))
      bal_src = -1;
 
-   gotoxy(2,7);
-   cprintf("\t Acknowledge LAN_COPY?(O/N) = ");
-   SaisieChaine(Lan_Copy, 2, 55, 7);
+   //gotoxy(2,7);
+   cprintf(" Acknowledge LAN_COPY?(O/N) = \n");
+   scanf("%2s",Lan_Copy);
    chaine = Lan_Copy;
    if( ( (chaine[0] == 'q') || (chaine[0] == 'Q')) && (chaine[1] == '\0'))
      strcpy(Lan_Copy,"N\0");
@@ -182,8 +182,8 @@ PROTECTED void SendManual( void)
    struct_rfr_message	msg;
    noyau_bal_id bal_src = SIMU.bal_msg;
    char  *chaine;
-   window( 1, 1, 80, 25);
-   cadre(80,13);
+   //window( 1, 1, 80, 25);
+   //cadre(80,13);
 
 
    p_message = &msg;
@@ -191,28 +191,28 @@ PROTECTED void SendManual( void)
    p_message->entete.service = M_RFR_MANUEL;
    p_message->entete.type_message = RFR_FICHIER_MANUEL;
 
-   textcolor(YELLOW);
-   gotoxy(2,2);
-   cprintf("         MESSAGE MANUEL \r");
-   gotoxy(2,4);
-   cprintf (" \t Manual file = ");
+   //textcolor(YELLOW);
+   ////gotoxy(2,2);
+   cprintf("         MESSAGE MANUEL \n");
+   //gotoxy(2,4);
+   cprintf ("\n Manual file =");
 
-   SaisieChaine(p_message->u.message_manuel.fichier, 50, 26, 4);
+   scanf("%s", p_message->u.message_manuel.fichier);
    chaine = p_message->u.message_ref.fichier;
    if( ( (chaine[0] == 'q') || (chaine[0] == 'Q')) && (chaine[1] == '\0'))
      bal_src = -1;
 
-   gotoxy(2,5);
-   cprintf (" \t File id = ");
+   //gotoxy(2,5);
+   cprintf (" \n File id =");
    
-   SaisieChaine(p_message->u.message_manuel.id, 50, 26, 5);
+   scanf("%s", p_message->u.message_manuel.id);
    chaine = p_message->u.message_ref.reference;
    if( ( (chaine[0] == 'q') || (chaine[0] == 'Q')) && (chaine[1] == '\0'))
      bal_src = -1;
 
-   gotoxy(2,7);
-   cprintf("\t Acknowledge LAN_COPY?(O/N) = ");
-   SaisieChaine(Lan_Copy, 2, 55, 7);
+   //gotoxy(2,7);
+   cprintf("\n Acknowledge LAN_COPY?(O/N) = ");
+   scanf("%s", Lan_Copy, 2, 55, 7);
    chaine = Lan_Copy;
    if( ( (chaine[0] == 'q') || (chaine[0] == 'Q')) && (chaine[1] == '\0'))
      bal_src = -1;
@@ -229,18 +229,17 @@ PROTECTED void ProcessMessages( void)
    struct_rfr_message  rfr_msg;
 
   
-   window( 1, 1, 80, 25);
-   cadre(80,13);
-   textcolor(YELLOW);
-   
-   gotoxy(7,5);
-   cprintf (" \t Reference file 1 = ");
-   SaisieChaine(chaine1, 50, 26, 7);
+   //window( 1, 1, 80, 25);
+   //cadre(80,13);
+   //textcolor(YELLOW);
+   //
+   ////gotoxy(7,5);
+   cprintf (" \n Reference file 1 = ");
+   scanf("%s",chaine1);
 
-   gotoxy(7,9);
-   cprintf (" \t Reference file 2 = ");
-   SaisieChaine(chaine2, 50, 26, 11);
-
+   //gotoxy(7,9);
+   cprintf (" \n Reference file 2 = ");
+   scanf("%s", chaine2);
    
    rfr_msg.entete.service = M_RFR_REFERENCE;
    rfr_msg.entete.type_message = RFR_RECEPTION_REFERENCE;
@@ -263,12 +262,12 @@ PROTECTED void ProcessStop( void)
    struct_lan_message  *p_lan_msg = NULL;
    struct_rfr_message  *p_rfr_msg = NULL;
 
-   window( 1, 1, 80, 25);
-   cadre(80,13);
+   //window( 1, 1, 80, 25);
+   //cadre(80,13);
 
-   gotoxy(7,3);
-   cprintf("\t LAN START?(O/N) = ");
-   SaisieChaine(chaine, 3, 30, 6);
+   ////gotoxy(7,3);
+   cprintf("\n LAN START?(O/N) = ");
+   scanf("%2s", chaine);
    if (strcmp(chaine, "N") != 0)
    {
 	    ExitAlloue ((struct_neutre **)(&p_lan_msg),sizeof(struct_lan_message),
@@ -277,9 +276,9 @@ PROTECTED void ProcessStop( void)
 	    p_lan_msg->entete.service = M_LAN_FICHIER;
 	
     	/* send message to mailbox */
-	   gotoxy(7,5);	      
-	   cprintf("\t Ack lan start?(O/N) = ");
-       SaisieChaine(Lan_Start, 30, 5, 6);
+	   //gotoxy(7,5);	      
+	   cprintf("\n Ack lan start?(O/N) = ");
+	   scanf("%2s", Lan_Start);
 	   Lan_Start[strlen(Lan_Start)] = '\0';
 	   if (strcmp(Lan_Start,"N") != 0)
 	   {
@@ -293,9 +292,9 @@ PROTECTED void ProcessStop( void)
    }
    else
    {
-	  gotoxy(7,5);
-	  cprintf("\t LAN END?(O/N) = ");
-	  SaisieChaine(chaine, 30, 5, 6);
+	  //gotoxy(7,5);
+	  cprintf("\n LAN END?(O/N) = ");
+	  scanf("%2s", chaine);
       if (strcmp(chaine, "N") != 0)
 	  {
 
@@ -304,9 +303,9 @@ PROTECTED void ProcessStop( void)
 
 	    p_lan_msg->entete.service = M_LAN_FICHIER;		
 		
-		gotoxy(7,7);	      
-		cprintf("\t Ack lan end?(O/N) = ");
-		SaisieChaine(Lan_End, 30, 7, 6);
+		//gotoxy(7,7);	      
+		cprintf("\n Ack lan end?(O/N) = ");
+		scanf("%2s", Lan_End);
 		Lan_End[strlen(Lan_End)] = '\0';
         if (strcmp(Lan_End,"N") != 0)
 	   	   p_lan_msg->entete.type_message = LAN_FIN_ACQ;
@@ -317,9 +316,9 @@ PROTECTED void ProcessStop( void)
 	  }
 	  else
 	  {
-		gotoxy(7,7);
-		cprintf("\t RFR STOP?(O/N) = ");
-		SaisieChaine(chaine, 30, 7, 6);
+		//gotoxy(7,7);
+		cprintf("\n RFR STOP?(O/N) = ");
+		scanf("%2s", chaine, 30, 7, 6);
         if (strcmp(chaine,"N") != 0)
 		{
 		    ExitAlloue ((struct_neutre **)(&p_rfr_msg),sizeof(struct_rfr_message),

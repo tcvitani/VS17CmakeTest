@@ -37,8 +37,8 @@
 
 /* module noyau */
 #include <noyau.h>
-#include <tcp_ip.h>
-#include <console.h>
+//#include <tcp_ip.h>
+//#include <console.h>
 #include <fic.h>
 
 #include <csr_lan.h>
@@ -149,16 +149,16 @@ PROTECTED DWORD WINAPI SimuRecoit (LPVOID p)
 			if( code_rtc == NOYAU_BAL_MESS )
 			{
 				/* fenetre de reception des messages */
-				window( 5, 17, 75, 22);
-				cadre(70,6);
-				textcolor(YELLOW);
-				gotoxy(2,2);
-				cprintf(" RECEPTION DANS BAL '%s' de tache %d\n", bal_name ,p_neutre->bl_retour ) ;
+				//window( 5, 17, 75, 22);
+				//cadre(70,6);
+				//textcolor(YELLOW);
+				////gotoxy(2,2);
+				cprintf("\n RECEPTION DANS BAL '%s' de tache %d\n", bal_name ,p_neutre->bl_retour ) ;
 				AfficheReception(p_neutre);
 				
 				/* On libŠre la m‚moire */
 				if( Libere (&p_neutre) != NOYAU_OK )
-					cprintf("SIMU : PB Libere() \n");
+					cprintf("\nSIMU : PB Libere() \n");
 				
 			}
 		}
@@ -191,7 +191,7 @@ PROTECTED DWORD WINAPI SimuRecoit (LPVOID p)
 * --------------------------------------------------------------------
 * $F_FCTN
 */
-PROTECTED void AfficheReception( struct_neutre *p_neutre)
+PROTECTED void AfficheReception(struct_neutre *p_neutre)
 {
    
    char      *fileid[36]	 =
@@ -206,11 +206,11 @@ PROTECTED void AfficheReception( struct_neutre *p_neutre)
    
    if( p_neutre->bl_id == SIMU.bal_simu)
    {
-        gotoxy(4,4);
+        ////gotoxy(4,4);
         ok = TRUE;
 		
 		p_rfr_appli_msg = ( struct_rfr_appli_msg *) p_neutre;
-		cprintf("New %s file", fileid[p_rfr_appli_msg->u.file.file_id]);
+		cprintf("\n New %s file", fileid[p_rfr_appli_msg->u.file.file_id]);
    }
    else
    
@@ -219,8 +219,8 @@ PROTECTED void AfficheReception( struct_neutre *p_neutre)
       p_rfr_message = ( struct_rfr_message *) p_neutre;
 	  if (p_rfr_message->entete.service == M_RFR_ARRET)
       {
-	    gotoxy(4,4);
-		cprintf("--------------> RFR ARRET");
+	    ////gotoxy(4,4);
+		cprintf("\n--------------> RFR ARRET");
 		ok = TRUE;
 	  }
 	  else		
@@ -228,18 +228,18 @@ PROTECTED void AfficheReception( struct_neutre *p_neutre)
 		{
            if( p_rfr_message->entete.type_message == RFR_EMISSION_UPDATE)
 		   {
-                gotoxy(4,4);
+                ////gotoxy(4,4);
 				ok = TRUE;
-				cprintf("----->LS : ID '%s', REF '%s', update '%d'\n",
+				cprintf("\n----->LS : ID '%s', REF '%s', update '%d'\n",
 					              p_rfr_message->u.message_update.id,
 						          p_rfr_message->u.message_update.reference,
 							      p_rfr_message->u.message_update.update);
 			}
 			else
 			{
-				gotoxy(4,4);
+				//gotoxy(4,4);
 				ok = TRUE;
-				cprintf("----->LS ID = ???\n");
+				cprintf("\n----->LS ID = ???\n");
 			}
 		}
 		else
@@ -247,33 +247,33 @@ PROTECTED void AfficheReception( struct_neutre *p_neutre)
 		{
 			if( p_rfr_message->entete.type_message == RFR_FICHIER_MANUEL_ACK)
 			{
-				gotoxy(4,4);
+				//gotoxy(4,4);
 				ok = TRUE;
-				cprintf("----->APP manuel : ACK ID '%s', FIC '%s'\n",
+				cprintf("\n----->APP manuel : ACK ID '%s', FIC '%s'\n",
 				               p_rfr_message->u.message_manuel.id,
 					              p_rfr_message->u.message_manuel.fichier);
 			}
 			else
 			if( p_rfr_message->entete.type_message == RFR_FICHIER_MANUEL_NACK)
 			{
-				gotoxy(4,4);
+				//gotoxy(4,4);
 				ok = TRUE;
-				cprintf("----->APP manuel : NACK ID '%s', FIC '%s'\n",
+				cprintf("\n----->APP manuel : NACK ID '%s', FIC '%s'\n",
 			                      p_rfr_message->u.message_manuel.id,
 				                  p_rfr_message->u.message_manuel.fichier);
 			}
 			else
 			{
-				gotoxy(4,4);
+				//gotoxy(4,4);
 				ok = TRUE;
-				cprintf("----->LS ID = ???\n");
+				cprintf("\n----->LS ID = ???\n");
 			}
 		}
 		else
 		{
-			gotoxy(4,4);
+			//gotoxy(4,4);
 			ok = TRUE;
-			cprintf("----->LS ???\n");
+			cprintf("\n----->LS ???\n");
 		}
 	}
 	else if( p_neutre->bl_id == SIMU.bal_lan)
@@ -284,9 +284,9 @@ PROTECTED void AfficheReception( struct_neutre *p_neutre)
 		  {
 			if( p_fic_message->entete.type_message == LAN_RECEPTION)
 			{
-				 gotoxy(4,4);
+				 //gotoxy(4,4);
 				ok = TRUE;
-				cprintf("----->FIC : '%s' => '%s'\n",
+				cprintf("\n----->FIC : '%s' => '%s'\n",
 					              p_fic_message->u.param_fic.fichier,
 						          p_fic_message->u.param_fic.path);
 
@@ -295,15 +295,15 @@ PROTECTED void AfficheReception( struct_neutre *p_neutre)
 			}
 			else if( p_fic_message->entete.type_message == LAN_DEBUT)
 			{
-				gotoxy(4,4);
+				//gotoxy(4,4);
 	            ok = TRUE;
-		        cprintf("----->FIC : demande du service fichier \n");
+		        cprintf("\n----->FIC : demande du service fichier \n");
 			 }
 			else
 			{
-				gotoxy(4,4);
+				//gotoxy(4,4);
 				ok = TRUE;
-				cprintf("----->FIC ???\n");
+				cprintf("\n----->FIC ???\n");
 			}
 		}
 	}
@@ -314,12 +314,12 @@ PROTECTED void AfficheReception( struct_neutre *p_neutre)
 
    if( ! ok)
    {
-      gotoxy(4,4);
-      cprintf("----- ????\n");
+      //gotoxy(4,4);
+      cprintf("\n----- ????\n");
    }
-   else
-	   /* Attente de la touche espace avant de poursuivre */
-	   while (getch () != (char)' ');
+   //else
+	  // /* Attente de la touche espace avant de poursuivre */
+	  // while (getch () != (char)' ');
 }
 
 PRIVATE void HandleLANMsg(struct_lan_message *p_lan)
@@ -342,7 +342,7 @@ PRIVATE void HandleLANMsg(struct_lan_message *p_lan)
     
 	Lan_Copy[strlen(Lan_Copy)] = '\0';
 	
-    if (strcmp(Lan_Copy, "N\0") != 0)
+    if (stricmp(Lan_Copy, "N\0") != 0)
 	{
 
 	    FIC_splitpath(p_lan->u.param_fic.fichier, FileDrv, FileDir, FileName, FileExt);
@@ -351,7 +351,7 @@ PRIVATE void HandleLANMsg(struct_lan_message *p_lan)
 
 		if (!FIC_copy(DestPath, p_lan->u.param_fic.fichier, FIC_COPY_WITH_DATE))
 		{
-			printf("Error copying file");
+			printf("Error copying file [%s] to [%s]", p_lan->u.param_fic.fichier, DestPath);
 			lan_type = LAN_RECEPTION_NON_EFFECTUEE;	  
 		}
 		else

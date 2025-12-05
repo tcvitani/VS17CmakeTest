@@ -65,7 +65,7 @@ typedef struct
 
 /*-----------------FONCTION:--------------------*/
 
-PROTECTED void cadre( int, int);
+//PROTECTED void cadre( int, int);
 PROTECTED void MenuPrincipal(void);
 PROTECTED void SendReference( void);
 PROTECTED void SendManual( void);
@@ -75,7 +75,7 @@ PROTECTED void AfficheReception( struct_neutre * p_neutre);
 
 
 //PROTECTED void SaisieChaine( char * chaine );
-BOOLEAN SaisieChaine( char * chaine, short lg_max, int xpos, int ypos );
+//BOOLEAN SaisieChaine( char * chaine, short lg_max, int xpos, int ypos );
 
 
 PROTECTED DWORD WINAPI Simulateur (void *param);

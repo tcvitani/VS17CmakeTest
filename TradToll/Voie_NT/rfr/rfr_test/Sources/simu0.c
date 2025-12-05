@@ -45,8 +45,8 @@
 
 /* module noyau */
 #include <noyau.h>
-#include <tcp_ip.h>
-#include <console.h>
+//#include <tcp_ip.h>
+//#include <console.h>
 
 #include ".\simu0.h"
 
@@ -87,54 +87,7 @@ PROTECTED struct_tache t_simu[NB_TACHE+1] =
 
 /*-------------------CODE:----------------------*/
 
-/**/
-/*
-* $D_FCTN
-* --------------------------------------------------------------------
-* SYNTAXE: void cadre(int largeur, int longueur)
-* PARAMETRES:
-* RETOUR:
-* --------------------------------------------------------------------
-* VARIABLES:
-* --------------------------------------------------------------------
-* TYPE: Fonction locale
-* ROLE: Dessine le cadre d'une fenetre
-* --------------------------------------------------------------------
-* $F_FCTN
-*/
-PROTECTED void cadre( int largeur, int longueur )
-{
-   short int i;
 
-//   textbackground(WHITE);
-   clrscr();
-   textcolor(CYAN);
-   for( i = 2; i<longueur; i++)
-   {
-      gotoxy(1,i );
-      cprintf("º");
-      gotoxy(largeur,i);
-      cprintf("º");
-   }
-
-   gotoxy(1,1);
-   cprintf("É");
-   gotoxy(1,longueur);
-   cprintf("È");
-   gotoxy(largeur,1);
-   cprintf("»");
-   gotoxy(largeur,longueur);
-   cprintf("¼");
-
-   for( i = 2; i<largeur; i++ )
-   {
-      gotoxy(i,1);
-      cprintf("Í");
-      gotoxy(i,longueur);
-      cprintf("Í");
-   }
-
-}
 
 /**/
 /*
@@ -153,61 +106,61 @@ PROTECTED void cadre( int largeur, int longueur )
 */
 
 
-BOOLEAN SaisieChaine( char * chaine, short lg_max, int xpos, int ypos )
-{
-	short int fin = FALSE;
-	short int x_min, y_min /*, y_ref*/;
-	short int i = 0;
-	boolean retour = TRUE;
-	x_min = xpos;
-	y_min = ypos;
-	
-/*	for( i = 0; i<lg_max; i++ )
-		cprintf("-");*/
-	gotoxy(x_min ,y_min);
-	
-	i = 0;
-	//y_ref = wherey();
-	
-	while((fin == FALSE) && (i < lg_max - 1))
-	{
-		//x_min = wherex();
-		//y_min = wherey();
-		gotoxy(x_min + i ,y_min);
-		if( kbhit())
-		{
-			/* R‚cup‚ration de la touche clavier */
-			chaine[i] = getche();
-			switch (chaine[i])
-			{
-            case ENTER :
-				fin = TRUE;
-				break;
-				
-            case CORRECTION:
-				i --;
-				cprintf(" ");
-				gotoxy(x_min-1,y_min);
-				break;
-				
-            case ESCAPE :
-				fin = TRUE;
-				retour = FALSE;
-				break;
-				
-            default:
-				i++;
-    			//printf("%s", chaine[i]);
-				break;
-			}// switch
-		}// if kbhit
-	}// while
-	/* caractŠre de fin de chaine */
-	chaine[i] = '\0';
-	
-	return retour;
-	
-}
+//BOOLEAN SaisieChaine( char * chaine, short lg_max, int xpos, int ypos )
+//{
+//	short int fin = FALSE;
+//	short int x_min, y_min /*, y_ref*/;
+//	short int i = 0;
+//	boolean retour = TRUE;
+//	x_min = xpos;
+//	y_min = ypos;
+//	
+///*	for( i = 0; i<lg_max; i++ )
+//		cprintf("-");*/
+//	//gotoxy(x_min ,y_min);
+//	
+//	i = 0;
+//	//y_ref = wherey();
+//	
+//	while((fin == FALSE) && (i < lg_max - 1))
+//	{
+//		//x_min = wherex();
+//		//y_min = wherey();
+//		//gotoxy(x_min + i ,y_min);
+//		if( kbhit())
+//		{
+//			/* R‚cup‚ration de la touche clavier */
+//			chaine[i] = getche();
+//			switch (chaine[i])
+//			{
+//            case ENTER :
+//				fin = TRUE;
+//				break;
+//				
+//            case CORRECTION:
+//				i --;
+//				cprintf(" ");
+//				//gotoxy(x_min-1,y_min);
+//				break;
+//				
+//            case ESCAPE :
+//				fin = TRUE;
+//				retour = FALSE;
+//				break;
+//				
+//            default:
+//				i++;
+//    			//printf("%s", chaine[i]);
+//				break;
+//			}// switch
+//		}// if kbhit
+//	}// while
+//	/* caractŠre de fin de chaine */
+//	chaine[i] = '\0';
+//	
+//	return retour;
+//	
+//}
 
 
 
@@ -230,35 +183,35 @@ BOOLEAN SaisieChaine( char * chaine, short lg_max, int xpos, int ypos )
 PROTECTED void MenuPrincipal(void)
 {
    /* fenetre principale */
-   window( 1, 1, 80, 25);
-   cadre(80,15);
+   //window( 1, 1, 80, 25);
+   //cadre(80,15);
 
    /* entete */
-   gotoxy(1,1);
-   textbackground(CYAN);
-   textcolor(YELLOW);
-   clreol();
-   gotoxy( 20,1);
-   cprintf(" SIMULATOR 'Test for reference and TFT&TCI modules \r");
+   //gotoxy(1,1);
+   //textbackground(CYAN);
+   //textcolor(YELLOW);
+   //clreol();
+   //gotoxy( 20,1);
+   cprintf(" SIMULATOR 'Test for reference and TFT&TCI modules \n");
  
-   textbackground(BLACK);
-   gotoxy(1,2);
+   //textbackground(BLACK);
+  // gotoxy(1,2);
 
    /* contenu */
-   textcolor(YELLOW);
-   gotoxy(20,3);
-   cprintf ("\t a : SEND REFERENCE MESSAGE\r");
-   gotoxy(20,5);
-   cprintf ("\t b : SEND MANUAL MESSAGE\r");
-   gotoxy(20,7);
-   cprintf ("\t c : START/STOP SERVICES\r");
-   gotoxy(20,9);
-   cprintf ("\t d : TWO REFERENCE FILES\r");
-   gotoxy(20,11);
-   cprintf ("\t q : QUIT");
+  // textcolor(YELLOW);
+  // gotoxy(20,3);
+   cprintf ("\t a : SEND REFERENCE MESSAGE\n");
+   //gotoxy(20,5);
+   cprintf ("\t b : SEND MANUAL MESSAGE\n");
+  // gotoxy(20,7);
+   cprintf ("\t c : START/STOP SERVICES\n");
+  // gotoxy(20,9);
+   cprintf ("\t d : TWO REFERENCE FILES\n");
+ //  gotoxy(20,11);
+   cprintf ("\t q : QUIT \n");
 
-   gotoxy(20,13);
-   cprintf ("   Choix => ");
+//   gotoxy(20,13);
+   cprintf ("   Choix => \n");
 
 }
 
@@ -305,8 +258,8 @@ PROTECTED DWORD WINAPI Simulateur (void *param)
    {
       DebutRegion();
 
-      window( 1, 1, 80, 25);
-      gotoxy(x1,y1);
+ //     window( 1, 1, 80, 25);
+ //     gotoxy(x1,y1);
       hit = kbhit();
       if( hit != 0)
       {
