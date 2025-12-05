@@ -161,6 +161,9 @@
 #include <csr_files_tools.h>
 
 #include <tft.h>
+#include<fcntl.h>
+#include<share.h>
+#include<sys\stat.h>
 
 #define LOC_DEF
 #include <tft_glob.h>
@@ -503,26 +506,28 @@ PRIVATE TEnum_Verified    Verifier( TpTIdContext   IdContext,
                                     char           *Commentaire)
 {
 
-	FILE					 *hFile;
+	int hFile = FIC_open(IdContext->NouveauFichier, _O_RDWR, _S_IREAD | _S_IWRITE);
+
+
 
    /* Opening file to extract file size */
-   if ((hFile = FIC_fopen(IdContext->NouveauFichier,"r+")) == NULL)
+   if (hFile == INVALID_HANDLE_VALUE)
    {
         STR_strncpy( RFR_MAX_COMMENTAIRE, Commentaire, "File not readable");
         return( NACK);
    }
    
    /* Reading file size */
-    if (FIC_filelength(hFile->_file) == 0)
+    if (FIC_filelength(hFile) == 0)
     {
-       FIC_fclose(hFile);	// FR 21/03/01
+       FIC_close(hFile);	// FR 21/03/01
 
        STR_strncpy( RFR_MAX_COMMENTAIRE, Commentaire, "Incoherent tft");
        return( NACK);
     }
    
 	/* Closing file */
-   if (FIC_fclose(hFile) != 0)
+   if (FIC_close(hFile) != 0)
    {
        STR_strncpy( RFR_MAX_COMMENTAIRE, Commentaire, "File not closable");
        return( NACK);
