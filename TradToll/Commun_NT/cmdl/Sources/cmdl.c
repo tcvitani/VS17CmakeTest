@@ -80,7 +80,7 @@ EXPORT char ** WINAPI CMDLOpenArgv(
         if ( pcCommand != NULL )
         {
             ppcArgv[dwCount] = HeapAlloc( GetProcessHeap(), 0, dwSize + 1 );
-            strcpy_s( ppcArgv[dwCount], CMDL_MAX_PARAM_SIZE, szParam );
+            strcpy_s( ppcArgv[dwCount], dwSize + 1, szParam );
             dwCount ++;
             ppcArgv = HeapReAlloc( GetProcessHeap(), 0, ppcArgv, ( dwCount + 1 ) * sizeof( *ppcArgv ) );
         }
