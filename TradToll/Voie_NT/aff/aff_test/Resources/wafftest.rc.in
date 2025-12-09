@@ -1,0 +1,440 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "wtlptest.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1250)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PERFORMANCE_DIALOG DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Performance Test"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Exit",IDCANCEL,251,155,50,14
+    LTEXT           "",IDC_STATIC,0,0,8,8
+    LTEXT           "Insert AFF labels from PED file for performance test (up to 5 labels).\n\rAll inserted labels will be sent as AFF DISPLAY COMMANDS\n\rin a loop until you press STOP button.",IDC_STATIC,19,14,252,27
+    PUSHBUTTON      "START",IDC_BUTTON_START,143,155,50,14
+    PUSHBUTTON      "STOP",IDC_BUTTON_STOP,197,155,50,14
+    EDITTEXT        IDC_EDIT1,50,47,243,14,ES_AUTOHSCROLL
+    LTEXT           "Label 1:",IDC_STATIC,19,49,26,8
+    EDITTEXT        IDC_EDIT2,50,67,243,14,ES_AUTOHSCROLL
+    LTEXT           "Label 2:",IDC_STATIC,19,69,26,8
+    EDITTEXT        IDC_EDIT3,50,87,243,14,ES_AUTOHSCROLL
+    LTEXT           "Label 3:",IDC_STATIC,19,89,26,8
+    EDITTEXT        IDC_EDIT4,50,107,243,14,ES_AUTOHSCROLL
+    LTEXT           "Label 4:",IDC_STATIC,19,109,26,8
+    EDITTEXT        IDC_EDIT5,50,127,243,14,ES_AUTOHSCROLL
+    LTEXT           "Label 5:",IDC_STATIC,19,129,26,8
+    LTEXT           "Delay (ms):",IDC_STATIC,19,150,38,8
+    EDITTEXT        IDC_EDIT6,64,147,40,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PERFORMANCE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Croatian (Croatia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HRV)
+LANGUAGE LANG_CROATIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+RESET DIALOG 0, 0, 186, 46
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Reset"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Priority:",IDC_STATIC,24,20,28,9
+    EDITTEXT        IDC_PRIORITY2,64,18,28,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+TEST_DISPLAY DIALOG 0, 0, 240, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TEST DISPLAY"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Priority:",IDC_STATIC,13,15,24,8
+    EDITTEXT        IDC_PRIORITY3,52,13,26,12,ES_AUTOHSCROLL
+    LTEXT           "Test label:",IDC_STATIC,13,36,34,8
+    EDITTEXT        IDC_TEST_LABEL,52,34,175,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,123,63,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,182,62,50,14
+END
+
+START_ESPION DIALOG 0, 0, 207, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Start ESPION service"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_ESPION_OK,77,132,50,14
+    PUSHBUTTON      "Cancel",IDC_ESPION_CANCEL,141,132,50,14
+    GROUPBOX        "Nature of message",IDC_STATIC,15,15,176,43
+    CONTROL         "SRV_ESPION_MESSAGES_DONNEES",IDC_SERV1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,31,28,144,10
+    CONTROL         "SRV_ESPION_MESSAGES_SERVICES",IDC_SERV2,"Button",BS_AUTORADIOBUTTON,31,40,144,10
+    GROUPBOX        "Direction of message",IDC_STATIC,15,65,176,56
+    CONTROL         "SRV_ESPION_ENTRANT",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,31,77,100,10
+    CONTROL         "SRV_ESPION_SORTANT",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,31,91,100,10
+    CONTROL         "SRV_ESPION_ENTRANT_SORTANT",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,31,105,139,10
+END
+
+IDD_BROWSE DIALOG 0, 0, 228, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,118,63,50,14
+    GROUPBOX        "Path",IDC_PATH,14,15,200,35
+    PUSHBUTTON      "Browse",IDC_BROWSE,175,27,34,17
+    EDITTEXT        IDC_FILENAME,17,28,154,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,59,63,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    RESET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    TEST_DISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    START_ESPION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_BROWSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,0,1,0
+ PRODUCTVERSION 11,0,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041a04b0"
+        BEGIN
+            VALUE "CompanyName", "EMOVIS"
+            VALUE "FileDescription", "EMOVIS AFF WINTEST"
+            VALUE "FileVersion", "11.0.1.0"
+            VALUE "InternalName", "CSR_AFF11_WINTEST_VS12_x64"
+            VALUE "LegalCopyright", "Copyright (C) 2018"
+            VALUE "OriginalFilename", "CSR_AFF11_WINTEST_VS12_x64"
+            VALUE "ProductName", "CSR AFF WINTEST"
+            VALUE "ProductVersion", "11.0.1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x41a, 1200
+    END
+END
+
+#endif    // Croatian (Croatia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+TESTAFF DIALOG 19, 65510, 525, 195
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "AFFTest"
+MENU IDR_MENU
+FONT 8, "Arial"
+BEGIN
+    LISTBOX         IDL_MESS,0,0,525,195,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_HSCROLL | WS_GROUP | WS_TABSTOP
+END
+
+ABOUT DIALOG 0, 0, 186, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,67,48,50,14
+    CTEXT           "CS Route 2000.",IDC_STATIC,65,29,52,8,SS_CENTERIMAGE
+    CTEXT           "AFF module test program",IDC_STATIC,53,13,79,8
+END
+
+DISPLAY DIALOG 0, 0, 230, 242
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DISPLAY"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Label:",IDC_STATIC,16,20,20,8
+    EDITTEXT        IDC_LABEL,69,17,140,12,ES_AUTOHSCROLL
+    LTEXT           "Priority:",IDC_STATIC,16,39,24,8
+    EDITTEXT        IDC_PRIORITY,69,36,40,12,ES_AUTOHSCROLL
+    LTEXT           "Precision:",IDC_STATIC,127,39,32,8
+    EDITTEXT        IDC_PREC,170,36,40,12,ES_AUTOHSCROLL
+    GROUPBOX        "Values",IDC_STATIC,9,58,210,150
+    LTEXT           "Payment type:",IDC_STATIC,16,75,46,8
+    EDITTEXT        IDC_PAY_TYPE,70,72,40,12,ES_AUTOHSCROLL
+    LTEXT           "Class:",IDC_STATIC,16,91,20,8
+    EDITTEXT        IDC_CLASS,70,88,40,12,ES_AUTOHSCROLL
+    LTEXT           "Sale fare:",IDC_STATIC,16,107,31,8
+    EDITTEXT        IDC_SALEFARE,70,104,40,12,ES_AUTOHSCROLL
+    LTEXT           "Fare:",IDC_STATIC,147,75,17,8
+    EDITTEXT        IDC_FARE,170,72,40,12,ES_AUTOHSCROLL
+    LTEXT           "Paid:",IDC_STATIC,147,91,17,8
+    EDITTEXT        IDC_PAID,170,88,40,12,ES_AUTOHSCROLL
+    LTEXT           "Amount due:",IDC_STATIC,123,107,41,8
+    EDITTEXT        IDC_AMOUNT_DUE,170,104,40,14,ES_AUTOHSCROLL
+    LTEXT           "Overpay:",IDC_STATIC,134,124,30,8
+    EDITTEXT        IDC_OVERPAY,170,122,40,14,ES_AUTOHSCROLL
+    LTEXT           "Libelle1:",IDC_STATIC,16,144,27,8
+    EDITTEXT        IDC_LIB1,70,141,140,12,ES_AUTOHSCROLL
+    LTEXT           "Libelle2:",IDC_STATIC,16,160,27,8
+    EDITTEXT        IDC_LIB2,70,157,140,12,ES_AUTOHSCROLL
+    LTEXT           "Libelle3",IDC_STATIC,16,176,25,8
+    EDITTEXT        IDC_LIB3,70,173,140,12,ES_AUTOHSCROLL
+    LTEXT           "Soft. revision:",IDC_STATIC,16,192,44,8
+    EDITTEXT        IDC_SOFT_REV,70,189,140,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,105,217,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,169,217,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    "TESTAFF", DIALOG
+    BEGIN
+    END
+
+    ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 178
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 72
+    END
+
+    DISPLAY, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 237
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""wtlptest.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "&Exit",                       IDM_EXIT
+    END
+    POPUP "Services"
+    BEGIN
+        POPUP "Affichage"
+        BEGIN
+            MENUITEM "Start",                       IDM_AFFICHAGE_DEBUT
+            MENUITEM "Stop",                        IDM_AFFICHAGE_FIN
+            MENUITEM SEPARATOR
+            MENUITEM "Display",                     IDM_AFFICHAGE_DISPLAY
+            POPUP "Backlight"
+            BEGIN
+                MENUITEM "ON",                          IDM_AFFICHAGE_BACKLIGHT_ON
+                MENUITEM "OFF",                         IDM_AFFICHAGE_BACKLIGHT_OFF
+            END
+            MENUITEM "Reset",                       IDM_AFFICHAGE_RESET
+            MENUITEM "New File",                    IDM_AFFICHAGE_NEW_FILE
+            MENUITEM "Performance Test",            IDM_AFFICHAGE_PERFO_TEST
+        END
+        POPUP "Espion"
+        BEGIN
+            MENUITEM "Start",                       IDM_ESPION_START
+            MENUITEM "Stop",                        IDM_ESPION_END
+        END
+        POPUP "Visu"
+        BEGIN
+            MENUITEM "Start",                       IDM_VISU_DEBUT
+            MENUITEM "Stop",                        IDM_VISU_FIN
+            MENUITEM SEPARATOR
+            MENUITEM "Request of Visu",             IDM_VISU_VISU
+        END
+        POPUP "Etat"
+        BEGIN
+            MENUITEM "Start",                       IDM_ETAT_DEBUT
+            MENUITEM "Stop",                        IDM_ETAT_FIN
+            MENUITEM SEPARATOR
+            MENUITEM "Status of service",           IDM_ETAT_ETAT
+        END
+        POPUP "Device Info"
+        BEGIN
+            MENUITEM "Start",                       ID_DEVICEINFO_START
+            MENUITEM "Stop",                        ID_DEVICEINFO_STOP
+            MENUITEM SEPARATOR
+            MENUITEM "Get Device info",             ID_DEVICEINFO_GETDEVICEINFO
+        END
+        POPUP "Arret"
+        BEGIN
+            MENUITEM "Module AFF stoping",          IDM_ARRET_ARRET
+        END
+    END
+    POPUP "MailBox"
+    BEGIN
+        MENUITEM "BAL_A",                       IDM_BAL_A, CHECKED
+        MENUITEM "BAL_B",                       IDM_BAL_B
+        MENUITEM "BAL_C",                       IDM_BAL_C
+        MENUITEM "BAL_D",                       IDM_BAL_D
+    END
+    POPUP "Info"
+    BEGIN
+        MENUITEM "About",                       IDM_ABOUT
+    END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
