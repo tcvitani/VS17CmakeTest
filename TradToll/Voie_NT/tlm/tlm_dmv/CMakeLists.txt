@@ -31,7 +31,20 @@ set(PROJECT_HEADERS_DIR   ${CMAKE_CURRENT_SOURCE_DIR}/includes)
 set(PROJECT_RESOURCES_DIR ${CMAKE_CURRENT_SOURCE_DIR}/resources)
 
 set(PROJECT_HEADERS
-		${PROJECT_HEADERS_DIR}/tlm_dmv.h
+	${PROJECT_HEADERS_DIR}/UdpClient.h
+	${PROJECT_HEADERS_DIR}/TlmDmvWorker.h
+	${PROJECT_HEADERS_DIR}/TlmDmvUtil.h
+	${PROJECT_HEADERS_DIR}/TlmDmvServ.h
+	${PROJECT_HEADERS_DIR}/TlmDmvGlobal.h
+	${PROJECT_HEADERS_DIR}/TlmDmvAutomate.h
+	${PROJECT_HEADERS_DIR}/TlmDmvAni.h
+	${PROJECT_HEADERS_DIR}/MQEventLoop.h
+	${PROJECT_HEADERS_DIR}/MQApplication.h
+	${PROJECT_HEADERS_DIR}/mbx2slot.h
+	${PROJECT_HEADERS_DIR}/InstTracer.h
+	${PROJECT_HEADERS_DIR}/HelpFuncs.h
+	${PROJECT_HEADERS_DIR}/AutomatFunctor.h
+	${PROJECT_HEADERS_DIR}/Automat.h
 )
 
 
@@ -39,20 +52,6 @@ set(PROJECT_HEADERS
 configure_file("${PROJECT_RESOURCES_DIR}/Resource.rc.in" Resources.rc @ONLY)
  
 set(PROJECT_SOURCES
-	${PROJECT_SOURCES_DIR}/UdpClient.h
-	${PROJECT_SOURCES_DIR}/TlmDmvWorker.h
-	${PROJECT_SOURCES_DIR}/TlmDmvUtil.h
-	${PROJECT_SOURCES_DIR}/TlmDmvServ.h
-	${PROJECT_SOURCES_DIR}/TlmDmvGlobal.h
-	${PROJECT_SOURCES_DIR}/TlmDmvAutomate.h
-	${PROJECT_SOURCES_DIR}/TlmDmvAni.h
-	${PROJECT_SOURCES_DIR}/MQEventLoop.h
-	${PROJECT_SOURCES_DIR}/MQApplication.h
-	${PROJECT_SOURCES_DIR}/mbx2slot.h
-	${PROJECT_SOURCES_DIR}/InstTracer.h
-	${PROJECT_SOURCES_DIR}/HelpFuncs.h
-	${PROJECT_SOURCES_DIR}/AutomatFunctor.h
-	${PROJECT_SOURCES_DIR}/Automat.h
 	${PROJECT_SOURCES_DIR}/UdpClient.cpp
 	${PROJECT_SOURCES_DIR}/TlmDmvWorker.cpp
 	${PROJECT_SOURCES_DIR}/TlmDmvAutomate.cpp
@@ -70,7 +69,7 @@ set(PROJECT_SOURCES
 
 
 add_library(${PROJECT_LIB} SHARED
-					${PROJECT_SOURCES} ${PROJECT_HEADERS}
+					${PROJECT_SOURCES} ${PROJECT_HEADERS} 
 )
 
 target_include_directories(${PROJECT_LIB} PRIVATE
@@ -83,7 +82,6 @@ target_include_directories(${PROJECT_LIB} PRIVATE
 							"${CMAKE_SOURCE_DIR}/../../../Voie_NT/run/includes"
 							"${CMAKE_SOURCE_DIR}/../../../Voie_NT/aff/aff_interface"
 							"${CMAKE_SOURCE_DIR}/../../../Voie_NT/tlm/tlm_interface"
-
 )
 
 target_compile_definitions(${PROJECT_LIB}
@@ -205,6 +203,8 @@ target_link_libraries(${PROJECT_LIB}
 		CSR::Srv
 		CSR::dmv_oblak_protocol
 )
+
+add_subdirectory(tests)
 
 set(CMAKE_INSTALL_PREFIX  "C:/csr/exe")
 
