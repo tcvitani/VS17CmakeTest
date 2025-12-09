@@ -1,0 +1,22 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "dll",
+      "exe": "C:\\csr\\exe\\csr_TestAff_vs17_x64.exe",
+      "project": "CMakeLists.txt",
+      "projectTarget": "aff_dmv_vs17_x64.dll",
+      "name": "aff_dmv_vs17_x64.dll",
+      "currentDir": "C:/csr/exe",
+      "args": [
+        "aff_dmv_vs17_x64.dll"
+      ],
+      "env": {
+        "DEBUG_LOGGING_LEVEL": "trace;info",
+        "ENABLE_TRACING": "true",
+        "PATH": "%PATH%;C:\\csr\\exe;C:\\qt\\6.5.2\\bin;C:\\qt\\6.5.2;"
+      }
+    }
+  ]
+}
