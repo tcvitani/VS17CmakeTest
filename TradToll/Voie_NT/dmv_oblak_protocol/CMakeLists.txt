@@ -65,13 +65,13 @@ PRIVATE
 
 ##-----------------------------------------------------------------------------------------------
 							
-#set_target_properties(${PROJECT_LIB}
-#    PROPERTIES
-#        WIN32_EXECUTABLE TRUE
-#		RELEASE_POSTFIX "_r"            
-#		MINSIZEREL_POSTFIX "_r"
-#		RELWITHDEBINFO_POSTFIX "_r"
-#)
+set_target_properties(${PROJECT_LIB}
+    PROPERTIES
+        WINDOWS_EXPORT_ALL_SYMBOLS TRUE
+		RELEASE_POSTFIX "_r"            
+		MINSIZEREL_POSTFIX "_r"
+		RELWITHDEBINFO_POSTFIX "_r"
+)
 
 
 target_link_libraries(${PROJECT_LIB}
