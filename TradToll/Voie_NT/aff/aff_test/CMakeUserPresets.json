@@ -1,0 +1,79 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "Debug-x64",
+      "displayName": "Debug (x64)",
+      "binaryDir": "${sourceDir}/out/build/debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_CXX_FLAGS": ""
+      },
+      "inherits": [
+        "Qt-Default"
+      ]
+    },
+    {
+      "name": "Release-x64",
+      "displayName": "Release (x64)",
+      "binaryDir": "${sourceDir}/out/build/release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      },
+      "inherits": [
+        "Qt-Default"
+      ]
+    },
+    {
+      "hidden": true,
+      "name": "QT_6.5.2",
+      "inherits": "Qt",
+      "environment": {
+        "QTDIR": "C:/QT/6.5.2"
+      },
+      "architecture": {
+        "strategy": "external",
+        "value": "x64"
+      },
+      "generator": "Ninja",
+      "vendor": {
+        "qt-project.org/Version": {
+          "checksum": "ExEbmmnNiC8VQCRMtv2LXTfkTA8="
+        }
+      }
+    },
+    {
+      "hidden": true,
+      "name": "Qt-Default",
+      "inherits": "qt_6.5.2",
+      "vendor": {
+        "qt-project.org/Default": {
+          "checksum": "0ZiJrSLgueRMr668E7FL4Af90RU="
+        }
+      }
+    },
+    {
+      "hidden": true,
+      "name": "qt_6.5.2",
+      "inherits": "Qt",
+      "environment": {
+        "QTDIR": "C:/qt/6.5.2"
+      },
+      "architecture": {
+        "strategy": "external",
+        "value": "x64"
+      },
+      "generator": "Ninja",
+      "vendor": {
+        "qt-project.org/Version": {
+          "checksum": "LXgV03QWfuE+ygjt6bQUJJNvgEM="
+        }
+      }
+    }
+  ],
+  "vendor": {
+    "qt-project.org/Presets": {
+      "checksum": "/7wMcs6RcmMKXZ2oEG4OQf2O9Oo="
+    }
+  }
+}

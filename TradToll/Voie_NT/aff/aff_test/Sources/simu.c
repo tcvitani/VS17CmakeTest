@@ -53,11 +53,12 @@ int LanceModule(HWND hDlg, char *p_MbName)
 
 	sprintf_s(szKey, 
 			sizeof(szKey),
-			"%s%s%s%s%s",
+			"%s%s%s%s%s%s",
 			CSR_REG_KEYn_CSRBASE,
 			CSR_REG_KEYn_LANE_BASE,
 			CSR_REG_KEYn_CONFIG,
 			MOD_REG_KEYn_MODULES,
+			AFF_REG_KEYn_ModAFF,	
 			BalName);
 
 	//AFF_REG_KEYn_ModAFF,

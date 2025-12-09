@@ -1,4 +1,4 @@
- /*------   (v) 1997 CSEE-Peage   ---------   Droits reserves   ------*/
+/*------   (v) 1997 CSEE-Peage   ---------   Droits reserves   ------*/
 /*
 * $D_HEAD
 * --------------------------------------------------------------------
@@ -13,11 +13,7 @@
 * DESCRIPTION:
 * --------------------------------------------------------------------
 * HISTORIQUE:
-* NBL : 2 display lines in service VISU. Now sends the displaid text
-*       when asked and when it changes.
-*       Sorry, not very clean, but is this library really clean ?
-*       No more history log for PVCS because of multiple projects.
- *
+*
 * --------------------------------------------------------------------
 * $F_HEAD
 */
@@ -31,7 +27,7 @@
 #include <run.h>
 #include <module.h>
 
-/* Macros sur types déclaratifs */ 
+/* Macros sur types declaratifs */ 
 #ifdef AFF_DEF
 #	include <public.h>
 #else
@@ -42,14 +38,14 @@
 
 /*--------------- DEFINES: ---------------*/
 
-// Définition de la longueur max. des messages pour le dop
+// Definition de la longueur max. des messages pour le dop
 #define AFF_MAX_DONNEES_AFFICHAGE 300
 #define AFF_MAX_LABEL 40
 // <-- NBL
 #define AFF_MAX_LIGNES 5
 // NBL -->
 
-/* Afficheur Allum‚ / ‚teind */
+/* Afficheur Allum, / ,teind */
 #define AFF_ON   TRUE
 #define AFF_OFF  (!AFF_ON)
 
@@ -82,7 +78,7 @@ typedef enum
 enum_aff_cmd_voyant;
 
 
-/* Liste des services disponibles pour l'afficheur ext‚rieur */
+/* Liste des services disponibles pour l'afficheur exterieur */
 typedef enum
 {
 	M_AFF_AFFICHAGE = M_SRV_USER,
@@ -131,16 +127,16 @@ enum_aff_type;
 /* STRUCTURE DES MESSAGES DU SERVICE ETAT  */
 /*******************************************/
 
-/* Définition des status en champs de bits */
+/* Definition des status en champs de bits */
 typedef struct
 {
 	unsigned int  aff_hs     : 1; // AFF hs
 	unsigned int  liaison_hs : 1; // Liaison AFF hs
-	unsigned int  specifique : 6; // non d‚taill‚ car d‚pend du hard utilis‚
+	unsigned int  specifique : 6; // non detaille car depend du hard utilise
 }
 struct_b_etat_aff;
 
-/* Définition du message proprement dit */
+/* Definition du message proprement dit */
 typedef struct
 {
 	union
@@ -178,8 +174,8 @@ struct_aff_donnee_affichage;
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*      Ne pas changer l'ordre de ces structures    */
-/*  Il correspond à l'ordre des mots clés pour      */
-/*  les variables à afficher (cf sgm_ani.h )        */
+/*  Il correspond a l'ordre des mots cles pour      */
+/*  les variables a afficher (cf sgm_ani.h )        */
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 typedef struct
@@ -255,7 +251,7 @@ typedef struct
 typedef struct
 {
 	unsigned char	priorite;
-	char			ligne[AFF_MAX_DONNEES_AFFICHAGE];				//buffer à afficher
+	char			ligne[AFF_MAX_DONNEES_AFFICHAGE];				//buffer a afficher
 } struct_aff_test;
 
 /******************************************************/
