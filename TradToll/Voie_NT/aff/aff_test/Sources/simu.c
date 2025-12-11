@@ -149,16 +149,16 @@ int ArretModule(HWND hDlg)
 		SIMU.fin = TRUE;
 	FinRegion();
 	
-	Sleep(100);
+	Sleep(500);
 
-	rc=ArretTaches( t_simu );
-	if ( rc != NOYAU_ARRET_TACHE_OK)
-	{
-		AddLBItem(hDlg, "Error stoping thread");
-		return 0;
-	}
-	else
-		AddLBItem(hDlg, "Simulateur arrete");
+	//rc=ArretTaches( t_simu );
+	//if ( rc != NOYAU_ARRET_TACHE_OK)
+	//{
+	//	AddLBItem(hDlg, "Error stoping thread");
+	//	return 0;
+	//}
+	//else
+	//	AddLBItem(hDlg, "Simulateur arrete");
 
 	SupprimeBAL ("SIMU_AFF_0");
 	SupprimeBAL ("SIMU_AFF_1");
