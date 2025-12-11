@@ -24,7 +24,8 @@ EXPORT_C void DeinitDmvWorker(IN  LPVOID pGlobalWorkerStructure)
 	TWorkerStructure* pWork = (TWorkerStructure*)pGlobalWorkerStructure;
 
 	if (pWork->pWorkerInstance != NULL)
-	{
+	{	
+
 		delete pWork->pWorkerInstance;
 		pWork->pWorkerInstance = NULL;
 	}
@@ -79,25 +80,34 @@ DmvWorker::~DmvWorker()
 {
 	if (m_pDmv_Client != nullptr)
 	{
-		m_pDmv_Client->deleteLater();
+		delete m_pDmv_Client;
+		m_pDmv_Client = nullptr;
 	}
 
 	if (m_pDmv_EchoClient != nullptr)
 	{
-		m_pDmv_EchoClient->deleteLater();
+		delete m_pDmv_EchoClient;
+		m_pDmv_EchoClient = nullptr;
 	}
 
 	if (m_pOblakDevice != nullptr)
 	{
 		delete m_pOblakDevice;
+		m_pOblakDevice = nullptr;
 	}
 
-	OblakMsg::deleteOblakMsg(m_pTextProperties);
-
-	if (this != nullptr)
+	//OblakMsg::deleteOblakMsg(m_pTextProperties);
+	if (m_pTextProperties != nullptr)
 	{
-		this->deleteLater();
+		delete m_pTextProperties;
+		m_pTextProperties = nullptr;
 	}
+
+
+	//if (this != nullptr)
+	//{
+	//	this->deleteLater();
+	//}
 }
 
 bool DmvWorker::InitializeIosMbox()
@@ -488,6 +498,7 @@ void DmvWorker::ReceiveFromAni(struct_neutre *pNeutre)
 	case TLM_MESSAGE_STOP_REQUESTED:
 		// Stopping IOS thread
 		// SendSetImage(OblakMsg::eImage_Red);
+		// 
 		// StopWorker(m_siInstId, M_ARRET_EFFECTUE);
 		break;
 

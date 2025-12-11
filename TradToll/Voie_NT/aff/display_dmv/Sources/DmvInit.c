@@ -58,12 +58,15 @@ EXPORT enum_instance_result WINAPI AFFLance(char * pcKey, char * pcBalNam, noyau
 	DWORD					dwTraceSizeMB = 1;
 
 	DebutRegion();
+
 	if (NB_INSTANCES >= INSTANCE_MAX)
 	{
 		FinRegion();
 		return INST_INIT_ERR_MAX_INSTANCE;
 	}
+
 	inst_id = NB_INSTANCES++; // updating global instances counter 
+
 	FinRegion();
 
 	memset(&gsDMV[inst_id], 0, sizeof(struct_global));
@@ -373,7 +376,6 @@ EXPORT enum_instance_result WINAPI AFFArret(noyau_bal_id iBalId)
 	dmv_inst_id				inst_id;
 	noyau_enum_retour		cr_arret;
 
-
 	// recherche en fonction du nombre de lecteur lance 
 	for (inst_id = 0; inst_id < INSTANCE_MAX; inst_id++)
 	{
@@ -383,6 +385,8 @@ EXPORT enum_instance_result WINAPI AFFArret(noyau_bal_id iBalId)
 
 	if (inst_id > INSTANCE_MAX)
 		return  INST_ARRET_NOK;
+
+	MQEventLoop_Quit(gsDMV[inst_id].sInitStructure.m_iLoopInstance);
 
 	cr_arret = ArretTaches(gsDMV[inst_id].threads);
 

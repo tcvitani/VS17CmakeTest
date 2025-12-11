@@ -46,7 +46,7 @@ bool Automat::test()
 
 	m_iCurrentStateID = m_iInitialStateID;
 
-	m_bRecursion = FALSE;
+	m_bRecursion = false;
 
 	m_bAutInitialized = true;
 	m_iErrorStatus = AUT_OK;

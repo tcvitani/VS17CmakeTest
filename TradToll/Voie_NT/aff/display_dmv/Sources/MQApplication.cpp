@@ -101,9 +101,12 @@ DWORD WINAPI ApplicationThread(PVOID pvParam)
 
 DWORD WINAPI StartApplicationThread()
 {
-	struct_tache sThreads[1 + 1];
+	//struct_tache sThreads[1 + 1];
 	char pcNomTache[MAX_PATH] = { 0 };
 	noyau_enum_retour eResult;
+	HANDLE hThread = NULL;
+	DWORD dwThreadId = NULL;
+	DWORD dwErr = NO_ERROR;
 
 	appFinished = CreateEvent(
 		NULL,               // default security attributes
@@ -112,33 +115,24 @@ DWORD WINAPI StartApplicationThread()
 		TEXT("appFinished")  // object name
 		);
 
-
 	sprintf_s(pcNomTache, sizeof(pcNomTache), "QApplication thread ");
 
-	NOYAU_INIT_TACHE(
-		sThreads[0],
-		(noyau_enum_booleen)TRUE,
-		THREAD_PRIORITY_NORMAL,
-		2048,
-		(LPTHREAD_START_ROUTINE)(ApplicationThread),
-		(PVOID)&qcoreOwnerInstId,
-		NULL,
-		pcNomTache);
-
-
-
-	// No more threads (clear end of threads description array)
-	NOYAU_VIDE_TACHE(sThreads[1]);
-
-	// Launch thread(s) software component
-	eResult = LanceTache(sThreads);
-	if (eResult != NOYAU_OK)
+	hThread = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)(ApplicationThread), (void*)NULL, CREATE_SUSPENDED, &dwThreadId);
+	if (hThread == NULL)
 	{
+		dwErr = GetLastError();
 		ExitBad();
-		return 1;
+		return dwErr;
 	}
 
-	return 0;
+	if (ResumeThread(hThread) == -1)
+	{
+		dwErr = GetLastError();
+		ExitBad();
+		return dwErr;
+	}
+
+	return dwErr;
 }
 
 
@@ -157,8 +151,9 @@ DWORD WINAPI StopApplicationThread()
 			appFinished = NULL;
 		}
 
-		delete app;
 		qInstallMessageHandler(nullptr);
+
+		delete app;
 
 		return 0;
 	}

@@ -15,11 +15,10 @@
 #include "mbx2slot.h"
 
 #define AFF_NB_THREAD  3
-#define NB_AFF_MAX     3
 #define NB_MAX_LABEL   64
 
 #define NB_THREADS	   2
-#define INSTANCE_MAX   999
+#define INSTANCE_MAX   5
 #define NB_SERVICE	   2
 
 #define AFF_TIMEOUT_INFINITE    NOYAU_ATTENTE_INFINIE
@@ -191,9 +190,9 @@ typedef struct _struct_global
 	TWorkerStructure			sInitStructure;
 	DWORD						dwMboxReadInterval; //Check this
 
-	HANDLE						service[NB_AFF_SERVICE];
-	dbg_struct_debug			sDbg;
-	dbg_struct_trace			sTrace[NB_AFF_SERVICE];
+	HANDLE						service[NB_TLM_SERVICE];
+	//dbg_struct_debug			sDbg;
+	//dbg_struct_trace			sTrace[NB_AFF_SERVICE];
 
 	struct_tache				threads[AFF_NB_THREAD + 1];
 
@@ -218,7 +217,7 @@ struct_global;
 #include <global.h>
 
 /* Array of structures (one public structure for each instance) */
-PROTECTED struct_global gsDMV[NB_AFF_MAX] INIT(0);
+PROTECTED struct_global gsDMV[INSTANCE_MAX] INIT(0);
 
 /* Instancies counter */
 PROTECTED WORD NB_INSTANCES INIT(0);

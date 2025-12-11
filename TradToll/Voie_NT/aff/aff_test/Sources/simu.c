@@ -145,6 +145,12 @@ int ArretModule(HWND hDlg)
 	}
 
 	// Stop thread
+	DebutRegion() ;
+		SIMU.fin = TRUE;
+	FinRegion();
+	
+	Sleep(100);
+
 	rc=ArretTaches( t_simu );
 	if ( rc != NOYAU_ARRET_TACHE_OK)
 	{
@@ -218,6 +224,7 @@ void SimuRecoit(void)
 	
 	SIMU.fin=FALSE;
 	hnDlg=SIMU.hDlg;
+
 	DebutRegion() ;
 	ChangePriorite( TacheCourante(), THREAD_PRIORITY_NORMAL );
 	while (SIMU.fin==FALSE)
@@ -534,6 +541,7 @@ void SimuRecoit(void)
 			} 
 		}
 	}
+
 	FinRegion();
 	Termine();
 } 

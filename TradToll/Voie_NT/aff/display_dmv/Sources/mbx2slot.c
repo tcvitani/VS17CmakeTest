@@ -37,6 +37,7 @@ PROTECTED void    * WINAPI PublieBALToQueue(char *nom_bal, unsigned long nb_mess
 	BOOL                fSuccess = FALSE;
 	BOOL                fTasks = FALSE;
 	noyau_enum_retour   eNoyRet;
+	char				pcThreadName[MAX_PATH];
 
 	__try
 	{
@@ -54,6 +55,9 @@ PROTECTED void    * WINAPI PublieBALToQueue(char *nom_bal, unsigned long nb_mess
 
 			__leave;
 		}
+
+		sprintf_s(pcThreadName, sizeof(pcThreadName), "Mbx2Slot(QT) (%s)", psMbx2slot->szBalName);
+
 
 		NOYAU_INIT_TACHE(
 			psMbx2slot->tsTasks[0],                        // structure à mettre à jour
@@ -100,6 +104,11 @@ PROTECTED noyau_enum_retour WINAPI SupprimeBALToQueue(mbx2slot_wrapper * psMbx2q
 {
 	noyau_enum_retour   eResult;
 
+	if (psMbx2queue->hEvtTerminateMbx2Slot != NULL)
+		SignalEvt(psMbx2queue->hEvtTerminateMbx2Slot);
+
+	Sleep(100);
+
 	eResult = ArretTaches(psMbx2queue->tsTasks);
 	if (eResult == NOYAU_ARRET_TACHE_OK)
 		eResult = CleanUpBeforeExit(psMbx2queue);
@@ -113,7 +122,8 @@ PRIVATE noyau_enum_retour WINAPI CleanUpBeforeExit(mbx2slot_wrapper * psMbx2queu
 
 	eResult = SupprimeBAL(psMbx2queue->szBalName);
 
-	LibereEvent(&psMbx2queue->hEvtTerminateMbx2Slot);
+	if(psMbx2queue->hEvtTerminateMbx2Slot!=NULL)
+		LibereEvent(&psMbx2queue->hEvtTerminateMbx2Slot);
 
 	return eResult;
 }

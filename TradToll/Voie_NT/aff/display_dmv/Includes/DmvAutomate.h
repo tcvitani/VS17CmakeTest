@@ -36,19 +36,19 @@ public:
 	bool initialize();
 	//---------------------------------------
 	//  States
-	enum {
+	enum _enumAutStateType {
 		enuInitial = 0,
 		enuActivation = 1,
 		enuWaitActivateRsp = 2,
 		enuConnectedIdle = 3,
 		enuWaitingResponse = 4, 
 		enuLinkError = 5,
-	} enumAutStateType;
+	} ;
 	//---------------------------------------
 
 	//---------------------------------------
 	//  Events
-	enum {
+	enum _enuAutEventTypes {
 		enuEvtConnected,
 		enuEvtDisconnected,
 		enuEvtLinkError,
@@ -61,7 +61,7 @@ public:
 		enuEvtTrafficLightReq,
 		enuEvtSetFlasherStateReq,
 		enuEvtConfirmFlasherStateReq,
-	} enuAutEventTypes;
+	} ;
 	//---------------------------------------
 
 	virtual bool reset();

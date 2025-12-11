@@ -791,7 +791,7 @@ void ExitApplication(HWND hDlg)
 		MB_SYSTEMMODAL );
 	if (tstex==IDOK)
 	{
-		SIMU.fin=TRUE;
+
 		ArretModule(hDlg);
 		EndDialog (hDlg, TRUE);
 	}

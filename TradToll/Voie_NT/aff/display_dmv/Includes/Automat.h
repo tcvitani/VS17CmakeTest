@@ -106,10 +106,12 @@ public:
 	explicit Automat(short int siInstId) :m_siInstId(siInstId), m_bAutInitialized(false), m_pCurrentEvent(NULL), m_bTrace(false),
 		m_sLastInputPCK(), m_sLastOutputPCK()
 	{
-		//tmTraceStart.start();
-	};
+		m_iErrorStatus = AUT_OK;
+		m_bRecursion = false;
+		m_iCurrentEventID = 0;
+		m_iInitialStateID = 0;
 
-	//	MAutomat(QString name, int iType):m_bAutInitialized(false),m_sName(name),m_iAutomatType(iType) {};
+	};
 
 	virtual ~Automat();
 

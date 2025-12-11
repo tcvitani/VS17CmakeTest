@@ -117,7 +117,7 @@ PROTECTED void ReceptionIos(dmv_inst_id inst_id, struct_neutre *p_neutre)
 		dwSize = sizeof(gsDMV[inst_id].szCurrentLineTable[0]);
 		for (i = 0; i<AFF_MAX_LIGNES; i++)
 		{
-			if (&p_ios->u.ios_ani.current_view[i] != NULL)
+			//if (&p_ios->u.ios_ani.current_view[i] != NULL)
 			{
 				strncpy_s(gsDMV[inst_id].szCurrentLineTable[i], sizeof(gsDMV[inst_id].szCurrentLineTable[i]), p_ios->u.ios_ani.current_view[i], dwSize);
 				gsDMV[inst_id].szCurrentLineTable[i][dwSize - 1] = '\0';
