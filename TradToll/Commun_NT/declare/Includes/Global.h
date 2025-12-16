@@ -1,11 +1,11 @@
-// inclure ce fichier avant et apres la déclaration en PROTECTED de vos
-// variables à partager entre plusieurs instance d'une DLL
+// inclure ce fichier avant et apres la declaration en PROTECTED de vos
+// variables apartager entre plusieurs instance d'une DLL
 // ATTENTION : 
-//    - ces variables partagées doivent etre initialisées (meme les structures) 
-//      grace à la macro 'INIT(valeur)' (cf protect.h)
-//    - ces variables ne peuvent être des pointeurs (pas meme des pointeurs vers
-//      d'autres variables dans cette meme zone partagée car l'adresse de base
-//      de la zone peut varier d'une instance à l'autre -> 'relocation' du systeme)
+//    - ces variables partagees doivent etre initialisees (meme les structures) 
+//      grace a la macro 'INIT(valeur)' (cf protect.h)
+//    - ces variables ne peuvent -tre des pointeurs (pas meme des pointeurs vers
+//      d'autres variables dans cette meme zone partagee car l'adresse de base
+//      de la zone peut varier d'une instance a l'autre -> 'relocation' du systeme)
 
 
 #ifdef LOC_DEF
@@ -13,17 +13,17 @@
 	
    #ifndef SECTION_GLOBALE
 
-      // début de déclaration de la section
+      // debut de declaration de la section
       #pragma data_seg("MySharedData")    
          
-      // bascule dans le 'else' à la prochaine inclusion de ce fichier
+      // bascule dans le 'else' a la prochaine inclusion de ce fichier
       #define SECTION_GLOBALE 
 
       #pragma message ("Declaration of data segment MySharedData START")
 
    #else
    
-      // fin de déclaration de la section
+      // fin de declaration de la section
       #pragma data_seg()       
 
       // attribution des acces en lecture/ecriture et partage
