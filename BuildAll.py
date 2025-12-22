@@ -117,9 +117,15 @@ class CBuildAllRecursively:
     def setBuildEnvironment(self, build_environment):
         self.build_environment = build_environment
 
+    def CleanFolder(self, full_dirpath):
+        print("Cleaning folder ****" + full_dirpath)
+        os.chdir(full_dirpath) 
+        shutil.rmtree(os.path.join(full_dirpath,"out"))
+
     def BuildFolder(self, full_dirpath):
         print("Building folder ****" + full_dirpath)
         os.chdir(full_dirpath) 
+        
         bAllOK = False
 
         if(callProcessAndShowOutput(["cmake", "--preset", "Debug-x64"], self.build_environment) == True):
@@ -135,7 +141,7 @@ class CBuildAllRecursively:
             print("************************** ERROR building module [" + full_dirpath + "] !!! ******************** ")
 
 
-    def RecrusiveFind(self, full_dirpath):
+    def RecrusiveFindAndBuild(self, full_dirpath):
         #print ("Checking folder:" + full_dirpath)
         with os.scandir(full_dirpath) as it:
              for entry in it:
@@ -147,17 +153,38 @@ class CBuildAllRecursively:
             for entry in it:
                 if (entry.is_dir()):
                     dir_path = os.path.join(full_dirpath, entry.name)
-                    self.RecrusiveFind(dir_path)       
+                    self.RecrusiveFindAndBuild(dir_path)       
 
-       
+
+    def RecrusiveFindAndClean(self, full_dirpath):
+        with os.scandir(full_dirpath) as it:
+             for entry in it:
+                if (entry.is_file() and entry.name.lower() == "cmakelists.txt"):
+                    self.CleanFolder(full_dirpath)
+                    return
+                
+        with os.scandir(full_dirpath) as it:        
+            for entry in it:
+                if (entry.is_dir()):
+                    dir_path = os.path.join(full_dirpath, entry.name)
+                    self.RecrusiveFindAndClean(dir_path)       
+
     def BuildAll(self):
         root = self.m_sRootFolderPath
         try:
-            self.RecrusiveFind(root)
+            self.RecrusiveFindAndBuild(root)
         except:
             print ("Error  building [" + self.m_sRootFolderPath + "]")
             return 
-        
+
+    def CleanAll(self):
+        root = self.m_sRootFolderPath
+        try:
+            self.RecrusiveFindAndClean(root)
+        except:
+            print ("Error  cleaning [" + self.m_sRootFolderPath + "]")
+            return 
+
 
 repository = "c:\\D_DISK\\Work\\Test_projects\\QT6_test\\VS17CmakeTest\\TradToll\\"
 
@@ -178,6 +205,7 @@ if (prepareBuildEnviron(aVSenvironment) == 0):
 
     x = CBuildAllRecursively(repository)   
     x.setBuildEnvironment(aVSenvironment)
+    x.CleanAll()
     x.BuildAll()
 else:
     print("Error preparing build environment!")
