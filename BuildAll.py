@@ -12,6 +12,8 @@ import re
 import glob
 import shutil
 import codecs
+import pyLogger 
+
 
 def removeDoubleBackslashes(sPath):
     return sPath.replace("\\\\", "\\")
@@ -38,24 +40,55 @@ def removeFirstBackslash(sPath):
         sPath = sPath[1:]
     return sPath  
 
-def callProcessAndShowOutput(sCommand):
-    print("Executing:[" + sCommand + "]")
-    
-    bDoRun = True
+
+def prepareBuildEnviron(aVSenvironment):
+    print("prepareBuildEnviron:...")
+    cmd = r'"C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\Build\vcvars64.bat" && set'
     
     try:
-        pProcess = subprocess.Popen(sCommand, shell=True, bufsize=0, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        #subprocess.CREATE_NEW_CONSOLE
+        #os.path.expandvars()
+        #for entry in os.environ:
+        #    print(entry + "=" + os.environ[entry])
+
+        pProcess = subprocess.Popen(cmd, shell=True, text=True, start_new_session=False, bufsize=100, stdout=subprocess.PIPE)
+        stdout, _ = pProcess.communicate()
+
+        for line in stdout.splitlines():
+            if '=' in line:
+                key, value = line.split('=', 1)
+                aVSenvironment[key] = value
+
+        return pProcess.returncode 
+    except:
+        print("prepareBuildEnviron Error detected...") 
+        return pProcess.returncode
+
+
+
+
+
+def callProcessAndShowOutput(sCommand, build_environment):
+    #print("Executing:[" + sCommand + "]")
+    
+    try:
+        #subprocess.CREATE_NEW_CONSOLE
+        #os.path.expandvars()
+        #for entry in os.environ:
+        #    print(entry + "=" + os.environ[entry])
+
+        pProcess = subprocess.Popen(args=sCommand, shell=True, start_new_session=False, bufsize=100, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, env=build_environment)
         
-        while bDoRun:
-            line = pProcess.stdout.readline()
-            #line = line.replace('\r', '').replace('\n', '')
-            print(line)
-            sys.stdout.flush()
-            #if line.find("Error")!=-1:
-            #    bDoRun = False
-            if pProcess.poll()!=None:
-                return pProcess.returncode
-                
+        while(pProcess.poll() == None):
+            message = pProcess.stdout.readline()
+            if message!=None:
+                typeMessage = type(message)
+                if(typeMessage == str or (typeMessage == bytes and message != b"")):
+                    strMessage = str(message)
+                    if len(strMessage)>0:
+                        print(strMessage)
+
+        return pProcess.returncode        
     except:
         print("Error detected...") 
         return pProcess.returncode
@@ -73,30 +106,34 @@ class CBuildAllRecursively:
     def __init__(self, sRootFolderPath):
         self.m_sRootFolderPath = sRootFolderPath   
 
-    def BulildFolder(self, full_dirpath):
+    def setBuildEnvironment(self, build_environment):
+        self.build_environment = build_environment
+
+    def BuildFolder(self, full_dirpath):
         print("Building folder ****" + full_dirpath)
-        os.chdir(full_dirpath) #callProcessAndShowOutput("cd " + );
-        if(callProcessAndShowOutput("cmake --preset \"Debug-x64\"") == 0):
-            callProcessAndShowOutput("ninja -C out/build/debug")
+        os.chdir(full_dirpath) 
+        if(callProcessAndShowOutput(["cmake", "--preset", "Debug-x64"], self.build_environment) == 0):
+            callProcessAndShowOutput(["ninja", "-C", "out/build/debug"], self.build_environment)
+
+        #if(callProcessAndShowOutput("cmake --preset \"Release-x64\"") == 0):
+        #    callProcessAndShowOutput("ninja -C out/build/release")
+
 
     def RecrusiveFind(self, full_dirpath):
         #print ("Checking folder:" + full_dirpath)
-        
-        for dirpath, dirnames, filenames in os.walk(full_dirpath):
-            cmakelistsFound = False
-            
-            for file_name in filenames:
-                if(file_name.lower() == "cmakelists.txt"):
-                    cmakelistsFound = True
-                    self.BulildFolder(full_dirpath)
+        with os.scandir(full_dirpath) as it:
+             for entry in it:
+                if (entry.is_file() and entry.name.lower() == "cmakelists.txt"):
+                    self.BuildFolder(full_dirpath)
                     return
-
-            if(cmakelistsFound == False):        
-                for dir_name in dirnames:
-                    dir_path = os.path.join(dirpath, dir_name)
+                
+        with os.scandir(full_dirpath) as it:        
+            for entry in it:
+                if (entry.is_dir()):
+                    dir_path = os.path.join(full_dirpath, entry.name)
                     self.RecrusiveFind(dir_path)       
 
-        
+       
     def BuildAll(self):
         root = self.m_sRootFolderPath
         try:
@@ -105,145 +142,26 @@ class CBuildAllRecursively:
             print ("Error  building [" + self.m_sRootFolderPath + "]")
             return 
         
-#        #everything OK by now...
-#        #enter "Script" folder and process iss files
-#        #  replace "_r.dll" with ".dll" in  all files
-#        self.sTargetDebugSubFolderScript = os.path.join(self.sTargetDebugFolder , self.m_sSubDirScripts)
-#        
-#        self.processReleaseToDebugFile(os.path.join(self.sTargetDebugSubFolderScript, "FilesAll.iss"))
-#        self.processReleaseToDebugFile(os.path.join(self.sTargetDebugSubFolderScript, "SetupScript.iss"))
-#        self.processFileToExcludeUnwantedBlocks(os.path.join(self.sTargetDebugSubFolderScript, "SetupScript.iss"))
-#        
-#        #replace "_r.dll" with ".dll" in  all files in all other files (reg and bat)
-#        self.processMassReplaceForBAT(os.path.join(self.sTargetDebugFolder, self.m_sSubDirParameters))
-#        self.processMassReplaceForUnicodeReg(os.path.join(self.sTargetDebugFolder, self.m_sSubDirParameters))
-#        
-#        print ("Debug installation processed ok to folder:" + self.sTargetDebugFolder)
-#        return
-    
-                                
-#    def processReleaseToDebugFile(self, sCurrentFile):
-#        print ("processReleaseToDebugFile: Processing file:" + sCurrentFile)
-#        findAndReplaceInFile(sCurrentFile, "_r.dll", ".dll")
-#        findAndReplaceInFile(sCurrentFile, "_r.exe", ".exe")
-#        findAndReplaceInFile(sCurrentFile, "_r_", "_")
-#        findAndReplaceInFile(sCurrentFile, "OutputBaseFilename=", "OutputBaseFilename=Dbg_")
-#       
-#    def processReleaseToDebugFileUnicode(self, sCurrentFile):
-#        print ("processReleaseToDebugFileUnicode: Processing file:" + sCurrentFile)
-#        if findAndReplaceInUnicodeFile(sCurrentFile, u"_r.dll", u".dll") == False:
-#            print ("findAndReplaceInUnicodeFile:returned False")
-#            sys.exit(1) 
-#        if findAndReplaceInUnicodeFile(sCurrentFile, u"_r.exe", u".exe") == False:
-#            print ("findAndReplaceInUnicodeFile:returned False")
-#            sys.exit(1) 
-#        if findAndReplaceInUnicodeFile(sCurrentFile, u"_r_", u"_") == False:
-#            print ("findAndReplaceInUnicodeFile:returned False")
-#            sys.exit(1)     
-      
-#    def processFileToExcludeUnwantedBlocks(self, sFilePath):
-#        print ("processFileToExcludeUnwantedBlocks: Processing file:" + sFilePath)
-#        try:
-#            sResultFilePath = sFilePath + ".tmp"
-#            #create a new file
-#            resultFile = io.open(sResultFilePath,'w')
-#            #load the original content
-#            sourceFile = io.open(sFilePath)
-#
-#            rePatStart = re.compile(r"\*\*\*START REMOVE IN DEBUG",re.IGNORECASE)
-#            rePatEnd = re.compile(r"\*\*\*END REMOVE IN DEBUG",re.IGNORECASE)
-#            
-#            bInBlockToComment = False
-#            
-#            for line in sourceFile:
-#                if bInBlockToComment == False:
-#                    if re.search(rePatStart, line) != None:
-#                        bInBlockToComment = True
-#                    resultFile.write(line)
-#                else:
-#                    if re.search(rePatEnd, line) != None:
-#                        bInBlockToComment = False
-#                        resultFile.write(line)
-#                    else:
-#                        resultFile.write("//"+line)
-#        except:
-#            print ("processFileToExcludeUnwantedBlocks: Error replacing in file:" + sFilePath)
-#            return False
-#        finally:
-#            resultFile.close()
-#            sourceFile.close()
-#            
-#        try:
-#            shutil.move(sResultFilePath, sFilePath)
-#        except:
-#            print ("processFileToExcludeUnwantedBlocks: Error moving file:" + sResultFilePath + " to:" + sFilePath)
-#            return False       
-#    
-#        return True 
-        
-#    def processMassReplaceForBAT(self, dir_name):
-#        for dirpath, dirnames, filenames in os.walk(dir_name):
-#            for fname in filenames:
-#                if testExtension(fname,".bat"):
-#                    fullname = os.path.join(dirpath, fname)
-#                    self.processReleaseToDebugFile(fullname)
-                    
-#    def processMassReplaceForUnicodeReg(self, dir_name):
-#        for dirpath, dirnames, filenames in os.walk(dir_name):
-#            for fname in filenames:
-#                if testExtension(fname,".reg"):
-#                    fullname = os.path.join(dirpath, fname)
-#                    self.processReleaseToDebugFileUnicode(fullname)
-
-
 
 repository = "c:\\D_DISK\\Work\\Test_projects\\QT6_test\\VS17CmakeTest\\TradToll\\"
-callProcessAndShowOutput("C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Auxiliary\\Build\\vcvars64.bat")
 
-x = CBuildAllRecursively(repository)   
-x.BuildAll()
+gRepLocalSourcesDirBase = os.curdir
+gLogFilePath = os.path.join(gRepLocalSourcesDirBase, "BuildAll.log")
 
-#run = True
+sys.stdout = pyLogger.Logger(gLogFilePath)
+print("************************** Starting BuildAll script for folder " + repository)    
 
-#while(run == True):
-#    # Do not attempt clean up on first run
-#    #print("Cleaning up repository...")
-#    #if callProcessAndShowOutput('svn ' + 'cleanup ' + repository) == 0: 
-#    #    print("Cleaning up completed")
-#    #else:
-#    #    print "Error cleaning up!"
-#    #    break
-#    
-#    print("Updating repository...")
-#    #p = subprocess.Popen("cmd", shell=True, bufsize=0, stdout=subprocess.PIPE)
-#    #commandSvnUP = "svn " + "update --set-depth infinity  " + repository
-#    #updating = True
-#    
-#    p = subprocess.Popen(commandSvnUP, shell=True, bufsize=0, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-#    
-#    while(p.poll() == None and run == True):
-#        message = p.stdout.readline()
-#        typeMessage = type(message)
-#        if(typeMessage == str or (typeMessage == bytes and message != b"")):
-#            strMessage = str(message)
-#            print(strMessage)
-#            sys.stdout.flush()
-#            
-#            resultFind = strMessage.find("At revision")
-#            if(resultFind != -1):
-#                print("Update completed")
-#                updating = False
-#                run = False
-#            elif strMessage.find("svn: E155037")!=-1 or strMessage.find("svn: E175012")!=-1:
-#                print("Restarting...")
-#                updating = False
-#                run = True 
-#                break              
-#            elif strMessage.find("svn: E")!=-1:
-#                print("Fatal error detected!")
-#                updating = False
-#                run = False
-#        else:
-#            updating = False
-#        
+aVSenvironment = os.environ.copy()
 
+if (prepareBuildEnviron(aVSenvironment) == 0):
+    sys.stdout = pyLogger.Logger(gLogFilePath)
+
+    print("Extracted environment:")
+    for entry in aVSenvironment:
+        print(entry + "=" + aVSenvironment[entry])
+
+    x = CBuildAllRecursively(repository)   
+    x.setBuildEnvironment(aVSenvironment)
+    x.BuildAll()
+else:
+    print("Error preparing build environment!")
