@@ -119,8 +119,11 @@ class CBuildAllRecursively:
 
     def CleanFolder(self, full_dirpath):
         print("Cleaning folder ****" + full_dirpath)
-        os.chdir(full_dirpath) 
-        shutil.rmtree(os.path.join(full_dirpath,"out"))
+        os.chdir(full_dirpath)
+
+        sOutFolder = os.path.join(full_dirpath,"out")
+        if(os.path.exists(sOutFolder)):
+            shutil.rmtree(sOutFolder)
 
     def BuildFolder(self, full_dirpath):
         print("Building folder ****" + full_dirpath)
@@ -205,7 +208,7 @@ if (prepareBuildEnviron(aVSenvironment) == 0):
 
     x = CBuildAllRecursively(repository)   
     x.setBuildEnvironment(aVSenvironment)
-    x.CleanAll()
+    #x.CleanAll()  #enable only to rebuild All
     x.BuildAll()
 else:
     print("Error preparing build environment!")
