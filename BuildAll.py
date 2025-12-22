@@ -76,6 +76,7 @@ def callProcessAndShowOutput(sCommand, build_environment):
         #os.path.expandvars()
         #for entry in os.environ:
         #    print(entry + "=" + os.environ[entry])
+        bIsBuildError = False
 
         pProcess = subprocess.Popen(args=sCommand, shell=True, start_new_session=False, bufsize=100, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, env=build_environment)
         
@@ -85,13 +86,20 @@ def callProcessAndShowOutput(sCommand, build_environment):
                 typeMessage = type(message)
                 if(typeMessage == str or (typeMessage == bytes and message != b"")):
                     strMessage = str(message)
+                    
                     if len(strMessage)>0:
                         print(strMessage)
+                        strMessage = strMessage.lower()
+                        if(strMessage.find("error")!=-1):
+                            bIsBuildError = True
+                        
+        if(bIsBuildError):
+            return False
 
-        return pProcess.returncode        
+        return True       
     except:
         print("Error detected...") 
-        return pProcess.returncode
+        return False
 
 def testExtension(fname, replace_extensions=""):
     if replace_extensions:
@@ -112,11 +120,19 @@ class CBuildAllRecursively:
     def BuildFolder(self, full_dirpath):
         print("Building folder ****" + full_dirpath)
         os.chdir(full_dirpath) 
-        if(callProcessAndShowOutput(["cmake", "--preset", "Debug-x64"], self.build_environment) == 0):
-            callProcessAndShowOutput(["ninja", "-C", "out/build/debug"], self.build_environment)
+        bAllOK = False
 
-        #if(callProcessAndShowOutput("cmake --preset \"Release-x64\"") == 0):
-        #    callProcessAndShowOutput("ninja -C out/build/release")
+        if(callProcessAndShowOutput(["cmake", "--preset", "Debug-x64"], self.build_environment) == True):
+            bAllOK = callProcessAndShowOutput(["ninja", "-C", "out/build/debug"], self.build_environment)
+
+
+        if(bAllOK and callProcessAndShowOutput( ["cmake", "--preset", "Release-x64"], self.build_environment) == True):
+            bAllOK = callProcessAndShowOutput(["ninja", "-C", "out/build/release"], self.build_environment)
+
+        if(bAllOK):
+            print("****Building module [" + full_dirpath + "] Success !!! ******************** ")
+        else:
+            print("************************** ERROR building module [" + full_dirpath + "] !!! ******************** ")
 
 
     def RecrusiveFind(self, full_dirpath):
