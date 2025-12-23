@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\Modules\AFF]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\CSRoute\LaneController\Config\Modules\AFF\BL_AFF_ERI]
+"_Id"="DAKTRONICS display (3x10)"
+"_Port"=dword:00000005
+"_ParamPort"="baud=9600 data=8 stop=1 parity=n to=off xon=off dtr=off rts=on"
+"_ProtocolLayer"=""
+"Pool"="Reserved"
+"PriorityInit"=dword:00000004
+"PriorityMax"=dword:00000004
+"FormatFile"="PED-ERI.txt"
+"Unit_address"=dword:00000000
+"DelayCommandMs"=dword:00000000
+"MaxLinkError"=dword:00000002
+"StopModuleReadMailboxTimeoutMs"=dword:00001388

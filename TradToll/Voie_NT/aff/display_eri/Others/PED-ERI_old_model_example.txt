@@ -1,0 +1,238 @@
+* Pour Afficheur SAGEM
+* Fichier permettant de choisir les messages de l'afficheur usager,
+* selon la sequence de passage du vehicule.
+* Chaque ligne est constituee d'un libelle delimite par des guillemets
+* et contenant eventuellement un ou plusieurs formatteurs d'impression
+* pour une ou plusieurs variable(s).
+* C'est ce libelle qui sera affiche sur les deux lignes de l'afficheur
+*  Remarque : pour les formatteurs la longueur depend du format et de
+*             la police de la ligne!
+*  Exemple  : formatteur %2lu prend toujours 2 caracteres sur la ligne
+*             affichee
+* La sequence de passage est identifiee par un mot cle precede de $
+* Les mots cle connu sont les suivants :
+*   AFF_SOFT_REV        // Version soft VM
+*   AFF_YEAR            //  \
+*   AFF_MONTH           //  |
+*   AFF_DAY             //  |  Date et
+*   AFF_HOUR            //  |  Heure
+*   AFF_MINUTE          //  |
+*   AFF_SECOND          //  /
+*   AFF_PAYMENT_TYPE    // Type de payment utilise
+*   AFF_CLASS           // Classe du vehicule
+*   AFF_FARE_INT        // Tarif associe (partie entiere)
+*   AFF_FARE_DEC        // Tarif associe (partie decimale)
+*   AFF_PAID_INT        // Montant paye (partie entiere)
+*   AFF_PAID_DEC        // Montant paye (partie decimale)
+*   AFF_SALEFARE_INT    // Tarif de la vente (partie entiere)
+*   AFF_SALEFARE_DEC    // Tarif de la vente (partie decimale)
+*   AFF_SALEPAID_INT    // Montant paye pour la vente (partie entiere)
+*   AFF_SALEPAID_DEC    // Montant paye pour la vente (partie decimale)
+*   AFF_LIBELLE1        // Libelle dynamique
+*   AFF_LIBELLE2        // Libelle dynamique
+*   AFF_LIBELLE3        // Libelle dynamique
+*
+* Une ligne de l'afficheur correspond … 20 caracteres en police A
+*                                  et … 15 caracteres en police B
+* la separation des lignes n'est pas indiquee dans le libelle
+* Exemple d'un message pour une voie fermee:
+* $CLOSED
+* "CERRADO  "
+* ""
+*
+* TOUTE LIGNE COMMENCANT PAR * EST CONSIDEREE COMME LIGNE DE COMMENTAIRES
+* ET EST DONC IGNOREE.
+
+#MESSAGES
+
+$AFF_CLEAR_SCREEN
+A"                          "
+
+$AFF_LANE_CLOSED
+A"\x0D   LANE\x0D  CLOSED"
+
+$AFF_LANE_OPEN
+A"\x0D WELCOME\x0DLANE OPEN"
+
+$AFF_LANE_OPEN_MNTC
+A"\x0D WELCOME\x0DLANE OPEN"
+
+$AFF_LANE_OPEN_DEG
+A"\x0D WELCOME\x0DLANE OPEN"
+
+$AFF_LANE_OPEN_ETC
+A"\x0D WELCOME\x0D TAG ONLY"
+
+$AFF_LANE_OPEN_ACM
+A"\x0D WELCOME\x0DCOINS ONLY"
+
+$AFF_LANE_OPEN_ACM_ALL
+A"\x9C %2lu.%02lu WELCOME\x0DLANE OPEN";AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_LANE_OPEN_ACM_BC
+A"\x9C %2lu.%02lu WELCOME\x0DCOINS/CARD";AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_LANE_OPEN_ACM_ETC
+A"\x0D WELCOME\x0DCOINS/TAG"
+
+$AFF_CLASS_PAY_FF
+A"\x9C %2lu.%02lu CLASS %d\x0D WELCOME";AFF_FARE_INT;AFF_FARE_DEC;AFF_CLASS
+
+$AFF_CLASS_PAY_ACM
+A"\x9C %2lu.%02lu WELCOME\x0DCOINS ONLY";AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_CLASS_PAY_ACM_ALL
+A"\x9C %2lu.%02lu WELCOME\x0DLANE OPEN";AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_CLASS_PAY_ACM_BC
+A"\x9C %2lu.%02lu WELCOME\x0DCOINS/CARD";AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_CLASS_PAY_ACM_ETC
+A"\x9C %2lu.%02lu WELCOME\x0DCOINS/TAG";AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_CLASS_PAY_ETC_BC
+A"\x9C %2lu.%02lu CLASS %d\x0D TAG/CARD";AFF_FARE_INT;AFF_FARE_DEC;AFF_CLASS
+
+$AFF_CLASS_PAY_BC
+A"\x9C %2lu.%02lu CLASS %d\x0D CARD ONLY";AFF_FARE_INT;AFF_FARE_DEC;AFF_CLASS
+
+$AFF_PAY_CASH
+A"\x9C %2lu.%02lu CLASS %d\x0D CASH PAID";AFF_PAID_INT;AFF_PAID_DEC;AFF_CLASS
+
+$AFF_PAY_CM_CASH
+A"\x9C %2lu.%02lu          \x0DTHANK YOU";AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_DUE_PAY_CM_CASH
+A"\x9C %2lu.%02lu WELCOME\x0DCOINS ONLY";AFF_PAID_INT;AFF_PAID_DEC
+
+$AFF_PAY_CASH_FF
+A"\x9C %2lu.%02lu CLASS %d\x0D   CASH";AFF_PAID_INT;AFF_PAID_DEC;AFF_CLASS
+
+$AFF_PAY_SHORT_FF
+A"\x9C %2lu.%02lu CLASS %d\x0DSHORT PAID";AFF_FARE_INT;AFF_FARE_DEC;AFF_CLASS
+
+$AFF_PAY_SHORT
+A"\x9C %2lu.%02lu CLASS %d\x0DSHORT PAID";AFF_PAID_INT;AFF_PAID_DEC;AFF_CLASS
+
+$AFF_PAY_NO_CHARGE
+A"\x0DMOTORBIKE\x0D   FREE"
+
+$AFF_PAY_GRATUIT
+A"\x0D CLASS %d\x0D  EXEMPT";AFF_CLASS
+
+$AFF_PAY_DISABLED
+A"\x0D CLASS %d\x0D   FREE";AFF_CLASS
+
+$AFF_PAY_DISABLED_CARD
+A"\x0D CLASS %d\x0D   FREE";AFF_CLASS
+
+$AFF_PAY_CNP
+A"\x9C %2lu.%02lu CLASS %d\x0D IN DEBT";AFF_FARE_INT;AFF_FARE_DEC;AFF_CLASS
+
+$AFF_CLASS_PAY_FOREIGN
+A"\x9C %2lu.%02lu %3s %3lu.%02lu";AFF_FARE_INT;AFF_FARE_DEC;AFF_LIBELLE1;AFF_SALEFARE_INT;AFF_SALEFARE_DEC
+
+$AFF_CONFIRM_PAY_FOREIGN
+A"\x9C %2lu.%02lu %3s %3lu.%02lu   \x9C %1s%2lu.%02lu";AFF_FARE_INT;AFF_FARE_DEC;AFF_LIBELLE1;AFF_SALEPAID_INT;AFF_SALEPAID_DEC;AFF_LIBELLE3;AFF_PAID_INT;AFF_PAID_DEC
+
+$AFF_DUE_PAY_FOREIGN
+A"\x9C %2lu.%02lu %3s %3lu.%02lu  \x9C %1s%2lu.%02lu";AFF_FARE_INT;AFF_FARE_DEC;AFF_LIBELLE1;AFF_SALEPAID_INT;AFF_SALEPAID_DEC;AFF_LIBELLE3;AFF_PAID_INT;AFF_PAID_DEC
+
+$AFF_PAY_FOREIGN
+A"\x9C%1s%2lu.%02lu CLASS %d\x0D CURRENCY";AFF_LIBELLE3;AFF_PAID_INT;AFF_PAID_DEC;AFF_CLASS
+
+$AFF_PAY_CHEQUE
+A"\x9C %2lu.%02lu CLASS %d\x0D  CHEQUE";AFF_PAID_INT;AFF_PAID_DEC;AFF_CLASS
+
+$AFF_PAY_TAG_LOW
+A"\x9C %2lu.%02lu CLASS %d\x0DLOW CREDIT";AFF_FARE_INT;AFF_FARE_DEC;AFF_CLASS
+
+$AFF_PAY_TAG_TRIP
+A"\x9C %2lu.%02lu CLASS %d\x0D TRIP TAG";AFF_FARE_INT;AFF_FARE_DEC;AFF_CLASS
+
+$AFF_PAY_TAG_FREE
+A"\x0D CLASS %d\x0DEXEMPT TAG";AFF_CLASS
+
+$AFF_PAY_TAG_SEASON
+A"\x0D CLASS %d\x0DSEASON TAG";AFF_CLASS
+
+$AFF_PAY_BANCAIRE
+A"\x9C %2lu.%02lu   CARD\x0DTHANK YOU";AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_BADGE_BAD_MISC
+A"\x0D   TAG\x0D  ERROR"
+
+$AFF_TAG_DISABLED
+A"\x0D   TAG\x0D  ERROR"
+
+$AFF_TAG_EXHAUSTED
+A"\x0D   TAG\x0D  LOCKED"
+
+$AFF_BADGE_NOIRE_2
+A"\x0D   TAG\x0D  LOCKED"
+
+$AFF_BADGE_NOIRE_7
+A"\x0D   TAG\x0DSUSPENDED"
+
+$AFF_BADGE_NOIRE_8
+A"\x0D   TAG\x0D  LOCKED"
+
+$AFF_TTM_BAD_MISC
+A"\x0D   CARD\x0D  ERROR"
+
+$AFF_TTM_BAD_READ
+A"\x0D   CARD\x0D  ERROR"
+
+$AFF_CARTE_PERIMEE_RENDU
+A"\x0D   CARD\x0D  EXPIRED"
+
+$AFF_CARTE_NOIRE_2
+A"\x0D   CARD\x0D  LOCKED"
+
+$AFF_CARTE_NOIRE_7
+A"\x0D   CARD\x0DSUSPENDED"
+
+$AFF_CARTE_NOIRE_8
+A"\x0D   CARD\x0D  LOCKED"
+
+$AFF_GATE_OVERRIDE
+A"\x0D  PLEASE  \x0D   WAIT   "
+
+$AFF_RJCT_COIN
+A"\x0D REJECTED \x0D  COINS   "
+
+$AFF_PAY_CONVOY
+A"\x9C %2lu.%02lu  CLASS %d   \x9C %3lu.%02lu";AFF_FARE_INT;AFF_FARE_DEC;AFF_CLASS;AFF_PAID_INT;AFF_PAID_DEC
+
+$AFF_PAY_CONVOY_CASH
+A"\x9C%3lu.%02lu  CONVOY\x0D CASH PAID";AFF_PAID_INT;AFF_PAID_DEC
+
+$AFF_PAY_CONVOY_SHORT
+A"\x9C%3lu.%02lu  CONVOY\x0DSHORT PAID";AFF_PAID_INT;AFF_PAID_DEC
+
+$AFF_PAY_CONVOY_CHEQUE
+A"\x9C%3lu.%02lu  CONVOY\x0D  CHEQUE";AFF_PAID_INT;AFF_PAID_DEC
+
+$AFF_PAY_CONVOY_FOREIGN
+A"\x9C%3lu.%02lu  CONVOY\x0D CURRENCY";AFF_PAID_INT;AFF_PAID_DEC
+
+$AFF_PAY_CONVOY_FREE
+A"\x0D  CONVOY  \x0D   FREE   "
+
+$AFF_BT_CARD_DECLINED
+A"\x0D   CARD\x0D DECLINED"
+
+$AFF_BT_CARD_ERROR
+A"\x0D   CARD\x0D  ERROR"
+
+$AFF_BT_PLS_WAIT
+A"\x9C %2lu.%02lu CLASS %d\x0D PLS WAIT";AFF_FARE_INT;AFF_FARE_DEC;AFF_CLASS
+
+$AFF_BT_TRS_END
+A"\x9C %2lu.%02lu CLASS %d\x0DTAKE CARD";AFF_FARE_INT;AFF_FARE_DEC;AFF_CLASS
+
+$AFF_BT_REINIT
+A"\x0D   CARD\x0D PLS WAIT"
+
+#END
+

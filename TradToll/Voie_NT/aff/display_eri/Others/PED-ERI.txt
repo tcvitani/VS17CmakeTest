@@ -1,0 +1,494 @@
+* For NOMISMA display
+* File to choose the messages of the user display,
+* According to the sequence of passage of the vehicle.
+* Each line is made up of a label delimited by quotation marks
+* And possibly containing one or more printing formatters
+* For one or more variable(s).
+*
+* This label will be displayed on both lines of the display
+* Note: Format and font of the line depends of length formatters!
+* Example: %2lu formatter always takes 2 characters on the displayed line
+*
+* The pass sequence is identified by a previous keyword of $
+* Known keywords are:
+*   AFF_SOFT_REV        // Software version
+*   AFF_YEAR            //  \
+*   AFF_MONTH           //  |
+*   AFF_DAY             //  |  Date and
+*   AFF_HOUR            //  |  time
+*   AFF_MINUTE          //  |
+*   AFF_SECOND          //  /
+*   AFF_PAYMENT_TYPE    // Payment type
+*   AFF_CLASS           // Vehicle class
+*   AFF_FARE_INT        // Associated tariff (integer part)
+*   AFF_FARE_DEC        // Associated rate (decimal part)
+*   AFF_PAID_INT        // Amount paid (integer part)
+*   AFF_PAID_DEC        // Amount paid (decimal part)
+*   AFF_SALEFARE_INT    // Sale tariff (integer part)
+*   AFF_SALEFARE_DEC    // Sale tariff (integer part)
+*   AFF_SALEPAID_INT    // Amount Paid for Sale (integer part)
+*   AFF_SALEPAID_DEC    // Amount paid for sale (decimal part)
+*   AFF_LIBELLE1        // Dynamic label
+*   AFF_LIBELLE2        // Dynamic label
+*   AFF_LIBELLE3        // Dynamic label
+*
+* A line of the display corresponds to	… 10 characters in police A
+*
+* Lines have to be filled with spaces to the end!
+*
+* This display has some specialized functions:
+* 	- to display the time, place in text '**H'
+*	- to display the date, place in text '**D'
+*	  The time display requires five characters and date eight.
+*	  It is therefore necessary to leave 2 spaces behind the **H and 5 behind the **D.
+*	  If some characters are sent instead of spaces, they will not be displayed.
+*	  If they are sent later, the date or time will no longer be displayed.
+*
+*	- to make some characters flash, send '\x05' before text to flash and '\x06' after text to flash.
+*	  Example: In text "FLASH TEST" if word 'FLASH' is wanted to flash then string will look like "\x05FLASH\x06 TEST".
+*	  There can be any combination of flashing (single letter, part of word, single word, whole row, etc.)
+*
+*	- to send pound character, type \x9C in place of it.
+*	- if 'enter' is wanted to send in one line instead of writing into separate lines type \x0D in place of it,
+*	- ex:
+*		$AFF_TEST0
+*		*"<---------------------------->"
+*		A"FIRST ROW\x0DSECOND ROW\x0DTHIRD ROW"
+*
+* The separation of the lines is not indicated in the label.
+*
+* Example of a message for a closed lane:
+* $CLOSED
+* "<-------->"
+*A"  CLOSED  "
+*
+* ANY LINE BEGINNING BY * IS CONSIDERED LINE OF COMMENTS
+* AND IS THEREFORE IGNORED.
+
+#MESSAGES
+
+$AFF_TEST1
+*"<-------->"
+A"TEST \x05FIRST\x06"
+
+$AFF_TEST2
+*"<-------->"
+*"<-------->"
+A"HOUR:\x05**H  \x06"
+A"d:**D     "
+
+$AFF_TEST3
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"HOUR:**H  "
+A"**D       "
+A"dd/mm/yy  "
+
+$AFF_CLEAR_SCREEN
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"          "
+A"          "
+A"          "
+
+$AFF_LANE_CLOSED
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"   LANE   "
+A"  CLOSED  "
+
+$AFF_CABINET_CLOSED
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"  CABINET "
+A"  CLOSED  "
+A"          "
+
+$AFF_LANE_OPEN
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"   LANE   "
+A"   OPEN   "
+A"          "
+
+$AFF_LANE_OPEN_MNTC
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"  MAINT.  "
+A"   MODE   "
+A"          "
+
+$AFF_LANE_OPEN_DEG
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A" DEGRADED "
+A"   MODE   "
+A"          "
+
+$AFF_LANE_OPEN_ETC
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"   LANE   "
+A"   OPEN   "
+A"          "
+
+$AFF_LANE_OPEN_FREE
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"   FREE   "
+A"  PASSAGE "
+A"          "
+
+$VEHICLE_CLASS
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"          "
+A"          "
+
+$AFF_CLASS_PAY_FF
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"          "
+
+$AFF_CLASS_PAY_FOREIGN
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"          "
+
+$AFF_PAY_AMOUNT_DUE
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"DUE:%3lu.%02lu€";AFF_AMOUNT_DUE_INT;AFF_AMOUNT_DUE_DEC
+
+$AFF_PAY_TOKEN_REMAIN
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"TOKENS:x%lu ";AFF_AMOUNT_DUE_INT
+
+$AFF_CLASS_ZERO_FARE
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"\x9C 0.00    "
+A"%-10s";AFF_CLASS
+A"          "
+
+$AFF_PAY_CASH
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_PAY_CASH_FF
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_PAY_CASH_FOREIGN
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_PAY_CHEQUE
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_PAY_BANCAIRE
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_PAY_SMART
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_PAY_SMART_FREE
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_PAY_GRATUIT
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_PAY_CNP
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_PAY_EMERGENCY
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_PAY_CONVOY
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"   PAID   "
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   "AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_PAY_CONVOY_CASH
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_PAY_CONVOY_FREE
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_BYE_BYE
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_BYE_DCP
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_BYE_DCP_HS
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"THANK YOU "
+A" HAVE A   "
+A"SAFE TRIP "
+
+$AFF_TTM_BAD_MISC
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"CARD ERROR"
+
+$AFF_TTM_BAD_READ
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"CARD ERROR"
+
+$AFF_CARTE_PERIMEE_RENDU
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A" EXPIRED  "
+
+$AFF_TTM_BLACKLIST_LOST
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A" BLOCKED  "
+
+$AFF_TTM_CARD_REFUSED
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"  REFUSED "
+
+$AFF_CARD_SUSPENDED
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"SUSPENDED "
+
+$AFF_TTM_LOW_BALANCE
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"SAFE TRIP "
+
+$AFF_BADGE_LOW_BALANCE
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"SAFE TRIP "
+
+$AFF_BADGE_NOIRE
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"SUSPENDED "
+
+$AFF_BADGE_REFUSED
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"TAG REFUSD"
+
+$AFF_BADGE_ERROR
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"TAG ERROR!"
+
+$AFF_BADGE_LOST
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"TAG BLOCKD"
+
+$AFF_POS_BT_SELECT_CARD
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"CARD TYPE?"
+
+$AFF_POS_BT_SELECT_PRINT_RP
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A" RECEIPT? "
+
+$AFF_POS_BT_CARD_DECLINED
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A" REFUSED!  "
+
+$AFF_POS_BT_CARD_CANCELED
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A" CANCELED "
+
+$AFF_POS_BT_CARD_ERROR
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"CARD ERROR"
+
+$AFF_POS_BT_CARD_TIMEOUT
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A" TIMEOUT  "
+
+$AFF_POS_BT_PLS_WAIT
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"   WAIT   "
+
+$AFF_POS_BT_REMOVE_CARD
+*"<-------->"
+*"<-------->"
+*"<-------->"
+A"%-10s";AFF_CLASS
+A"\x9C%3lu.%02lu   ";AFF_FARE_INT;AFF_FARE_DEC
+A"TAKE CARD "
+
+#END
