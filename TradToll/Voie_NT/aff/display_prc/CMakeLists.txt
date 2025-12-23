@@ -91,24 +91,6 @@ set_target_properties(CSR::Aff_util PROPERTIES
 					  	Release
 )		
 
-add_library(CSR::conv SHARED IMPORTED GLOBAL)
-set_target_properties(CSR::conv PROPERTIES
-					  INTERFACE_INCLUDE_DIRECTORIES
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/convert/includes/"
-					  IMPORTED_IMPLIB_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/convert/out/build/release/csr_convert_VS17_x64_r.lib"
-					  IMPORTED_LOCATION_RELEASE	
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/convert/out/build/release/csr_convert_VS17_x64_r.dll"
-					  IMPORTED_IMPLIB_DEBUG		
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/convert/out/build/debug/csr_convert_VS17_x64.lib"
-					  IMPORTED_LOCATION_DEBUG	
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/convert/out/build/debug/csr_convert_VS17_x64.dll"
-					  MAP_IMPORTED_CONFIG_MINSIZEREL
-					  	Release
-					  MAP_IMPORTED_CONFIG_RELWITHDEBINFO
-					  	Release
-)			
-
 add_library(CSR::Noy SHARED IMPORTED GLOBAL)
 set_target_properties(CSR::Noy PROPERTIES
 					  INTERFACE_INCLUDE_DIRECTORIES
@@ -257,7 +239,6 @@ target_link_libraries(${PROJECT_LIB}
 	  CSR::ser
 	  CSR::Srv
 	  CSR::Trc
-	  CSR::conv
 )
 
 #add_subdirectory(tests)

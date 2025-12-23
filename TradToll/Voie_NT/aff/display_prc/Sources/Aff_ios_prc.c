@@ -25,7 +25,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <convert.h>
 #include <noyau.h>
 #include <serie.h>
 #include <debug.h>
