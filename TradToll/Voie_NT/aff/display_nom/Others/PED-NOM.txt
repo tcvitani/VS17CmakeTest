@@ -1,0 +1,270 @@
+* For NOMISMA display
+* File to choose the messages of the user display,
+* According to the sequence of passage of the vehicle.
+* Each line is made up of a label delimited by quotation marks
+* And possibly containing one or more printing formatters
+* For one or more variable (s).
+*
+* This label will be displayed on both lines of the display
+* Note: Format and font of the line depends of length formatters!
+* Example: %2lu formatter always takes 2 characters on the displayed line
+*
+* The pass sequence is identified by a previous keyword of $
+* Known keywords are:
+*   AFF_SOFT_REV        // Software version
+*   AFF_YEAR            //  \
+*   AFF_MONTH           //  |
+*   AFF_DAY             //  |  Date and
+*   AFF_HOUR            //  |  time
+*   AFF_MINUTE          //  |
+*   AFF_SECOND          //  /
+*   AFF_PAYMENT_TYPE    // Payment type
+*   AFF_CLASS           // Vehicle class
+*   AFF_FARE_INT        // Associated tariff (integer part)
+*   AFF_FARE_DEC        // Associated rate (decimal part)
+*   AFF_PAID_INT        // Amount paid (integer part)
+*   AFF_PAID_DEC        // Amount paid (decimal part)
+*   AFF_SALEFARE_INT    // Sale tariff (integer part)
+*   AFF_SALEFARE_DEC    // Sale tariff (integer part)
+*   AFF_SALEPAID_INT    // Amount Paid for Sale (integer part)
+*   AFF_SALEPAID_DEC    // Amount paid for sale (decimal part)
+*   AFF_LIBELLE1        // Dynamic label
+*   AFF_LIBELLE2        // Dynamic label
+*   AFF_LIBELLE3        // Dynamic label
+*
+* A line of the display corresponds to	… 40 characters in police A (One string, first 20 characters is in first row, last 20 characters is in second row)
+*                                  		… 15 characters in police B
+*                                  		… 30 characters in police C (One string, first 6 characters is big caps, next 12 characters is in first row, last 12 characters is in second row)
+* Lines have to be filled with spaces to the end!
+*
+* The separation of the lines is not indicated in the label.
+*
+* Note: -Pound character for this display is A3h, euro character is 80h.
+*
+* Example of a message for a closed lane:
+* $CLOSED
+* "<------------->"
+* B" CLOSED LANE  "
+*
+* ANY LINE BEGINNING BY * IS CONSIDERED LINE OF COMMENTS
+* AND IS THEREFORE IGNORED.
+
+#MESSAGES
+
+$AFF_CLEAR_SCREEN
+*"<------------->"
+B"               "
+
+$AFF_POUND_EURO_CHECK_15
+*"<------------->"
+B"POUND £, EURO €"
+
+$AFF_LANE_CLOSED
+*"<------------->"
+B"  LANE CLOSED  "
+
+$AFF_CABINET_CLOSED
+*"<------------->"
+B"CABINET CLOSED "
+
+$AFF_LANE_OPEN
+*"<------------->"
+B"   LANE OPEN   "
+
+$AFF_LANE_OPEN_MNTC
+*"<------------->"
+B"  MAINT. MODE  "
+
+$AFF_LANE_OPEN_DEG
+*"<------------->"
+B" DEGRADED MODE "
+
+$AFF_LANE_OPEN_ETC
+*"<------------->"
+B"   LANE OPEN   "
+
+$AFF_LANE_OPEN_FREE
+*"<------------->"
+B" FREE PASSAGE  "
+
+$VEHICLE_CLASS
+*"<------------->"
+B"%-12s   ";AFF_CLASS
+
+$AFF_POUND_EURO_CHECK_40
+*"<------------------><------------------>"
+A"POUND CHAR CHECK - £EURO CHAR. CHECK - €"
+
+$AFF_CLASS_PAY_FF
+*"<------------------><------------------>"
+A"%-12s        $%3lu.%02lu              ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_CLASS_PAY_FOREIGN
+*"<------------------><------------------>"
+A"%-12s        $%3lu.%02lu              ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_PAY_AMOUNT_DUE
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02luAMOUNT DUE:  $%3lu.%02lu";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC;AFF_AMOUNT_DUE_INT;AFF_AMOUNT_DUE_DEC
+
+$AFF_PAY_TOKEN_REMAIN
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02luTOKENS:      x%lu     ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC;AFF_AMOUNT_DUE_INT
+
+$AFF_POUND_EURO_CHECK_30
+*"<----><----------><---------->"
+C"£€    1ST CHAR - £2ND CHAR - €"
+
+$AFF_CLASS_ZERO_FARE
+*"<----><----------><---------->"
+C"$0.00 %-12s            ";AFF_CLASS
+
+$AFF_PAY_CASH
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_PAY_CASH_FF
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_PAY_CASH_FOREIGN
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_PAY_CHEQUE
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_PAY_BANCAIRE
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_PAY_SMART
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_PAY_SMART_FREE
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_PAY_NO_CHARGE
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_PAY_GRATUIT
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_PAY_CNP
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_PAY_EMERGENCY
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_PAY_CONVOY
+*"<----><----------><---------->"
+C"PAID  %-12s     $%3lu.%02lu";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_PAY_CONVOY_CASH
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_PAY_CONVOY_FREE
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_BYE_BYE
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_BYE_DCP
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_BYE_DCP_HS
+*"<------------------><------------------>"
+A"     THANK YOU      HAVE A SAFE JOURNEY "
+
+$AFF_TTM_BAD_MISC
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu     CARD ERROR     ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_TTM_BAD_READ
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu     CARD ERROR     ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_CARTE_PERIMEE_RENDU
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu    CARD EXPIRED    ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_TTM_BLACKLIST_LOST
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02luCARD BLOCKED - LOST ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_TTM_CARD_REFUSED
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu    CARD REFUSED    ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_CARD_SUSPENDED
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu   CARD SUSPENDED   ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_TTM_LOW_BALANCE
+*"<------------------><------------------>"
+A"PAID: $%3lu.%02lu       THANK YOU, SAFE TRIP";AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_BADGE_LOW_BALANCE
+*"<------------------><------------------>"
+A"PAID: $%3lu.%02lu       THANK YOU, SAFE TRIP";AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_BADGE_NOIRE
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu   TAG SUSPENDED    ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_BADGE_REFUSED
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu    TAG REFUSED     ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_BADGE_ERROR
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu     TAG ERROR      ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_BADGE_LOST
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu TAG BLOCKED - LOST ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_POS_BT_SELECT_CARD
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu  SELECT CARD TYPE  ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_POS_BT_SELECT_PRINT_RP
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02luPRINT RECEIPT YES/NO";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_POS_BT_CARD_DECLINED
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu    CARD REFUSED    ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_POS_BT_CARD_CANCELED
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu  CANCELED BY USER  ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_POS_BT_CARD_ERROR
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu     CARD ERROR     ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_POS_BT_CARD_TIMEOUT
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu    TIME EXPIRED    ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_POS_BT_PLS_WAIT
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu    PLEASE WAIT     ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+$AFF_POS_BT_REMOVE_CARD
+*"<------------------><------------------>"
+A"%-12s $%3lu.%02lu PLEASE REMOVE CARD ";AFF_CLASS;AFF_FARE_INT;AFF_FARE_DEC
+
+#END
