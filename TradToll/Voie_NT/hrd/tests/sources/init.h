@@ -62,11 +62,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#ifdef INIT_DEF
+
 #include <memclass.h>
-#else
-#include <export.h>
-#endif
+
 
 /*--------------- RESERVED: ---------------*/
 
@@ -147,32 +145,11 @@ enum
 
 /*--------------- FUNCTIONS: ---------------*/
 
-void main(void);
 
 /*--------------- VARIABLES: ---------------*/
 
 
-/* Tableau donnant le nombre de messages pouvant attendre  */
-/* dans chaque boite aux lettres.                          */
-static short int NumSegment [NB_BL+1] =
-{
-   -1,      /* BL_TACHE1      */
-   -1,      /* BL_TACHE2      */
-   -1,
-   -1,
-   -1,
-   0        /* Fin du tableau */
-
-};
-
-
-/* Taille de chaque pool utilise par HRD */
-static unsigned long MemSize [NB_POOL] =
-{
-   20*1024,        /* Taille du POOL1  */
-   8*1024,         /* Taille du POOL2  */
-};
-
 PUBLIC short int etat_logiciel;
 PUBLIC short int acq_fin;
+
 #endif

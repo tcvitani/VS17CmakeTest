@@ -144,13 +144,13 @@ set_target_properties(CSR::BitBl PROPERTIES
 					  INTERFACE_INCLUDE_DIRECTORIES
 					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/bitbl/includes/"
 					  IMPORTED_IMPLIB_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/bitbl/out/build/x64-release/csr_bitbl_VS17_x64_r.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/bitbl/out/build/release/csr_bitbl_VS17_x64_r.lib"
 					  IMPORTED_LOCATION_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/bitbl/out/build/x64-release/csr_bitbl_VS17_x64_r.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/bitbl/out/build/release/csr_bitbl_VS17_x64_r.dll"
 					  IMPORTED_IMPLIB_DEBUG
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/bitbl/out/build/x64-debug/csr_bitbl_VS17_x64.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/bitbl/out/build/debug/csr_bitbl_VS17_x64.lib"
 					  IMPORTED_LOCATION_DEBUG
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/bitbl/out/build/x64-debug/csr_bitbl_VS17_x64.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/bitbl/out/build/debug/csr_bitbl_VS17_x64.dll"
 					  MAP_IMPORTED_CONFIG_MINSIZEREL
 					  	Release
 					  MAP_IMPORTED_CONFIG_RELWITHDEBINFO
@@ -163,13 +163,13 @@ set_target_properties(CSR::Des PROPERTIES
 					  INTERFACE_INCLUDE_DIRECTORIES
 					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/des/includes/"
 					  IMPORTED_IMPLIB_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/des/out/build/x64-release/csr_des_VS17_x64_r.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/des/out/build/release/csr_des_VS17_x64_r.lib"
 					  IMPORTED_LOCATION_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/des/out/build/x64-release/csr_des_VS17_x64_r.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/des/out/build/release/csr_des_VS17_x64_r.dll"
 					  IMPORTED_IMPLIB_DEBUG
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/des/out/build/x64-debug/csr_des_VS17_x64.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/des/out/build/debug/csr_des_VS17_x64.lib"
 					  IMPORTED_LOCATION_DEBUG
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/des/out/build/x64-debug/csr_des_VS17_x64.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/des/out/build/debug/csr_des_VS17_x64.dll"
 					  MAP_IMPORTED_CONFIG_MINSIZEREL
 					  	Release
 					  MAP_IMPORTED_CONFIG_RELWITHDEBINFO
@@ -182,13 +182,13 @@ set_target_properties(CSR::Queuemt PROPERTIES
 					  INTERFACE_INCLUDE_DIRECTORIES
 					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/queue/includes/"
 					  IMPORTED_IMPLIB_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/queue/out/build/x64-release/csr_queuemt_VS17_x64_r.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/queue/out/build/release/csr_queuemt_VS17_x64_r.lib"
 					  IMPORTED_LOCATION_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/queue/out/build/x64-release/csr_queuemt_VS17_x64_r.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/queue/out/build/release/csr_queuemt_VS17_x64_r.dll"
 					  IMPORTED_IMPLIB_DEBUG
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/queue/out/build/x64-debug/csr_queuemt_VS17_x64.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/queue/out/build/debug/csr_queuemt_VS17_x64.lib"
 					  IMPORTED_LOCATION_DEBUG
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/queue/out/build/x64-debug/csr_queuemt_VS17_x64.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/queue/out/build/debug/csr_queuemt_VS17_x64.dll"
 					  MAP_IMPORTED_CONFIG_MINSIZEREL
 					  	Release
 					  MAP_IMPORTED_CONFIG_RELWITHDEBINFO
@@ -200,13 +200,13 @@ set_target_properties(CSR::Timermt PROPERTIES
 					  INTERFACE_INCLUDE_DIRECTORIES
 					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/timer/includes/"
 					  IMPORTED_IMPLIB_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/timer/out/build/x64-release/csr_timermt_VS17_x64_r.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/timer/out/build/release/csr_timermt_VS17_x64_r.lib"
 					  IMPORTED_LOCATION_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/timer/out/build/x64-release/csr_timermt_VS17_x64_r.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/timer/out/build/release/csr_timermt_VS17_x64_r.dll"
 					  IMPORTED_IMPLIB_DEBUG
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/timer/out/build/x64-debug/csr_timermt_VS17_x64.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/timer/out/build/debug/csr_timermt_VS17_x64.lib"
 					  IMPORTED_LOCATION_DEBUG
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/timer/out/build/x64-debug/csr_timermt_VS17_x64.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/timer/out/build/debug/csr_timermt_VS17_x64.dll"
 					  MAP_IMPORTED_CONFIG_MINSIZEREL
 					  	Release
 					  MAP_IMPORTED_CONFIG_RELWITHDEBINFO

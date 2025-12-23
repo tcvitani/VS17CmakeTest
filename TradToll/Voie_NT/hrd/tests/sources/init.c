@@ -65,6 +65,27 @@
 
 short int priorite_tache = THREAD_PRIORITY_NORMAL;
 
+/* Tableau donnant le nombre de messages pouvant attendre  */
+/* dans chaque boite aux lettres.                          */
+static short int NumSegment[NB_BL + 1] =
+{
+   -1,      /* BL_TACHE1      */
+   -1,      /* BL_TACHE2      */
+   -1,
+   -1,
+   -1,
+   0        /* Fin du tableau */
+
+};
+
+
+/* Taille de chaque pool utilise par HRD */
+static unsigned long MemSize[NB_POOL] =
+{
+   20 * 1024,        /* Taille du POOL1  */
+   8 * 1024,         /* Taille du POOL2  */
+};
+
 /*--------------- CODE: ---------------*/
 /**/
 /*
@@ -82,7 +103,7 @@ short int priorite_tache = THREAD_PRIORITY_NORMAL;
 * $F_FCTN
 */
 
-void main(void)
+int  main(int argc, char* argv[])
 {
    short int         rc;
    noyau_bal_id      bl;
@@ -133,7 +154,7 @@ void main(void)
 
    printf("LOGICIEL SORTIE\n");
 
-   return ;
+   return 0;
 }
 
 /*======================= THAT'S ALL FOLKS ==============================*/

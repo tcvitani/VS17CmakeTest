@@ -102,13 +102,13 @@ set_target_properties(CSR::Aff_util PROPERTIES
 					  INTERFACE_INCLUDE_DIRECTORIES
 					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/aff/aff_util/includes/"
 					  IMPORTED_IMPLIB_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/aff/aff_util/out/build/x64-release/csr_aff_util_VS17_x64_r.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/aff/aff_util/out/build/release/csr_aff_util_VS17_x64_r.lib"
 					  IMPORTED_LOCATION_RELEASE										 
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/aff/aff_util/out/build/x64-release/csr_aff_util_VS17_x64_r.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/aff/aff_util/out/build/release/csr_aff_util_VS17_x64_r.dll"
 					  IMPORTED_IMPLIB_DEBUG											 
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/aff/aff_util/out/build/x64-debug/csr_aff_util_VS17_x64.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/aff/aff_util/out/build/debug/csr_aff_util_VS17_x64.lib"
 					  IMPORTED_LOCATION_DEBUG										 
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/aff/aff_util/out/build/x64-debug/csr_aff_util_VS17_x64.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/aff/aff_util/out/build/debug/csr_aff_util_VS17_x64.dll"
 					  MAP_IMPORTED_CONFIG_MINSIZEREL
 					  	Release
 					  MAP_IMPORTED_CONFIG_RELWITHDEBINFO
@@ -138,13 +138,13 @@ set_target_properties(CSR::fonct_c PROPERTIES
 					  INTERFACE_INCLUDE_DIRECTORIES
 					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fonct_c/includes/"
 					  IMPORTED_IMPLIB_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fonct_c/out/build/x64-release/csr_fonct_c_VS17_x64_r.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fonct_c/out/build/release/csr_fonct_c_VS17_x64_r.lib"
 					  IMPORTED_LOCATION_RELEASE	
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fonct_c/out/build/x64-release/csr_fonct_c_VS17_x64_r.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fonct_c/out/build/release/csr_fonct_c_VS17_x64_r.dll"
 					  IMPORTED_IMPLIB_DEBUG		
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fonct_c/out/build/x64-debug/csr_fonct_c_VS17_x64.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fonct_c/out/build/debug/csr_fonct_c_VS17_x64.lib"
 					  IMPORTED_LOCATION_DEBUG	
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fonct_c/out/build/x64-debug/csr_fonct_c_VS17_x64.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fonct_c/out/build/debug/csr_fonct_c_VS17_x64.dll"
 					  MAP_IMPORTED_CONFIG_MINSIZEREL
 					  	Release
 					  MAP_IMPORTED_CONFIG_RELWITHDEBINFO
@@ -210,13 +210,13 @@ set_target_properties(CSR::fic_gere PROPERTIES
 					  INTERFACE_INCLUDE_DIRECTORIES
 					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fic_gere/includes/"
 					  IMPORTED_IMPLIB_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fic_gere/out/build/x64-release/csr_fic_gere_VS17_x64_r.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fic_gere/out/build/release/csr_fic_gere_VS17_x64_r.lib"
 					  IMPORTED_LOCATION_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fic_gere/out/build/x64-release/csr_fic_gere_VS17_x64_r.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fic_gere/out/build/release/csr_fic_gere_VS17_x64_r.dll"
 					  IMPORTED_IMPLIB_DEBUG
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fic_gere/out/build/x64-debug/csr_fic_gere_VS17_x64.lib"
+					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fic_gere/out/build/debug/csr_fic_gere_VS17_x64.lib"
 					  IMPORTED_LOCATION_DEBUG
-					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fic_gere/out/build/x64-debug/csr_fic_gere_VS17_x64.dll"
+					  	"${CMAKE_SOURCE_DIR}/../../../Voie_NT/fic_gere/out/build/debug/csr_fic_gere_VS17_x64.dll"
 					  MAP_IMPORTED_CONFIG_MINSIZEREL
 					  	Release
 					  MAP_IMPORTED_CONFIG_RELWITHDEBINFO

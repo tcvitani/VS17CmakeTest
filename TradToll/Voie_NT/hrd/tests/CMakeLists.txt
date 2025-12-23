@@ -8,9 +8,9 @@ set(TEST_EXE "csr_${PROJECT_NAME}_vs17_x64")
 #configure_file("${TEST_RESOURCES_DIR}/des_res.rc.in" TestResources.rc @ONLY)
 
 # Create the library
-add_executable(${TEST_EXE}  
+add_executable(${TEST_EXE}
 	${CMAKE_CURRENT_SOURCE_DIR}/sources/init.h
-	${CMAKE_CURRENT_SOURCE_DIR}/sources/init.C
+	${CMAKE_CURRENT_SOURCE_DIR}/sources/init.c
 	${CMAKE_CURRENT_SOURCE_DIR}/sources/simu1.h
 	${CMAKE_CURRENT_SOURCE_DIR}/sources/simu1.c
 	#${CMAKE_CURRENT_BINARY_DIR}/TestResources.rc 
@@ -32,10 +32,10 @@ target_link_libraries(${TEST_EXE}
 
 )
 
-target_compile_definitions(${TEST_EXE}
-PRIVATE
-    INIT_DEF # Must be PRIVATE to be defined only during BUILD
-)
+#target_compile_definitions(${TEST_EXE}
+#PRIVATE
+#    INIT_DEF # Must be PRIVATE to be defined only during BUILD
+#)
 
 
 
