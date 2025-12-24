@@ -1,0 +1,38 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "csr_EmiTest_vs17_x64_r.exe (tests\\csr_EmiTest_vs17_x64_r.exe)",
+      "name": "csr_EmiTest_vs17_x64_r.exe (tests\\csr_EmiTest_vs17_x64_r.exe)",
+      "currentDir": "C:/csr/exe",
+      "args": [
+        ""
+      ],
+      "env": {
+        "DEBUG_LOGGING_LEVEL": "trace;info",
+        "ENABLE_TRACING": "true",
+        "PATH": "%PATH%;C:\\csr\\exe;"
+      }
+
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "csr_EmiTest_vs17_x64.exe (tests\\csr_EmiTest_vs17_x64.exe)",
+      "name": "csr_EmiTest_vs17_x64.exe (tests\\csr_EmiTest_vs17_x64.exe)",
+      "currentDir": "C:/csr/exe",
+      "args": [
+        ""
+      ],
+      "env": {
+        "DEBUG_LOGGING_LEVEL": "trace;info",
+        "ENABLE_TRACING": "true",
+        "PATH": "%PATH%;C:\\csr\\exe;"
+      }
+
+    }
+  ]
+}
