@@ -1,0 +1,42 @@
+
+Changes between 11.0.0 and 10.0.0
+=================================
+
+Version 10.0.0 is written with assumption that
+only one instance of the library will be used.
+Single instance operate with files in a directory defined with these registry keys:
+ CSRoute\LaneController\Config\PCS Communication\Directories\backup_path
+ CSRoute\LaneController\Config\PCS Communication\Directories\disk_path
+ CSRoute\LaneController\Config\PCS Communication\Directories\local_drive
+
+
+With Version 11.x it is possible to run two or more instances independently,
+each with its own configuration.
+
+To almost all functions in msg_fic.h, new argument "struct_fic_paths *fic_paths" is appended to the argument list.
+This argument is a pointer to the structure with configuration parameters.
+
+User of the library shall create this structure and fill it with correct values. 
+
+If function from msg_fic.h is invoked with non-NULL *fic_paths argument, 
+ library will use values from struct_fic_paths structure instead of those loaded from registry.
+
+Example:
+
+RechercherFichier(nbPackage, FICHIER_SANS_EXTENSION, szBuffer, &GLOB[insId].fic_paths);
+
+
+
+Migration from previous version to 11.0 with minimal code changes
+-----------------------------------------------------------------
+If NULL is passed to struct_fic_paths *fic_paths argument, function will use configuration values
+loaded from registry, just like old versions.
+
+Example:
+
+old code (for version 10.x):
+RechercherFichier(nbPackage, FICHIER_SANS_EXTENSION, szBuffer);
+
+new code (for version 11.x):
+RechercherFichier(nbPackage, FICHIER_SANS_EXTENSION, szBuffer, NULL);
+
