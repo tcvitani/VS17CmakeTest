@@ -1,0 +1,133 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Croatian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HRV)
+#ifdef _WIN32
+LANGUAGE LANG_CROATIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 336, 226
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Day"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,279,35,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,279,56,50,14
+    EDITTEXT        IDC_FROM_YEAR,55,59,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Year",IDC_STATIC,10,59,40,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_FROM_MONTH,55,76,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Month",IDC_STATIC,10,76,40,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_FROM_DAY,55,93,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Day",IDC_STATIC,10,93,40,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_FROM_HOUR,55,110,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Hour",IDC_STATIC,10,110,40,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_FROM_MINUTE,55,127,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Minute",IDC_STATIC,10,127,40,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_FROM_SECOND,55,144,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Second",IDC_STATIC,10,144,40,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_FROM_MILLISECOND,55,161,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    RTEXT           "Millisecond",IDC_STATIC,10,161,40,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TO_YEAR,100,59,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TO_MONTH,100,76,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TO_DAY,100,93,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TO_HOUR,100,110,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TO_MINUTE,100,127,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TO_SECOND,100,144,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TO_MILLISECOND,100,161,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CTEXT           "From",IDC_STATIC,55,41,40,14,SS_CENTERIMAGE
+    CTEXT           "To",IDC_STATIC,100,42,40,14,SS_CENTERIMAGE
+    PUSHBUTTON      "Request reemission",IDC_REQOEST_REEMISSION,55,184,84,14
+    GROUPBOX        "Reemission from date to date",IDC_STATIC,7,32,149,171
+    GROUPBOX        "Reemission by record ID",IDC_STATIC,161,32,102,171
+    EDITTEXT        IDC_EDIT1,218,109,40,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    RTEXT           "Record ID",IDC_STATIC,168,109,41,14,SS_CENTERIMAGE
+    PUSHBUTTON      "Request reemission",IDC_REQOEST_REEMISSION_ID,169,185,
+                    84,14
+    GROUPBOX        "Status",IDC_STATIC,267,88,62,115
+    CONTROL         "Link error",IDC_LINK_ERR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,271,110,49,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Croatian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

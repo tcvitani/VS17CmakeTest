@@ -1,0 +1,2 @@
+add_subdirectory(MaintTool)
+add_subdirectory(WinTest)
