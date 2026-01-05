@@ -41,7 +41,7 @@ target_include_directories(${PROJECT_LIB} PRIVATE
  
 target_compile_definitions(${PROJECT_LIB}
 PRIVATE
-    AFF_UTIL_DEF # Must be PRIVATE to be defined only during BUILD
+    DIO_MUTEX_DEF # Must be PRIVATE to be defined only during BUILD
 	
 )
 
