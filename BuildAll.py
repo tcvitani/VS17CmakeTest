@@ -208,7 +208,7 @@ if (prepareBuildEnviron(aVSenvironment) == 0):
 
     x = CBuildAllRecursively(repository)   
     x.setBuildEnvironment(aVSenvironment)
-    #x.CleanAll()  #enable only to rebuild All
+    #x.CleanAll()  #enable only to clear All
     x.BuildAll()
 else:
     print("Error preparing build environment!")

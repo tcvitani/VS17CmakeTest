@@ -15,7 +15,7 @@
       "env": {
         "DEBUG_LOGGING_LEVEL": "trace;info",
         "ENABLE_TRACING": "true",
-        "PATH": "%PATH%;C:\\csr\\exe;C:\\qt\\6.5.2\\bin;C:\\qt\\6.5.2;"
+        "PATH": "%PATH%;C:\\csr\\exe;C:\\qt\\6.10.1\\bin;C:\\qt\\6.10.1;"
       }
     }
   ]

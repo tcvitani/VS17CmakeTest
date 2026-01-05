@@ -20,7 +20,7 @@ find_package(Qt6 #${QT_VERSION_MAJOR}
 		Core5Compat
 		UiTools
 PATHS
-    $<$<PLATFORM_ID:Windows>:"C:/QT/6.5.2/lib/cmake"
+    $<$<PLATFORM_ID:Windows>:"C:/QT/6.10.1/lib/cmake"
 ) 
 
 qt_standard_project_setup()

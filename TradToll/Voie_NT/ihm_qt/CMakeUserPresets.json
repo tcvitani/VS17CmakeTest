@@ -26,6 +26,34 @@
     },
     {
       "hidden": true,
+      "name": "Qt-Default",
+      "inherits": "QT_6.10.1",
+      "vendor": {
+        "qt-project.org/Default": {
+          "checksum": "HpeSm8GhOdKPLOudmTg5I654i1k="
+        }
+      }
+    },
+    {
+      "hidden": true,
+      "name": "QT_6.10.1",
+      "inherits": "Qt",
+      "environment": {
+        "QTDIR": "C:/QT/6.10.1"
+      },
+      "architecture": {
+        "strategy": "external",
+        "value": "x64"
+      },
+      "generator": "Ninja",
+      "vendor": {
+        "qt-project.org/Version": {
+          "checksum": "BL36DqivSOn4keAkZIQ5BwNNgk0="
+        }
+      }
+    },
+    {
+      "hidden": true,
       "name": "QT_6.5.2",
       "inherits": "Qt",
       "environment": {
@@ -41,39 +69,11 @@
           "checksum": "ExEbmmnNiC8VQCRMtv2LXTfkTA8="
         }
       }
-    },
-    {
-      "hidden": true,
-      "name": "Qt-Default",
-      "inherits": "qt_6.5.2",
-      "vendor": {
-        "qt-project.org/Default": {
-          "checksum": "0ZiJrSLgueRMr668E7FL4Af90RU="
-        }
-      }
-    },
-    {
-      "hidden": true,
-      "name": "qt_6.5.2",
-      "inherits": "Qt",
-      "environment": {
-        "QTDIR": "C:/qt/6.5.2"
-      },
-      "architecture": {
-        "strategy": "external",
-        "value": "x64"
-      },
-      "generator": "Ninja",
-      "vendor": {
-        "qt-project.org/Version": {
-          "checksum": "LXgV03QWfuE+ygjt6bQUJJNvgEM="
-        }
-      }
     }
   ],
   "vendor": {
     "qt-project.org/Presets": {
-      "checksum": "/7wMcs6RcmMKXZ2oEG4OQf2O9Oo="
+      "checksum": "kXHcSwsKnFRHgw8EGFXAt5FztNM="
     }
   }
 }

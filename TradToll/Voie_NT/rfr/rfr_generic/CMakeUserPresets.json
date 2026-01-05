@@ -26,10 +26,10 @@
     },
     {
       "hidden": true,
-      "name": "QT_6.5.2",
+      "name": "QT_6.10.1",
       "inherits": "Qt",
       "environment": {
-        "QTDIR": "C:/QT/6.5.2"
+        "QTDIR": "C:/QT/6.10.1"
       },
       "architecture": {
         "strategy": "external",
@@ -44,10 +44,10 @@
     },
     {
       "hidden": true,
-      "name": "qt_6.5.2",
+      "name": "qt_6.10.1",
       "inherits": "Qt",
       "environment": {
-        "QTDIR": "C:/qt/6.5.2"
+        "QTDIR": "C:/qt/6.10.1"
       },
       "architecture": {
         "strategy": "external",
@@ -63,7 +63,7 @@
     {
       "hidden": true,
       "name": "Qt-Default",
-      "inherits": "QT_6.5.2",
+      "inherits": "QT_6.10.1",
       "vendor": {
         "qt-project.org/Default": {
           "checksum": "hHn5gzUDPtQ1p+M/rARyOegGk2Q="
