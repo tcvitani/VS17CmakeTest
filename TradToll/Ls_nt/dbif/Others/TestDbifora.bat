@@ -1,0 +1,1 @@
+CSR_DBIFORA10_OCI11_TEST_x64.exe /INST=MTTSR /USR=PVUSER /PWD=PVPWD /REQ="DECLARE a varchar2(100); BEGIN a := 'sto'; :outparam:=a; END;" /STRPLC=:outparam 

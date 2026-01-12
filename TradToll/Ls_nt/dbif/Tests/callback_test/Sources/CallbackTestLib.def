@@ -1,0 +1,4 @@
+EXPORTS RetourneIntFromVoid=RetourneIntFromVoid
+EXPORTS RetourneIntFromInt=RetourneIntFromInt
+EXPORTS RetourneIntFromString=RetourneIntFromString
+EXPORTS RetourneIntFromContextInt=RetourneIntFromContextInt
