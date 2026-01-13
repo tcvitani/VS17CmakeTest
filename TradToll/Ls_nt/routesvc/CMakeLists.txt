@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(RouteSvc_VT LANGUAGES C )
+project(RouteSvc LANGUAGES C )
 
 set(PROJECT_EXE "csr_${PROJECT_NAME}_vs17_x64")
  
