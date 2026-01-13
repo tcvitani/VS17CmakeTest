@@ -1,0 +1,60 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ToDBSvc\Parameters]
+"TraceInfoFile"="\\ToDBSvc.TRC"
+"TraceErrorFile"="\\ToDBSvc.ERR"
+"ExceptionRestart"=dword:00000001
+"CmdSvcEnabled"=dword:0000303e
+"MaxLanes"=dword:00000040
+"MaxCmdCnx"=dword:00000005
+"Workers"=dword:00000002
+"ReconnectTime"=dword:000003e8
+"QueueSize"=dword:00000100
+"MaxMsgSize"=dword:00004000
+"BufferSize"=dword:00004000
+"MaxLife"=dword:00000005
+"LifeTime"=dword:00001388
+"MainPolling"=dword:0036ee80
+"ErrorSleep"=dword:00002710
+"SendAgain"=dword:0000ea60
+"PoolScanDelay"=dword:00002710
+"MaxFiles"=dword:00000010
+"MaxFileMsgSize"=dword:00004000
+"MaxFileRetry"=dword:00000020
+"LanesFileOnly"=dword:00000000
+"CycleLow"=dword:0001869f
+"CycleHigh"=dword:05f45a60
+"OnlyBackup"=dword:00000000
+"AcceptNALFiles"=dword:00000000
+"MaxNALErrors"=dword:00000020
+"BaseLaneDir"="C:\\MSGFILES"
+"RejectLaneDir"="C:\\MSGFILES\\ERR"
+"RejectKBQuota"=dword:00002710
+"TCPRoute"=dword:00002fbe
+"DbPoolCount"=dword:00000001
+"AppMsgId"=dword:0000006e
+"DbUser"="comuser"
+"DbPassword"="compwd"
+"DbInstance"="pcs"
+"RouteServer"="UC3278"
+"LanesFile"="C:\\TODBLN.TXT"
+"MsgFilesTrace"="C:\\TODBFILES.LOG"
+"MsgFilesTraceSize"=dword:00989680
+"ContextId"=dword:00000000
+"AutoCopyDir"=""
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ToDBSvc\Parameters\DBRequests]
+"BeginLoadRequest"="DECLARE TrfMode CHAR(1); BEGIN IF :ContextId <> 0 THEN  NULL; END IF; IF :OriginId = 0 THEN  TrfMode := LOAD_MES.c_LOAD_ORIGINE_VOIE; ELSIF :OriginId = 1 THEN  TrfMode := LOAD_MES.c_LOAD_ORIGINE_BACKUP_DISK; ELSIF :OriginId = 2 THEN  TrfMode := LOAD_MES.c_LOAD_ORIGINE_BACKUP_TCO; ELSIF :OriginId = 3 THEN  TrfMode := LOAD_MES.c_LOAD_ORIGINE_NON_VOIE; ELSE  RAISE_APPLICATION_ERROR( -20001, 'OriginId>3' ); END IF; LOAD_MES.BLOAD_LANE_TRANSFERT( :PlazaId, :LaneId, TrfMode ); END;"
+"LoadMesRequest"="BEGIN LOAD_MES.INSERT_MSG( :NbMsg, :Msg ); END;"
+"EndLoadRequest"="BEGIN IF :ErrorFlag <> 0 THEN  LOAD_MES.ELOAD_LANE_TRANSFERT( NULL, LOAD_MES.c_LOAD_ETAT_ERR ); ELSE  LOAD_MES.ELOAD_LANE_TRANSFERT(); END IF; END;"
+"LaneListRequest"="BEGIN IF :ContextId <> 0 THEN NULL; END IF; GEN_DEF.Get_Lane_LS( :PlazaId, :PlazaName, :LaneId, :LaneName); :TotalCount := 0; END;"
+"SetLastRequest"="BEGIN  IF :ContextId <> 0 THEN  NULL; END IF; IF LOAD_MES.SET_LAST_SEQ_LANE( :PlazaId, :LaneId, :SeqNumber ) = 0 THEN  RAISE_APPLICATION_ERROR( -20001, 'SET_LAST_SEQ_LANE' ); END IF; END;"
+"GetLastRequest"="BEGIN IF :ContextId <> 0 THEN  NULL; END IF; IF LOAD_MES.GET_LAST_SEQ_LANE( :PlazaId, :LaneId, :SeqNumber ) = 0 THEN  RAISE_APPLICATION_ERROR( -20001, 'GET_LAST_SEQ_LANE' ); END IF; END;"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ToDBSvc\Parameters\MenuItems]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ToDBSvc\Parameters\MenuItems\0]
+"Command"="cmd"
+"Text"="essai"
+"NoConsole"=dword:00000000
+
