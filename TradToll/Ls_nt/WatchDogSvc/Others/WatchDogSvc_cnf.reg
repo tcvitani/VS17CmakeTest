@@ -1,0 +1,36 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WatchDogSvc\Parameters]
+"TraceInfoFile"="\\WatchDogSvc.TRC"
+"TraceErrorFile"="\\WatchDogSvc.ERR"
+"ExceptionRestart"=dword:00000001
+"CmdSvcEnabled"=dword:00003059
+"MaxCmdCnx"=dword:00000005
+"Workers"=dword:00000003
+"ReconnectTime"=dword:00002710
+"QueueSize"=dword:00000100
+"MaxMsgSize"=dword:00004000
+"BufferSize"=dword:00004000
+"MaxLife"=dword:00000001
+"LifeTime"=dword:00002710
+"ScmPolling"=dword:00002710
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WatchDogSvc\Parameters\MenuItems]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WatchDogSvc\Parameters\MenuItems\0]
+"Text"=""
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WatchDogSvc\Parameters\MenuItems\1]
+"Text"="cmd"
+"command"="cmd"
+"NoConsole"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WatchDogSvc\Parameters\Services]
+"Messenger"=dword:00000bb8
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WatchDogSvc\Parameters\OnStart]
+"Messenger"="cmd.exe /C C:\\MessengerChange.BAT ONSTOP"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WatchDogSvc\Parameters\OnStop]
+"Messenger"="cmd.exe /C C:\\MessengerChange.BAT ONSTART"
+
