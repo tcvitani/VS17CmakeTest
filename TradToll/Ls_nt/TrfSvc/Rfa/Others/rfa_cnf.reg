@@ -1,0 +1,16 @@
+REGEDIT4
+
+; The key below describes the files that are used by the realtime replication
+; service (TrfSvc).
+; The name of each value of this key must be use in RFACreateFile()
+; The string value has the following syntax :
+;        EXPORT(.)=C:\\Directories....\\FileName.Ext
+;   or   IMPORT(EXPORTSERVERNAME)=C:\\Directories....\\FileName.Ext
+;   or   IMPORTEXPORT(EXPORTSERVERNAME)=C:\\Directories....\\FileName.Ext
+; EXPORT / IMPORT / IMPORTEXPORT define the way the file is replicated.
+; Write access can only be granted to file with EXPORT only replication.
+;
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TrfSvc\Parameters\Files]
+"TESTFILE"="EXPORT(.)=c:\\temp\\test.txt"
+"WHITELIST"="EXPORT(.)=c:\\temp\\WHITELIST.DAT"
+
