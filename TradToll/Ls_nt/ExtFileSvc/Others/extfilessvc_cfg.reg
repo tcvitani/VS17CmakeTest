@@ -1,0 +1,50 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ExtFilesSvc\Parameters]
+"TraceInfoFile"="C:\\csr\\traces\\ExtFilesSvc.TRC"
+"TraceErrorFile"="C:\\csr\\traces\\ExtFilesSvc.ERR"
+"ExceptionRestart"=dword:00000001
+"CmdSvcEnabled"=dword:00000001
+"MaxCmdCnx"=dword:00000002
+"Workers"=dword:00000002
+"ReconnectTime"=dword:000003e8
+"QueueSize"=dword:00000100
+"MaxMsgSize"=dword:00004000
+"BufferSize"=dword:00004000
+"MaxLife"=dword:00000003
+"LifeTime"=dword:00001388
+"MainPolling"=dword:0001d4c0
+"MaxBakTries"=dword:0000000a
+"MaxBakFiles"=dword:00000040
+"DbUser"="COMUSER"
+"DbPassword"="COMPWD"
+"DbInstance"="CCIH"
+"InDirectory"="C:\\LISTFILES\\IMPORT"
+"OutDirectory"="C:\\LISTFILES\\LANES"
+"BakDirectory"="C:\\LISTFILES\\HISTORY"
+"ErrDirectory"="C:\\LISTFILES\\ERR"
+"EvtLogErrors"=dword:00000000
+"LogStrServiceStarted"="Démarrage du service ExtFilesSvc"
+"LogStrServiceStopped"="Arrêt du service ExtFilesSvc"
+"LogStrProcessSuccess"="Acquittement automatique des événements de type [Import des fichiers LISTOPP/OPPTIS].\\n  Fichier précédemment en erreur : [1]\\n  Fichier OK : [2]"
+"LogStrProcessParse"="Erreur de structure de fichier"
+"LogStrProcessErrorInt"="Erreur sur traitement du fichier ([2])"
+"LogStrProcessErrorExt"="Echec de l'import d'une nouvelle liste dans la base de données."
+"ParseErrorCode"=dword:00000032
+"ErrorMaxHead"=dword:00000050
+"ErrorMaxLine"=dword:0000003e
+"SortByName"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ExtFilesSvc\Parameters\CopyFiles]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ExtFilesSvc\Parameters\DBRequests]
+"ListBegin"="DECLARE Result NUMBER(3); BEGIN   Result := IMP_FICHIERS.IMPORT_LIST_BEGIN( :BndType, :BndLine );         IF Result <> 0 THEN             SELECT ID_LN_ERROR, LONG_LN_ERROR_MSG                    INTO :BndRet, :BndText                    FROM V_LN_ERROR_MSG                    WHERE ID_LN_ERROR = Result;         ELSE              :BndRet := 0;              :BndText := '';         END IF; END;"
+"ListItem"="DECLARE Result NUMBER(3); BEGIN   Result := IMP_FICHIERS.IMPORT_LIST_ITEM( :BndType, :BndLine );         IF Result <> 0 THEN             SELECT ID_LN_ERROR, LONG_LN_ERROR_MSG                    INTO :BndRet, :BndText                    FROM V_LN_ERROR_MSG                    WHERE ID_LN_ERROR = Result;         ELSE              :BndRet := 0;              :BndText := '';         END IF; END;"
+"ListEnd"="DECLARE Result NUMBER(3); BEGIN   Result := IMP_FICHIERS.IMPORT_LIST_END( :BndType );         IF Result <> 0 THEN             SELECT ID_LN_ERROR, LONG_LN_ERROR_MSG                    INTO :BndRet, :BndText                    FROM V_LN_ERROR_MSG                    WHERE ID_LN_ERROR = Result;         ELSE              :BndRet := 0;              :BndText := '';         END IF; END;"
+"ExtListNew"="BEGIN :BndRet := IMP_FICHIERS.EXTERNAL_LIST_NEW( :BndType, :BndFile ); END;"
+"ExtListAck"="BEGIN :BndRet := IMP_FICHIERS.EXTERNAL_LIST_ACK( :BndType, :BndFile ); END;"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ExtFilesSvc\Parameters\ImportFiles]
+"LISTOPP|OPPS"="LISTOPP.*"
+"OPPTIS|CIPOTL"="OPPTIS.V*"
+
