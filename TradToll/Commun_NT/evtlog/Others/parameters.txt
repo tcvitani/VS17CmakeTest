@@ -1,0 +1,205 @@
+Paramètres de l'application EvtLogNotifier
+
+AckByEvent :
+  Définit le mode d'acquitement manuel. Si AckByEvent vaut 0, les acquitements
+  utilisateur sont globaux (acquitement de tous les événements présent). Si
+  AckByEvent a une autre valeur, le logiciel demande à l'utilisateur s'il
+  souhaite acquiter tous les événements ou uniquement les évévements jusqu'à
+  celui en cours de visualisation.
+  Valeur par défaut : 0.
+  
+AckOnSuccess :
+  Défini le mode d'acquitement automatique. Si AckOnSuccess vaut 0, un
+  événement de type "Success" acquitte automatiquement tous les événements
+  précédents. Si AckOnSuccess a une autre valeur, aucun acquitement
+  automatique n'a lieu.
+  Valeur par défaut : 1
+  
+AckSource :
+  Défini le nom de la source utilisé pour générer l'événement d'acquitement
+  dans l'event-log du serveur.
+  Valeur par défaut : "EvtLogNotifier"
+
+BlinkOnEvents :
+  Défini le mode de fonctionnement de l'icone de la barre de tache.
+  Si BlinkOnEvents a une valeur non nulle, l'icone clignote tant qu'il existe
+  des événements non acquités. 
+  Si BlinkOnEvents vaut 0, l'icone ne clignote plus lorsque l'utilisateur a
+  effectué une action signifiant qu'il a pris connaissance des événements. Cette
+  action peut être une activation de la fenètre d'alerte par exemple.
+  Valeur par défaut : 0
+  
+Computer :
+  Nom de l'ordinateur distant dont l'event-log est à surveiller. Une chaine
+  vide correspond à l'ordinateur local. Ce paramètre est utilisé conjointement
+  avec les paramètres Domain, Password et User.
+  Valeur par défaut : ""
+  
+DebugMode :
+  Si DebugMode a une valeur différente de 0, une fenètre de debugging est
+  affichée. Attention, cette valeur ne doit pas être utilisée en explotation.
+  Valeur par défaut : 0
+  
+DisplayEvtLogInfo :
+  Définit le détail d'affichage des événements. Si DisplayEvtLogInfo vaut 0,
+  seul la date, l'heure et le texte de l'événement sont affichés. Si
+  DisplayEvtLogInfo a une autre valeur, le type, la catégorie et la source
+  de l'événement sont affichés entre la date/heure et le texte.
+  Valeur par défaut : 0
+  
+DisplayFilterSeconds :
+  Définit le délai de ré-affichage de la fenètre lorsque des événements sont
+  présents mais non acquités. Une valeur supérieure à 0x7FFFFFFF fait que
+  l'affichage de la fenètre n'est jamais forcé à moins qu'un nouvel événement
+  n'arrive. Pour toute autre valeur, si l'utilisateur choisi de cacher la
+  fenètre alors que des événements ne sont pas acquités, la fenêtre est
+  automatiquement rendu visible lorsque DisplayFilterSeconds secondes se sont
+  écoulées (même s'il n'y a pas eu de nouveaux événements).
+  Valeur par défaut : 60
+  
+DisplayIfFirst :
+  Définit le mode d'affichage de la fenètre lorsqu'elle est cachée. Si
+  DisplayIfFirst vaut 0, l'affichage de la fenètre n'a pas lieu lorsque
+  de nouveaux événements arrivé. L'affichage est uniquement régi par le
+  paramètre DisplayFilterSeconds. Pour une autre valeur, la fenètre est
+  rendue visible automatiquement lorsqu'on passe d'un état ou aucun événement
+  n'était à signaler à au moins un événement à signaler. Ensuite, l'affichage
+  est également régi par le paramètre DisplayFilterSeconds.
+  Valeur par défaut : 1
+  
+Domain :
+  Domaine utilisé pour l'identification d'accés distant. Ce paramètre est
+  utilisé conjointement avec les paramètres Computer, Password et User. Il
+  doit être vide lorsqu'aucun domaine n'est utilisé ou en mode local.
+  Valeur par défaut : ""
+  
+ExitOnSysClose :
+  Défini le comportement sur une demande de fermeture de la fenètre par le
+  menu système (icone à gauche ou croix à droite de la barre de titre).  Si
+  ExitOnSysClose vaut 0, une demande de fermeture est convertie a pour effet
+  de rendre la fenètre invisible sans terminer l'application. Une autre valeur
+  fait que l'application se termine.
+  Valeur par défaut : 0
+  
+LastAck :
+  Paramètre utilisé de manière automatique. Ne pas le toucher manuellement
+  hormis pour le remettre à zéro. Il contient l'identifiant du dernier
+  événement acquité. Une valeur "-1" ou vide signifie qu'aun événement n'est
+  acquité. Attention, bien que numérique, la valeur est de type chaine.
+  Valeur par défaut : "-1"
+  
+LogFile :
+  Idenfiant du fichier event-log surveillé par l'application. Les 3 fichiers
+  possibles en standard sont "Application", "System" et "Audit".
+  Valeur par défaut : "Application"
+
+Password :
+  Mot de passe utilisé pour l'identification d'accés distant. Ce paramètre est
+  utilisé conjointement avec les paramètres Domain, Computer et User. Il
+  doit être vide lorsqu'aucun domaine n'est utilisé ou en mode local. Il peut
+  être vide ainsi que "Domain" et "User" si l'utilisateur courant sous lequel
+  l'application est lancée dispose d'un minimum de droits d'accés à la machine
+  distante.
+  Valeur par défaut : ""
+
+RefreshIntervalMs :
+  Interval de rafraichissement (en ms) de l'application. Lorsque cette valeur
+  vaut zéro ou est supérieure à 0x00007FFF, le rafraichissement automatique
+  est inactif, il doit être effectué par l'utilisateur avec le bouton de
+  rafraichissement (incompatible avec la valeur 0 pour le paramètre
+  ShowRefreshButton).
+  Valeur par défaut : 10000
+  
+ShowHideButton :
+  Définit si le bouton "cacher" servant à rendre la fenètre invisible est
+  visible ou non. Si le paramètre vaut 0, le bouton n'est pas visible. Toute
+  autre valeur le rend visible.
+  Valeur par défaut : 1
+
+ShowMode (à partir de la version 1.0.1):
+  Définit le mode d'apparition de la fenètre d'alerte lorsqu'elle doit
+  signaler un événement à l'utilisateur (attention, comportement différents
+  selon la version de Windows).
+  Les valeurs possibles sont :
+   - 0 : Appel du focus (avant W2K, la fenètre prend le focus, à partir de
+   W2K, elle clignote pour attirer l'attention de l'utilisateur).
+   - 1 : Faire passer la fenètre en premier plan
+   - 2 : Faire passer la fenètre en premier plan et appel du focus (à partir
+   de W2K, le comportement dépend de l'état de la barre de tache).
+  Valeur par défaut : 0
+  
+ShowRefreshButton :
+  Définit si le bouton "actualiser" servant à mettre à jour le contenu de la
+  fenètre est visible ou non. Si le paramètre vaut 0, le bouton n'est pas
+  visible. Toute autre valeur le rend visible.
+  Valeur par défaut : 0
+  
+StringsFile :
+  Fichier de traduction des chaines de caractères de la fenètre (ne sert
+  pas à traduire le texte des événements, ce qui est potentiellement fait par
+  le service event-log lui même). Une chaine vide désactive l'utilisation de
+  ce fichier et affiche les textes par défaut (en francais).
+  Une fichier de traduction est un fichier texte dans lequel chaque ligne est
+  au format : "IdentifiantTexte ValeurTexte". Les lignes vide ou commençant
+  par un ";" sont ignorée.
+  Les identifiants attendues sont :
+    - AckFrm.Caption : Titre de la fenètre de confirmation d'acquitement
+    - AckFrm.OkBtn.Caption : Texte du bouton de confirmation d'acquitement
+    - AckFrm.CancelBtn.Caption : Texte du bouton d'annulation d'acquitement
+    - AckFrm.PartialRdo.Caption : Texte de l'option "acquitement partiel"
+    - AckFrm.FullRdo.Caption : Texte de l'option "acquitement complet"
+    - NotifierFrm.AckEvtText : Texte de l'événement d'acquitement généré dans
+      l'event-log
+    - NotifierFrm.AckEvtErr.Text : Texte de la boite d'erreur affichée si un
+      événement d'acquitement n'a pas pu être généré.
+    - NotifierFrm.AckEvtErr.Caption : Titre de la boite d'erreur affichée si
+      un événement d'acquitement n'a pas pu être généré.
+    - NotifierFrm.RefreshBtn.Caption : Texte du bouton "actualiser"
+    - NotifierFrm.AckBtn.Caption : Texte du bouton "acquiter"
+    - NotifierFrm.HideBtn.Caption : Texte du bouton "masquer"
+    - NotifierFrm.Caption : Texte de la barre de titre indiquant une
+      surveillance en cours.
+    - NotifierFrm.IconObj.TextMonitoring : Texte de l'icone dans la barre des
+      taches lorsqu'aucun événement n'est présent.
+    - NotifierFrm.IconObj.TextEvent : Texte de l'icone dans la barre des
+      taches lorsqu'au moins un événement est présent.
+    - NotifierFrm.IconObj.TextDisconnected : Texte de l'icone dans la barre
+      des taches lorsque la connexion au service event-log n'est pas
+      disponible.
+    - NotifierFrm.CountLbl.CaptionNoConnection : Texte affiché dans la fenêtre
+      lorsque la connexion avec l'event-log n'est pas disponible.
+    - NotifierFrm.CountLbl.CaptionNoEvent :Texte affiché dans la fenêtre
+      lorsqu'aucun événement n'est présent.
+    - NotifierFrm.CountLbl.CaptionStandard : Texte affiché dans la fenêtre
+      lorsqu'au moins un événement est présent (les textes "%1" et "%2" sont
+      respectivement remplacés par le numéro de l'événement visualisé et le
+      nombre total d'événements).
+    - NotifierFrm.AlertTxt.TextSource : Intitulé "Source" (pour la source d'un
+      événement).
+    - NotifierFrm.AlertTxt.TextId : Intitulé "Id" (pour l'identifiant d'un
+      événement).
+    - NotifierFrm.AlertTxt.TextCategory : Intitulé "Catégorie" (pour la
+      catégorie d'un événement).
+    - NotifierFrm.AlertTxt.TextRecord : Intitulé "Elément" (pour les éléments
+      complémentaire d'un événement).
+      événement).
+  
+User :
+  Utilisateur utilisé pour l'identification d'accés distant. Ce paramètre est
+  utilisé conjointement avec les paramètres Domain, Computer et Password. Il
+  doit être vide lorsqu'aucun domaine n'est utilisé ou en mode local. Il peut
+  être vide ainsi que "Domain" et "Password" si l'utilisateur courant sous
+  lequel l'application est lancée dispose d'un minimum de droits d'accés à la
+  machine distante.
+  Valeur par défaut : ""
+  
+VisualAppName :
+  Nom donné à l'application dans la barre de titre.
+  Valeur par défaut : "EvtLogNotifier"
+  
+VisualCnfName :
+  Nom donné à la configuration de notification dans la barre de titre et au
+  niveau de l'icône de la barre de taches.
+  Valeur par défaut : "EvtLogNotifier"
+  
+  
