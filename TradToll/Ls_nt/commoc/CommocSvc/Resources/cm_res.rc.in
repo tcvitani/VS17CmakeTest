@@ -1,0 +1,127 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "cm_res.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1250)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 10,0,5,0
+ PRODUCTVERSION 10,0,5,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "00000000"
+        BEGIN
+            VALUE "CompanyName", "Emovis"
+            VALUE "FileDescription", "CommocSvc"
+            VALUE "FileVersion", "10.0.5.0"
+            VALUE "InternalName", "CommocSvc"
+            VALUE "LegalCopyright", "Copyright (c) 2017"
+            VALUE "OriginalFilename", "CSR_COMMOCSVC10_VS12_x64"
+            VALUE "ProductName", "Emovis CommocSvc"
+            VALUE "ProductVersion", "10.0.5.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 0
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CSR_LOGO            ICON                    "csr_logo.ico"
+IDI_CM_OK01             ICON                    "cm_ok1.ico"
+IDI_CM_KO               ICON                    "cm_ko.ico"
+IDI_CM_OK00             ICON                    "cm_ok0.ico"
+IDI_CM_OK10             ICON                    "cm_ok10.ico"
+IDI_CM_OK02             ICON                    "cm_ok2.ico"
+IDI_CM_OK03             ICON                    "cm_ok3.ico"
+IDI_CM_OK04             ICON                    "cm_ok4.ico"
+IDI_CM_OK05             ICON                    "cm_ok5.ico"
+IDI_CM_OK06             ICON                    "cm_ok6.ico"
+IDI_CM_OK07             ICON                    "cm_ok7.ico"
+IDI_CM_OK08             ICON                    "cm_ok8.ico"
+IDI_CM_OK09             ICON                    "cm_ok9.ico"
+IDI_CM_OK14             ICON                    "cm_ok14.ico"
+IDI_CM_OK12             ICON                    "cm_ok12.ico"
+IDI_CM_OK13             ICON                    "cm_ok13.ico"
+IDI_CM_OK11             ICON                    "cm_ok11.ico"
+IDI_CM_PS00             ICON                    "cm_ps00.ico"
+IDI_CM_PS01             ICON                    "cm_ps01.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "cm_res.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
