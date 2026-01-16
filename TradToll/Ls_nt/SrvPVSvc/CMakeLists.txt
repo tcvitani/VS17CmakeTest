@@ -20,24 +20,6 @@ set_target_properties(CSR::Aut PROPERTIES
 					  	Release
 )			
 
-add_library(CSR::Des SHARED IMPORTED GLOBAL)
-set_target_properties(CSR::Des PROPERTIES
-					  INTERFACE_INCLUDE_DIRECTORIES
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/des/includes/"
-					  IMPORTED_IMPLIB_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/des/out/build/release/csr_des_VS17_x64_r.lib"
-					  IMPORTED_LOCATION_RELEASE
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/des/out/build/release/csr_des_VS17_x64_r.lib"
-					  IMPORTED_IMPLIB_DEBUG
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/des/out/build/debug/csr_des_VS17_x64.lib"
-					  IMPORTED_LOCATION_DEBUG
-					  	"${CMAKE_SOURCE_DIR}/../../Commun_NT/des/out/build/debug/csr_des_VS17_x64.lib"
-					  MAP_IMPORTED_CONFIG_MINSIZEREL
-					  	Release
-					  MAP_IMPORTED_CONFIG_RELWITHDEBINFO
-					  	Release
-)		
-
 add_library(CSR::Excpt SHARED IMPORTED GLOBAL)
 set_target_properties(CSR::Excpt PROPERTIES
 					  INTERFACE_INCLUDE_DIRECTORIES
@@ -410,7 +392,6 @@ set_target_properties(${PROJECT_EXE}
 
 target_link_libraries(${PROJECT_EXE}
     PUBLIC
-		CSR::Des
 		CSR::Aut
 		CSR::Excpt
 		CSR::Trc

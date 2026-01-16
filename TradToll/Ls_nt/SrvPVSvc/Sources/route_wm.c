@@ -47,7 +47,7 @@
 #include <msg_lc_header.h>
 #include <msg_lc_command.h>
 #include <msg_lc_comp_inf_tr.h>
-#include <csr_des.h>
+//#include <csr_des.h>
 //#include <openssl/conf.h>
 //#include <openssl/evp.h>
 //#include <openssl/err.h>

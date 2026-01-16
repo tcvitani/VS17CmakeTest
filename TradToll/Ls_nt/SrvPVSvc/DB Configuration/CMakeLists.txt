@@ -111,7 +111,6 @@ set_target_properties(${SRVPV_CONF_LIB}
 
 target_link_libraries(${SRVPV_CONF_LIB}
     PUBLIC
-		CSR::Des
 		CSR::Excpt
 		CSR::Acom
 		CSR::Trc
