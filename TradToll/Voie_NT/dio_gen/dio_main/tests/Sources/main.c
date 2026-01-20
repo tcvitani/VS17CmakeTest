@@ -252,8 +252,11 @@ __cdecl main()
 		
   	eDioErr = MDioInit(CSR_REG_KEYi_ROOT, szPluginKey, Test_DioStatusOccuredEvent);
 //  	eDioErr = MDioInit(CSR_REG_KEYi_ROOT, szPluginKey, NULL);
-	if(eDioErr != DIO_SUCCESS)
-			printf("MDioInit() -> RETURN ERROR CODE: %s", dio_err[eDioErr]);	
+	if (eDioErr != DIO_SUCCESS)
+	{
+		printf("MDioInit() -> RETURN ERROR CODE: %s", dio_err[eDioErr]);
+		return;
+	}
 
 	MDioGetRange(&dwFirstInputIndex, &dwLastInputIndex, &dwFirstOutputIndex, &dwLastOutputIndex);
 

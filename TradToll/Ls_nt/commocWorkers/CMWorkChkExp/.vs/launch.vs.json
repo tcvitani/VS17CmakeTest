@@ -1,0 +1,29 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "csr_CMWorkChkExp_vs17_x64.dll",
+      "name": "Launch csr_CMWorkChkExp_vs17_x64.dll",
+      "currentDir": "C:/csr/exe",
+      "args": [
+        "/DEBUG"
+      ],
+      "env": {
+        "DEBUG_LOGGING_LEVEL": "trace;info",
+        "ENABLE_TRACING": "true",
+        "PATH": "%PATH%;C:\\csr\\exe;C:\\qt\\6.10.1\\bin;C:\\qt\\6.10.1;"
+      },
+      "exe": "C:/csr/exe/csr_CommocSvc_vs17_x64.exe"
+    },
+    {
+      "type": "dll",
+      "exe": "",
+      "project": "CMakeLists.txt",
+      "projectTarget": "csr_CMWorkChkExp_vs17_x64.dll",
+      "name": "csr_CMWorkChkExp_vs17_x64.dll"
+    }
+  ]
+}
