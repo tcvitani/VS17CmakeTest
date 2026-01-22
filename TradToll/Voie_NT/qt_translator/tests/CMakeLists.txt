@@ -18,8 +18,8 @@ find_package(Qt6 #${QT_VERSION_MAJOR}
         Widgets
 		Xml
 		Core5Compat
-PATHS
-    $<$<PLATFORM_ID:Windows>:"C:/QT/6.10.1/lib/cmake"
+#PATHS
+#    $<$<PLATFORM_ID:Windows>:"C:/QT/6.10.1/lib/cmake"
 ) 
 
 qt_standard_project_setup()
@@ -28,7 +28,7 @@ qt_standard_project_setup()
 set(TEST_SOURCES_DIR   ${CMAKE_CURRENT_SOURCE_DIR}/sources)
 set(TEST_RESOURCES_DIR ${CMAKE_CURRENT_SOURCE_DIR}/resources)
 set(TEST_CONFIG
-    ${CMAKE_CURRENT_SOURCE_DIR}/qt_trans_gui_Languages.xml
+    ${CMAKE_CURRENT_SOURCE_DIR}/Others/qt_trans_gui_Languages.xml
 
 )
 

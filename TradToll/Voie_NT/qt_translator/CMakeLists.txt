@@ -18,8 +18,8 @@ find_package(Qt6 #${QT_VERSION_MAJOR}
 		Xml
 		Gui
  		Core5Compat
-PATHS
-    $<$<PLATFORM_ID:Windows>:"C:/QT/6.10.1/lib/cmake"
+#PATHS
+#    $<$<PLATFORM_ID:Windows>:"C:/QT/6.10.1/lib/cmake"
 ) 
 
 qt_standard_project_setup()
