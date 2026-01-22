@@ -1,0 +1,1224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MMainDialogB</class>
+ <widget class="QDialog" name="MMainDialogB">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>916</width>
+    <height>747</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>720</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame#frMainFrame
+{
+	border: 1px solid #000000;	
+}
+
+QLabel#lblTitle1
+{
+	color:#e6e6e6;
+	padding-left:10px;
+	padding-right:0px;
+	margin-right:0px;
+	font: 12pt &quot;CachetBold&quot;;
+}
+
+QLabel#lblTitle2
+{
+	color:#4d4d4d;
+	padding-left:0px;
+	margin-left:0px;
+	font: 12pt &quot;CachetBold&quot;;
+}
+
+QFrame#frTitle
+{
+	background-color: #000000;
+	border: 0px solid #285e8e;	
+}
+
+QFrame#frStatus
+{
+	background-color: #e6e6e6;
+	border-top: 1px solid #000000;	
+    border-bottom: 4px solid #4d4d4d;
+    border-right: 0px solid #285e8e;
+    border-left: 0px solid #285e8e;
+}
+
+
+
+QPushButton#btnClose,
+QPushButton#btnMinimize,
+QPushButton#btnRestoreMax
+{
+	color:#808080;
+	font: 16pt &quot;CachetBold&quot;;
+	border:none;
+    border-left: 1px solid #e6e6e6;
+	background-color: #000000;
+ 
+}	
+
+
+QFrame#frMenuButtons
+{
+	background-color: #e6e6e6;
+	min-height:  60px;
+	max-height:  60px;
+}
+
+QFrame#frStatus
+{
+	min-height:  10px;
+	max-height:  10px;
+}
+
+QFrame#frMenuLangPick
+{
+ margin-top:5px;
+}
+
+
+
+QPushButton#btnTools,
+QPushButton#btnLanguages
+{
+	background-color: #e6e6e6;
+	border:none;
+    color: #333333;
+	font: 16pt &quot;CachetBold&quot;;
+    text-align:left;
+    padding-left:40px;
+	min-height:  60px;
+	max-height:  60px;
+ 	padding-top:0px;
+    padding-bottom:2px;
+
+}
+
+QPushButton#btnTools
+{
+	min-width:  318px;
+	max-width:  318px;
+}
+
+QPushButton#btnAbout
+{	
+	background-color: #e6e6e6;
+	border-style: solid;
+	border:none;
+    color: #333333;
+	font: 18pt &quot;CachetBold&quot;;
+}
+
+QPushButton#btnLanguages
+{
+    border-left: 1px solid #000000;
+}
+
+QPushButton#btnTools:hover,
+QPushButton#btnLanguages:hover,
+QPushButton#btnAbout:hover
+{
+	color: #fff;
+}
+
+QToolBox{
+	background-color: #000000;
+	
+	font: 14pt &quot;CachetBold&quot;;
+}
+QToolBox QWidget{
+	background: transparent;
+}
+
+QToolBox QAbstractButton{
+	background: transparent;
+	color: rgb(209, 139, 0);
+	border-style: solid;
+	font: 12pt &quot;CachetBold&quot;;
+   border-width:0px;
+  text-align:left;
+	padding-left:60px;
+  height:40px;
+}
+
+QToolBox::tab{
+  background:   transparent;
+	border:none;
+     border-top-width:1px;
+      color: darkgray;
+	 border-color:#4d4d4d;
+   border-style: solid;
+   padding-left:10px;
+   margin-left:20px;
+   margin-right:20px;
+
+	font: 12pt &quot;CachetBold&quot;;
+}
+
+ QToolBox::tab:selected { /* italicize selected tabs */
+     color: darkgray;
+    border-bottom-width:0px;
+}
+
+QToolBox::tab:first { 
+     color: darkgray;
+      border-top-width:0px;
+ }
+
+QToolBox QAbstractButton#qt_toolbox_toolboxbutton { 
+  background:   transparent;
+	border:none;
+       color: darkgray;
+	 border-color:#4d4d4d;
+   border-style: solid;
+   padding-left:10px;
+   margin-left:20px;
+   margin-right:20px;
+
+	font: 12pt &quot;CachetBold&quot;;
+ }
+ 
+
+QLabel#lblAppLogo
+{
+  padding-left:20px;
+}
+
+QFrame#frContent
+{
+	border-style: solid;
+	border-width: 0px;	
+	background-color: #1a1a1a;
+	color:#e6e6e6;
+}
+
+QFrame#frContent QPushButton,
+QFrame#frContent QLabel,
+QFrame#frContent QCheckBox
+QFrame#frContent QRadioButton
+{
+	color:#e6e6e6;
+	background-color: #1a1a1a;
+
+}
+
+QFrame#frContent QPushButton
+{
+	border: 1px solid #4d4d4d;	
+	border-radius:5px;
+	padding:5px 5px 5px 5px;
+	min-height:  18px;
+	max-height:  18px;
+	min-width:  120px;
+	max-width:  120px;
+	text-align: center;
+	color:#e6e6e6;
+	font: 10pt &quot;CachetBold&quot;;
+}
+
+QFrame#frContent QPushButton#btnConnect,
+QFrame#frContent QPushButton#btnDisconnect
+{
+	min-height:  18px;
+	max-height:  18px;
+	min-width:  30px;
+	max-width:  1000px;
+}
+
+QFrame#frContent QPushButton#btnBrowse
+{
+	min-height: 18px;
+	max-height: 18px;
+	min-width: 18px;
+	max-width: 18px; 
+}
+
+
+QFrame#frContent QPushButton:disabled
+{
+	text-decoration:none;
+	color:#cacaca;
+	background-color:#1a1a1a;
+	border: 1px solid #4d4d4d;	
+}
+
+QFrame#frContent QPushButton:pressed
+{
+	padding:6px 5px 5px 5px;
+  	color:#ffffff;	
+}
+
+QFrame#frContent QPushButton:hover
+{
+	padding:7px 5px 5px 5px;
+}
+
+QFrame#frContent QPushButton:focus
+{
+	border: 1px solid #4d4d4d;	
+}
+
+QFrame#frContent QLineEdit,
+QFrame#frContent QPlainTextEdit
+{ 
+  	color:#e6e6e6;
+	background: #e6e6e6;
+ 	background-color: #1a1a1a;
+	border: 1px solid #4d4d4d;	
+     border-radius: 5px;
+     padding: 0px;
+     selection-background-color: darkgray;
+}
+
+QFrame#frContent QSpinBox,
+QFrame#frContent QProgressBar,
+ QFrame#frContent QLineEdit
+{
+	min-height:  28px;
+	max-height:  28px;
+}
+
+QFrame#frContent QLineEdit,
+QFrame#frContent QPlainTextEdit,
+QFrame#frContent QSpinBox,
+QFrame#frContent QProgressBar 
+{
+		font: 10pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QFrame#frContent QPlainTextEdit
+{
+	padding-bottom: -1px; /*This should be here due to bug in QT*/
+}
+
+QFrame#frContent QPlainTextEdit#txtOutput
+{
+	margin-left:0px;
+	margin-right:0px;
+}
+
+QFrame#frContent QLineEdit:read-only {   
+	background: #1a1a1a; 
+}
+
+QCheckBox {
+	spacing: 5px;
+  	color:#e6e6e6;
+	background: #e6e6e6;
+ 	background-color: #1a1a1a;
+}
+
+QCheckBox::indicator {
+width: 14px;
+height: 14px;
+	border: none;	
+}
+
+QCheckBox::indicator:unchecked:disabled {
+image: url(:/Images/chk_unchecked_disabled.png);
+}
+
+QCheckBox::indicator:checked{
+image: url(:/Images/chk_checked.png);
+}
+
+QCheckBox::indicator:unchecked:disabled {
+image: url(:/Images/chk_unchecked_disabled.png);
+}
+
+QCheckBox::indicator:unchecked{
+image: url(:/Images/chk_unchecked.png);
+}
+
+/* Customize radio buttons. */ 
+
+QRadioButton {
+	spacing: 5px;
+  	color:#e6e6e6;
+	background: #e6e6e6;
+ 	background-color: #1a1a1a;
+}
+
+
+QRadioButton::indicator {
+width: 14px;
+height: 14px;
+}
+
+QRadioButton::indicator::unchecked {
+image: url(:/Images/radiobnone.png);
+}
+
+
+QRadioButton::indicator:checked{
+image: url(:/Images/radiobcheck.png);
+}
+
+
+QFrame#frStatusBar
+{
+	background-color: transparent;
+	border: 0px solid #285e8e;	
+}
+
+QFrame#frDevStatus
+{
+	background-color: transparent;
+	border:none;
+     border-top-width:1px;
+     border-bottom-width:0px;
+ 	 border-color:#4d4d4d;
+   border-style: solid;
+   padding-left:10px;
+}
+
+
+QFrame#frModuleTitle
+{
+	background-color: #1a1a1a;
+	border:none;
+  	 border-color:#4d4d4d;
+   border-style: solid;
+   padding-left:10px;
+}
+
+
+QFrame#frContent QScrollArea
+{ 
+  	color:#e6e6e6;
+	background: #e6e6e6;
+ 	background-color: #1a1a1a;
+	border: 1px solid #4d4d4d;	
+  	border-left-width:0px;
+   	border-right-width:0px;
+     border-radius: 0px;
+     padding: 0px;
+     selection-background-color: darkgray;
+}
+
+QScrollBar:vertical {
+    border-radius:0px; 
+    border: 1px solid #4d4d4d;	
+     background: #1a1a1a;
+     width: 20px;
+     margin: 30px 0px 30px 0px;
+ }
+ QScrollBar::handle:vertical {
+     background: #dddddd;
+     min-height: 20px;
+ }
+ QScrollBar::add-line:vertical {
+     border-radius: 0px; 
+	border: 1px solid #4d4d4d;	
+    border-bottom-width:0px;
+   border-top-width:0px;
+  border:none;
+     background:  #1a1a1a;
+     height: 20px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ margin-bottom: 5px;
+ }
+
+ QScrollBar::sub-line:vertical {
+ border-radius: 0px;    
+ border: 1px solid #4d4d4d;	
+    border-bottom-width:0px;
+   border-top-width:0px;
+  border:none;
+   background:#1a1a1a;
+     height: 20px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ margin-top: 5px;
+ }
+
+ QScrollBar::up-arrow:vertical {
+     image: url(:/Images/spin_up.png);
+    width: 10px;
+    height: 10px;
+ }
+
+QScrollBar::down-arrow:vertical {
+     image: url(:/Images/spin_down.png);
+    width: 10px;
+    height: 10px;
+ }
+
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+     background: none;
+ }
+
+
+/*Customizing pop-up list of the QComboBox*/
+ QComboBox QAbstractItemView {
+	color:#e6e6e6;
+    	border: 1px solid #4d4d4d;
+	background-color: #1a1a1a;
+    	selection-background-color: darkgray;
+ }
+ 
+QComboBox { 
+    	padding-right: 25px;
+	font:11pt &quot;Arial&quot;;
+  	color:#e6e6e6;
+	background: #e6e6e6;
+ 	background-color: #1a1a1a;
+	border: 1px solid #4d4d4d;	
+    border-radius: 5px;
+    padding: 0 8px;
+	height:30px;
+
+    selection-background-color: darkgray;
+	min-height: 1.3em;
+}
+
+QComboBox::drop-down {	
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+	padding:1px;
+}
+ 
+QSpinBox::down-arrow,
+QDoubleSpinBox::down-arrow,
+QComboBox::down-arrow {
+    image: url(:/Images/spin_down.png);
+    width: 9px;
+    height: 9px;
+}
+
+QSpinBox::down-arrow:disabled,
+QDoubleSpinBox::down-arrow:disabled,
+QComboBox::down-arrow:disabled {
+   image: url(:/Images/spin_down_disabled.png);
+}
+
+QSpinBox::up-arrow,
+QDoubleSpinBox::up-arrow {
+    image: url(:/Images/spin_up.png);
+    width: 9px;
+    height: 9px;
+}
+
+QSpinBox::up-arrow:disabled,
+QDoubleSpinBox::up-arrow:disabled {
+   image: url(:/Images/spin_up_disabled.png);
+}
+
+QSpinBox,
+QDoubleSpinBox { 
+    padding-right: 25px;
+  	color:#e6e6e6;
+	background: #e6e6e6;
+ 	background-color: #1a1a1a;
+	border: 1px solid #4d4d4d;	
+     border-radius: 5px;
+     padding: 0 5px;
+	 height:22px;
+
+     selection-background-color: darkgray;
+	min-height: 22px;
+
+}
+
+QSpinBox::up-button,
+QDoubleSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+ 	height:12px;
+    width: 20px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+    /*border-image: url(:/Images/spinup.png) 1;*/
+	border: 1px solid #4d4d4d;	
+   border-bottom-width:0px;     
+   border-top-width:0px;     
+  border-right-width:0px;     
+
+margin:0px 2px 0px 2px;
+padding:1px;
+	background-color: transparent;
+}
+
+QSpinBox::down-button,
+QDoubleSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+	height:12px;
+    width: 20px;
+	border: 1px solid #4d4d4d;	
+    border-top-width:0px;     
+	border-bottom-width:0px;     
+    border-right-width:0px;     
+	margin:0px 2px 1px 2px;
+	background-color: transparent;
+	padding:1px;
+    
+}
+
+QFrame#frContent QLabel,
+QFrame#frContent QCheckBox,
+QFrame#frContent QRadioButton
+{
+	font: 12pt &quot;CachetBold&quot;;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_6">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frMainFrame">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frTitle">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>43</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>43</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="lblAppLogo">
+           <property name="pixmap">
+            <pixmap resource="../Resources/ImgResources.qrc">:/Images/logo.png</pixmap>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblTitle1">
+           <property name="text">
+            <string>MAINWND_TITLE_PART1</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblTitle2">
+           <property name="text">
+            <string>MAINWND_TITLE_PART2</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>706</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnMinimize">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>43</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="icon">
+            <iconset resource="../Resources/ImgResources.qrc">
+             <normaloff>:/Images/minimize.png</normaloff>:/Images/minimize.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>48</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnRestoreMax">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>43</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="icon">
+            <iconset resource="../Resources/ImgResources.qrc">
+             <normaloff>:/Images/restore.png</normaloff>:/Images/restore.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>48</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnClose">
+           <property name="minimumSize">
+            <size>
+             <width>43</width>
+             <height>43</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>43</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="text">
+            <string>X</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>48</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frBody">
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frMenuButtons">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="lineWidth">
+            <number>0</number>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,1,2,0">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="margin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="btnTools">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>358</width>
+                <height>62</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>358</width>
+                <height>62</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>MAINWND_OPTIONS</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../Resources/ImgResources.qrc">
+                <normaloff>:/Images/tools2.png</normaloff>:/Images/tools2.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnLanguages">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>62</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>62</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>MAINWND_LANGUAGES</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../Resources/ImgResources.qrc">
+                <normaloff>:/Images/languages3.png</normaloff>:/Images/languages3.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frMenuLangPick">
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <property name="lineWidth">
+               <number>0</number>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>111</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnAbout">
+              <property name="minimumSize">
+               <size>
+                <width>43</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>?</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frContent">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="0">
+               <widget class="QLabel" name="lblMachineName">
+                <property name="text">
+                 <string>LBL_MACHINE_NAME</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="txtMachineName">
+                <property name="minimumSize">
+                 <size>
+                  <width>350</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="lblServiceName">
+                <property name="text">
+                 <string>LBL_SERVICE_NAME</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QComboBox" name="cmbServiceName">
+                <property name="minimumSize">
+                 <size>
+                  <width>350</width>
+                  <height>32</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>1000</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QPushButton" name="btnRefresh">
+                <property name="text">
+                 <string>BTN_REFRESH</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QCheckBox" name="chkRedirectToFile">
+                <property name="text">
+                 <string>LBL_REDIRECT_TO_FILE</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <layout class="QHBoxLayout" name="horizontalLayout_7">
+                <item>
+                 <widget class="QLineEdit" name="txtRedirtectToFile">
+                  <property name="text">
+                   <string>C:\csr\_traces\CmdSvc_Untitled.log</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btnBrowse">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>30</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>30</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>...</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QPushButton" name="btnConnect">
+                <property name="text">
+                 <string>BTN_CONNECT</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnDisconnect">
+                <property name="text">
+                 <string>BTN_DISCONNECT</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="line">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,1,6">
+              <item>
+               <widget class="QLabel" name="lblStatusName">
+                <property name="text">
+                 <string>LBL_STATUS_NAME</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="lblLinkFail">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap resource="../Resources/ImgResources.qrc">:/Images/ledred.png</pixmap>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="lblStatus">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string notr="true"/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,6,2,0">
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="lblModuleName_5">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>LBL_COMMAND_NAME</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="txtCommand"/>
+              </item>
+              <item>
+               <widget class="QComboBox" name="cmbCommandList"/>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnSendCmd">
+                <property name="text">
+                 <string>BTN_SEND</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QPlainTextEdit" name="txtOutput"/>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>148</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnClear">
+                <property name="text">
+                 <string>BTN_CLEAR</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../Resources/ImgResources.qrc"/>
+  <include location="../../../../Test_tools/cs_test_tool/trunk/Resources/ImgResources.qrc"/>
+  <include location="../../../../Test_tools/dcp_test_tool/trunk/Resources/ImgResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

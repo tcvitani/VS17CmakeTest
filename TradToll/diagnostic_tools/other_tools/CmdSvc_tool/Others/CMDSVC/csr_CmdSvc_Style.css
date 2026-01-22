@@ -1,0 +1,561 @@
+QFrame#frMainFrame
+{
+	border: 1px solid #000000;	
+}
+
+QLabel#lblTitle1
+{
+	color:#e6e6e6;
+	padding-left:10px;
+	padding-right:0px;
+	margin-right:0px;
+	font: 12pt "CachetBold";
+}
+
+QLabel#lblTitle2
+{
+	color:#4d4d4d;
+	padding-left:0px;
+	margin-left:0px;
+	font: 12pt "CachetBold";
+}
+
+QFrame#frTitle
+{
+	background-color: #000000;
+	border: 0px solid #285e8e;	
+}
+
+QFrame#frStatus
+{
+	background-color: #e6e6e6;
+	border-top: 1px solid #000000;	
+    border-bottom: 4px solid #4d4d4d;
+    border-right: 0px solid #285e8e;
+    border-left: 0px solid #285e8e;
+}
+
+
+
+QPushButton#btnClose,
+QPushButton#btnMinimize,
+QPushButton#btnRestoreMax
+{
+	color:#808080;
+	font: 16pt "CachetBold";
+	border:none;
+    border-left: 1px solid #e6e6e6;
+	background-color: #000000;
+ 
+}	
+
+
+QFrame#frMenuButtons
+{
+	background-color: #e6e6e6;
+	min-height:  60px;
+	max-height:  60px;
+}
+
+QFrame#frStatus
+{
+	min-height:  10px;
+	max-height:  10px;
+}
+
+QFrame#frMenuLangPick
+{
+ margin-top:5px;
+}
+
+
+
+QPushButton#btnTools,
+QPushButton#btnLanguages
+{
+	background-color: #e6e6e6;
+	border:none;
+    color: #333333;
+	font: 16pt "CachetBold";
+    text-align:left;
+    padding-left:40px;
+	min-height:  60px;
+	max-height:  60px;
+ 	padding-top:0px;
+    padding-bottom:2px;
+
+}
+
+QPushButton#btnTools
+{
+	min-width:  318px;
+	max-width:  318px;
+}
+
+QPushButton#btnAbout
+{	
+	background-color: #e6e6e6;
+	border-style: solid;
+	border:none;
+    color: #333333;
+	font: 18pt "CachetBold";
+}
+
+QPushButton#btnLanguages
+{
+    border-left: 1px solid #000000;
+}
+
+QPushButton#btnTools:hover,
+QPushButton#btnLanguages:hover,
+QPushButton#btnAbout:hover
+{
+	color: #fff;
+}
+
+QToolBox{
+	background-color: #000000;
+	
+	font: 14pt "CachetBold";
+}
+QToolBox QWidget{
+	background: transparent;
+}
+
+QToolBox QAbstractButton{
+	background: transparent;
+	color: rgb(209, 139, 0);
+	border-style: solid;
+	font: 12pt "CachetBold";
+   border-width:0px;
+  text-align:left;
+	padding-left:60px;
+  height:40px;
+}
+
+QToolBox::tab{
+  background:   transparent;
+	border:none;
+     border-top-width:1px;
+      color: darkgray;
+	 border-color:#4d4d4d;
+   border-style: solid;
+   padding-left:10px;
+   margin-left:20px;
+   margin-right:20px;
+
+	font: 12pt "CachetBold";
+}
+
+ QToolBox::tab:selected { /* italicize selected tabs */
+     color: darkgray;
+    border-bottom-width:0px;
+}
+
+QToolBox::tab:first { 
+     color: darkgray;
+      border-top-width:0px;
+ }
+
+QToolBox QAbstractButton#qt_toolbox_toolboxbutton { 
+  background:   transparent;
+	border:none;
+       color: darkgray;
+	 border-color:#4d4d4d;
+   border-style: solid;
+   padding-left:10px;
+   margin-left:20px;
+   margin-right:20px;
+
+	font: 12pt "CachetBold";
+ }
+ 
+
+QLabel#lblAppLogo
+{
+  padding-left:20px;
+}
+
+QFrame#frContent
+{
+	border-style: solid;
+	border-width: 0px;	
+	background-color: #1a1a1a;
+	color:#e6e6e6;
+}
+
+QFrame#frContent QPushButton,
+QFrame#frContent QLabel,
+QFrame#frContent QCheckBox
+QFrame#frContent QRadioButton
+{
+	color:#e6e6e6;
+	background-color: #1a1a1a;
+
+}
+
+QFrame#frContent QPushButton
+{
+	border: 1px solid #4d4d4d;	
+	border-radius:5px;
+	padding:5px 5px 5px 5px;
+	min-height:  18px;
+	max-height:  18px;
+	min-width:  120px;
+	max-width:  120px;
+	text-align: center;
+	color:#e6e6e6;
+	font: 10pt "CachetBold";
+}
+
+QFrame#frContent QPushButton#btnConnect,
+QFrame#frContent QPushButton#btnDisconnect
+{
+	min-height:  18px;
+	max-height:  18px;
+	min-width:  30px;
+	max-width:  1000px;
+}
+
+QFrame#frContent QPushButton#btnBrowse
+{
+	min-height: 18px;
+	max-height: 18px;
+	min-width:  18px;
+	max-width:  18px;
+}
+
+
+QFrame#frContent QPushButton:disabled
+{
+	text-decoration:none;
+	color:#cacaca;
+	background-color:#1a1a1a;
+	border: 1px solid #4d4d4d;	
+}
+
+QFrame#frContent QPushButton:pressed
+{
+	padding:6px 5px 5px 5px;
+  	color:#ffffff;	
+}
+
+QFrame#frContent QPushButton:hover
+{
+	padding:7px 5px 5px 5px;
+}
+
+QFrame#frContent QPushButton:focus
+{
+	border: 1px solid #4d4d4d;	
+}
+
+QFrame#frContent QLineEdit,
+QFrame#frContent QPlainTextEdit
+{ 
+  	color:#e6e6e6;
+	background: #e6e6e6;
+ 	background-color: #1a1a1a;
+	border: 1px solid #4d4d4d;	
+     border-radius: 5px;
+     padding: 0px;
+     selection-background-color: darkgray;
+}
+
+QFrame#frContent QSpinBox,
+QFrame#frContent QProgressBar,
+ QFrame#frContent QLineEdit
+{
+	min-height:  28px;
+	max-height:  28px;
+}
+
+QFrame#frContent QLineEdit,
+QFrame#frContent QPlainTextEdit,
+QFrame#frContent QSpinBox,
+QFrame#frContent QProgressBar 
+{
+		font: 10pt "MS Shell Dlg 2";
+}
+
+QFrame#frContent QPlainTextEdit
+{
+	padding-bottom: -1px; /*This should be here due to bug in QT*/
+}
+
+QFrame#frContent QPlainTextEdit#txtOutput
+{
+	margin-left:0px;
+	margin-right:0px;
+}
+
+QFrame#frContent QLineEdit:read-only {   
+	background: #1a1a1a; 
+}
+
+QCheckBox {
+	spacing: 5px;
+  	color:#e6e6e6;
+	background: #e6e6e6;
+ 	background-color: #1a1a1a;
+}
+
+QCheckBox::indicator {
+width: 14px;
+height: 14px;
+	border: none;	
+}
+
+QCheckBox::indicator:unchecked:disabled {
+image: url(:/Images/chk_unchecked_disabled.png);
+}
+
+QCheckBox::indicator:checked{
+image: url(:/Images/chk_checked.png);
+}
+
+QCheckBox::indicator:unchecked:disabled {
+image: url(:/Images/chk_unchecked_disabled.png);
+}
+
+QCheckBox::indicator:unchecked{
+image: url(:/Images/chk_unchecked.png);
+}
+
+/* Customize radio buttons. */ 
+
+QRadioButton {
+	spacing: 5px;
+  	color:#e6e6e6;
+	background: #e6e6e6;
+ 	background-color: #1a1a1a;
+}
+
+
+QRadioButton::indicator {
+width: 14px;
+height: 14px;
+}
+
+QRadioButton::indicator::unchecked {
+image: url(:/Images/radiobnone.png);
+}
+
+
+QRadioButton::indicator:checked{
+image: url(:/Images/radiobcheck.png);
+}
+
+
+QFrame#frStatusBar
+{
+	background-color: transparent;
+	border: 0px solid #285e8e;	
+}
+
+QFrame#frDevStatus
+{
+	background-color: transparent;
+	border:none;
+     border-top-width:1px;
+     border-bottom-width:0px;
+ 	 border-color:#4d4d4d;
+   border-style: solid;
+   padding-left:10px;
+}
+
+
+QFrame#frModuleTitle
+{
+	background-color: #1a1a1a;
+	border:none;
+  	 border-color:#4d4d4d;
+   border-style: solid;
+   padding-left:10px;
+}
+
+
+QFrame#frContent QScrollArea
+{ 
+  	color:#e6e6e6;
+	background: #e6e6e6;
+ 	background-color: #1a1a1a;
+	border: 1px solid #4d4d4d;	
+  	border-left-width:0px;
+   	border-right-width:0px;
+     border-radius: 0px;
+     padding: 0px;
+     selection-background-color: darkgray;
+}
+
+QScrollBar:vertical {
+    border-radius:0px; 
+    border: 1px solid #4d4d4d;	
+     background: #1a1a1a;
+     width: 20px;
+     margin: 30px 0px 30px 0px;
+ }
+ QScrollBar::handle:vertical {
+     background: #dddddd;
+     min-height: 20px;
+ }
+ QScrollBar::add-line:vertical {
+     border-radius: 0px; 
+	border: 1px solid #4d4d4d;	
+    border-bottom-width:0px;
+   border-top-width:0px;
+  border:none;
+     background:  #1a1a1a;
+     height: 20px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ margin-bottom: 5px;
+ }
+
+ QScrollBar::sub-line:vertical {
+ border-radius: 0px;    
+ border: 1px solid #4d4d4d;	
+    border-bottom-width:0px;
+   border-top-width:0px;
+  border:none;
+   background:#1a1a1a;
+     height: 20px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ margin-top: 5px;
+ }
+
+ QScrollBar::up-arrow:vertical {
+     image: url(:/Images/spin_up.png);
+    width: 10px;
+    height: 10px;
+ }
+
+QScrollBar::down-arrow:vertical {
+     image: url(:/Images/spin_down.png);
+    width: 10px;
+    height: 10px;
+ }
+
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+     background: none;
+ }
+
+
+/*Customizing pop-up list of the QComboBox*/
+ QComboBox QAbstractItemView {
+	color:#e6e6e6;
+    	border: 1px solid #4d4d4d;
+	background-color: #1a1a1a;
+    	selection-background-color: darkgray;
+ }
+ 
+QComboBox { 
+    	padding-right: 25px;
+	font:11pt "Arial";
+  	color:#e6e6e6;
+	background: #e6e6e6;
+ 	background-color: #1a1a1a;
+	border: 1px solid #4d4d4d;	
+    border-radius: 5px;
+    padding: 0 8px;
+	height:30px;
+
+    selection-background-color: darkgray;
+	min-height: 1.3em;
+}
+
+QComboBox::drop-down {	
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+	padding:1px;
+}
+ 
+QSpinBox::down-arrow,
+QDoubleSpinBox::down-arrow,
+QComboBox::down-arrow {
+    image: url(:/Images/spin_down.png);
+    width: 9px;
+    height: 9px;
+}
+
+QSpinBox::down-arrow:disabled,
+QDoubleSpinBox::down-arrow:disabled,
+QComboBox::down-arrow:disabled {
+   image: url(:/Images/spin_down_disabled.png);
+}
+
+QSpinBox::up-arrow,
+QDoubleSpinBox::up-arrow {
+    image: url(:/Images/spin_up.png);
+    width: 9px;
+    height: 9px;
+}
+
+QSpinBox::up-arrow:disabled,
+QDoubleSpinBox::up-arrow:disabled {
+   image: url(:/Images/spin_up_disabled.png);
+}
+
+QSpinBox,
+QDoubleSpinBox { 
+    padding-right: 25px;
+  	color:#e6e6e6;
+	background: #e6e6e6;
+ 	background-color: #1a1a1a;
+	border: 1px solid #4d4d4d;	
+     border-radius: 5px;
+     padding: 0 5px;
+	 height:22px;
+
+     selection-background-color: darkgray;
+	min-height: 22px;
+
+}
+
+QSpinBox::up-button,
+QDoubleSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+ 	height:12px;
+    width: 20px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+    /*border-image: url(:/Images/spinup.png) 1;*/
+	border: 1px solid #4d4d4d;	
+   border-bottom-width:0px;     
+   border-top-width:0px;     
+  border-right-width:0px;     
+
+margin:0px 2px 0px 2px;
+padding:1px;
+	background-color: transparent;
+}
+
+QSpinBox::down-button,
+QDoubleSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+	height:12px;
+    width: 20px;
+	border: 1px solid #4d4d4d;	
+    border-top-width:0px;     
+	border-bottom-width:0px;     
+    border-right-width:0px;     
+	margin:0px 2px 1px 2px;
+	background-color: transparent;
+	padding:1px;
+    
+}
+
+QFrame#frContent QLabel,
+QFrame#frContent QCheckBox,
+QFrame#frContent QRadioButton
+{
+	font: 12pt "CachetBold";
+}

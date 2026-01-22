@@ -1,0 +1,341 @@
+QFrame,
+QMessageBox
+{
+	color:#4d4d4d;
+	background-color: #000000;
+	border:none;
+	font: 12pt "CachetBold";
+}
+
+QLabel
+{
+	padding:5px;
+}
+
+#lblTitle
+{
+	color:#4d4d4d;
+	border:none;
+	border-bottom: 1px solid #333333;
+	font: 14pt "CachetBold";
+	padding:10px;
+}
+
+QLineEdit
+{ 
+	font: 12pt "Arial";
+	color:#e6e6e6;
+	background: #e6e6e6;
+	background-color: #000000;
+	border: 1px solid #4d4d4d; 
+	border-radius: 5px;
+	padding: 0 8px;
+	height:30px;
+	selection-background-color: darkgray;
+}
+
+QLineEdit:read-only 
+{ 
+	background: #1a1a1a; 
+}
+
+QSpinBox::down-arrow 
+{
+	image: url(:/Images/spin_down.png);
+	width: 9px;
+	height: 9px;
+}
+
+QSpinBox::down-arrow:disabled 
+{
+	image: url(:/Images/spin_down_disabled.png);
+}
+
+QSpinBox::up-arrow 
+{
+	image: url(:/Images/spin_up.png);
+	width: 9px;
+	height: 9px;
+}
+
+QSpinBox::up-arrow:disabled 
+{
+	image: url(:/Images/spin_up_disabled.png);
+}
+
+QSpinBox 
+{ 
+	padding-right: 25px;
+	font: 12pt "Arial";
+	color:#e6e6e6;
+	background: #e6e6e6;
+	background-color: #1a1a1a;
+	border: 1px solid #4d4d4d; 
+	border-radius: 5px;
+	padding: 0 8px;
+	height:30px;
+	selection-background-color: darkgray;
+	min-height: 1.3em;
+}
+
+QSpinBox::up-button 
+{
+	subcontrol-origin: border;
+	subcontrol-position: top right;
+
+	width: 20px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+	/*border-image: url(:/Images/spinup.png) 1;*/
+	border: 1px solid #4d4d4d; 
+	border-bottom-width:0px; 
+	border-top-width:0px; 
+	border-right-width:0px; 
+	margin-right:2px;
+	padding:1px;
+	background-color: transparent;
+}
+/*
+QSpinBox::up-button:hover {
+	border-image: url(./Images/spinup_hover.png) 1;
+}
+
+QSpinBox::up-button:pressed {
+	border-image: url(./Images/spinup_pressed.png) 1;
+}
+*/
+QSpinBox::down-button 
+{
+	subcontrol-origin: border;
+	subcontrol-position: bottom right;
+	width: 20px;
+	/* border-image: url(:/Images/spindown.png) 1;*/
+	border: 1px solid #4d4d4d; 
+	border-top-width:0px; 
+	border-bottom-width:0px; 
+	border-right-width:0px; 
+	margin-right:2px;
+	background-color: transparent;
+	padding:1px;
+}
+
+QPushButton, 
+QLabel,
+QCheckBox
+QRadioButton{
+	color:#e6e6e6;
+	background-color: #000000;
+}
+
+QLabel,
+QCheckBox,
+QRadioButton
+{
+	font: 10pt "MS Shell Dlg 2";
+}
+
+ QLineEdit,
+ QPlainTextEdit,
+ QSpinBox,
+ QProgressBar 
+{
+	font: 10pt "MS Shell Dlg 2";
+}
+
+QPushButton
+{
+	border: 1px solid #4d4d4d;	
+	border-radius:5px;
+	padding:5px 5px 5px 5px;
+	min-height:  18px;
+	max-height:  18px;
+	min-width:  120px;
+	max-width:  120px;
+	text-align: centered;
+	color:#e6e6e6;
+	font: 10pt "CachetBold";
+}
+
+QPushButton:disabled
+{
+	color:#4d4d4d; 
+}
+
+ QPushButton:pressed
+ {
+	padding:6px 5px 5px 5px;
+}
+
+QPushButton:focus
+{
+	border: 1px solid #4d4d4d; 
+}
+
+QRadioButton {
+	spacing: 5px;
+	color:#e6e6e6;
+	background: #e6e6e6;
+	background-color: #000000;
+	padding-left:10px;
+}
+
+
+QRadioButton::indicator {
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton::indicator::unchecked {
+	image: url(:/Images/radiobnone.png);
+}
+
+QRadioButton::indicator:checked{
+	image: url(:/Images/radiobcheck.png);
+}
+
+QComboBox { 
+    padding-right: 25px;
+	font: 12pt "Arial";
+  	color:#e6e6e6;
+	background: #e6e6e6;
+ 	background-color: #1a1a1a;
+	border: 1px solid #4d4d4d;	
+    border-radius: 5px;
+    padding: 0 8px;
+	height:30px;
+
+    selection-background-color: darkgray;
+	min-height: 1.3em;
+}
+
+
+/*
+QSpinBox::up-button:hover {
+    border-image: url(./Images/spinup_hover.png) 1;
+}
+
+QSpinBox::up-button:pressed {
+    border-image: url(./Images/spinup_pressed.png) 1;
+}
+*/
+
+
+QComboBox::down-arrow {
+    image: url(:/Images/spin_down.png);
+    width: 9px;
+    height: 9px;
+}
+
+
+QComboBox::down-arrow:disabled {
+   image: url(:/Images/spin_down_disabled.png);
+}
+
+ QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+	padding:1px;
+ }
+
+QGroupBox{
+	background-color: #000000;
+	border:none;
+	border-color:#4d4d4d;
+	border-style: solid;
+	padding-left:10px;
+	border-bottom: 1px solid #333333;
+}
+
+QGroupBox#groupParity,QGroupBox#groupBits,QGroupBox#groupFlowControl{
+	border-bottom: 0px solid #333333;
+}
+
+QCheckBox {
+	spacing: 5px;
+  	color:#e6e6e6;
+	background: #000000;
+ 	background-color: #000000;
+ 	padding-left:15px;
+}
+
+
+QCheckBox::indicator {
+	width: 14px;
+	height: 14px;
+	border: none;	
+}
+
+
+QCheckBox::indicator:unchecked:disabled {
+	image: url(:/Images/chk_unchecked_disabled.png);
+}
+
+QCheckBox::indicator:checked{
+	image: url(:/Images/chk_checked.png);
+}
+
+QCheckBox::indicator:unchecked:disabled {
+	image: url(:/Images/chk_unchecked_disabled.png);
+}
+
+QCheckBox::indicator:unchecked{
+	image: url(:/Images/chk_unchecked.png);
+}
+
+QFrame#frDlgAbout,
+QFrame#frTitleAbout,
+QLabel#lblTitleAbout{
+	color:#4d4d4d;
+	background-color: #000000;
+	border:none;
+	font: 12pt "CachetBold";
+	/*border: 0px solid #000000;	*/
+}
+
+QLabel#lblTitleAbout{
+	max-height: 33px;
+	min-height: 33px;
+  	margin:0px;
+	margin-left:20px;
+}
+
+QPushButton#btnCloseAbout{
+	color:red;
+	font: 16pt "CachetBold";
+	border:none;
+	border-radius:px;
+    border-left: 1px solid #e6e6e6;
+	background-color: #000000;
+	min-height: 33px;
+  	min-width: 33px;
+	max-width: 33px;
+	max-height: 33px;
+	text-align: center;
+	 margin:0px;
+}	
+
+QFrame#frTitleAbout{
+	color:#4d4d4d;
+	border:none;
+    border-bottom: 1px solid #333333;
+	font: 14pt "CachetBold";
+    margin:0px;
+}
+
+QLabel#lblAboutLabel1,
+QLabel#lblAboutLabel2{
+	margin-left:10px;
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+QLabel#lblAboutDlgLogo{
+	margin-left:10px;
+	margin-right:10px;
+	background-color: #FFFFFF;
+}
