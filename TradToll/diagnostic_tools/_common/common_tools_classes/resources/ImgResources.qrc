@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="Images" >
+    <file alias="EmovisLogo.png">n:\\Diagnostic_Tools\\_common\\images\\emovisLogo_cropped.png</file>
+  </qresource>
+</RCC>
