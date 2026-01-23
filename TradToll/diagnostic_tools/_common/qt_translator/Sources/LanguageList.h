@@ -33,7 +33,7 @@
 class LanguageLabel
 {
 public:
-	bool operator<(const LanguageLabel& x) const { return (QString::compare(m_sLabelName, x.m_sLabelName)<0); }
+	bool operator<(const LanguageLabel& x) const { return (QString::compare(m_sLabelName, x.m_sLabelName,Qt::CaseSensitive)<0); }
 	
 	QString m_sLabelName;
 	QString m_sLabelTranslation;

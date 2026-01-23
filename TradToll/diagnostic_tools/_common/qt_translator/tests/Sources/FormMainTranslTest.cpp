@@ -92,6 +92,8 @@ void FormMainTranslTest::changeEvent(QEvent* event)
 	{
 		QString s2 = m_pTrans->translate("FormMainTranslTestB", "LABEL_APP_WINDOW_TITLE", nullptr);
 		QString s = QCoreApplication::translate("FormMainTranslTestB", "LABEL_APP_WINDOW_TITLE", nullptr);
+		
+		QString s3 = tr("?");
 		// retranslate designer form (single inheritance approach)
 		m_ui->retranslateUi(this);
 		

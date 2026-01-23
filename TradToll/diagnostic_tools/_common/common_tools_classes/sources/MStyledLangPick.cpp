@@ -16,7 +16,7 @@ MStyledLangButton::MStyledLangButton(QWidget *parent, QString sUnselectedImagePa
     setLineWidth(0);
     QVBoxLayout * verticalLayout_5 = new QVBoxLayout(this);
     verticalLayout_5->setSpacing(0);
-    //verticalLayout_5->setMargin(0);
+    verticalLayout_5->setContentsMargins(0,0,0,0);
     verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
 
 	m_lblFlag = new QLabel(this);
@@ -74,7 +74,7 @@ MStyledLangPick::MStyledLangPick(QWidget *parentFrame)
 	
 	m_horizontalLayout = new QHBoxLayout(this);
     m_horizontalLayout->setSpacing(3);
-   // m_horizontalLayout->setMargin(0);
+    m_horizontalLayout->setContentsMargins(0,0,0,0);
     m_horizontalLayout->setObjectName(QString::fromUtf8("m_horizontalLayout"));
 	m_horizontalLayout->setDirection(QBoxLayout::LeftToRight);
 

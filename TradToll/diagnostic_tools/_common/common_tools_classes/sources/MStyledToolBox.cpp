@@ -80,7 +80,7 @@ int MStyledToolBox::addGroup(const QString & text )
 	
     QVBoxLayout *verticalLayout_4 = new QVBoxLayout(pPage);
     verticalLayout_4->setSpacing(0);
-    //verticalLayout_4->setMargin(0);
+    verticalLayout_4->setContentsMargins(0,0,0,0);
     verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
 
     QSpacerItem *verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);

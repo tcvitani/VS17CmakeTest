@@ -72,23 +72,24 @@ bool LanguageList::getTranslation(QString sLabelName, QString &sResult)
 {
 	LanguageLabel *pFound;
 	bool bFound = false;
+	sResult = sLabelName;
 	
 	LanguageLabel oWanted;
 	oWanted.m_sLabelName = sLabelName;
-	
+
 	QList<LanguageLabel*>::iterator it;
 	//it = qBinaryFind(m_plstLanguage->begin(), m_plstLanguage->end(), &oWanted, LanguageList::lessThan);
 	it = std::lower_bound(m_plstLanguage->begin(), m_plstLanguage->end(), &oWanted, LanguageList::lessThan);
 
-	if( it !=  m_plstLanguage->end())
+	if( it != m_plstLanguage->end())
 	{
 		pFound = *it;
-		bFound = true;
-	}
-	
-	if(bFound)
-	{
-		sResult = pFound->m_sLabelTranslation;
+
+		if (QString::compare(pFound->m_sLabelName, sLabelName, Qt::CaseSensitive) == 0)
+		{
+			sResult = pFound->m_sLabelTranslation;
+			bFound = true;
+		}
 	}
 	
 	return bFound;
