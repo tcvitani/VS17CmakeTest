@@ -1,0 +1,37 @@
+<RCC>
+  <qresource prefix="Images" >
+    <file alias="spin_down.png">n:\\Diagnostic_Tools\\_common\\images\\spin_down.png</file>
+    <file alias="chk_unchecked_disabled.png">n:\\Diagnostic_Tools\\_common\\images\\chk_unchecked_disabled.png</file>
+    <file alias="chk_checked.png">n:\\Diagnostic_Tools\\_common\\images\\chk_checked.png</file>
+    <file alias="chk_checked_disabled.png">n:\\Diagnostic_Tools\\_common\\images\\chk_checked_disabled.png</file>
+    <file alias="chk_unchecked.png">n:\\Diagnostic_Tools\\_common\\images\\chk_unchecked.png</file>
+    <file alias="ledoff.png">n:\\Diagnostic_Tools\\_common\\images\\ledoff.png</file>
+    <file alias="spin_up.png">n:\\Diagnostic_Tools\\_common\\images\\spin_up.png</file>
+    <file alias="radiobnone.png">n:\\Diagnostic_Tools\\_common\\images\\radiobnone.png</file>
+    <file alias="radiobcheck.png">n:\\Diagnostic_Tools\\_common\\images\\radiobcheck.png</file>
+    <file alias="ico.png">n:\\Diagnostic_Tools\\_common\\images\\ico.png</file>
+    <file alias="ledgreen.png">n:\\Diagnostic_Tools\\_common\\images\\ledgreen.png</file>
+    <file alias="ledred.png">n:\\Diagnostic_Tools\\_common\\images\\ledred.png</file>
+    <file alias="EmovisLogo.png">n:\\Diagnostic_Tools\\_common\\images\\emovisLogo_cropped.png</file>
+    <file alias="logo.png">n:\\Diagnostic_Tools\\_common\\images\\logo.png</file>
+    <file alias="FR2.png">n:\\Diagnostic_Tools\\_common\\images\\FR2.png</file>
+    <file alias="HR2.png">n:\\Diagnostic_Tools\\_common\\images\\HR2.png</file>
+    <file alias="EN2.png">n:\\Diagnostic_Tools\\_common\\images\\EN2.png</file>
+    <file alias="restore.png">n:\\Diagnostic_Tools\\_common\\images\\restore.png</file>
+    <file alias="maximize.png">n:\\Diagnostic_Tools\\_common\\images\\maximize.png</file>
+    <file alias="up_arrow.png">n:\\Diagnostic_Tools\\_common\\images\\up_arrow.png</file>
+    <file alias="down_arrow_disabled.png">n:\\Diagnostic_Tools\\_common\\images\\down_arrow_disabled.png</file>
+    <file alias="up_arrow_disabled.png">n:\\Diagnostic_Tools\\_common\\images\\up_arrow_disabled.png</file>
+    <file alias="down_arrow.png">n:\\Diagnostic_Tools\\_common\\images\\down_arrow.png</file>
+    <file alias="spindown.png">n:\\Diagnostic_Tools\\_common\\images\\spindown.png</file>
+    <file alias="spinup.png">n:\\Diagnostic_Tools\\_common\\images\\spinup.png</file>
+    <file alias="minimize.png">n:\\Diagnostic_Tools\\_common\\images\\minimize.png</file>
+    <file alias="comm_not.png">n:\\Diagnostic_Tools\\_common\\images\\comm_not.png</file>
+    <file alias="comm_ok.png">n:\\Diagnostic_Tools\\_common\\images\\comm_ok.png</file>
+    <file alias="HR.png">n:\\Diagnostic_Tools\\_common\\images\\HR.png</file>
+    <file alias="EN.png">n:\\Diagnostic_Tools\\_common\\images\\EN.png</file>
+    <file alias="FR.png">n:\\Diagnostic_Tools\\_common\\images\\FR.png</file>
+    <file alias="tools2.png">n:\\Diagnostic_Tools\\_common\\images\\tools2.png</file>
+    <file alias="languages3.png">n:\\Diagnostic_Tools\\_common\\images\\languages3.png</file>
+  </qresource>
+</RCC>
