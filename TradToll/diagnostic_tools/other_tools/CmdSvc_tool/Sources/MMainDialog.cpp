@@ -175,7 +175,7 @@ MMainDialog::MMainDialog(QWidget *parent) :m_ui(new Ui::MMainDialogB), m_pAboutD
 	connect(m_ui->btnClear, SIGNAL(clicked()), this, SLOT(onBtnClear_clicked()));
 	connect(m_ui->btnBrowse, SIGNAL(clicked()), this, SLOT(onBtnBrowse_clicked()));
 	connect(m_ui->chkRedirectToFile, SIGNAL(stateChanged(int)), this, SLOT(onchkRedirect_stateChanged(int)));
-	connect(m_ui->cmbCommandList, SIGNAL(currentIndexChanged(const QString &)), this, SLOT(onCurrentCmdIndexChanged(const QString &)));
+	connect(m_ui->cmbCommandList, SIGNAL(currentIndexChanged(int)), this, SLOT(onCurrentCmdIndexChanged(int)));
 
 	connect(m_ui->txtMachineName, SIGNAL(editingFinished()), this, SLOT(onMachineName_editingFinished()));
 	connect(m_ui->txtMachineName, SIGNAL(textChanged(const QString &)), this, SLOT(onMachineName_textChanged(const QString &)));
@@ -296,8 +296,9 @@ void MMainDialog::onLangSelectionChanged(QString sLangID)
 	m_languageName = sLangID;
 	MTranslator* pTr = MCmdSvcToolConfig::getCfg()->getTranslator();
 	pTr->setLanguage(m_languageName);
-	qApp->installTranslator(pTr);
 
+	QCoreApplication::removeTranslator(pTr);
+	QCoreApplication::installTranslator(pTr);
 }
 
 void MMainDialog::changeEvent(QEvent* event)
@@ -516,10 +517,11 @@ void MMainDialog::onBtnSendCmd_clicked()
 }
 
 
-void MMainDialog::onCurrentCmdIndexChanged(const QString &sNewCmd)
+void MMainDialog::onCurrentCmdIndexChanged(int index)
 {
-	if (m_ui->cmbCommandList->currentIndex() > 0)
+	if (index > 0)
 	{
+		QString sNewCmd = m_ui->cmbCommandList->currentText();
 		m_ui->txtCommand->setText(sNewCmd);
 		m_ui->cmbCommandList->setCurrentIndex(0);
 	}

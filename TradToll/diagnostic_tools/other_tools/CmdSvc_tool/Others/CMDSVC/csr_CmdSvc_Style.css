@@ -250,8 +250,7 @@ QFrame#frContent QPushButton:focus
 	border: 1px solid #4d4d4d;	
 }
 
-QFrame#frContent QLineEdit,
-QFrame#frContent QPlainTextEdit
+QFrame#frContent QLineEdit
 { 
   	color:#e6e6e6;
 	background: #e6e6e6;
@@ -260,6 +259,19 @@ QFrame#frContent QPlainTextEdit
      border-radius: 5px;
      padding: 0px;
      selection-background-color: darkgray;
+}
+
+
+QFrame#frContent  #txtOutput
+{ 
+  	color:#e6e6e6;
+	background: #e6e6e6;
+ 	background-color: #1a1a1a;
+	/*border: 3px solid #004dff;	
+     border-radius: 5px;*/
+     padding: 1px;
+	 margin: 1px 1px 1px 1px;
+     
 }
 
 QFrame#frContent QSpinBox,
@@ -277,17 +289,19 @@ QFrame#frContent QProgressBar
 {
 		font: 10pt "MS Shell Dlg 2";
 }
-
+/*
 QFrame#frContent QPlainTextEdit
 {
-	padding-bottom: -1px; /*This should be here due to bug in QT*/
+	padding-bottom: -1px; 
 }
+
 
 QFrame#frContent QPlainTextEdit#txtOutput
 {
 	margin-left:0px;
 	margin-right:0px;
 }
+*/
 
 QFrame#frContent QLineEdit:read-only {   
 	background: #1a1a1a; 
@@ -381,8 +395,8 @@ QFrame#frContent QScrollArea
 	background: #e6e6e6;
  	background-color: #1a1a1a;
 	border: 1px solid #4d4d4d;	
-  	border-left-width:0px;
-   	border-right-width:0px;
+  	/*border-left-width:0px;
+   	border-right-width:0px;*/
      border-radius: 0px;
      padding: 0px;
      selection-background-color: darkgray;

@@ -54,7 +54,7 @@ set(PROJECT_SOURCES
 	${PROJECT_SOURCES_DIR}/MCmdSvcToolConfig.cpp
 	${PROJECT_SOURCES_DIR}/MCmdACOM.cpp
 	
-	#${CMAKE_CURRENT_BINARY_DIR}/Resources.rc
+	${CMAKE_CURRENT_BINARY_DIR}/Resources.rc
 	${PROJECT_RESOURCES_DIR}/ImgResources.qrc
 )
 

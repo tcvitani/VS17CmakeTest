@@ -63,7 +63,7 @@ class MMainDialog: public QDialog
 		void onBtnSendCmd_clicked();
 		void onBtnClear_clicked();
 		void onchkRedirect_stateChanged(int);
-		void onCurrentCmdIndexChanged(const QString &);
+		void onCurrentCmdIndexChanged(int);
 		void onMachineName_editingFinished();
 		void onMachineName_textChanged(const QString &);
 		void onCommand_returnPressed();
