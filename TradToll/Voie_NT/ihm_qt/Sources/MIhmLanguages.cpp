@@ -517,6 +517,7 @@ bool LanguageList::getTranslation(QString sLabelName, MIhmLanguages::enumTranslT
 {
 	LanguageLabel *pFound;
 	bool bFound = false;
+	sResult = sLabelName;
 
 	LanguageLabel oWanted;
 	oWanted.m_sLabelName = sLabelName;
@@ -528,7 +529,11 @@ bool LanguageList::getTranslation(QString sLabelName, MIhmLanguages::enumTranslT
 	if( it !=  m_plstLanguage->end())
 	{
 		pFound = *it;
-		bFound = true;
+		
+		if (QString::compare(pFound->m_sLabelName, sLabelName, Qt::CaseSensitive) == 0)
+		{
+			bFound = true;
+		}	
 	}
 	
 	if(bFound)
@@ -564,8 +569,11 @@ bool LanguageList::findLanguageLabel(QString sLabelName, LanguageLabel ** pFound
 
 	if( it !=  m_plstLanguage->end())
 	{
-		*pFound = *it;
-		return true;
+		if(QString::compare((*it)->m_sLabelName, sLabelName, Qt::CaseSensitive) == 0)
+		{
+			*pFound = *it;
+			return true;
+		}
 	}
 
 	return false; //NULL

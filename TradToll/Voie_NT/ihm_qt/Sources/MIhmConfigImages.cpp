@@ -255,8 +255,11 @@ bool ImagesList::findImage(QString  &sImgName, ConfigImage ** pFound)
 
 	if( it !=  m_plstOrderedImages->end())
 	{
-		*pFound = *it;
-		return true;
+		if(QString::compare((*it)->m_sImgName, sImgName, Qt::CaseSensitive) == 0)
+		{
+			*pFound = *it;
+			return true;
+		}
 	}
 
 	return false; //NULL

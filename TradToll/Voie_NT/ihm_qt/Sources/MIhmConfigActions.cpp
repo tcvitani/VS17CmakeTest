@@ -144,8 +144,11 @@ MIhmAction * MIhmConfigActions::findAction(QString sActionID)
 
 	if( it !=  m_lstAvailableActions.end())
 	{
-		pCurrent = *it;
-		return pCurrent;
+		if(QString::compare((*it)->getActionID(), sActionID, Qt::CaseSensitive) == 0)
+		{
+			pCurrent = *it;
+			return pCurrent;
+		}
 	}
 
 	return NULL; //NULL

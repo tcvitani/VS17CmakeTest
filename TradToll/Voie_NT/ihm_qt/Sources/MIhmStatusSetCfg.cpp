@@ -84,8 +84,11 @@ bool StatusSetGroupList::find(QString  &sGroupName, MStatusSetGroup ** pFound)
 
 	if( it !=  m_plstOrderedStatusSetGroups->end())
 	{
-		*pFound = *it;
-		return true;
+		if(QString::compare((*it)->getID(), sGroupName, Qt::CaseSensitive) == 0)
+		{
+			*pFound = *it;
+			return true;
+		}
 	}
 
 	return false; //NULL

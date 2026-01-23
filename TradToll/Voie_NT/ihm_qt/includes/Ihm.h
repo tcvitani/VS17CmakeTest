@@ -91,7 +91,7 @@
 
 #define IHM_STR_IS_DO_NOT_CHANGE(x) ((x)[0]=='\1' && (x)[1]=='\0')
 
-#define IHM_STR_NEW_LINE "§"
+#define IHM_STR_NEW_LINE "\xF5"
 #define IHM_REG_VAL_DEFAULT_VIDEO_DIR		"DefaultVideoDirectory"
 
 /*---------------------------- TYPES -------------------------*/
