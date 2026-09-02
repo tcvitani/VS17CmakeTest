@@ -17,11 +17,19 @@ To BUILD:
 Install Conan for win version >2.25 
 
 Start "x64 Native Tools Command Prompt for VS 2022 LTSC 17.4.lnk" 
-
+-------------------
 cmake -B build -S . -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=.\cmake-conan\conan_provider.cmake -DCMAKE_BUILD_TYPE=Release
 
 cmake --build build --config Release 
 
+cmake --install build --config Release
+
+-------------------
+
 cmake -B build -S . -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=.\cmake-conan\conan_provider.cmake -DCMAKE_BUILD_TYPE=Debug
 
 cmake --build build --config Debug
+
+cmake --install build --config Debug
+
+-------------------
